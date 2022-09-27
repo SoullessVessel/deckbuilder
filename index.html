@@ -1232,6 +1232,9 @@
 							zoomer.querySelector(".rune-zoom").src = "cards/" + activeDeck[ group ][ index ].rune + ".png"
 							zoomer.querySelector(".rune-zoom").className += " active";
 						}
+						else{
+							zoomer.querySelector(".rune-zoom").className = zoomer.querySelector(".rune-zoom").className.replace( / active/g, "" );
+						}
 					}
 					else{
 						zoomer.querySelector(".rune-zoom").className = zoomer.querySelector(".rune-zoom").className.replace( / active/g, "" );
