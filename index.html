@@ -794,7 +794,7 @@
 					// Load any deck embedded in the URL directly
 					activeDeck = parseDeckList( decodeURI( params.get( "deck" ) ) );
 					localStorage.setItem( "activeDeck", "TEMP_DefaultDeck" );
-					history.replaceState( {}, "", "/" );
+					history.replaceState( {}, "", window.location.pathname );
 					console.log( "Loaded deck list from URL." );
 				}
 				else if( localStorage.getItem( "activeDeck" ) ){
