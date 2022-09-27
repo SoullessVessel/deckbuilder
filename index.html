@@ -261,6 +261,7 @@
 				color:#DDDDDD;
 				text-align:left;
 				width:15em;
+				pointer-events:none;
 			}
 			
 			.tip h1,.modal h1{
@@ -281,6 +282,7 @@
 				display:none;
 				position:fixed;
 				z-index:10;
+				pointer-events:none;
 			}
 			.zoom img{
 				border:1px solid rgba(128,128,128,1.0);
@@ -1268,8 +1270,22 @@
 				if ( !tip )
 					return;
 				
-				tip.style.left = ( event.pageX + 20 ) + "px";
-				tip.style.top = ( event.pageY + 30 ) + "px";
+				var xOffset = 10;
+				var yOffset = 10;
+				
+				var x = event.clientX + xOffset;
+				var y = event.clientY + yOffset;
+						
+				var cardWidth = 350;
+				var cardHeight = 500;
+				
+				if ( x > window.innerWidth - cardWidth )
+					x = event.clientX - cardWidth - xOffset;
+				if ( y > window.innerHeight - cardHeight )
+					y = event.clientY - cardHeight - yOffset;
+				
+				tip.style.left = x + "px";
+				tip.style.top = y + "px";
 			
 			}
 			
