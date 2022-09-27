@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Ebene_2"
+   viewBox="0 0 245.02 440"
+   version="1.1"
+   sodipodi:docname="soulshard.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="820"
+     inkscape:window-height="480"
+     id="namedview18"
+     showgrid="false"
+     inkscape:zoom="2.2909091"
+     inkscape:cx="122.51"
+     inkscape:cy="220"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Ebene_2" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#1d1d1b;}</style>
+  </defs>
+  <g
+     id="Ebene_6"
+     style="fill:#ffffff">
+    <g
+       id="g14"
+       style="fill:#ffffff">
+      <polygon
+         class="cls-1"
+         points="130.49 272.95 245.02 337.64 198.34 55.88 130.49 79.35 130.49 272.95"
+         id="polygon6"
+         style="fill:#ffffff" />
+      <polygon
+         class="cls-1"
+         points="122.51 286.78 4.19 353.62 122.51 440 240.83 353.62 122.51 286.78"
+         id="polygon8"
+         style="fill:#ffffff" />
+      <polygon
+         class="cls-1"
+         points="122.51 65.21 190.74 41.61 122.51 0 54.28 41.61 122.51 65.21"
+         id="polygon10"
+         style="fill:#ffffff" />
+      <polygon
+         class="cls-1"
+         points="114.52 272.95 114.52 79.35 46.68 55.88 0 337.64 114.52 272.95"
+         id="polygon12"
+         style="fill:#ffffff" />
+    </g>
+  </g>
+</svg>
