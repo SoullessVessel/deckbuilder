@@ -188,7 +188,41 @@ function build(){
 		data.items.push( entry );	
 		
 	}
+	
+	// Sort the entries alphabetically by name
+	data.abilities.sort( function( a,b ){
 
+		var aVal = "";
+		switch( a.variant ){
+			case "Basic":
+				aVal = a.name + "0";
+			case "Alpha":
+				aVal = a.name + "1";
+			case "Beta":
+				aVal = a.name + "2";
+		}
+		
+		var bVal = "";
+		switch( b.variant ){
+			case "Basic":
+				bVal = b.name + "0";
+			case "Alpha":
+				bVal = b.name + "1";
+			case "Beta":
+				bVal = b.name + "2";
+		}
+		
+		if( aVal > bVal ) return 1;
+		else return -1;
+		
+	} );
+	
+	data.items.sort( function( a,b ){
+		
+		if( a.name > b.name ) return 1;
+		else return -1;
+		
+	} );
 
 	finishBuild( data );
 	
