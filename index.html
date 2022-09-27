@@ -1957,7 +1957,7 @@
 			
 			function copyDeckLink(){
 			
-				navigator.clipboard.writeText( window.location.protocol + "://" + window.location.hostname + window.location.pathname + "?deck=" + encodeDeckList(activeDeck,true) );
+				navigator.clipboard.writeText( window.location.protocol + "//" + window.location.hostname + window.location.pathname + "?deck=" + encodeDeckList(activeDeck,true) );
 				sendMessage( "green", "Deck link coppied to clipboard." );
 			
 			}
