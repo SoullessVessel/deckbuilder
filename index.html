@@ -261,7 +261,6 @@
 				color:#DDDDDD;
 				text-align:left;
 				width:15em;
-				pointer-events:none;
 			}
 			
 			.tip h1,.modal h1{
@@ -444,25 +443,29 @@
 			
 			#modal_confirmclear,
 			#modal_confirmdelete,
-			#modal_deckname{
+			#modal_deckname,
+			#modal_confirmoverwrite{
 				text-align:center;
 			}
 
 			#modal_confirmclear h1,
 			#modal_confirmdelete h1,
-			#modal_deckname h1{
+			#modal_deckname h1,
+			#modal_confirmoverwrite h1{
 				
 			}
 
 			#modal_confirmclear p,
 			#modal_confirmdelete p,
-			#modal_deckname p{
+			#modal_deckname p,
+			#modal_confirmoverwrite p{
 				font-size:120%;
 			}
 			
 			#modal_confirmclear input,
 			#modal_confirmdelete input,
-			#modal_deckname input{
+			#modal_deckname input,
+			#modal_confirmoverwrite input{
 				display:block;
 				background-color:rgba(8,8,8,0.7);
 				height:2.0em;
@@ -479,7 +482,8 @@
 
 			#modal_confirmclear .button,
 			#modal_confirmdelete .button,
-			#modal_deckname .button{
+			#modal_deckname .button,
+			#modal_confirmoverwrite .button{
 				display:inline-block;
 			}
 		
@@ -1910,7 +1914,7 @@
 				
 			}
 			
-			function confirmSaveAs(){
+			function confirmSaveAs(allowOverwrite){
 			
 				// Show an error if no name was provided
 				var name = document.getElementById( "nameInput" ).value;
@@ -1924,22 +1928,39 @@
 					sendMessage( "red", "Build names can't contain colons or semi-colons." );
 					return;
 				}
+				
+				// Get confirmation before overwriting another deck
+				var key = "DECK_" + name.replace( "|", "-" );
+				var existingNames = localStorage.getItem( "deckNames" ).split( "|" );
+				if( existingNames.includes( key ) && !allowOverwrite ){
+					modal_hide("modal_deckname");
+					modal_show("modal_confirmoverwrite");
+					return;
+				}
 			
 				// Record the name in the deck as presented
 				activeDeck.name = name;
 
-				// Save the deck to local storage with the coresponding key
-				var key = "DECK_" + name.replace( "|", "-" );
-				localStorage.setItem( "deckNames", localStorage.getItem( "deckNames" ) + "|" + key );
-				localStorage.setItem( "activeDeck", key );
-				saveActiveDeck();
+				// If this isn't overwriting an existing deck
+				if( !existingNames.includes( key ) ){
 				
-				//Update the decks dropdown
-				var opt = document.createElement( "option" );
-					opt.value = key;
-					opt.innerHTML = name;
-				document.getElementById( "name" ).appendChild( opt );
-				document.getElementById( "name" ).value = key;
+					// Add the deck to the list of deck keys
+					localStorage.setItem( "deckNames", localStorage.getItem( "deckNames" ) + "|" + key );
+
+					//Update the decks dropdown
+					var opt = document.createElement( "option" );
+						opt.value = key;
+						opt.innerHTML = name;
+					document.getElementById( "name" ).appendChild( opt );
+					document.getElementById( "name" ).value = key;
+					
+				}
+				
+				// Make the new deck the active deck
+				localStorage.setItem( "activeDeck", key );
+				
+				// Save the deck to local storage with the coresponding key
+				saveActiveDeck();
 				
 				// Close the modal dialog
 				modal_hide("modal_deckname");
@@ -2083,12 +2104,19 @@
 				<div class="button" closeModal="modal_confirmdelete"><span>Cancel</span></div>
 				<div class="button" onclick="confirmDelete();"><span>Delete</span></div>
 			</div>
+
+			<div class="modal" id="modal_confirmoverwrite">
+				<h1>Overwrite Build</h1>
+				<p>A build with that name already exists.<br>Are you sure you want to replace it?</p>
+				<div class="button" closeModal="modal_confirmoverwrite"><span>Cancel</span></div>
+				<div class="button" onclick="confirmSaveAs(true);"><span>Overwrite</span></div>
+			</div>
 			
 			<div class="modal" id="modal_deckname">
 				<h1>Set Build Name</h1>
 				<input type="text" id="nameInput" />
 				<div class="button" closeModal="modal_deckname"><span>Cancel</span></div>
-				<div class="button" onclick="confirmSaveAs();"><span>Create</span></div>
+				<div class="button" onclick="confirmSaveAs(false);"><span>Create</span></div>
 			</div>
 		
 		</div>
