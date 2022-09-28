@@ -923,7 +923,8 @@
 				clearDeck();
 				tip_hideAll();
 				
-				var totalXP = 0;
+				var baseXP = 0;
+				var upgradeXP = 0;
 				if( deck.abilities.length ){
 					for( var i = 0; i < deck.abilities.length; i++ ){
 						var cardData = cardLookup[ deck.abilities[i].id ];
@@ -932,19 +933,23 @@
 						document.getElementById( "deck-abilities" ).appendChild( card );
 						if( i < 9 ){
 							if( cardData.variant == "Basic" )
-								totalXP += 1;
-							else
-								totalXP += 2;
+								baseXP += 1;
+							else{
+								baseXP += 1;
+								upgradeXP += 1;
+							}
 						}
 						else{
 							if( cardData.variant == "Basic" )
-								totalXP += 2;
-							else
-								totalXP += 3;
+								baseXP += 2;
+							else{
+								baseXP += 2;
+								upgradeXP += 1;
+							}
 						}
 					}
 				}
-				document.getElementById( "abilityxp" ).innerHTML = totalXP;
+				document.getElementById( "abilityxp" ).innerHTML = ( Math.max( 0, baseXP - 6 ) + upgradeXP ) ;
 				
 				var totalSP = 0;
 				if( deck.vessel.length ){
