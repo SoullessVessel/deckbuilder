@@ -196,20 +196,26 @@ function build(){
 		switch( a.variant ){
 			case "Basic":
 				aVal = a.name + "0";
+				break;
 			case "Alpha":
 				aVal = a.name + "1";
+				break;
 			case "Beta":
 				aVal = a.name + "2";
+				break;
 		}
 		
 		var bVal = "";
 		switch( b.variant ){
 			case "Basic":
 				bVal = b.name + "0";
+				break;
 			case "Alpha":
 				bVal = b.name + "1";
+				break;
 			case "Beta":
 				bVal = b.name + "2";
+				break;
 		}
 		
 		if( aVal > bVal ) return 1;

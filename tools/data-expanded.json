@@ -4,13 +4,13 @@
 			"type": "Meta",
 			"initiative": "1",
 			"name": "Arcane Manipulation",
-			"cooldown": "2",
-			"id": "a99",
+			"cooldown": "1",
+			"id": "a97",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [],
-			"rules": "Arcane Manipulation Meta Extend the duration of up to two ongoing spells by +2 each.    Then you suffer a scratch. Extend the duration of an ongoing spell that you have cast by +1."
+			"rules": "Arcane Manipulation Meta Extend the duration of an ongoing spell by +4.    Attach a card from your hand below the targeted spell. It only becomes available again once that effect ends. Extend the duration of an ongoing spell that you have cast by +1."
 		},
 		{
 			"type": "Meta",
@@ -28,25 +28,25 @@
 			"type": "Meta",
 			"initiative": "1",
 			"name": "Arcane Manipulation",
-			"cooldown": "1",
-			"id": "a97",
+			"cooldown": "2",
+			"id": "a99",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [],
-			"rules": "Arcane Manipulation Meta Extend the duration of an ongoing spell by +4.    Attach a card from your hand below the targeted spell. It only becomes available again once that effect ends. Extend the duration of an ongoing spell that you have cast by +1."
+			"rules": "Arcane Manipulation Meta Extend the duration of up to two ongoing spells by +2 each.    Then you suffer a scratch. Extend the duration of an ongoing spell that you have cast by +1."
 		},
 		{
 			"type": "Melee",
 			"initiative": "6",
 			"name": "Assassin's Strike",
 			"cooldown": "5",
-			"id": "a69",
+			"id": "a67",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [],
-			"rules": "Assassin's Strike Melee Move up to 3 (Gain 'Nimble' and 'Slippery') in a straight or diagonal line.  Repeat this up to two more times.    Then perform one melee attack against each enemy you have moved over, adding (Enhancement Die). Move (2) (gain 'Nimble')  Attack, add (Cursed Die)."
+			"rules": "Assassin's Strike Melee Move up to 2 (Gain 'Nimble' and 'Slippery') in a straight or diagonal line.  Repeat this up to two more times.    Then perform one melee attack against each enemy you have moved over, adding (Enhancement Die). Move (2) (gain 'Nimble')  Attack, add (Cursed Die)."
 		},
 		{
 			"type": "Melee",
@@ -65,28 +65,27 @@
 			"initiative": "6",
 			"name": "Assassin's Strike",
 			"cooldown": "5",
-			"id": "a67",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [],
-			"spends": [],
-			"rules": "Assassin's Strike Melee Move up to 2 (Gain 'Nimble' and 'Slippery') in a straight or diagonal line.  Repeat this up to two more times.    Then perform one melee attack against each enemy you have moved over, adding (Enhancement Die). Move (2) (gain 'Nimble')  Attack, add (Cursed Die)."
-		},
-		{
-			"type": "Melee",
-			"initiative": "6",
-			"name": "Backstab",
-			"cooldown": "4",
-			"id": "a72",
+			"id": "a69",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [],
+			"spends": [],
+			"rules": "Assassin's Strike Melee Move up to 3 (Gain 'Nimble' and 'Slippery') in a straight or diagonal line.  Repeat this up to two more times.    Then perform one melee attack against each enemy you have moved over, adding (Enhancement Die). Move (2) (gain 'Nimble')  Attack, add (Cursed Die)."
+		},
+		{
+			"type": "Melee",
+			"initiative": "4",
+			"name": "Backstab",
+			"cooldown": "4",
+			"id": "a70",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
 			"spends": [
-				"surge",
 				"surge",
 				"surge"
 			],
-			"rules": "Backstab Melee Attack, add (Enhancement Die). Surge: +3 Power if no ally is adjacent to you. Surge: +4 Power if there is an ally on the opposing tile of the target. Surge: +2 Power. Move (2) (gain 'Slippery' and 'Nimble')  Attack, add (Cursed Die)."
+			"rules": "Backstab Melee You may swap positions with an adjacent enemy.  In either case, attack that enemy, adding (Enhancement Die). Surge: +4 Power if there is an ally on the opposing tile of the target. Surge: +2 Power. Move (2) (gain 'Slippery' and 'Nimble')  Attack, add (Cursed Die)."
 		},
 		{
 			"type": "Melee",
@@ -106,47 +105,19 @@
 		},
 		{
 			"type": "Melee",
-			"initiative": "4",
+			"initiative": "6",
 			"name": "Backstab",
 			"cooldown": "4",
-			"id": "a70",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [],
-			"spends": [
-				"surge",
-				"surge"
-			],
-			"rules": "Backstab Melee You may swap positions with an adjacent enemy.  In either case, attack that enemy, adding (Enhancement Die). Surge: +4 Power if there is an ally on the opposing tile of the target. Surge: +2 Power. Move (2) (gain 'Slippery' and 'Nimble')  Attack, add (Cursed Die)."
-		},
-		{
-			"type": "Attack",
-			"initiative": "5",
-			"name": "Barrage",
-			"cooldown": "3",
-			"id": "a24",
+			"id": "a72",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [],
 			"spends": [
 				"surge",
+				"surge",
 				"surge"
 			],
-			"rules": "Barrage Attack Attack, add (Enhancement Die). Surge: +1 Power. Surge: Perform a free attack against the same enemy with your other equipped weapon. Move (1)  Attack, add (Blessing Die)."
-		},
-		{
-			"type": "Attack",
-			"initiative": "2",
-			"name": "Barrage",
-			"cooldown": "1",
-			"id": "a23",
-			"category": "ability",
-			"variant": "Alpha",
-			"effects": [],
-			"spends": [
-				"star"
-			],
-			"rules": "Barrage Attack Attack, add (Standard Die).  You can repeat this attack two more times, but increase the cooldown of this ability by +2 for each additional attack. Star: Cooldown -1. Move (1)  Attack, add (Blessing Die)."
+			"rules": "Backstab Melee Attack, add (Enhancement Die). Surge: +3 Power if no ally is adjacent to you. Surge: +4 Power if there is an ally on the opposing tile of the target. Surge: +2 Power. Move (2) (gain 'Slippery' and 'Nimble')  Attack, add (Cursed Die)."
 		},
 		{
 			"type": "Attack",
@@ -164,19 +135,47 @@
 			"rules": "Barrage Attack Attack, add (Enhancement Die). Star: Perform a free attack against the same enemy. Star: Perform a free attack against the same enemy. Move (1)  Attack, add (Blessing Die)."
 		},
 		{
-			"type": "Spell",
-			"initiative": "3",
-			"name": "Beam Of Destruction",
+			"type": "Attack",
+			"initiative": "2",
+			"name": "Barrage",
 			"cooldown": "1",
-			"id": "a204",
+			"id": "a23",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [
+				"star"
+			],
+			"rules": "Barrage Attack Attack, add (Standard Die).  You can repeat this attack two more times, but increase the cooldown of this ability by +2 for each additional attack. Star: Cooldown -1. Move (1)  Attack, add (Blessing Die)."
+		},
+		{
+			"type": "Attack",
+			"initiative": "5",
+			"name": "Barrage",
+			"cooldown": "3",
+			"id": "a24",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [],
 			"spends": [
-				"star",
+				"surge",
 				"surge"
 			],
-			"rules": "Beam Of Destruction Spell Treat this spell like a ranged attack with a range of 7, using your spellcasting dice pool. Star: Immediately repeat this ability for free (max. two times per round). Star: +1 Power. Attack an enemy within range 5 using your spellcasting dice pool, add (Cursed Die) (Cursed Die)."
+			"rules": "Barrage Attack Attack, add (Enhancement Die). Surge: +1 Power. Surge: Perform a free attack against the same enemy with your other equipped weapon. Move (1)  Attack, add (Blessing Die)."
+		},
+		{
+			"type": "Spell",
+			"initiative": "3",
+			"name": "Beam Of Destruction",
+			"cooldown": "1",
+			"id": "a202",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"surge"
+			],
+			"rules": "Beam Of Destruction Spell Treat this spell like a ranged attack with a range of 5, using your spellcasting dice pool. Surge: +1 Power. Attack an enemy within range 5 using your spellcasting dice pool, add (Cursed Die) (Cursed Die)."
 		},
 		{
 			"type": "Spell",
@@ -199,31 +198,29 @@
 			"initiative": "3",
 			"name": "Beam Of Destruction",
 			"cooldown": "1",
-			"id": "a202",
+			"id": "a204",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
+				"star",
 				"surge"
 			],
-			"rules": "Beam Of Destruction Spell Treat this spell like a ranged attack with a range of 5, using your spellcasting dice pool. Surge: +1 Power. Attack an enemy within range 5 using your spellcasting dice pool, add (Cursed Die) (Cursed Die)."
+			"rules": "Beam Of Destruction Spell Treat this spell like a ranged attack with a range of 7, using your spellcasting dice pool. Star: Immediately repeat this ability for free (max. two times per round). Star: +1 Power. Attack an enemy within range 5 using your spellcasting dice pool, add (Cursed Die) (Cursed Die)."
 		},
 		{
 			"type": "Defense",
 			"initiative": "2",
 			"name": "Bind",
 			"cooldown": "2",
-			"id": "a51",
+			"id": "a49",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"interrupt"
 			],
-			"spends": [
-				"star",
-				"surge"
-			],
-			"rules": "Bind Defense Interrupt  If an adjacent enemy would move, you can prevent that movement and make yourself the target of their attack instead (if applicable).  The below spending options can be used during that defense. Star: Cooldown -2. Star: Cooldown -1. Move (3) (gain 'Slippery)"
+			"spends": [],
+			"rules": "Bind Defense Interrupt  If an adjacent enemy would move, you can prevent that movement and make yourself the target of their attack instead (if applicable). Move (3) (gain 'Slippery)"
 		},
 		{
 			"type": "Defense",
@@ -244,26 +241,29 @@
 			"initiative": "2",
 			"name": "Bind",
 			"cooldown": "2",
-			"id": "a49",
+			"id": "a51",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"interrupt"
 			],
-			"spends": [],
-			"rules": "Bind Defense Interrupt  If an adjacent enemy would move, you can prevent that movement and make yourself the target of their attack instead (if applicable). Move (3) (gain 'Slippery)"
+			"spends": [
+				"star",
+				"surge"
+			],
+			"rules": "Bind Defense Interrupt  If an adjacent enemy would move, you can prevent that movement and make yourself the target of their attack instead (if applicable).  The below spending options can be used during that defense. Star: Cooldown -2. Star: Cooldown -1. Move (3) (gain 'Slippery)"
 		},
 		{
 			"type": "Meta",
 			"initiative": "5",
 			"name": "Black Magic",
-			"cooldown": "5",
-			"id": "a102",
+			"cooldown": "3",
+			"id": "a100",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [],
-			"rules": "Black Magic Meta Suffer 'Stun (2)'.  Add one of the following bonusses to your next spellcasting roll this round (after rolling):  • Add +4 Power.  • Add (Double Surge).  • Add +2 Power and (Surge).  • Add (Star). Reduce the cooldown of one of your spells by 1."
+			"rules": "Black Magic Meta Suffer 'Cursed (2)'.    Add (Power Die) (Enhancement Die) to your next spellcasting roll this round. Reduce the cooldown of one of your spells by 1."
 		},
 		{
 			"type": "Meta",
@@ -281,30 +281,30 @@
 			"type": "Meta",
 			"initiative": "5",
 			"name": "Black Magic",
-			"cooldown": "3",
-			"id": "a100",
+			"cooldown": "5",
+			"id": "a102",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [],
-			"rules": "Black Magic Meta Suffer 'Cursed (2)'.    Add (Power Die) (Enhancement Die) to your next spellcasting roll this round. Reduce the cooldown of one of your spells by 1."
+			"rules": "Black Magic Meta Suffer 'Stun (2)'.  Add one of the following bonusses to your next spellcasting roll this round (after rolling):  • Add +4 Power.  • Add (Double Surge).  • Add +2 Power and (Surge).  • Add (Star). Reduce the cooldown of one of your spells by 1."
 		},
 		{
 			"type": "Spell",
 			"initiative": "5",
 			"name": "Blessing Of Speed",
-			"cooldown": "3",
-			"id": "a207",
+			"cooldown": "2",
+			"id": "a205",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"interrupt"
 			],
 			"spends": [
-				"doublesurge",
-				"doublesurge"
+				"surge",
+				"surge"
 			],
-			"rules": "Blessing Of Speed Spell Interrupt  Spellcasting 1+  Move up to three heroes (you may choose yourself) within range 6 by 2 tiles. DoubleSurge: The targets gain 'Nimble'. DoubleSurge: Move each target by +1 tile. Move (4)"
+			"rules": "Blessing Of Speed Spell Interrupt  Spellcasting 1+  Move yourself or an ally within range 6 by 2 tiles. Surge: The target gains 'Nimble'. Surge: Move the target by +1 tile. Move (4)"
 		},
 		{
 			"type": "Spell",
@@ -327,32 +327,36 @@
 			"type": "Spell",
 			"initiative": "5",
 			"name": "Blessing Of Speed",
-			"cooldown": "2",
-			"id": "a205",
+			"cooldown": "3",
+			"id": "a207",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"interrupt"
+			],
+			"spends": [
+				"doublesurge",
+				"doublesurge"
+			],
+			"rules": "Blessing Of Speed Spell Interrupt  Spellcasting 1+  Move up to three heroes (you may choose yourself) within range 6 by 2 tiles. DoubleSurge: The targets gain 'Nimble'. DoubleSurge: Move each target by +1 tile. Move (4)"
+		},
+		{
+			"type": "Defense",
+			"initiative": "1",
+			"name": "Block",
+			"cooldown": "3",
+			"id": "a52",
 			"category": "ability",
 			"variant": "Basic",
 			"effects": [
+				"ongoing",
 				"interrupt"
 			],
 			"spends": [
 				"surge",
 				"surge"
 			],
-			"rules": "Blessing Of Speed Spell Interrupt  Spellcasting 1+  Move yourself or an ally within range 6 by 2 tiles. Surge: The target gains 'Nimble'. Surge: Move the target by +1 tile. Move (4)"
-		},
-		{
-			"type": "Defense",
-			"initiative": "5",
-			"name": "Block",
-			"cooldown": "4",
-			"id": "a54",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [
-				"interrupt"
-			],
-			"spends": [],
-			"rules": "Block Defense Interrupt  Add +2 Power to your current defense roll and after determining the results, prevent one additional scratch. Move (4)"
+			"rules": "Block Defense Interrupt  Prevent one scratch after a defense.    Ongoing  While the effect lasts, you may use the below spending options on your defense. Surge: +1 Power. Surge: +2 Power. Move (4)"
 		},
 		{
 			"type": "Defense",
@@ -374,33 +378,32 @@
 		},
 		{
 			"type": "Defense",
-			"initiative": "1",
+			"initiative": "5",
 			"name": "Block",
-			"cooldown": "3",
-			"id": "a52",
+			"cooldown": "4",
+			"id": "a54",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
-				"ongoing",
 				"interrupt"
 			],
+			"spends": [],
+			"rules": "Block Defense Interrupt  Add +2 Power to your current defense roll and after determining the results, prevent one additional scratch. Move (4)"
+		},
+		{
+			"type": "Spell",
+			"initiative": "3",
+			"name": "Blood Sorcery",
+			"cooldown": "1",
+			"id": "a208",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
 			"spends": [
 				"surge",
 				"surge"
 			],
-			"rules": "Block Defense Interrupt  Prevent one scratch after a defense.    Ongoing  While the effect lasts, you may use the below spending options on your defense. Surge: +1 Power. Surge: +2 Power. Move (4)"
-		},
-		{
-			"type": "Spell",
-			"initiative": "1",
-			"name": "Blood Sorcery",
-			"cooldown": "4",
-			"id": "a210",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [],
-			"spends": [],
-			"rules": "Blood Sorcery Spell Spellcasting 1+  Remove a 'Bleed' token from an enemy within range 5, then play two cards from your hand.    Alternatively remove 2 scratches from a hero within range 5. Transfer a scratch from one hero to another.  Move (3)"
+			"rules": "Blood Sorcery Spell A hero within range 5 (or you) suffers a scratch.    Treat this spell like a ranged attack with a range of 6, using your spellcasting dice pool. Surge: +1 Power. Surge: Cause 'Bleed (2)'. Transfer a scratch from one hero to another.  Move (3)"
 		},
 		{
 			"type": "Spell",
@@ -420,18 +423,49 @@
 		},
 		{
 			"type": "Spell",
-			"initiative": "3",
+			"initiative": "1",
 			"name": "Blood Sorcery",
-			"cooldown": "1",
-			"id": "a208",
+			"cooldown": "4",
+			"id": "a210",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [],
+			"spends": [],
+			"rules": "Blood Sorcery Spell Spellcasting 1+  Remove a 'Bleed' token from an enemy within range 5, then play two cards from your hand.    Alternatively remove 2 scratches from a hero within range 5. Transfer a scratch from one hero to another.  Move (3)"
+		},
+		{
+			"type": "Spell",
+			"initiative": "4",
+			"name": "Bones Of Fate",
+			"cooldown": "3",
+			"id": "a211",
 			"category": "ability",
 			"variant": "Basic",
-			"effects": [],
+			"effects": [
+				"ongoing"
+			],
 			"spends": [
 				"surge",
 				"surge"
 			],
-			"rules": "Blood Sorcery Spell A hero within range 5 (or you) suffers a scratch.    Treat this spell like a ranged attack with a range of 6, using your spellcasting dice pool. Surge: +1 Power. Surge: Cause 'Bleed (2)'. Transfer a scratch from one hero to another.  Move (3)"
+			"rules": "Bones Of Fate Spell Ongoing  Spellcasting 2+  While the effect lasts, you may grant allies a re-roll on any (Blessing Die), (Cursed Die) or (Enhancement Die).  For each die re-rolled, you suffer a scratch. Surge: Duration +1. Surge: Duration +1. Grant yourself and an ally one re-roll each on a (Blessing Die) or (Enhancement Die) during this round."
+		},
+		{
+			"type": "Spell",
+			"initiative": "4",
+			"name": "Bones Of Fate",
+			"cooldown": "3",
+			"id": "a212",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Bones Of Fate Spell Ongoing  Spellcasting 2+  While the effect lasts, you may grant allies a re-roll on any (Blessing Die), (Cursed Die) or (Enhancement Die).  For each die re-rolled, you suffer a scratch. Surge: May also grant re-rolls on (Standard Die). Surge: Duration +1. Grant yourself and an ally one re-roll each on a (Blessing Die) or (Enhancement Die) during this round."
 		},
 		{
 			"type": "Spell",
@@ -453,54 +487,19 @@
 		},
 		{
 			"type": "Spell",
-			"initiative": "4",
-			"name": "Bones Of Fate",
-			"cooldown": "3",
-			"id": "a212",
-			"category": "ability",
-			"variant": "Alpha",
-			"effects": [
-				"ongoing"
-			],
-			"spends": [
-				"surge",
-				"surge"
-			],
-			"rules": "Bones Of Fate Spell Ongoing  Spellcasting 2+  While the effect lasts, you may grant allies a re-roll on any (Blessing Die), (Cursed Die) or (Enhancement Die).  For each die re-rolled, you suffer a scratch. Surge: May also grant re-rolls on (Standard Die). Surge: Duration +1. Grant yourself and an ally one re-roll each on a (Blessing Die) or (Enhancement Die) during this round."
-		},
-		{
-			"type": "Spell",
-			"initiative": "4",
-			"name": "Bones Of Fate",
-			"cooldown": "3",
-			"id": "a211",
+			"initiative": "6",
+			"name": "Boon Of Protection",
+			"cooldown": "4",
+			"id": "a214",
 			"category": "ability",
 			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
-				"surge",
 				"surge"
 			],
-			"rules": "Bones Of Fate Spell Ongoing  Spellcasting 2+  While the effect lasts, you may grant allies a re-roll on any (Blessing Die), (Cursed Die) or (Enhancement Die).  For each die re-rolled, you suffer a scratch. Surge: Duration +1. Surge: Duration +1. Grant yourself and an ally one re-roll each on a (Blessing Die) or (Enhancement Die) during this round."
-		},
-		{
-			"type": "Spell",
-			"initiative": "6",
-			"name": "Boon Of Protection",
-			"cooldown": "3",
-			"id": "a216",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [
-				"ongoing"
-			],
-			"spends": [
-				"star",
-				"surge"
-			],
-			"rules": "Boon Of Protection Spell Ongoing  Spellcasting 2+  Declare an ally (or yourself). Reduce the duration of all incoming negative effects by 2. Star: Duration +1. Star: Duration +1. Reduce the duration of any one ongoing negative effect by 1."
+			"rules": "Boon Of Protection Spell Ongoing  Spellcasting 2+  Declare an ally (or yourself). Reduce the duration of all incoming negative effects by 1. Surge: Duration +1. Reduce the duration of any one ongoing negative effect by 1."
 		},
 		{
 			"type": "Spell",
@@ -521,41 +520,18 @@
 			"type": "Spell",
 			"initiative": "6",
 			"name": "Boon Of Protection",
-			"cooldown": "4",
-			"id": "a214",
+			"cooldown": "3",
+			"id": "a216",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
+				"star",
 				"surge"
 			],
-			"rules": "Boon Of Protection Spell Ongoing  Spellcasting 2+  Declare an ally (or yourself). Reduce the duration of all incoming negative effects by 1. Surge: Duration +1. Reduce the duration of any one ongoing negative effect by 1."
-		},
-		{
-			"type": "Meta",
-			"initiative": "6",
-			"name": "Bouncing Bomb",
-			"cooldown": "3",
-			"id": "a105",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [],
-			"spends": [],
-			"rules": "Bouncing Bomb Meta Select a tile in exactly range 2 that is straight or diagonal to your position.    Deal damage to all enemies on and adjacent to it using only (Standard Die) (Enhancement Die) (Blessing Die).  Cause 'Knockback (2)' against all enemies affected, originating from the targeted tile.  Add Power to the damage equal to the current chapter tier. Deal damage to an enemy within range 4 using only (Standard Die) (Enhancement Die)."
-		},
-		{
-			"type": "Meta",
-			"initiative": "3",
-			"name": "Bouncing Bomb",
-			"cooldown": "4",
-			"id": "a104",
-			"category": "ability",
-			"variant": "Alpha",
-			"effects": [],
-			"spends": [],
-			"rules": "Bouncing Bomb Meta Select a tile in exactly range 3 that is straight or diagonal to your position.    Deal damage to all enemies on and adjacent to it using only (Power Die) (Blessing Die). Then do the same procedure 3 tiles further in any straight or diagonal direction from there.  Add Power to the damage equal to the current chapter tier. Deal damage to an enemy within range 4 using only (Standard Die) (Enhancement Die)."
+			"rules": "Boon Of Protection Spell Ongoing  Spellcasting 2+  Declare an ally (or yourself). Reduce the duration of all incoming negative effects by 2. Star: Duration +1. Star: Duration +1. Reduce the duration of any one ongoing negative effect by 1."
 		},
 		{
 			"type": "Meta",
@@ -571,19 +547,43 @@
 		},
 		{
 			"type": "Meta",
-			"initiative": "5",
-			"name": "Brawler",
-			"cooldown": "5",
-			"id": "a108",
+			"initiative": "3",
+			"name": "Bouncing Bomb",
+			"cooldown": "4",
+			"id": "a104",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [],
+			"rules": "Bouncing Bomb Meta Select a tile in exactly range 3 that is straight or diagonal to your position.    Deal damage to all enemies on and adjacent to it using only (Power Die) (Blessing Die). Then do the same procedure 3 tiles further in any straight or diagonal direction from there.  Add Power to the damage equal to the current chapter tier. Deal damage to an enemy within range 4 using only (Standard Die) (Enhancement Die)."
+		},
+		{
+			"type": "Meta",
+			"initiative": "6",
+			"name": "Bouncing Bomb",
+			"cooldown": "3",
+			"id": "a105",
 			"category": "ability",
 			"variant": "Beta",
+			"effects": [],
+			"spends": [],
+			"rules": "Bouncing Bomb Meta Select a tile in exactly range 2 that is straight or diagonal to your position.    Deal damage to all enemies on and adjacent to it using only (Standard Die) (Enhancement Die) (Blessing Die).  Cause 'Knockback (2)' against all enemies affected, originating from the targeted tile.  Add Power to the damage equal to the current chapter tier. Deal damage to an enemy within range 4 using only (Standard Die) (Enhancement Die)."
+		},
+		{
+			"type": "Meta",
+			"initiative": "5",
+			"name": "Brawler",
+			"cooldown": "4",
+			"id": "a106",
+			"category": "ability",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
 				"surge"
 			],
-			"rules": "Brawler Meta Ongoing  For each hand that is free, add (Blessing Die) to your attacks and your melee defense.  You may use the below spending options for your attacks. Surge: +1 Power. Attack, add (Blessing Die) for each free hand."
+			"rules": "Brawler Meta Ongoing  For each hand that is free, add (Blessing Die) to your attacks.  You may use the below spending option for your attacks. Surge: +1 Power. Attack, add (Blessing Die) for each free hand."
 		},
 		{
 			"type": "Meta",
@@ -607,45 +607,17 @@
 			"type": "Meta",
 			"initiative": "5",
 			"name": "Brawler",
-			"cooldown": "4",
-			"id": "a106",
+			"cooldown": "5",
+			"id": "a108",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
 				"surge"
 			],
-			"rules": "Brawler Meta Ongoing  For each hand that is free, add (Blessing Die) to your attacks.  You may use the below spending option for your attacks. Surge: +1 Power. Attack, add (Blessing Die) for each free hand."
-		},
-		{
-			"type": "Meta",
-			"initiative": "6",
-			"name": "Call Target",
-			"cooldown": "2",
-			"id": "a111",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [
-				"interrupt"
-			],
-			"spends": [],
-			"rules": "Call Target Meta Interrupt  Cause 'Weaken' to an enemy within range 6. Provide an ally with (Enhancement Die)  (Blessing Die) on their next roll this round."
-		},
-		{
-			"type": "Meta",
-			"initiative": "5",
-			"name": "Call Target",
-			"cooldown": "3",
-			"id": "a110",
-			"category": "ability",
-			"variant": "Alpha",
-			"effects": [
-				"ongoing"
-			],
-			"spends": [],
-			"rules": "Call Target Meta Ongoing  Cause 'Weaken' to an enemy within range 6.    While this effect persists, that enemy cannot lose 'Weaken'.    If you or allies use attacks against that enemy, reduce the cooldown of those used cards by one. Provide an ally with (Enhancement Die)  (Blessing Die) on their next roll this round."
+			"rules": "Brawler Meta Ongoing  For each hand that is free, add (Blessing Die) to your attacks and your melee defense.  You may use the below spending options for your attacks. Surge: +1 Power. Attack, add (Blessing Die) for each free hand."
 		},
 		{
 			"type": "Meta",
@@ -663,17 +635,43 @@
 		},
 		{
 			"type": "Meta",
-			"initiative": "1",
-			"name": "Catch Breath",
+			"initiative": "5",
+			"name": "Call Target",
 			"cooldown": "3",
-			"id": "a114",
+			"id": "a110",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Call Target Meta Ongoing  Cause 'Weaken' to an enemy within range 6.    While this effect persists, that enemy cannot lose 'Weaken'.    If you or allies use attacks against that enemy, reduce the cooldown of those used cards by one. Provide an ally with (Enhancement Die)  (Blessing Die) on their next roll this round."
+		},
+		{
+			"type": "Meta",
+			"initiative": "6",
+			"name": "Call Target",
+			"cooldown": "2",
+			"id": "a111",
 			"category": "ability",
 			"variant": "Beta",
-			"effects": [],
-			"spends": [
-				"doublesurge"
+			"effects": [
+				"interrupt"
 			],
-			"rules": "Catch Breath Meta Roll (Power Die).  The total power is the amount of scratches that you may heal from yourself. DoubleSurge: Heal one wound from yourself. Heal one scratch from yourself."
+			"spends": [],
+			"rules": "Call Target Meta Interrupt  Cause 'Weaken' to an enemy within range 6. Provide an ally with (Enhancement Die)  (Blessing Die) on their next roll this round."
+		},
+		{
+			"type": "Meta",
+			"initiative": "4",
+			"name": "Catch Breath",
+			"cooldown": "3",
+			"id": "a112",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [],
+			"rules": "Catch Breath Meta Heal half your scratches (round up).    Add (Blessing Die) to your next roll during this round. Heal one scratch from yourself."
 		},
 		{
 			"type": "Meta",
@@ -689,31 +687,32 @@
 		},
 		{
 			"type": "Meta",
-			"initiative": "4",
+			"initiative": "1",
 			"name": "Catch Breath",
 			"cooldown": "3",
-			"id": "a112",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [],
-			"spends": [],
-			"rules": "Catch Breath Meta Heal half your scratches (round up).    Add (Blessing Die) to your next roll during this round. Heal one scratch from yourself."
-		},
-		{
-			"type": "Attack",
-			"initiative": "5",
-			"name": "Cautious Advance",
-			"cooldown": "1",
-			"id": "a36",
+			"id": "a114",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [],
 			"spends": [
-				"surge",
+				"doublesurge"
+			],
+			"rules": "Catch Breath Meta Roll (Power Die).  The total power is the amount of scratches that you may heal from yourself. DoubleSurge: Heal one wound from yourself. Heal one scratch from yourself."
+		},
+		{
+			"type": "Attack",
+			"initiative": "4",
+			"name": "Cautious Advance",
+			"cooldown": "1",
+			"id": "a34",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
 				"surge",
 				"surge"
 			],
-			"rules": "Cautious Advance Attack Attack, add (Blessing Die). Surge: Cooldown -1. Surge: +1 Power. Surge: Treat botched results as +1 Power instead. Attack, add (Blessing Die)."
+			"rules": "Cautious Advance Attack Attack, add (Blessing Die). Surge: +1 Power. Surge: Treat botched results as +1 Power instead. Attack, add (Blessing Die)."
 		},
 		{
 			"type": "Attack",
@@ -733,30 +732,31 @@
 		},
 		{
 			"type": "Attack",
-			"initiative": "4",
+			"initiative": "5",
 			"name": "Cautious Advance",
 			"cooldown": "1",
-			"id": "a34",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [],
-			"spends": [
-				"surge",
-				"surge"
-			],
-			"rules": "Cautious Advance Attack Attack, add (Blessing Die). Surge: +1 Power. Surge: Treat botched results as +1 Power instead. Attack, add (Blessing Die)."
-		},
-		{
-			"type": "Meta",
-			"initiative": "3",
-			"name": "Center",
-			"cooldown": "4",
-			"id": "a117",
+			"id": "a36",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [],
+			"spends": [
+				"surge",
+				"surge",
+				"surge"
+			],
+			"rules": "Cautious Advance Attack Attack, add (Blessing Die). Surge: Cooldown -1. Surge: +1 Power. Surge: Treat botched results as +1 Power instead. Attack, add (Blessing Die)."
+		},
+		{
+			"type": "Meta",
+			"initiative": "1",
+			"name": "Center",
+			"cooldown": "5",
+			"id": "a115",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
 			"spends": [],
-			"rules": "Center Meta You may spend 3 points on the following options, with each costing one point. You can use the same option multiple times (distribute as you like):  • Reduce the duration of an effect on you by 1.  • Add (Enhancement Die) OR (Blessing Die) to your next roll this round.  • Reduce one of your cooldowns by 2. Move (3)"
+			"rules": "Center Meta You may spend 3 points on the following options, with each costing one point. You can use the same option multiple times (distribute as you like):  • Reduce the duration of a negative effect on you by 1.  • Add (Enhancement Die) to your next roll this round.  • Reduce one of your cooldowns by 2. Move (3)"
 		},
 		{
 			"type": "Meta",
@@ -772,30 +772,30 @@
 		},
 		{
 			"type": "Meta",
-			"initiative": "1",
+			"initiative": "3",
 			"name": "Center",
-			"cooldown": "5",
-			"id": "a115",
+			"cooldown": "4",
+			"id": "a117",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [],
-			"rules": "Center Meta You may spend 3 points on the following options, with each costing one point. You can use the same option multiple times (distribute as you like):  • Reduce the duration of a negative effect on you by 1.  • Add (Enhancement Die) to your next roll this round.  • Reduce one of your cooldowns by 2. Move (3)"
+			"rules": "Center Meta You may spend 3 points on the following options, with each costing one point. You can use the same option multiple times (distribute as you like):  • Reduce the duration of an effect on you by 1.  • Add (Enhancement Die) OR (Blessing Die) to your next roll this round.  • Reduce one of your cooldowns by 2. Move (3)"
 		},
 		{
 			"type": "Spell",
 			"initiative": "1",
 			"name": "Chain Lightning",
 			"cooldown": "2",
-			"id": "a219",
+			"id": "a217",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
-				"star",
+				"surge",
 				"surge"
 			],
-			"rules": "Chain Lightning Spell Spellcasting 2+  Select an enemy within range 6 and deal one wound.  You can spend any amount of (Surge) to hit one additional target each within range 2 of the previous one. Star: Cooldown -2. Star: Increase the maximum distance of the bouncing lightnings from 2 to 4. Deal a wound against up to two enemies within range 5 that have a defense of 2 or less."
+			"rules": "Chain Lightning Spell Spellcasting 2+  Select an enemy within range 6 and deal one wound. Surge: Select a third target within range 3 of the second one. Surge: Select a second target within range 3 of the first one. Deal a wound against up to two enemies within range 5 that have a defense of 2 or less."
 		},
 		{
 			"type": "Spell",
@@ -818,31 +818,29 @@
 			"initiative": "1",
 			"name": "Chain Lightning",
 			"cooldown": "2",
-			"id": "a217",
+			"id": "a219",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
-				"surge",
+				"star",
 				"surge"
 			],
-			"rules": "Chain Lightning Spell Spellcasting 2+  Select an enemy within range 6 and deal one wound. Surge: Select a third target within range 3 of the second one. Surge: Select a second target within range 3 of the first one. Deal a wound against up to two enemies within range 5 that have a defense of 2 or less."
+			"rules": "Chain Lightning Spell Spellcasting 2+  Select an enemy within range 6 and deal one wound.  You can spend any amount of (Surge) to hit one additional target each within range 2 of the previous one. Star: Cooldown -2. Star: Increase the maximum distance of the bouncing lightnings from 2 to 4. Deal a wound against up to two enemies within range 5 that have a defense of 2 or less."
 		},
 		{
 			"type": "Attack",
 			"initiative": "3",
 			"name": "Challenge",
-			"cooldown": "1",
-			"id": "a3",
+			"cooldown": "2",
+			"id": "a1",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"interrupt"
 			],
-			"spends": [
-				"doublesurge"
-			],
-			"rules": "Challenge Attack Interrupt  Prevent an adjacent enemy from attacking an ally by making yourself the target instead.  You may use the below spending option on that defense. DoubleSurge: Cooldown -1. Move (4)"
+			"spends": [],
+			"rules": "Challenge Attack Pull (2)  Attack    Interrupt  Prevent an adjacent enemy from attacking an ally by making yourself the target instead. Move (3)"
 		},
 		{
 			"type": "Attack",
@@ -862,30 +860,31 @@
 			"type": "Attack",
 			"initiative": "3",
 			"name": "Challenge",
-			"cooldown": "2",
-			"id": "a1",
+			"cooldown": "1",
+			"id": "a3",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"interrupt"
 			],
-			"spends": [],
-			"rules": "Challenge Attack Pull (2)  Attack    Interrupt  Prevent an adjacent enemy from attacking an ally by making yourself the target instead. Move (3)"
+			"spends": [
+				"doublesurge"
+			],
+			"rules": "Challenge Attack Interrupt  Prevent an adjacent enemy from attacking an ally by making yourself the target instead.  You may use the below spending option on that defense. DoubleSurge: Cooldown -1. Move (4)"
 		},
 		{
 			"type": "Melee",
 			"initiative": "2",
 			"name": "Charge Attack",
-			"cooldown": "4",
-			"id": "a75",
+			"cooldown": "3",
+			"id": "a73",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
-				"star",
 				"surge"
 			],
-			"rules": "Charge Attack Melee Move up to 6 tiles in a straight or diagonal line. You gain 'Nimble' during that movement.    Melee Attack Star: Roll (Power Die) against each enemy you moved over (and deal the result as damage). Star: +1 Power for each tile moved. Move (3)  Attack, add (Cursed Die)."
+			"rules": "Charge Attack Melee Move up to 6 tiles in a straight or diagonal line.    Melee Attack Surge: +1 Power for each tile moved. Move (3)  Attack, add (Cursed Die)."
 		},
 		{
 			"type": "Melee",
@@ -906,29 +905,30 @@
 			"type": "Melee",
 			"initiative": "2",
 			"name": "Charge Attack",
+			"cooldown": "4",
+			"id": "a75",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [],
+			"spends": [
+				"star",
+				"surge"
+			],
+			"rules": "Charge Attack Melee Move up to 6 tiles in a straight or diagonal line. You gain 'Nimble' during that movement.    Melee Attack Star: Roll (Power Die) against each enemy you moved over (and deal the result as damage). Star: +1 Power for each tile moved. Move (3)  Attack, add (Cursed Die)."
+		},
+		{
+			"type": "Melee",
+			"initiative": "3",
+			"name": "Combat Mage's Strike",
 			"cooldown": "3",
-			"id": "a73",
+			"id": "a76",
 			"category": "ability",
 			"variant": "Basic",
 			"effects": [],
 			"spends": [
 				"surge"
 			],
-			"rules": "Charge Attack Melee Move up to 6 tiles in a straight or diagonal line.    Melee Attack Surge: +1 Power for each tile moved. Move (3)  Attack, add (Cursed Die)."
-		},
-		{
-			"type": "Melee",
-			"initiative": "2",
-			"name": "Combat Mage's Strike",
-			"cooldown": "3",
-			"id": "a78",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [],
-			"spends": [
-				"surge"
-			],
-			"rules": "Combat Mage's Strike Melee Melee Attack, add (Power Die).    Additionally add your spellcasting bonus dice to this melee attack. Surge: Reduce the cooldown spells by 2. Melee Attack  Add (Enhancement Die) to your next spellcasting roll this round."
+			"rules": "Combat Mage's Strike Melee Melee Attack    Additionally add your spellcasting bonus dice to this melee attack. Surge: Reduce the cooldown spells by 2. Melee Attack  Add (Enhancement Die) to your next spellcasting roll this round."
 		},
 		{
 			"type": "Melee",
@@ -947,35 +947,35 @@
 		},
 		{
 			"type": "Melee",
-			"initiative": "3",
+			"initiative": "2",
 			"name": "Combat Mage's Strike",
 			"cooldown": "3",
-			"id": "a76",
+			"id": "a78",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
 				"surge"
 			],
-			"rules": "Combat Mage's Strike Melee Melee Attack    Additionally add your spellcasting bonus dice to this melee attack. Surge: Reduce the cooldown spells by 2. Melee Attack  Add (Enhancement Die) to your next spellcasting roll this round."
+			"rules": "Combat Mage's Strike Melee Melee Attack, add (Power Die).    Additionally add your spellcasting bonus dice to this melee attack. Surge: Reduce the cooldown spells by 2. Melee Attack  Add (Enhancement Die) to your next spellcasting roll this round."
 		},
 		{
 			"type": "Meta",
 			"initiative": "1",
 			"name": "Combat Techniques",
-			"cooldown": "4",
-			"id": "a120",
+			"cooldown": "5",
+			"id": "a118",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
-				"ongoing"
+				"ongoing",
+				"interrupt"
 			],
 			"spends": [
 				"star",
-				"surge",
 				"surge"
 			],
-			"rules": "Combat Techniques Meta Ongoing  While the effect lasts, you may use the below spending options on your attacks. Star: Cooldown -2 on the just used card. Star: +1 Power. Surge: +2 Power. Add (Blessing Die) (Blessing Die) to your next attack this turn."
+			"rules": "Combat Techniques Meta Interrupt  Re-roll two dice during a defense or attack.    Ongoing  While the effect lasts, you may use the below spending options on your attacks. Star: Cooldown -1 on the just used card. Star: +1 Power. Add (Blessing Die) (Blessing Die) to your next attack this turn."
 		},
 		{
 			"type": "Meta",
@@ -1000,37 +1000,34 @@
 			"type": "Meta",
 			"initiative": "1",
 			"name": "Combat Techniques",
-			"cooldown": "5",
-			"id": "a118",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [
-				"ongoing",
-				"interrupt"
-			],
-			"spends": [
-				"star",
-				"surge"
-			],
-			"rules": "Combat Techniques Meta Interrupt  Re-roll two dice during a defense or attack.    Ongoing  While the effect lasts, you may use the below spending options on your attacks. Star: Cooldown -1 on the just used card. Star: +1 Power. Add (Blessing Die) (Blessing Die) to your next attack this turn."
-		},
-		{
-			"type": "Melee",
-			"initiative": "3",
-			"name": "Combo",
 			"cooldown": "4",
-			"id": "a312",
+			"id": "a120",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [
-				"interrupt"
+				"ongoing"
 			],
 			"spends": [
 				"star",
 				"surge",
 				"surge"
 			],
-			"rules": "Combo Melee Interrupt  Melee attack, add (Blessing Die). Star: Add (Power Die) to your next attack this round. Star: Add (Enhancement Die) to your next attack this round. Surge: Cooldown -1. Attack, add (Cursed Die).  Add (Blessing Die) to your next attack this round."
+			"rules": "Combat Techniques Meta Ongoing  While the effect lasts, you may use the below spending options on your attacks. Star: Cooldown -2 on the just used card. Star: +1 Power. Surge: +2 Power. Add (Blessing Die) (Blessing Die) to your next attack this turn."
+		},
+		{
+			"type": "Melee",
+			"initiative": "3",
+			"name": "Combo",
+			"cooldown": "1",
+			"id": "a310",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"star",
+				"surge"
+			],
+			"rules": "Combo Melee Melee attack, add (Blessing Die). Star: Add (Power Die) to your next attack this round. Star: Add (Enhancement Die) to your next attack this round. Attack, add (Cursed Die).  Add (Blessing Die) to your next attack this round."
 		},
 		{
 			"type": "Melee",
@@ -1052,8 +1049,26 @@
 			"type": "Melee",
 			"initiative": "3",
 			"name": "Combo",
-			"cooldown": "1",
-			"id": "a310",
+			"cooldown": "4",
+			"id": "a312",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"interrupt"
+			],
+			"spends": [
+				"star",
+				"surge",
+				"surge"
+			],
+			"rules": "Combo Melee Interrupt  Melee attack, add (Blessing Die). Star: Add (Power Die) to your next attack this round. Star: Add (Enhancement Die) to your next attack this round. Surge: Cooldown -1. Attack, add (Cursed Die).  Add (Blessing Die) to your next attack this round."
+		},
+		{
+			"type": "Attack",
+			"initiative": "3",
+			"name": "Concussion",
+			"cooldown": "3",
+			"id": "a7",
 			"category": "ability",
 			"variant": "Basic",
 			"effects": [],
@@ -1061,23 +1076,7 @@
 				"star",
 				"surge"
 			],
-			"rules": "Combo Melee Melee attack, add (Blessing Die). Star: Add (Power Die) to your next attack this round. Star: Add (Enhancement Die) to your next attack this round. Attack, add (Cursed Die).  Add (Blessing Die) to your next attack this round."
-		},
-		{
-			"type": "Attack",
-			"initiative": "3",
-			"name": "Concussion",
-			"cooldown": "3",
-			"id": "a9",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [],
-			"spends": [
-				"star",
-				"surge",
-				"surge"
-			],
-			"rules": "Concussion Attack Attack, add (Enhancement Die) (Blessing Die). Star: Cooldown -1. Star: Cause 'Dazed'. Surge: Cause 'Stun'. Attack  Cause 'Dazed' against the target."
+			"rules": "Concussion Attack Attack, add (Enhancement Die). Star: Cooldown -1. Star: Cause 'Stun'. Move (1)  Attack, add (Blessing Die)."
 		},
 		{
 			"type": "Attack",
@@ -1099,24 +1098,25 @@
 			"initiative": "3",
 			"name": "Concussion",
 			"cooldown": "3",
-			"id": "a7",
+			"id": "a9",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
 				"star",
+				"surge",
 				"surge"
 			],
-			"rules": "Concussion Attack Attack, add (Enhancement Die). Star: Cooldown -1. Star: Cause 'Stun'. Move (1)  Attack, add (Blessing Die)."
+			"rules": "Concussion Attack Attack, add (Enhancement Die) (Blessing Die). Star: Cooldown -1. Star: Cause 'Dazed'. Surge: Cause 'Stun'. Attack  Cause 'Dazed' against the target."
 		},
 		{
 			"type": "Meta",
-			"initiative": "6",
+			"initiative": "3",
 			"name": "Coordinating Command",
 			"cooldown": "3",
-			"id": "a123",
+			"id": "a121",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"interrupt"
 			],
@@ -1124,7 +1124,7 @@
 				"star",
 				"surge"
 			],
-			"rules": "Coordinating Command Meta Interrupt  Add (Surge) or +1 Power to an ally's current roll.  Then you roll (Enhancement Die) and you may use the below spending options. Star: Cooldown -2. Star: Cooldown -1. Surge: Also add (Star) to the ally's roll. Move an ally by 1 tile.  Move (2)"
+			"rules": "Coordinating Command Meta Interrupt  Add (Surge) to an ally's current roll.  Then you roll (Enhancement Die) and you may use the below spending options. Star: Cooldown -2. Star: Cooldown -1. Surge: Also add (Star) to the ally's roll. Move an ally by 1 tile.  Move (2)"
 		},
 		{
 			"type": "Meta",
@@ -1145,12 +1145,12 @@
 		},
 		{
 			"type": "Meta",
-			"initiative": "3",
+			"initiative": "6",
 			"name": "Coordinating Command",
 			"cooldown": "3",
-			"id": "a121",
+			"id": "a123",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"interrupt"
 			],
@@ -1158,38 +1158,7 @@
 				"star",
 				"surge"
 			],
-			"rules": "Coordinating Command Meta Interrupt  Add (Surge) to an ally's current roll.  Then you roll (Enhancement Die) and you may use the below spending options. Star: Cooldown -2. Star: Cooldown -1. Surge: Also add (Star) to the ally's roll. Move an ally by 1 tile.  Move (2)"
-		},
-		{
-			"type": "Spell",
-			"initiative": "5",
-			"name": "Corpse Explosion",
-			"cooldown": "4",
-			"id": "a222",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [],
-			"spends": [
-				"star",
-				"surge",
-				"surge"
-			],
-			"rules": "Corpse Explosion Spell Interrupt  Spellcasting 2+  If an enemy just died, you can deal damage to all models within range 2 of it. Heroes take a scratch, each enemy takes damage using (Standard Die) (Standard Die). Star: Add (Power Die) to the damage. Star: Cuase 'Knockback (2)' to all affected models (originating from the targeted tile). Surge: Add (Blessing Die) to the damage. Attack two enemies within range 5 using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die) (Cursed Die)."
-		},
-		{
-			"type": "Spell",
-			"initiative": "3",
-			"name": "Corpse Explosion",
-			"cooldown": "3",
-			"id": "a221",
-			"category": "ability",
-			"variant": "Alpha",
-			"effects": [],
-			"spends": [
-				"surge",
-				"surge"
-			],
-			"rules": "Corpse Explosion Spell Interrupt  Spellcasting 2+  If an enemy just died, you can deal damage to all enemies adjacent to it using (Standard Die) (Standard Die). Surge: Add (Blessing Die) to the damage. Surge: Add (Blessing Die) to the damage. Attack two enemies within range 5 using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die) (Cursed Die)."
+			"rules": "Coordinating Command Meta Interrupt  Add (Surge) or +1 Power to an ally's current roll.  Then you roll (Enhancement Die) and you may use the below spending options. Star: Cooldown -2. Star: Cooldown -1. Surge: Also add (Star) to the ally's roll. Move an ally by 1 tile.  Move (2)"
 		},
 		{
 			"type": "Spell",
@@ -1209,11 +1178,26 @@
 			"rules": "Corpse Explosion Spell Interrupt  Spellcasting 2+  If an enemy just died, you can deal damage to all models adjacent to it. Heroes take a scratch, each enemy takes damage using (Standard Die) (Standard Die). Surge: Add (Blessing Die) to the damage. Surge: Add (Blessing Die) to the damage. Attack two enemies within range 5 using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die) (Cursed Die)."
 		},
 		{
-			"type": "Ranged",
-			"initiative": "6",
-			"name": "Crippling Shot",
-			"cooldown": "2",
-			"id": "a192",
+			"type": "Spell",
+			"initiative": "3",
+			"name": "Corpse Explosion",
+			"cooldown": "3",
+			"id": "a221",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Corpse Explosion Spell Interrupt  Spellcasting 2+  If an enemy just died, you can deal damage to all enemies adjacent to it using (Standard Die) (Standard Die). Surge: Add (Blessing Die) to the damage. Surge: Add (Blessing Die) to the damage. Attack two enemies within range 5 using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die) (Cursed Die)."
+		},
+		{
+			"type": "Spell",
+			"initiative": "5",
+			"name": "Corpse Explosion",
+			"cooldown": "4",
+			"id": "a222",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [],
@@ -1222,7 +1206,22 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Crippling Shot Ranged Ranged Attack, add (Enhancement Die). Star: +3 Power. Star: Cause 'Knockback (3). Surge: Cause 'Cripple'. Ranged Attack  Move (1)"
+			"rules": "Corpse Explosion Spell Interrupt  Spellcasting 2+  If an enemy just died, you can deal damage to all models within range 2 of it. Heroes take a scratch, each enemy takes damage using (Standard Die) (Standard Die). Star: Add (Power Die) to the damage. Star: Cuase 'Knockback (2)' to all affected models (originating from the targeted tile). Surge: Add (Blessing Die) to the damage. Attack two enemies within range 5 using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die) (Cursed Die)."
+		},
+		{
+			"type": "Ranged",
+			"initiative": "4",
+			"name": "Crippling Shot",
+			"cooldown": "2",
+			"id": "a190",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Crippling Shot Ranged Ranged Attack, add (Enhancement Die). Surge: +2 Power. Surge: Cause 'Cripple'. Ranged Attack  Move (1)"
 		},
 		{
 			"type": "Ranged",
@@ -1242,25 +1241,10 @@
 		},
 		{
 			"type": "Ranged",
-			"initiative": "4",
+			"initiative": "6",
 			"name": "Crippling Shot",
 			"cooldown": "2",
-			"id": "a190",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [],
-			"spends": [
-				"surge",
-				"surge"
-			],
-			"rules": "Crippling Shot Ranged Ranged Attack, add (Enhancement Die). Surge: +2 Power. Surge: Cause 'Cripple'. Ranged Attack  Move (1)"
-		},
-		{
-			"type": "Spell",
-			"initiative": "6",
-			"name": "Curse Of The Citadel",
-			"cooldown": "1",
-			"id": "a225",
+			"id": "a192",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [],
@@ -1269,7 +1253,22 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Curse Of The Citadel Spell Spellcasting 1+  Target an enemy within range 6 and cause 'Dazed'. Star: Cause 'Stun'. Star: Perform a free melee attack against the target. Surge: Cause 'Weaken'. Cause 'Knockback (3)' against a model within range 6."
+			"rules": "Crippling Shot Ranged Ranged Attack, add (Enhancement Die). Star: +3 Power. Star: Cause 'Knockback (3). Surge: Cause 'Cripple'. Ranged Attack  Move (1)"
+		},
+		{
+			"type": "Spell",
+			"initiative": "5",
+			"name": "Curse Of The Citadel",
+			"cooldown": "1",
+			"id": "a223",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"star",
+				"surge"
+			],
+			"rules": "Curse Of The Citadel Spell Spellcasting 1+  Target an enemy within range 6 and cause 'Dazed'. Star: Cause 'Stun'. Star: Cause 'Weaken'. Cause 'Knockback (3)' against a model within range 6."
 		},
 		{
 			"type": "Spell",
@@ -1289,18 +1288,46 @@
 		},
 		{
 			"type": "Spell",
-			"initiative": "5",
+			"initiative": "6",
 			"name": "Curse Of The Citadel",
 			"cooldown": "1",
-			"id": "a223",
+			"id": "a225",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [],
+			"spends": [
+				"star",
+				"surge",
+				"surge"
+			],
+			"rules": "Curse Of The Citadel Spell Spellcasting 1+  Target an enemy within range 6 and cause 'Dazed'. Star: Cause 'Stun'. Star: Perform a free melee attack against the target. Surge: Cause 'Weaken'. Cause 'Knockback (3)' against a model within range 6."
+		},
+		{
+			"type": "Attack",
+			"initiative": "2",
+			"name": "Dispersion",
+			"cooldown": "4",
+			"id": "a4",
 			"category": "ability",
 			"variant": "Basic",
 			"effects": [],
 			"spends": [
-				"star",
+				"surge",
 				"surge"
 			],
-			"rules": "Curse Of The Citadel Spell Spellcasting 1+  Target an enemy within range 6 and cause 'Dazed'. Star: Cause 'Stun'. Star: Cause 'Weaken'. Cause 'Knockback (3)' against a model within range 6."
+			"rules": "Dispersion Attack Attack, add (Enhancement Die). Surge: Hit a third enemy within range. Surge: Hit a second enemy within range. Attack  Move (2)"
+		},
+		{
+			"type": "Attack",
+			"initiative": "2",
+			"name": "Dispersion",
+			"cooldown": "5",
+			"id": "a5",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [],
+			"rules": "Dispersion Attack Perform one attack each against up to three enemies within range. Attack  Move (2)"
 		},
 		{
 			"type": "Attack",
@@ -1320,46 +1347,19 @@
 		},
 		{
 			"type": "Attack",
-			"initiative": "2",
-			"name": "Dispersion",
-			"cooldown": "5",
-			"id": "a5",
-			"category": "ability",
-			"variant": "Alpha",
-			"effects": [],
-			"spends": [],
-			"rules": "Dispersion Attack Perform one attack each against up to three enemies within range. Attack  Move (2)"
-		},
-		{
-			"type": "Attack",
-			"initiative": "2",
-			"name": "Dispersion",
-			"cooldown": "4",
-			"id": "a4",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [],
-			"spends": [
-				"surge",
-				"surge"
-			],
-			"rules": "Dispersion Attack Attack, add (Enhancement Die). Surge: Hit a third enemy within range. Surge: Hit a second enemy within range. Attack  Move (2)"
-		},
-		{
-			"type": "Attack",
 			"initiative": "1",
 			"name": "Displacing Blow",
 			"cooldown": "3",
-			"id": "a12",
+			"id": "a10",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
 				"star",
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Displacing Blow Attack Attack, add (Enhancement Die). Star: +3 Power. Star: Cause 'Stun'. DoubleSurge: Cause 'Knockback (3)' or 'Dazed'. Cause 'Knockback (1)' OR 'Pull (1)' against a model within range 6.  Move (1)"
+			"rules": "Displacing Blow Attack Attack, add (Enhancement Die). Star: +3 Power. Star: Cause 'Knockback (3)'. DoubleSurge: Cause 'Knockback (2)'. Cause 'Knockback (1)' OR 'Pull (1)' against a model within range 6.  Move (1)"
 		},
 		{
 			"type": "Attack",
@@ -1381,16 +1381,45 @@
 			"initiative": "1",
 			"name": "Displacing Blow",
 			"cooldown": "3",
-			"id": "a10",
+			"id": "a12",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
 				"star",
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Displacing Blow Attack Attack, add (Enhancement Die). Star: +3 Power. Star: Cause 'Knockback (3)'. DoubleSurge: Cause 'Knockback (2)'. Cause 'Knockback (1)' OR 'Pull (1)' against a model within range 6.  Move (1)"
+			"rules": "Displacing Blow Attack Attack, add (Enhancement Die). Star: +3 Power. Star: Cause 'Stun'. DoubleSurge: Cause 'Knockback (3)' or 'Dazed'. Cause 'Knockback (1)' OR 'Pull (1)' against a model within range 6.  Move (1)"
+		},
+		{
+			"type": "Spell",
+			"initiative": "2",
+			"name": "Displacing Void",
+			"cooldown": "3",
+			"id": "a226",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"interrupt"
+			],
+			"spends": [],
+			"rules": "Displacing Void Spell Interrupt Spellcasting 2+  Declare a tile within range 4. All enemies within range 3 of that tile get moved towards it by up to 2 tiles. Cause 'Knockback (2)' OR 'Pull (2)' against a model within range 6.  Move (1)"
+		},
+		{
+			"type": "Spell",
+			"initiative": "6",
+			"name": "Displacing Void",
+			"cooldown": "2",
+			"id": "a227",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Displacing Void Spell Spellcasting 1+  Declare a tile within range 4. All enemies within range 3 of that tile suffer 'Knockback (2)', originating from that tile. Surge: Increase the 'Knockback' effect from 2 to 3. Surge: Increase the area of effect by 1. Cause 'Knockback (2)' OR 'Pull (2)' against a model within range 6.  Move (1)"
 		},
 		{
 			"type": "Spell",
@@ -1410,47 +1439,19 @@
 			"rules": "Displacing Void Spell Ongoing  Spellcasting 2+  Declare a tile within range 5. Whenever you reduce this spell's duration, move all enemies within range 4 of that tile towards it - move each enemy up to 2 tiles. Surge: Move all enemies up to 3 tiles each time. Surge: Duration +1. Cause 'Knockback (2)' OR 'Pull (2)' against a model within range 6.  Move (1)"
 		},
 		{
-			"type": "Spell",
-			"initiative": "6",
-			"name": "Displacing Void",
-			"cooldown": "2",
-			"id": "a227",
-			"category": "ability",
-			"variant": "Alpha",
-			"effects": [],
-			"spends": [
-				"surge",
-				"surge"
-			],
-			"rules": "Displacing Void Spell Spellcasting 1+  Declare a tile within range 4. All enemies within range 3 of that tile suffer 'Knockback (2)', originating from that tile. Surge: Increase the 'Knockback' effect from 2 to 3. Surge: Increase the area of effect by 1. Cause 'Knockback (2)' OR 'Pull (2)' against a model within range 6.  Move (1)"
-		},
-		{
-			"type": "Spell",
-			"initiative": "2",
-			"name": "Displacing Void",
-			"cooldown": "3",
-			"id": "a226",
+			"type": "Defense",
+			"initiative": "4",
+			"name": "Dodge",
+			"cooldown": "4",
+			"id": "a55",
 			"category": "ability",
 			"variant": "Basic",
 			"effects": [
+				"ongoing",
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Displacing Void Spell Interrupt Spellcasting 2+  Declare a tile within range 4. All enemies within range 3 of that tile get moved towards it by up to 2 tiles. Cause 'Knockback (2)' OR 'Pull (2)' against a model within range 6.  Move (1)"
-		},
-		{
-			"type": "Defense",
-			"initiative": "6",
-			"name": "Dodge",
-			"cooldown": "5",
-			"id": "a57",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [
-				"interrupt"
-			],
-			"spends": [],
-			"rules": "Dodge Defense Interrupt  Add +3 power to your current defense roll. Move (2) (Gain 'Slippery' and 'Nimble')"
+			"rules": "Dodge Defense Interrupt  When defending, add (Enhancement Die).  Ongoing  Before rolling defense die against an attack, you can negate the attack by turning this card face down. Move (2) (Gain 'Slippery' and 'Nimble')"
 		},
 		{
 			"type": "Defense",
@@ -1469,33 +1470,31 @@
 		},
 		{
 			"type": "Defense",
-			"initiative": "4",
+			"initiative": "6",
 			"name": "Dodge",
-			"cooldown": "4",
-			"id": "a55",
+			"cooldown": "5",
+			"id": "a57",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
-				"ongoing",
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Dodge Defense Interrupt  When defending, add (Enhancement Die).  Ongoing  Before rolling defense die against an attack, you can negate the attack by turning this card face down. Move (2) (Gain 'Slippery' and 'Nimble')"
+			"rules": "Dodge Defense Interrupt  Add +3 power to your current defense roll. Move (2) (Gain 'Slippery' and 'Nimble')"
 		},
 		{
 			"type": "Attack",
 			"initiative": "4",
 			"name": "Double Trouble",
 			"cooldown": "3",
-			"id": "a15",
+			"id": "a13",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
-				"surge",
 				"surge"
 			],
-			"rules": "Double Trouble Attack Attack with both weapons.    You may use the spending options on either attack, but not on both. Surge: Cause 'Cripple'. Surge: Cause 'Bleed (2)'. Move (2)  Attack"
+			"rules": "Double Trouble Attack Attack with both weapons.    You may only use the spending options on the first attack. Surge: Cooldown -1. Move (2)  Attack"
 		},
 		{
 			"type": "Attack",
@@ -1517,26 +1516,27 @@
 			"initiative": "4",
 			"name": "Double Trouble",
 			"cooldown": "3",
-			"id": "a13",
+			"id": "a15",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
+				"surge",
 				"surge"
 			],
-			"rules": "Double Trouble Attack Attack with both weapons.    You may only use the spending options on the first attack. Surge: Cooldown -1. Move (2)  Attack"
+			"rules": "Double Trouble Attack Attack with both weapons.    You may use the spending options on either attack, but not on both. Surge: Cause 'Cripple'. Surge: Cause 'Bleed (2)'. Move (2)  Attack"
 		},
 		{
 			"type": "Melee",
 			"initiative": "4",
 			"name": "Dual Strike",
-			"cooldown": "2",
-			"id": "a81",
+			"cooldown": "3",
+			"id": "a79",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [],
-			"rules": "Dual Strike Melee Melee Attack, add (Blessing Die).    Additionally add the bonus dice (and options) of your other equipped weapon to the roll.    You may distribute the total dealt damage freely among all enemies within reach. Melee Attack  Add (Standard Die) if you wield two 1h weapons."
+			"rules": "Dual Strike Melee Melee Attack, add (Blessing Die).    Additionally add the bonus dice (and options) of your other equipped weapon to the roll. Melee Attack  Add (Standard Die) if you wield two 1h weapons."
 		},
 		{
 			"type": "Melee",
@@ -1557,49 +1557,13 @@
 			"type": "Melee",
 			"initiative": "4",
 			"name": "Dual Strike",
-			"cooldown": "3",
-			"id": "a79",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [],
-			"spends": [],
-			"rules": "Dual Strike Melee Melee Attack, add (Blessing Die).    Additionally add the bonus dice (and options) of your other equipped weapon to the roll. Melee Attack  Add (Standard Die) if you wield two 1h weapons."
-		},
-		{
-			"type": "Spell",
-			"initiative": "4",
-			"name": "Earthen Armor",
-			"cooldown": "3",
-			"id": "a231",
+			"cooldown": "2",
+			"id": "a81",
 			"category": "ability",
 			"variant": "Beta",
-			"effects": [
-				"ongoing"
-			],
-			"spends": [
-				"star",
-				"surge",
-				"surge"
-			],
-			"rules": "Earthen Armor Spell Ongoing  Spellcasting 2+  Declare an ally (or yourself). The target adds +1 power to their defense. Star: Upon casting the spell, you heal 2 scratches from the target. Star: The target also adds (Blessing Die) to their defense. Surge: Duration +1. Move (2)  Add (Blessing Die) to your next defense roll this round."
-		},
-		{
-			"type": "Spell",
-			"initiative": "3",
-			"name": "Earthen Armor",
-			"cooldown": "3",
-			"id": "a230",
-			"category": "ability",
-			"variant": "Alpha",
-			"effects": [
-				"ongoing"
-			],
-			"spends": [
-				"star",
-				"doublesurge",
-				"surge"
-			],
-			"rules": "Earthen Armor Spell Ongoing  Spellcasting 2+  Declare an ally (or yourself). The target adds +1 power to their defense. Star: The target(s) also adds (Blessing Die) to their defense. Star: Declare a second ally to benefit from this. DoubleSurge: Duration +1. Move (2)  Add (Blessing Die) to your next defense roll this round."
+			"effects": [],
+			"spends": [],
+			"rules": "Dual Strike Melee Melee Attack, add (Blessing Die).    Additionally add the bonus dice (and options) of your other equipped weapon to the roll.    You may distribute the total dealt damage freely among all enemies within reach. Melee Attack  Add (Standard Die) if you wield two 1h weapons."
 		},
 		{
 			"type": "Spell",
@@ -1621,21 +1585,56 @@
 		},
 		{
 			"type": "Spell",
-			"initiative": "1",
-			"name": "Elemental Familiar",
+			"initiative": "3",
+			"name": "Earthen Armor",
 			"cooldown": "3",
-			"id": "a234",
+			"id": "a230",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"star",
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Earthen Armor Spell Ongoing  Spellcasting 2+  Declare an ally (or yourself). The target adds +1 power to their defense. Star: The target(s) also adds (Blessing Die) to their defense. Star: Declare a second ally to benefit from this. DoubleSurge: Duration +1. Move (2)  Add (Blessing Die) to your next defense roll this round."
+		},
+		{
+			"type": "Spell",
+			"initiative": "4",
+			"name": "Earthen Armor",
+			"cooldown": "3",
+			"id": "a231",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
-				"surge",
+				"star",
 				"surge",
 				"surge"
 			],
-			"rules": "Elemental Familiar Spell Ongoing  Spellcasting 3+  Summon an Elemental minion within range 2. It has a toughness of 3, dies with the second wound and has a speed of 4. Surge: Add (Power Die) to its attacks. Surge: It can also perform ranged attacks with a range of 6. Surge: Duration +1. Move (3)"
+			"rules": "Earthen Armor Spell Ongoing  Spellcasting 2+  Declare an ally (or yourself). The target adds +1 power to their defense. Star: Upon casting the spell, you heal 2 scratches from the target. Star: The target also adds (Blessing Die) to their defense. Surge: Duration +1. Move (2)  Add (Blessing Die) to your next defense roll this round."
+		},
+		{
+			"type": "Spell",
+			"initiative": "1",
+			"name": "Elemental Familiar",
+			"cooldown": "3",
+			"id": "a232",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Elemental Familiar Spell Ongoing  Spellcasting 3+  Summon an Elemental minion within range 2. It has a toughness of 3, dies with the second wound and has a speed of 4. DoubleSurge: Add (Power Die) to its attacks. DoubleSurge: Duration +1. Move (3)"
 		},
 		{
 			"type": "Spell",
@@ -1660,31 +1659,32 @@
 			"initiative": "1",
 			"name": "Elemental Familiar",
 			"cooldown": "3",
-			"id": "a232",
+			"id": "a234",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
-				"doublesurge",
+				"surge",
+				"surge",
 				"surge"
 			],
-			"rules": "Elemental Familiar Spell Ongoing  Spellcasting 3+  Summon an Elemental minion within range 2. It has a toughness of 3, dies with the second wound and has a speed of 4. DoubleSurge: Add (Power Die) to its attacks. DoubleSurge: Duration +1. Move (3)"
+			"rules": "Elemental Familiar Spell Ongoing  Spellcasting 3+  Summon an Elemental minion within range 2. It has a toughness of 3, dies with the second wound and has a speed of 4. Surge: Add (Power Die) to its attacks. Surge: It can also perform ranged attacks with a range of 6. Surge: Duration +1. Move (3)"
 		},
 		{
 			"type": "Attack",
 			"initiative": "3",
 			"name": "Exploit",
 			"cooldown": "2",
-			"id": "a18",
+			"id": "a16",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
 				"surge"
 			],
-			"rules": "Exploit Attack Attack  Add (Power Die) if the target has at least two ongoing effect tokens. Surge: Remove one ongoing effect from the target to add +2 Power. Move (1)  Attack"
+			"rules": "Exploit Attack Attack  Add (Enhancement Die) for each ongoing effect on the target. Surge: Remove one ongoing effect from the target to add +2 Power. Move (1)  Attack"
 		},
 		{
 			"type": "Attack",
@@ -1707,30 +1707,30 @@
 			"initiative": "3",
 			"name": "Exploit",
 			"cooldown": "2",
-			"id": "a16",
+			"id": "a18",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
 				"surge"
 			],
-			"rules": "Exploit Attack Attack  Add (Enhancement Die) for each ongoing effect on the target. Surge: Remove one ongoing effect from the target to add +2 Power. Move (1)  Attack"
+			"rules": "Exploit Attack Attack  Add (Power Die) if the target has at least two ongoing effect tokens. Surge: Remove one ongoing effect from the target to add +2 Power. Move (1)  Attack"
 		},
 		{
 			"type": "Meta",
 			"initiative": "1",
 			"name": "First Aid",
 			"cooldown": "4",
-			"id": "a126",
+			"id": "a124",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
 				"star",
-				"doublesurge",
+				"surge",
 				"surge"
 			],
-			"rules": "First Aid Meta Roll only (Enhancement Die) (Blessing Die).  The total power is the amount of scratches that you can heal from yourself or an adjacent ally. You may use the below spending options on that roll. Star: +1 Power or heal a wound. Star: +2 Power. DoubleSurge: +2 Power or (if the target doesn't have any scratches) heal a wound. Move (1)  Heal 1 scratch from an adjacent ally."
+			"rules": "First Aid Meta Roll only (Enhancement Die) (Blessing Die).  The total power is the amount of scratches that you can heal from yourself or an adjacent ally. You may use the below spending options on that roll. Star: +3 Power. Star: +1 Power. Surge: +2 Power or (if the target doesn't have any scratches) heal a wound. Move (1)  Heal 1 scratch from an adjacent ally."
 		},
 		{
 			"type": "Meta",
@@ -1753,33 +1753,30 @@
 			"initiative": "1",
 			"name": "First Aid",
 			"cooldown": "4",
-			"id": "a124",
+			"id": "a126",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
 				"star",
-				"surge",
+				"doublesurge",
 				"surge"
 			],
-			"rules": "First Aid Meta Roll only (Enhancement Die) (Blessing Die).  The total power is the amount of scratches that you can heal from yourself or an adjacent ally. You may use the below spending options on that roll. Star: +3 Power. Star: +1 Power. Surge: +2 Power or (if the target doesn't have any scratches) heal a wound. Move (1)  Heal 1 scratch from an adjacent ally."
+			"rules": "First Aid Meta Roll only (Enhancement Die) (Blessing Die).  The total power is the amount of scratches that you can heal from yourself or an adjacent ally. You may use the below spending options on that roll. Star: +1 Power or heal a wound. Star: +2 Power. DoubleSurge: +2 Power or (if the target doesn't have any scratches) heal a wound. Move (1)  Heal 1 scratch from an adjacent ally."
 		},
 		{
 			"type": "Spell",
 			"initiative": "1",
 			"name": "Flame Strike",
 			"cooldown": "2",
-			"id": "a237",
+			"id": "a235",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
-			"spends": [
-				"surge",
-				"surge"
-			],
-			"rules": "Flame Strike Spell Ongoing  Spellcasting 3+  Place a 'Flamestrike' token on any tile within range 5. Once this effect ends, every enemy within range 1 of the token suffers 3 wounds, and heroes suffer 2 scratches.    The duration of this effect cannot be reduced through other effects. Surge: Increase the area of effect by 1. Surge: Increase the area of effect by 1. Deal damage to two enemies within range 4 that are adjacent to each other, using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
+			"spends": [],
+			"rules": "Flame Strike Spell Ongoing  Spellcasting 3+  Place a 'Flamestrike' token on any tile within range 5. Once this effect ends, every enemy within range 1 of the token suffers 3 wounds, and heroes suffer 2 scratches.    The duration of this effect cannot be reduced through other effects. Deal damage to two enemies within range 4 that are adjacent to each other, using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
 		},
 		{
 			"type": "Spell",
@@ -1803,23 +1800,26 @@
 			"initiative": "1",
 			"name": "Flame Strike",
 			"cooldown": "2",
-			"id": "a235",
+			"id": "a237",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
-			"spends": [],
-			"rules": "Flame Strike Spell Ongoing  Spellcasting 3+  Place a 'Flamestrike' token on any tile within range 5. Once this effect ends, every enemy within range 1 of the token suffers 3 wounds, and heroes suffer 2 scratches.    The duration of this effect cannot be reduced through other effects. Deal damage to two enemies within range 4 that are adjacent to each other, using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Flame Strike Spell Ongoing  Spellcasting 3+  Place a 'Flamestrike' token on any tile within range 5. Once this effect ends, every enemy within range 1 of the token suffers 3 wounds, and heroes suffer 2 scratches.    The duration of this effect cannot be reduced through other effects. Surge: Increase the area of effect by 1. Surge: Increase the area of effect by 1. Deal damage to two enemies within range 4 that are adjacent to each other, using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
 		},
 		{
 			"type": "Spell",
 			"initiative": "5",
 			"name": "Flash Heal",
 			"cooldown": "5",
-			"id": "a315",
+			"id": "a313",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"interrupt"
 			],
@@ -1827,7 +1827,7 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Flash Heal Spell Interrupt Spellcasting 4+  Immediately heal all scratches from an ally within range 5 (or yourself).  If they don't have any scratches, heal a wound instead. DoubleSurge: Cooldown -1. DoubleSurge: Heal a scratch from a different ally within range 5. Move (2)  Heal one scratch from an ally within range 2."
+			"rules": "Flash Heal Spell Interrupt Spellcasting 3+  Immediately heal an ally within range 5 (or yourself) for half their current scratches (round up).  If they don't have any scratches, heal a wound instead. DoubleSurge: Cooldown -1. DoubleSurge: Heal a scratch from a different ally within range 5. Move (2)  Heal one scratch from an ally within range 2."
 		},
 		{
 			"type": "Spell",
@@ -1851,9 +1851,9 @@
 			"initiative": "5",
 			"name": "Flash Heal",
 			"cooldown": "5",
-			"id": "a313",
+			"id": "a315",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"interrupt"
 			],
@@ -1861,31 +1861,7 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Flash Heal Spell Interrupt Spellcasting 3+  Immediately heal an ally within range 5 (or yourself) for half their current scratches (round up).  If they don't have any scratches, heal a wound instead. DoubleSurge: Cooldown -1. DoubleSurge: Heal a scratch from a different ally within range 5. Move (2)  Heal one scratch from an ally within range 2."
-		},
-		{
-			"type": "Attack",
-			"initiative": "5",
-			"name": "Flash Of Strikes",
-			"cooldown": "3",
-			"id": "a21",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [],
-			"spends": [],
-			"rules": "Flash Of Strikes Attack Move (2), then attack, then Move (1) (gain 'Slippery').    You can repeat this two more times, but you have to put a hand card on cooldown 2 with each repitition. Move (2)  Attack, add (Cursed Die)."
-		},
-		{
-			"type": "Attack",
-			"initiative": "4",
-			"name": "Flash Of Strikes",
-			"cooldown": "3",
-			"id": "a20",
-			"category": "ability",
-			"variant": "Alpha",
-			"effects": [],
-			"spends": [],
-			"rules": "Flash Of Strikes Attack Move (2), then attack.    You can repeat this three more times, but you take a scratch with each repitition. Move (2)  Attack, add (Cursed Die)."
+			"rules": "Flash Heal Spell Interrupt Spellcasting 4+  Immediately heal all scratches from an ally within range 5 (or yourself).  If they don't have any scratches, heal a wound instead. DoubleSurge: Cooldown -1. DoubleSurge: Heal a scratch from a different ally within range 5. Move (2)  Heal one scratch from an ally within range 2."
 		},
 		{
 			"type": "Attack",
@@ -1901,19 +1877,42 @@
 		},
 		{
 			"type": "Attack",
+			"initiative": "4",
+			"name": "Flash Of Strikes",
+			"cooldown": "3",
+			"id": "a20",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [],
+			"rules": "Flash Of Strikes Attack Move (2), then attack.    You can repeat this three more times, but you take a scratch with each repitition. Move (2)  Attack, add (Cursed Die)."
+		},
+		{
+			"type": "Attack",
 			"initiative": "5",
-			"name": "Forceful Attack",
-			"cooldown": "4",
-			"id": "a27",
+			"name": "Flash Of Strikes",
+			"cooldown": "3",
+			"id": "a21",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [],
+			"spends": [],
+			"rules": "Flash Of Strikes Attack Move (2), then attack, then Move (1) (gain 'Slippery').    You can repeat this two more times, but you have to put a hand card on cooldown 2 with each repitition. Move (2)  Attack, add (Cursed Die)."
+		},
+		{
+			"type": "Attack",
+			"initiative": "3",
+			"name": "Forceful Attack",
+			"cooldown": "4",
+			"id": "a25",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
 			"spends": [
 				"star",
-				"surge",
 				"surge"
 			],
-			"rules": "Forceful Attack Attack Attack, add (Power Die).    Then suffer a scratch. Star: +3 Power. Star: +2 Power. Surge: Cause 'Knockback (2)' or 'Stun'. Attack, add (Blessing Die)."
+			"rules": "Forceful Attack Attack Attack, add (Power Die).    Double any faults suffered from this attack. Star: +3 Power. Star: +2 Power. Attack, add (Blessing Die)."
 		},
 		{
 			"type": "Attack",
@@ -1933,46 +1932,19 @@
 		},
 		{
 			"type": "Attack",
-			"initiative": "3",
+			"initiative": "5",
 			"name": "Forceful Attack",
 			"cooldown": "4",
-			"id": "a25",
+			"id": "a27",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
 				"star",
+				"surge",
 				"surge"
 			],
-			"rules": "Forceful Attack Attack Attack, add (Power Die).    Double any faults suffered from this attack. Star: +3 Power. Star: +2 Power. Attack, add (Blessing Die)."
-		},
-		{
-			"type": "Meta",
-			"initiative": "3",
-			"name": "Group Tactics",
-			"cooldown": "2",
-			"id": "a129",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [
-				"interrupt"
-			],
-			"spends": [],
-			"rules": "Group Tactics Meta Move every ally (including yourself) by up to 2 tiles and remove one scratch from one of the targets.  Interrupt  Allow an ally (or yourself) to change their initiative by up to 2 steps. Attack, add (Cursed Die).  Allow an ally to attack, they add (Cursed Die)."
-		},
-		{
-			"type": "Meta",
-			"initiative": "5",
-			"name": "Group Tactics",
-			"cooldown": "2",
-			"id": "a128",
-			"category": "ability",
-			"variant": "Alpha",
-			"effects": [
-				"interrupt"
-			],
-			"spends": [],
-			"rules": "Group Tactics Meta Move every ally (including yourself) by up to 3 tiles.  Interrupt  Allow an ally (or yourself) to change their initiative by up to 3 steps. Attack, add (Cursed Die).  Allow an ally to attack, they add (Cursed Die)."
+			"rules": "Forceful Attack Attack Attack, add (Power Die).    Then suffer a scratch. Star: +3 Power. Star: +2 Power. Surge: Cause 'Knockback (2)' or 'Stun'. Attack, add (Blessing Die)."
 		},
 		{
 			"type": "Meta",
@@ -1990,17 +1962,45 @@
 		},
 		{
 			"type": "Meta",
-			"initiative": "3",
-			"name": "Growing Rage",
+			"initiative": "5",
+			"name": "Group Tactics",
 			"cooldown": "2",
-			"id": "a132",
+			"id": "a128",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"interrupt"
+			],
+			"spends": [],
+			"rules": "Group Tactics Meta Move every ally (including yourself) by up to 3 tiles.  Interrupt  Allow an ally (or yourself) to change their initiative by up to 3 steps. Attack, add (Cursed Die).  Allow an ally to attack, they add (Cursed Die)."
+		},
+		{
+			"type": "Meta",
+			"initiative": "3",
+			"name": "Group Tactics",
+			"cooldown": "2",
+			"id": "a129",
 			"category": "ability",
 			"variant": "Beta",
+			"effects": [
+				"interrupt"
+			],
+			"spends": [],
+			"rules": "Group Tactics Meta Move every ally (including yourself) by up to 2 tiles and remove one scratch from one of the targets.  Interrupt  Allow an ally (or yourself) to change their initiative by up to 2 steps. Attack, add (Cursed Die).  Allow an ally to attack, they add (Cursed Die)."
+		},
+		{
+			"type": "Meta",
+			"initiative": "3",
+			"name": "Growing Rage",
+			"cooldown": "3",
+			"id": "a130",
+			"category": "ability",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Growing Rage Meta Ongoing  Whenever you finish off an enemy, extend the duration of this effect by +1. While this effect is active, add (Blessing Die) to your attacks. If this card is at duration 4 or 5, add (Power Die) instead, but also add (Cursed Die) (Cursed Die) to defense. Attack, and you may add (Power Die) for each 2 scratches you are willing to suffer."
+			"rules": "Growing Rage Meta Ongoing  Whenever you finish off an enemy, place a token on this card. Once you have two tokens, you may perform a free melee attack at any time, adding (Power Die) (Power Die). Then turn this card face down. Attack, and you may add (Power Die) for each 2 scratches you are willing to suffer."
 		},
 		{
 			"type": "Meta",
@@ -2020,31 +2020,30 @@
 			"type": "Meta",
 			"initiative": "3",
 			"name": "Growing Rage",
-			"cooldown": "3",
-			"id": "a130",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [
-				"ongoing"
-			],
-			"spends": [],
-			"rules": "Growing Rage Meta Ongoing  Whenever you finish off an enemy, place a token on this card. Once you have two tokens, you may perform a free melee attack at any time, adding (Power Die) (Power Die). Then turn this card face down. Attack, and you may add (Power Die) for each 2 scratches you are willing to suffer."
-		},
-		{
-			"type": "Spell",
-			"initiative": "3",
-			"name": "Gust",
-			"cooldown": "3",
-			"id": "a240",
+			"cooldown": "2",
+			"id": "a132",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
+			"spends": [],
+			"rules": "Growing Rage Meta Ongoing  Whenever you finish off an enemy, extend the duration of this effect by +1. While this effect is active, add (Blessing Die) to your attacks. If this card is at duration 4 or 5, add (Power Die) instead, but also add (Cursed Die) (Cursed Die) to defense. Attack, and you may add (Power Die) for each 2 scratches you are willing to suffer."
+		},
+		{
+			"type": "Spell",
+			"initiative": "3",
+			"name": "Gust",
+			"cooldown": "2",
+			"id": "a238",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
 			"spends": [
-				"doublesurge"
+				"surge",
+				"surge"
 			],
-			"rules": "Gust Spell Ongoing  Spellcasting 1+  Declare an enemy within range 6 upon casting the spell. Whenever you reduce the duration of this effect, cause 'Knockback (3)' against the target (from any direction). DoubleSurge: Declare a second enemy to be affected by this. Cause 'Knockback (2)' against an enemy within range 5.  Move (1)"
+			"rules": "Gust Spell Spellcasting 1+  Cause 'Knockback (3)' to a target within range 6. Surge: Hit one additional target. Surge: Hit one additional target. Cause 'Knockback (2)' against an enemy within range 5.  Move (1)"
 		},
 		{
 			"type": "Spell",
@@ -2066,30 +2065,31 @@
 			"type": "Spell",
 			"initiative": "3",
 			"name": "Gust",
-			"cooldown": "2",
-			"id": "a238",
+			"cooldown": "3",
+			"id": "a240",
 			"category": "ability",
-			"variant": "Basic",
-			"effects": [],
-			"spends": [
-				"surge",
-				"surge"
+			"variant": "Beta",
+			"effects": [
+				"ongoing"
 			],
-			"rules": "Gust Spell Spellcasting 1+  Cause 'Knockback (3)' to a target within range 6. Surge: Hit one additional target. Surge: Hit one additional target. Cause 'Knockback (2)' against an enemy within range 5.  Move (1)"
+			"spends": [
+				"doublesurge"
+			],
+			"rules": "Gust Spell Ongoing  Spellcasting 1+  Declare an enemy within range 6 upon casting the spell. Whenever you reduce the duration of this effect, cause 'Knockback (3)' against the target (from any direction). DoubleSurge: Declare a second enemy to be affected by this. Cause 'Knockback (2)' against an enemy within range 5.  Move (1)"
 		},
 		{
 			"type": "Meta",
 			"initiative": "4",
 			"name": "Haste",
 			"cooldown": "5",
-			"id": "a135",
+			"id": "a133",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Haste Meta Interrupt  Allow an ally to immediately play any one card from their hand. Allow an ally to immediately play a card from their hand.  Then suffer 'Stun (2)."
+			"rules": "Haste Meta Interrupt  Allow an ally to repeat a card that they have just played. Allow an ally to immediately play a card from their hand.  Then suffer 'Stun (2)."
 		},
 		{
 			"type": "Meta",
@@ -2110,28 +2110,28 @@
 			"initiative": "4",
 			"name": "Haste",
 			"cooldown": "5",
-			"id": "a133",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [
-				"interrupt"
-			],
-			"spends": [],
-			"rules": "Haste Meta Interrupt  Allow an ally to repeat a card that they have just played. Allow an ally to immediately play a card from their hand.  Then suffer 'Stun (2)."
-		},
-		{
-			"type": "Meta",
-			"initiative": "5",
-			"name": "Heroic Opportunity",
-			"cooldown": "5",
-			"id": "a138",
+			"id": "a135",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Heroic Opportunity Meta Interrupt  Allow yourself and an ally to each play a card from the hand. You suffer 'Stun (2)'. Play a minor action from your hand, but don't get a cooldown reduction from it in addition."
+			"rules": "Haste Meta Interrupt  Allow an ally to immediately play any one card from their hand. Allow an ally to immediately play a card from their hand.  Then suffer 'Stun (2)."
+		},
+		{
+			"type": "Meta",
+			"initiative": "3",
+			"name": "Heroic Opportunity",
+			"cooldown": "X",
+			"id": "a136",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"interrupt"
+			],
+			"spends": [],
+			"rules": "Heroic Opportunity Meta Interrupt  Play a card from your hand. Suffer 'Stun (2)', then put 'Heroic Opportunity' on cooldown 3.    Interrupt  You may spend (Surge) on one of your attack, spellcasting or defense rolls to add +1 Power. Then put 'Heroic Opportunity' on cooldown 1. Play a minor action from your hand, but don't get a cooldown reduction from it in addition."
 		},
 		{
 			"type": "Meta",
@@ -2149,33 +2149,32 @@
 		},
 		{
 			"type": "Meta",
-			"initiative": "3",
+			"initiative": "5",
 			"name": "Heroic Opportunity",
-			"cooldown": "X",
-			"id": "a136",
+			"cooldown": "5",
+			"id": "a138",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Heroic Opportunity Meta Interrupt  Play a card from your hand. Suffer 'Stun (2)', then put 'Heroic Opportunity' on cooldown 3.    Interrupt  You may spend (Surge) on one of your attack, spellcasting or defense rolls to add +1 Power. Then put 'Heroic Opportunity' on cooldown 1. Play a minor action from your hand, but don't get a cooldown reduction from it in addition."
+			"rules": "Heroic Opportunity Meta Interrupt  Allow yourself and an ally to each play a card from the hand. You suffer 'Stun (2)'. Play a minor action from your hand, but don't get a cooldown reduction from it in addition."
 		},
 		{
 			"type": "Spell",
 			"initiative": "5",
 			"name": "Ice Lance",
 			"cooldown": "2",
-			"id": "a243",
+			"id": "a241",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
-				"star",
 				"surge",
 				"surge"
 			],
-			"rules": "Ice Lance Spell Treat this spell like a ranged attack with a range of 6, using your spellcasting dice pool. Star: +2 Power. Star: +2 Power. Surge: Cause 'Cripple'. Attack an enemy within range 6 using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
+			"rules": "Ice Lance Spell Treat this spell like a ranged attack with a range of 6, using your spellcasting dice pool. Surge: +1 Power. Surge: Cause 'Cripple'. Attack an enemy within range 6 using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
 		},
 		{
 			"type": "Spell",
@@ -2197,32 +2196,32 @@
 			"initiative": "5",
 			"name": "Ice Lance",
 			"cooldown": "2",
-			"id": "a241",
+			"id": "a243",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
+				"star",
 				"surge",
 				"surge"
 			],
-			"rules": "Ice Lance Spell Treat this spell like a ranged attack with a range of 6, using your spellcasting dice pool. Surge: +1 Power. Surge: Cause 'Cripple'. Attack an enemy within range 6 using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
+			"rules": "Ice Lance Spell Treat this spell like a ranged attack with a range of 6, using your spellcasting dice pool. Star: +2 Power. Star: +2 Power. Surge: Cause 'Cripple'. Attack an enemy within range 6 using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
 		},
 		{
 			"type": "Spell",
 			"initiative": "4",
 			"name": "Ignite",
-			"cooldown": "2",
-			"id": "a246",
+			"cooldown": "3",
+			"id": "a244",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
-				"doublesurge",
-				"surge"
+				"doublesurge"
 			],
-			"rules": "Ignite Spell Ongoing  Spellcasting 3+  Declare two enemies within range 5 upon casting this spell. Whenever you reduce this card's duration, these enemies take damage using (Power Die) (Blessing Die) (Blessing Die). DoubleSurge: Add (Blessing Die) to the damage roll. DoubleSurge: Add (Blessing Die) to the damage roll. Suffer a scratch. After you did:  An enemy within range 5 takes a wound."
+			"rules": "Ignite Spell Ongoing  Spellcasting 3+  Declare an enemy within range 5 upon casting this spell. Whenever you reduce this card's duration, that enemy takes damage using (Power Die) (Blessing Die) (Blessing Die). DoubleSurge: Add (Blessing Die) to the damage roll. Suffer a scratch. After you did:  An enemy within range 5 takes a wound."
 		},
 		{
 			"type": "Spell",
@@ -2246,34 +2245,34 @@
 			"type": "Spell",
 			"initiative": "4",
 			"name": "Ignite",
-			"cooldown": "3",
-			"id": "a244",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [
-				"ongoing"
-			],
-			"spends": [
-				"doublesurge"
-			],
-			"rules": "Ignite Spell Ongoing  Spellcasting 3+  Declare an enemy within range 5 upon casting this spell. Whenever you reduce this card's duration, that enemy takes damage using (Power Die) (Blessing Die) (Blessing Die). DoubleSurge: Add (Blessing Die) to the damage roll. Suffer a scratch. After you did:  An enemy within range 5 takes a wound."
-		},
-		{
-			"type": "Meta",
-			"initiative": "1",
-			"name": "Ignore Pain",
-			"cooldown": "5",
-			"id": "a141",
+			"cooldown": "2",
+			"id": "a246",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
-				"star",
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Ignite Spell Ongoing  Spellcasting 3+  Declare two enemies within range 5 upon casting this spell. Whenever you reduce this card's duration, these enemies take damage using (Power Die) (Blessing Die) (Blessing Die). DoubleSurge: Add (Blessing Die) to the damage roll. DoubleSurge: Add (Blessing Die) to the damage roll. Suffer a scratch. After you did:  An enemy within range 5 takes a wound."
+		},
+		{
+			"type": "Meta",
+			"initiative": "1",
+			"name": "Ignore Pain",
+			"cooldown": "4",
+			"id": "a139",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
 				"numbers"
 			],
-			"rules": "Ignore Pain Meta Ongoing  For each scratch that you would suffer, roll (Blessing Die) and use the below spending options. Star: Ignore the scratch. Star: Ignore the scratch. Attack, add (Blessing Die) for each scratch that you have."
+			"rules": "Ignore Pain Meta Ongoing  For each scratch that you would suffer, roll (Blessing Die) and use the below spending options. Numbers: Ignore the scratch. Attack, add (Blessing Die) for each scratch that you have."
 		},
 		{
 			"type": "Meta",
@@ -2296,41 +2295,18 @@
 			"type": "Meta",
 			"initiative": "1",
 			"name": "Ignore Pain",
-			"cooldown": "4",
-			"id": "a139",
+			"cooldown": "5",
+			"id": "a141",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
+				"star",
 				"numbers"
 			],
-			"rules": "Ignore Pain Meta Ongoing  For each scratch that you would suffer, roll (Blessing Die) and use the below spending options. Numbers: Ignore the scratch. Attack, add (Blessing Die) for each scratch that you have."
-		},
-		{
-			"type": "Meta",
-			"initiative": "1",
-			"name": "Imbuing Words",
-			"cooldown": "2",
-			"id": "a144",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [],
-			"spends": [],
-			"rules": "Imbuing Words Meta Reduce the duration of up to three ongoing effects (from yourself or allies) by 1 each. Move an ally by 3 tiles."
-		},
-		{
-			"type": "Meta",
-			"initiative": "3",
-			"name": "Imbuing Words",
-			"cooldown": "4",
-			"id": "a143",
-			"category": "ability",
-			"variant": "Alpha",
-			"effects": [],
-			"spends": [],
-			"rules": "Imbuing Words Meta Reduce the duration of an ongoing effect from yourself and an ally within range 5 by 3 each. Move an ally by 2 tiles.  Add (Blessing Die) (Blessing Die) to their next roll this round."
+			"rules": "Ignore Pain Meta Ongoing  For each scratch that you would suffer, roll (Blessing Die) and use the below spending options. Star: Ignore the scratch. Star: Ignore the scratch. Attack, add (Blessing Die) for each scratch that you have."
 		},
 		{
 			"type": "Meta",
@@ -2346,18 +2322,42 @@
 		},
 		{
 			"type": "Meta",
+			"initiative": "3",
+			"name": "Imbuing Words",
+			"cooldown": "4",
+			"id": "a143",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [],
+			"rules": "Imbuing Words Meta Reduce the duration of an ongoing effect from yourself and an ally within range 5 by 3 each. Move an ally by 2 tiles.  Add (Blessing Die) (Blessing Die) to their next roll this round."
+		},
+		{
+			"type": "Meta",
+			"initiative": "1",
+			"name": "Imbuing Words",
+			"cooldown": "2",
+			"id": "a144",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [],
+			"spends": [],
+			"rules": "Imbuing Words Meta Reduce the duration of up to three ongoing effects (from yourself or allies) by 1 each. Move an ally by 3 tiles."
+		},
+		{
+			"type": "Meta",
 			"initiative": "1",
 			"name": "Improvise",
 			"cooldown": "4",
-			"id": "a147",
+			"id": "a145",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
 				"star",
 				"surge"
 			],
-			"rules": "Improvise Meta Roll a single (Enhancement Die) and use the below spending options.    Take the corresponding item from the item deck, then reshuffle it. Star: Obtain 'Weak Healing Potion'. Star: Obtain 'Bandages'. Surge: Obtain 'Talisman'. Reduce the duration of an ongoing effect on yourself or an ally by 1."
+			"rules": "Improvise Meta Roll a single (Enhancement Die) and use the below spending options.    Take the corresponding item from the item deck, then reshuffle it. Star: Obtain 'Bandages'. Star: Obtain 'Bandages'. Surge: Obtain 'Talisman'. Remove a scratch from yourself or an adjacent ally."
 		},
 		{
 			"type": "Meta",
@@ -2379,39 +2379,15 @@
 			"initiative": "1",
 			"name": "Improvise",
 			"cooldown": "4",
-			"id": "a145",
+			"id": "a147",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
 				"star",
 				"surge"
 			],
-			"rules": "Improvise Meta Roll a single (Enhancement Die) and use the below spending options.    Take the corresponding item from the item deck, then reshuffle it. Star: Obtain 'Bandages'. Star: Obtain 'Bandages'. Surge: Obtain 'Talisman'. Remove a scratch from yourself or an adjacent ally."
-		},
-		{
-			"type": "Meta",
-			"initiative": "1",
-			"name": "Inspire",
-			"cooldown": "3",
-			"id": "a150",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [],
-			"spends": [],
-			"rules": "Inspire Meta Interrupt  Allow an ally to change the rolled result of one (Standard Die) to any result of your choice. Move an ally by 2 tiles.  Move (2)"
-		},
-		{
-			"type": "Meta",
-			"initiative": "1",
-			"name": "Inspire",
-			"cooldown": "2",
-			"id": "a149",
-			"category": "ability",
-			"variant": "Alpha",
-			"effects": [],
-			"spends": [],
-			"rules": "Inspire Meta Interrupt  Allow an ally to re-roll up to two dice from their current roll. Move an ally by 2 tiles.  Move (2)"
+			"rules": "Improvise Meta Roll a single (Enhancement Die) and use the below spending options.    Take the corresponding item from the item deck, then reshuffle it. Star: Obtain 'Weak Healing Potion'. Star: Obtain 'Bandages'. Surge: Obtain 'Talisman'. Reduce the duration of an ongoing effect on yourself or an ally by 1."
 		},
 		{
 			"type": "Meta",
@@ -2431,14 +2407,38 @@
 		{
 			"type": "Meta",
 			"initiative": "1",
-			"name": "Intensified Channeling",
+			"name": "Inspire",
+			"cooldown": "2",
+			"id": "a149",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [],
+			"rules": "Inspire Meta Interrupt  Allow an ally to re-roll up to two dice from their current roll. Move an ally by 2 tiles.  Move (2)"
+		},
+		{
+			"type": "Meta",
+			"initiative": "1",
+			"name": "Inspire",
 			"cooldown": "3",
-			"id": "a153",
+			"id": "a150",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [],
 			"spends": [],
-			"rules": "Intensified Channeling Meta On your next spellcasting test this round, you can re-roll any number of dice once and keep the new result.    Also heal one scratch from yourself. Reduce the cooldown of one of your spells by 2."
+			"rules": "Inspire Meta Interrupt  Allow an ally to change the rolled result of one (Standard Die) to any result of your choice. Move an ally by 2 tiles.  Move (2)"
+		},
+		{
+			"type": "Meta",
+			"initiative": "1",
+			"name": "Intensified Channeling",
+			"cooldown": "3",
+			"id": "a151",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [],
+			"rules": "Intensified Channeling Meta On your next spellcasting test this round, you can re-roll any number of dice once and keep the new result. Reduce the cooldown of one of your spells by 2."
 		},
 		{
 			"type": "Meta",
@@ -2457,27 +2457,26 @@
 			"initiative": "1",
 			"name": "Intensified Channeling",
 			"cooldown": "3",
-			"id": "a151",
+			"id": "a153",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [],
-			"rules": "Intensified Channeling Meta On your next spellcasting test this round, you can re-roll any number of dice once and keep the new result. Reduce the cooldown of one of your spells by 2."
+			"rules": "Intensified Channeling Meta On your next spellcasting test this round, you can re-roll any number of dice once and keep the new result.    Also heal one scratch from yourself. Reduce the cooldown of one of your spells by 2."
 		},
 		{
 			"type": "Attack",
 			"initiative": "4",
 			"name": "Intimidating Assault",
-			"cooldown": "2",
-			"id": "a30",
+			"cooldown": "3",
+			"id": "a28",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
-				"star",
 				"surge"
 			],
-			"rules": "Intimidating Assault Attack Attack, add (Blessing Die) (Blessing Die).    If the target suffers at least one wound, you may move it once according to its current speed. Star: Cause 'Bleed (2)'. Star: +1 Power. Attack  Cause 'Knockback (1)' against any one adjacent model."
+			"rules": "Intimidating Assault Attack Attack, add (Blessing Die) (Blessing Die).    If the target suffers at least one wound, you may move it once according to its current speed. Surge: +1 Power. Attack  Cause 'Knockback (1)' against any one adjacent model."
 		},
 		{
 			"type": "Attack",
@@ -2498,29 +2497,30 @@
 			"type": "Attack",
 			"initiative": "4",
 			"name": "Intimidating Assault",
-			"cooldown": "3",
-			"id": "a28",
+			"cooldown": "2",
+			"id": "a30",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
+				"star",
 				"surge"
 			],
-			"rules": "Intimidating Assault Attack Attack, add (Blessing Die) (Blessing Die).    If the target suffers at least one wound, you may move it once according to its current speed. Surge: +1 Power. Attack  Cause 'Knockback (1)' against any one adjacent model."
+			"rules": "Intimidating Assault Attack Attack, add (Blessing Die) (Blessing Die).    If the target suffers at least one wound, you may move it once according to its current speed. Star: Cause 'Bleed (2)'. Star: +1 Power. Attack  Cause 'Knockback (1)' against any one adjacent model."
 		},
 		{
 			"type": "Defense",
-			"initiative": "2",
+			"initiative": "1",
 			"name": "Iron Defense",
 			"cooldown": "3",
-			"id": "a60",
+			"id": "a58",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Iron Defense Defense Interrupt  After a defense roll, you may add additional dice equal to what your armor provides and then determine the end result.    If you would only take the minimum amount of scratches (1), you also prevent that scratch. Move (1)  Attack"
+			"rules": "Iron Defense Defense Interrupt  After a defense roll, you may add additional dice equal to what your armor provides and then determine the end result. Move (1)  Attack"
 		},
 		{
 			"type": "Defense",
@@ -2538,31 +2538,29 @@
 		},
 		{
 			"type": "Defense",
-			"initiative": "1",
+			"initiative": "2",
 			"name": "Iron Defense",
 			"cooldown": "3",
-			"id": "a58",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [
-				"interrupt"
-			],
-			"spends": [],
-			"rules": "Iron Defense Defense Interrupt  After a defense roll, you may add additional dice equal to what your armor provides and then determine the end result. Move (1)  Attack"
-		},
-		{
-			"type": "Meta",
-			"initiative": "6",
-			"name": "Leadership",
-			"cooldown": "3",
-			"id": "a156",
+			"id": "a60",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Leadership Meta Interrupt  Immediately refresh the duration of an ally's ongoing effect by resetting it back to it's unmodified base duration. Move any allies or yourself for a total of 4 tiles. Distribute as you like."
+			"rules": "Iron Defense Defense Interrupt  After a defense roll, you may add additional dice equal to what your armor provides and then determine the end result.    If you would only take the minimum amount of scratches (1), you also prevent that scratch. Move (1)  Attack"
+		},
+		{
+			"type": "Meta",
+			"initiative": "5",
+			"name": "Leadership",
+			"cooldown": "3",
+			"id": "a154",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [],
+			"rules": "Leadership Meta Increase the current duration of an ally's ongoing effect by +2 if it has an unmodified base duration of 2 or less, otherwise you increase it by +3. Move any allies or yourself for a total of 4 tiles. Distribute as you like."
 		},
 		{
 			"type": "Meta",
@@ -2580,31 +2578,33 @@
 		},
 		{
 			"type": "Meta",
-			"initiative": "5",
+			"initiative": "6",
 			"name": "Leadership",
 			"cooldown": "3",
-			"id": "a154",
+			"id": "a156",
 			"category": "ability",
-			"variant": "Basic",
-			"effects": [],
+			"variant": "Beta",
+			"effects": [
+				"interrupt"
+			],
 			"spends": [],
-			"rules": "Leadership Meta Increase the current duration of an ally's ongoing effect by +2 if it has an unmodified base duration of 2 or less, otherwise you increase it by +3. Move any allies or yourself for a total of 4 tiles. Distribute as you like."
+			"rules": "Leadership Meta Interrupt  Immediately refresh the duration of an ally's ongoing effect by resetting it back to it's unmodified base duration. Move any allies or yourself for a total of 4 tiles. Distribute as you like."
 		},
 		{
 			"type": "Spell",
 			"initiative": "2",
 			"name": "Leech Life",
 			"cooldown": "3",
-			"id": "a249",
+			"id": "a247",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
-				"star",
 				"doublesurge",
+				"surge",
 				"surge"
 			],
-			"rules": "Leech Life Spell Treat this spell like a ranged attack with a range of 4, using your spellcasting dice pool. Star: Heal one wound from yourself. Star: +3 Power. DoubleSurge: Heal one scratch from yourself. Attack an enemy within range 3 using your spellcasting dice pool."
+			"rules": "Leech Life Spell Treat this spell like a ranged attack with a range of 4, using your spellcasting dice pool. DoubleSurge: +2 Power. DoubleSurge: Heal one scratch from yourself. Surge: Heal one scratch from yourself. Attack an enemy within range 3 using your spellcasting dice pool."
 		},
 		{
 			"type": "Spell",
@@ -2627,31 +2627,31 @@
 			"initiative": "2",
 			"name": "Leech Life",
 			"cooldown": "3",
-			"id": "a247",
+			"id": "a249",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
+				"star",
 				"doublesurge",
-				"surge",
 				"surge"
 			],
-			"rules": "Leech Life Spell Treat this spell like a ranged attack with a range of 4, using your spellcasting dice pool. DoubleSurge: +2 Power. DoubleSurge: Heal one scratch from yourself. Surge: Heal one scratch from yourself. Attack an enemy within range 3 using your spellcasting dice pool."
+			"rules": "Leech Life Spell Treat this spell like a ranged attack with a range of 4, using your spellcasting dice pool. Star: Heal one wound from yourself. Star: +3 Power. DoubleSurge: Heal one scratch from yourself. Attack an enemy within range 3 using your spellcasting dice pool."
 		},
 		{
 			"type": "Melee",
 			"initiative": "4",
 			"name": "Lethal Blow",
 			"cooldown": "4",
-			"id": "a84",
+			"id": "a82",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Lethal Blow Melee Melee Attack, add (Blessing Die).  Add (Power Die) if you wield a 2h weapon. DoubleSurge: Immediately repeat this attack (but must be against a different target). DoubleSurge: +1 Power. Melee Attack  Add (Standard Die) if you wield a 2h weapon."
+			"rules": "Lethal Blow Melee Melee Attack, add (Blessing Die).  Add (Power Die) if you wield a 2h weapon. DoubleSurge: +2 Power. DoubleSurge: +1 Power. Melee Attack  Add (Standard Die) if you wield a 2h weapon."
 		},
 		{
 			"type": "Melee",
@@ -2674,29 +2674,30 @@
 			"initiative": "4",
 			"name": "Lethal Blow",
 			"cooldown": "4",
-			"id": "a82",
+			"id": "a84",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Lethal Blow Melee Melee Attack, add (Blessing Die).  Add (Power Die) if you wield a 2h weapon. DoubleSurge: +2 Power. DoubleSurge: +1 Power. Melee Attack  Add (Standard Die) if you wield a 2h weapon."
+			"rules": "Lethal Blow Melee Melee Attack, add (Blessing Die).  Add (Power Die) if you wield a 2h weapon. DoubleSurge: Immediately repeat this attack (but must be against a different target). DoubleSurge: +1 Power. Melee Attack  Add (Standard Die) if you wield a 2h weapon."
 		},
 		{
 			"type": "Meta",
 			"initiative": "6",
 			"name": "Lightning Reflexes",
 			"cooldown": "4",
-			"id": "a159",
+			"id": "a157",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
+				"ongoing",
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Lightning Reflexes Meta Interrupt  Add +3 power to your defense OR add (Star) to it. Move (2) (gain 'Slippery')"
+			"rules": "Lightning Reflexes Meta Interrupt  Add +2 power to your defense.    Ongoing  Each round, choose freely at each initiative step if you wish to have your turn, latest at step 0. While the effect lasts, you are considered to have the highest initiative. Move (2) (gain 'Slippery')"
 		},
 		{
 			"type": "Meta",
@@ -2718,27 +2719,26 @@
 			"initiative": "6",
 			"name": "Lightning Reflexes",
 			"cooldown": "4",
-			"id": "a157",
+			"id": "a159",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
-				"ongoing",
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Lightning Reflexes Meta Interrupt  Add +2 power to your defense.    Ongoing  Each round, choose freely at each initiative step if you wish to have your turn, latest at step 0. While the effect lasts, you are considered to have the highest initiative. Move (2) (gain 'Slippery')"
+			"rules": "Lightning Reflexes Meta Interrupt  Add +3 power to your defense OR add (Star) to it. Move (2) (gain 'Slippery')"
 		},
 		{
 			"type": "Melee",
 			"initiative": "4",
 			"name": "Lunging Slash",
-			"cooldown": "5",
-			"id": "a87",
+			"cooldown": "4",
+			"id": "a85",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [],
-			"rules": "Lunging Slash Melee Move by up to 3 tiles (gain 'Slippery') in a straight or diagonal line. Then perform an attack against each enemy that was adjacent to you during or after that movement.    Then repeat this action once (may not hit original targets again). Move (2)  Cause 'Knockback (1)' against an adjacent enemy."
+			"rules": "Lunging Slash Melee Move by up to 3 tiles in a straight or diagonal line. Then perform a melee attack against each enemy that was adjacent to you during or after that movement. Move (2)  Cause 'Knockback (1)' against an adjacent enemy."
 		},
 		{
 			"type": "Melee",
@@ -2756,28 +2756,25 @@
 			"type": "Melee",
 			"initiative": "4",
 			"name": "Lunging Slash",
-			"cooldown": "4",
-			"id": "a85",
+			"cooldown": "5",
+			"id": "a87",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [],
-			"rules": "Lunging Slash Melee Move by up to 3 tiles in a straight or diagonal line. Then perform a melee attack against each enemy that was adjacent to you during or after that movement. Move (2)  Cause 'Knockback (1)' against an adjacent enemy."
+			"rules": "Lunging Slash Melee Move by up to 3 tiles (gain 'Slippery') in a straight or diagonal line. Then perform an attack against each enemy that was adjacent to you during or after that movement.    Then repeat this action once (may not hit original targets again). Move (2)  Cause 'Knockback (1)' against an adjacent enemy."
 		},
 		{
 			"type": "Spell",
 			"initiative": "1",
 			"name": "Mind Control",
 			"cooldown": "4",
-			"id": "a252",
+			"id": "a250",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
-			"spends": [
-				"star",
-				"surge"
-			],
-			"rules": "Mind Control Spell Spellcasting 3+  Attach this card to a single enemy model. On their next activation, you control them instead and add (Standard Die) to their attacks (adding it to their regular attack value). Then this card goes on cooldown.    Their abilities work as usual (to your favor) as long as it makes sense. Star: Cooldown -1. Star: Cooldown -1. Move an enemy by 2 tiles."
+			"spends": [],
+			"rules": "Mind Control Spell Spellcasting 3+  Attach this card to a single enemy model. On their next activation, you control them instead and add (Standard Die) to their attacks (adding it to their regular attack value). Then this card goes on cooldown.    Their abilities work as usual (to your favor) as long as it makes sense. Move an enemy by 2 tiles."
 		},
 		{
 			"type": "Spell",
@@ -2798,26 +2795,29 @@
 			"initiative": "1",
 			"name": "Mind Control",
 			"cooldown": "4",
-			"id": "a250",
+			"id": "a252",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
-			"spends": [],
-			"rules": "Mind Control Spell Spellcasting 3+  Attach this card to a single enemy model. On their next activation, you control them instead and add (Standard Die) to their attacks (adding it to their regular attack value). Then this card goes on cooldown.    Their abilities work as usual (to your favor) as long as it makes sense. Move an enemy by 2 tiles."
+			"spends": [
+				"star",
+				"surge"
+			],
+			"rules": "Mind Control Spell Spellcasting 3+  Attach this card to a single enemy model. On their next activation, you control them instead and add (Standard Die) to their attacks (adding it to their regular attack value). Then this card goes on cooldown.    Their abilities work as usual (to your favor) as long as it makes sense. Star: Cooldown -1. Star: Cooldown -1. Move an enemy by 2 tiles."
 		},
 		{
 			"type": "Spell",
 			"initiative": "6",
 			"name": "Mirage",
 			"cooldown": "4",
-			"id": "a255",
+			"id": "a253",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Mirage Spell Ongoing  Spellcasting 1+  Create an immobile minion within range 3. It has a toughness of 0 and dies with the first wound.  If it gets destroyed, it deals damage to all enemies adjacent to it using (Standard Die) (Blessing Die) (Blessing Die). Ignore the next scratch that you would suffer this round."
+			"rules": "Mirage Spell Ongoing  Spellcasting 1+  Create an immobile minion within range 3. It has a toughness of 0 and dies with the first wound.  If it gets destroyed by a melee attack, the attacker takes damage using (Standard Die) (Blessing Die) (Blessing Die). Ignore the next scratch that you would suffer this round."
 		},
 		{
 			"type": "Spell",
@@ -2838,28 +2838,28 @@
 			"initiative": "6",
 			"name": "Mirage",
 			"cooldown": "4",
-			"id": "a253",
+			"id": "a255",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Mirage Spell Ongoing  Spellcasting 1+  Create an immobile minion within range 3. It has a toughness of 0 and dies with the first wound.  If it gets destroyed by a melee attack, the attacker takes damage using (Standard Die) (Blessing Die) (Blessing Die). Ignore the next scratch that you would suffer this round."
+			"rules": "Mirage Spell Ongoing  Spellcasting 1+  Create an immobile minion within range 3. It has a toughness of 0 and dies with the first wound.  If it gets destroyed, it deals damage to all enemies adjacent to it using (Standard Die) (Blessing Die) (Blessing Die). Ignore the next scratch that you would suffer this round."
 		},
 		{
 			"type": "Meta",
 			"initiative": "2",
 			"name": "Mirroring Technique",
 			"cooldown": "X",
-			"id": "a162",
+			"id": "a160",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Mirroring Technique Meta Interrupt  Mirror a just performed main action of an ally (but no ongoing effects or spells) and attempt it yourself.    The cooldown is the mirrored action's cooldown +1 (but you may not exceed a total of 5). Move (3)  OR  Attack"
+			"rules": "Mirroring Technique Meta Interrupt  Mirror a just performed main or minor action of an ally (but no ongoing effects or spells) and attempt it yourself.    The cooldown is the mirrored action's cooldown +2 (but you may not exceed a total of 5). Move (3)  OR  Attack"
 		},
 		{
 			"type": "Meta",
@@ -2880,32 +2880,31 @@
 			"initiative": "2",
 			"name": "Mirroring Technique",
 			"cooldown": "X",
-			"id": "a160",
+			"id": "a162",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Mirroring Technique Meta Interrupt  Mirror a just performed main or minor action of an ally (but no ongoing effects or spells) and attempt it yourself.    The cooldown is the mirrored action's cooldown +2 (but you may not exceed a total of 5). Move (3)  OR  Attack"
+			"rules": "Mirroring Technique Meta Interrupt  Mirror a just performed main action of an ally (but no ongoing effects or spells) and attempt it yourself.    The cooldown is the mirrored action's cooldown +1 (but you may not exceed a total of 5). Move (3)  OR  Attack"
 		},
 		{
 			"type": "Spell",
 			"initiative": "1",
 			"name": "Necromancy",
-			"cooldown": "5",
-			"id": "a258",
+			"cooldown": "4",
+			"id": "a256",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
 				"star",
-				"surge",
 				"surge"
 			],
-			"rules": "Necromancy Spell Ongoing  Spellcasting 3+  Summon a Skeleton Warrior minion within range 2. It has a toughness of 2, dies with the second wound and has a speed of 4. Star: The Skeleton Warriors add (Blessing Die) to their attacks. Star: They can also perform ranged attacks with a range of 5. Surge: Summon a second Skeleton Warrior minion. Suffer a scratch, then deal damage to an enemy within range 5 using your spellcasting dice pool, adding (Standard Die)."
+			"rules": "Necromancy Spell Ongoing  Spellcasting 3+  Summon a Skeleton Warrior minion within range 2. It has a toughness of 2, dies with the second wound and has a speed of 3. Star: The Skeleton Warriors add (Blessing Die) to their attacks. Star: Summon a second Skeleton Warrior minion. Suffer a scratch, then deal damage to an enemy within range 5 using your spellcasting dice pool, adding (Standard Die)."
 		},
 		{
 			"type": "Spell",
@@ -2929,33 +2928,34 @@
 			"type": "Spell",
 			"initiative": "1",
 			"name": "Necromancy",
-			"cooldown": "4",
-			"id": "a256",
+			"cooldown": "5",
+			"id": "a258",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
 				"star",
-				"surge"
-			],
-			"rules": "Necromancy Spell Ongoing  Spellcasting 3+  Summon a Skeleton Warrior minion within range 2. It has a toughness of 2, dies with the second wound and has a speed of 3. Star: The Skeleton Warriors add (Blessing Die) to their attacks. Star: Summon a second Skeleton Warrior minion. Suffer a scratch, then deal damage to an enemy within range 5 using your spellcasting dice pool, adding (Standard Die)."
-		},
-		{
-			"type": "Melee",
-			"initiative": "5",
-			"name": "Open Thrust",
-			"cooldown": "2",
-			"id": "a90",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [],
-			"spends": [
 				"surge",
 				"surge"
 			],
-			"rules": "Open Thrust Melee Melee Attack, add (Enhancement Die).    If this attack does not deal a wound, the targeted enemy immediately attempts to perform a free attack against you. Surge: Cause either 'Dazed', 'Stun', 'Cripple', 'Weaken' or 'Bleed (2)'. Surge: +1 Power. Attack, add (Blessing Die)."
+			"rules": "Necromancy Spell Ongoing  Spellcasting 3+  Summon a Skeleton Warrior minion within range 2. It has a toughness of 2, dies with the second wound and has a speed of 4. Star: The Skeleton Warriors add (Blessing Die) to their attacks. Star: They can also perform ranged attacks with a range of 5. Surge: Summon a second Skeleton Warrior minion. Suffer a scratch, then deal damage to an enemy within range 5 using your spellcasting dice pool, adding (Standard Die)."
+		},
+		{
+			"type": "Melee",
+			"initiative": "2",
+			"name": "Open Thrust",
+			"cooldown": "3",
+			"id": "a88",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"star",
+				"surge"
+			],
+			"rules": "Open Thrust Melee Melee Attack, add (Enhancement Die).    If this attack does not deal a wound, the targeted enemy immediately attempts to perform a free attack against you. Star: +4 Power. Star: Cause 'Bleed (2)'. Attack, add (Blessing Die)."
 		},
 		{
 			"type": "Melee",
@@ -2975,32 +2975,33 @@
 		},
 		{
 			"type": "Melee",
-			"initiative": "2",
+			"initiative": "5",
 			"name": "Open Thrust",
-			"cooldown": "3",
-			"id": "a88",
+			"cooldown": "2",
+			"id": "a90",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
-				"star",
+				"surge",
 				"surge"
 			],
-			"rules": "Open Thrust Melee Melee Attack, add (Enhancement Die).    If this attack does not deal a wound, the targeted enemy immediately attempts to perform a free attack against you. Star: +4 Power. Star: Cause 'Bleed (2)'. Attack, add (Blessing Die)."
+			"rules": "Open Thrust Melee Melee Attack, add (Enhancement Die).    If this attack does not deal a wound, the targeted enemy immediately attempts to perform a free attack against you. Surge: Cause either 'Dazed', 'Stun', 'Cripple', 'Weaken' or 'Bleed (2)'. Surge: +1 Power. Attack, add (Blessing Die)."
 		},
 		{
 			"type": "Ranged",
 			"initiative": "2",
 			"name": "Piercing Missile",
 			"cooldown": "3",
-			"id": "a195",
+			"id": "a193",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
+				"surge",
 				"surge"
 			],
-			"rules": "Piercing Missile Ranged Ranged Attack, add (Power Die). Surge: Hit a second enemy that is adjacent to but further away than your first target. Ranged Attack (gain +2 range)"
+			"rules": "Piercing Missile Ranged Ranged Attack, add (Blessing Die) (Blessing Die). Surge: Hit a third enemy that is adjacent to but further away than your second target. Surge: Hit a second enemy that is adjacent to but further away than your first target. Ranged Attack (gain +2 range)"
 		},
 		{
 			"type": "Ranged",
@@ -3021,7 +3022,21 @@
 			"initiative": "2",
 			"name": "Piercing Missile",
 			"cooldown": "3",
-			"id": "a193",
+			"id": "a195",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [],
+			"spends": [
+				"surge"
+			],
+			"rules": "Piercing Missile Ranged Ranged Attack, add (Power Die). Surge: Hit a second enemy that is adjacent to but further away than your first target. Ranged Attack (gain +2 range)"
+		},
+		{
+			"type": "Attack",
+			"initiative": "3",
+			"name": "Puncture",
+			"cooldown": "2",
+			"id": "a31",
 			"category": "ability",
 			"variant": "Basic",
 			"effects": [],
@@ -3029,22 +3044,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Piercing Missile Ranged Ranged Attack, add (Blessing Die) (Blessing Die). Surge: Hit a third enemy that is adjacent to but further away than your second target. Surge: Hit a second enemy that is adjacent to but further away than your first target. Ranged Attack (gain +2 range)"
-		},
-		{
-			"type": "Attack",
-			"initiative": "5",
-			"name": "Puncture",
-			"cooldown": "3",
-			"id": "a33",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [],
-			"spends": [
-				"doublesurge",
-				"surge"
-			],
-			"rules": "Puncture Attack Attack, add (Enhancement Die). DoubleSurge: Place this like an ongoing effect with a duration of 3. While it lasts, the target suffers from 'Weaken'. DoubleSurge: Cause 'Weaken'. Move (1)  Attack"
+			"rules": "Puncture Attack Attack, add (Enhancement Die). Surge: +1 Power. Surge: Cause 'Weaken'. Move (1)  Attack"
 		},
 		{
 			"type": "Attack",
@@ -3064,32 +3064,30 @@
 		},
 		{
 			"type": "Attack",
-			"initiative": "3",
+			"initiative": "5",
 			"name": "Puncture",
-			"cooldown": "2",
-			"id": "a31",
+			"cooldown": "3",
+			"id": "a33",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
-				"surge",
+				"doublesurge",
 				"surge"
 			],
-			"rules": "Puncture Attack Attack, add (Enhancement Die). Surge: +1 Power. Surge: Cause 'Weaken'. Move (1)  Attack"
+			"rules": "Puncture Attack Attack, add (Enhancement Die). DoubleSurge: Place this like an ongoing effect with a duration of 3. While it lasts, the target suffers from 'Weaken'. DoubleSurge: Cause 'Weaken'. Move (1)  Attack"
 		},
 		{
 			"type": "Ranged",
 			"initiative": "6",
 			"name": "Quickshot",
-			"cooldown": "4",
-			"id": "a198",
+			"cooldown": "1",
+			"id": "a196",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
-			"spends": [
-				"surge"
-			],
-			"rules": "Quickshot Ranged Melee Attack.    Move (3) (gain 'Slippery').    Ranged Attack, add (Blessing Die). Surge: +1 Power. Move (2) (gain 'Slippery')  Attack, add (Cursed Die)."
+			"spends": [],
+			"rules": "Quickshot Ranged Ranged Attack, add (Blessing Die).    The range of this attack is reduced by 2. Ranged Attack  Move (2) (gain 'Slippery')"
 		},
 		{
 			"type": "Ranged",
@@ -3107,29 +3105,30 @@
 			"type": "Ranged",
 			"initiative": "6",
 			"name": "Quickshot",
-			"cooldown": "1",
-			"id": "a196",
+			"cooldown": "4",
+			"id": "a198",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
-			"spends": [],
-			"rules": "Quickshot Ranged Ranged Attack, add (Blessing Die).    The range of this attack is reduced by 2. Ranged Attack  Move (2) (gain 'Slippery')"
+			"spends": [
+				"surge"
+			],
+			"rules": "Quickshot Ranged Melee Attack.    Move (3) (gain 'Slippery').    Ranged Attack, add (Blessing Die). Surge: +1 Power. Move (2) (gain 'Slippery')  Attack, add (Cursed Die)."
 		},
 		{
 			"type": "Spell",
 			"initiative": "2",
 			"name": "Ray Of Healing",
-			"cooldown": "3",
-			"id": "a261",
+			"cooldown": "4",
+			"id": "a259",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
-				"star",
-				"doublesurge",
+				"surge",
 				"surge"
 			],
-			"rules": "Ray Of Healing Spell Spellcasting 2+  Cast a ray over a straight or diagonal line with a range of 5.  Heal one scratch from each ally on that line. Star: Heal one wound from one of the targets, but add +2 cooldown. Star: Heal one additional scratch from each target. DoubleSurge: Heal one additional scratch from one of the targets. Heal a scratch from an ally within range 4."
+			"rules": "Ray Of Healing Spell Spellcasting 1+  Cast a ray over a straight or diagonal line with a range of 5.  Heal one scratch from each ally on that line. Surge: Heal one additional scratch from one of the targets. Surge: Heal one additional scratch from one of the targets. Heal a scratch from an ally within range 4."
 		},
 		{
 			"type": "Spell",
@@ -3150,33 +3149,34 @@
 			"type": "Spell",
 			"initiative": "2",
 			"name": "Ray Of Healing",
-			"cooldown": "4",
-			"id": "a259",
+			"cooldown": "3",
+			"id": "a261",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
-				"surge",
+				"star",
+				"doublesurge",
 				"surge"
 			],
-			"rules": "Ray Of Healing Spell Spellcasting 1+  Cast a ray over a straight or diagonal line with a range of 5.  Heal one scratch from each ally on that line. Surge: Heal one additional scratch from one of the targets. Surge: Heal one additional scratch from one of the targets. Heal a scratch from an ally within range 4."
+			"rules": "Ray Of Healing Spell Spellcasting 2+  Cast a ray over a straight or diagonal line with a range of 5.  Heal one scratch from each ally on that line. Star: Heal one wound from one of the targets, but add +2 cooldown. Star: Heal one additional scratch from each target. DoubleSurge: Heal one additional scratch from one of the targets. Heal a scratch from an ally within range 4."
 		},
 		{
 			"type": "Spell",
 			"initiative": "1",
 			"name": "Regeneration",
-			"cooldown": "4",
-			"id": "a264",
+			"cooldown": "3",
+			"id": "a262",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
 				"star",
-				"doublesurge"
+				"surge"
 			],
-			"rules": "Regeneration Spell Ongoing  Spellcasting 2+  Declare an ally (or yourself). Whenever this card reduces its duration, they heal one scratch. Star: Once the effect ends, they also heal one wound. Star: If the target doesn't have a scratch when this effect heals, they heal a wound instead. Heal one scratch from yourself or an adjacent ally."
+			"rules": "Regeneration Spell Ongoing  Spellcasting 2+  Declare an ally (or yourself). Whenever this card reduces its duration, they heal one scratch. Star: If the target doesn't have a scratch when this effect heals, they heal a wound instead. Star: Duration +1. Heal one scratch from yourself."
 		},
 		{
 			"type": "Spell",
@@ -3200,34 +3200,32 @@
 			"type": "Spell",
 			"initiative": "1",
 			"name": "Regeneration",
-			"cooldown": "3",
-			"id": "a262",
+			"cooldown": "4",
+			"id": "a264",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
 				"star",
-				"surge"
+				"doublesurge"
 			],
-			"rules": "Regeneration Spell Ongoing  Spellcasting 2+  Declare an ally (or yourself). Whenever this card reduces its duration, they heal one scratch. Star: If the target doesn't have a scratch when this effect heals, they heal a wound instead. Star: Duration +1. Heal one scratch from yourself."
+			"rules": "Regeneration Spell Ongoing  Spellcasting 2+  Declare an ally (or yourself). Whenever this card reduces its duration, they heal one scratch. Star: Once the effect ends, they also heal one wound. Star: If the target doesn't have a scratch when this effect heals, they heal a wound instead. Heal one scratch from yourself or an adjacent ally."
 		},
 		{
 			"type": "Defense",
 			"initiative": "6",
 			"name": "Riposte",
 			"cooldown": "2",
-			"id": "a63",
+			"id": "a61",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
-				"interrupt"
+				"ongoing"
 			],
-			"spends": [
-				"star"
-			],
-			"rules": "Riposte Defense Interrupt  Add +1 Power to your current defense roll. If you don't take a wound during that defense, perform a free melee attack against the attacker. Star: Cooldown -1. Attack, add (Blessing Die)."
+			"spends": [],
+			"rules": "Riposte Defense Ongoing  On a defense roll, you may add (Enhancement Die) (Blessing Die) (decide before rolling). If you don't take a wound during that defense, you may perform a free melee attack against the attacker. Then turn this effect face down. Attack, add (Blessing Die)."
 		},
 		{
 			"type": "Defense",
@@ -3248,28 +3246,30 @@
 			"initiative": "6",
 			"name": "Riposte",
 			"cooldown": "2",
-			"id": "a61",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [
-				"ongoing"
-			],
-			"spends": [],
-			"rules": "Riposte Defense Ongoing  On a defense roll, you may add (Enhancement Die) (Blessing Die) (decide before rolling). If you don't take a wound during that defense, you may perform a free melee attack against the attacker. Then turn this effect face down. Attack, add (Blessing Die)."
-		},
-		{
-			"type": "Meta",
-			"initiative": "5",
-			"name": "Rush In",
-			"cooldown": "3",
-			"id": "a165",
+			"id": "a63",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [
 				"interrupt"
 			],
+			"spends": [
+				"star"
+			],
+			"rules": "Riposte Defense Interrupt  Add +1 Power to your current defense roll. If you don't take a wound during that defense, perform a free melee attack against the attacker. Star: Cooldown -1. Attack, add (Blessing Die)."
+		},
+		{
+			"type": "Meta",
+			"initiative": "5",
+			"name": "Rush In",
+			"cooldown": "5",
+			"id": "a163",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"interrupt"
+			],
 			"spends": [],
-			"rules": "Rush In Meta Interrupt  Move (3)  Pull (2) Move (2), then grant an adjacent ally (Blessing Die) on their next roll this round."
+			"rules": "Rush In Meta Interrupt  Move (3), then play a minor action from your hand (you don't get to reduce cooldowns from it). Move (2), then grant an adjacent ally (Blessing Die) on their next roll this round."
 		},
 		{
 			"type": "Meta",
@@ -3289,29 +3289,29 @@
 			"type": "Meta",
 			"initiative": "5",
 			"name": "Rush In",
-			"cooldown": "5",
-			"id": "a163",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [
-				"interrupt"
-			],
-			"spends": [],
-			"rules": "Rush In Meta Interrupt  Move (3), then play a minor action from your hand (you don't get to reduce cooldowns from it). Move (2), then grant an adjacent ally (Blessing Die) on their next roll this round."
-		},
-		{
-			"type": "Meta",
-			"initiative": "4",
-			"name": "Saving Warning",
-			"cooldown": "4",
-			"id": "a168",
+			"cooldown": "3",
+			"id": "a165",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Saving Warning Meta Interrupt  If an ally within range 8 takes a wound, you can prevent it, as well as any scratches that would otherwise overflow.  They remain at a maximum amount of scratches for that bar.  For the remainder of the round, they add (Blessing Die) to their defense. Grant an ally (Blessing Die) (Blessing Die)  on their next defense roll this round."
+			"rules": "Rush In Meta Interrupt  Move (3)  Pull (2) Move (2), then grant an adjacent ally (Blessing Die) on their next roll this round."
+		},
+		{
+			"type": "Meta",
+			"initiative": "4",
+			"name": "Saving Warning",
+			"cooldown": "5",
+			"id": "a166",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"interrupt"
+			],
+			"spends": [],
+			"rules": "Saving Warning Meta Interrupt  If an ally within range 5 takes a wound, you can prevent it, as well as any scratches that would otherwise overflow.  They remain at a maximum amount of scratches for that bar. Grant an ally (Blessing Die) (Blessing Die)  on their next defense roll this round."
 		},
 		{
 			"type": "Meta",
@@ -3331,27 +3331,27 @@
 			"type": "Meta",
 			"initiative": "4",
 			"name": "Saving Warning",
-			"cooldown": "5",
-			"id": "a166",
+			"cooldown": "4",
+			"id": "a168",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Saving Warning Meta Interrupt  If an ally within range 5 takes a wound, you can prevent it, as well as any scratches that would otherwise overflow.  They remain at a maximum amount of scratches for that bar. Grant an ally (Blessing Die) (Blessing Die)  on their next defense roll this round."
+			"rules": "Saving Warning Meta Interrupt  If an ally within range 8 takes a wound, you can prevent it, as well as any scratches that would otherwise overflow.  They remain at a maximum amount of scratches for that bar.  For the remainder of the round, they add (Blessing Die) to their defense. Grant an ally (Blessing Die) (Blessing Die)  on their next defense roll this round."
 		},
 		{
 			"type": "Meta",
 			"initiative": "1",
 			"name": "Scavenge & Craft",
 			"cooldown": "5",
-			"id": "a171",
+			"id": "a169",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [],
-			"rules": "Scavenge & Craft Meta Remove up to two faults from one adjacent ally's item or your own.    Alternatively, draw an item card (or default equipment of your choice) and only keep it if it has a value of 30 or less. Move (3)"
+			"rules": "Scavenge & Craft Meta Remove a fault from an adjacent ally's item or your own.    Alternatively, draw an item card (or default equipment of your choice) and only keep it if it has a value of 20 or less. Move (3)"
 		},
 		{
 			"type": "Meta",
@@ -3370,27 +3370,27 @@
 			"initiative": "1",
 			"name": "Scavenge & Craft",
 			"cooldown": "5",
-			"id": "a169",
+			"id": "a171",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [],
-			"rules": "Scavenge & Craft Meta Remove a fault from an adjacent ally's item or your own.    Alternatively, draw an item card (or default equipment of your choice) and only keep it if it has a value of 20 or less. Move (3)"
+			"rules": "Scavenge & Craft Meta Remove up to two faults from one adjacent ally's item or your own.    Alternatively, draw an item card (or default equipment of your choice) and only keep it if it has a value of 30 or less. Move (3)"
 		},
 		{
 			"type": "Spell",
 			"initiative": "2",
 			"name": "Scorching Blast",
-			"cooldown": "4",
-			"id": "a267",
+			"cooldown": "5",
+			"id": "a265",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
-				"doublesurge",
+				"surge",
 				"surge"
 			],
-			"rules": "Scorching Blast Spell Spellcasting 3+  Use the 'Blast' token and deal damage against each model under it, using (Power Die). Against heroes and minions, if the roll meets (or exceeds) their current toughness, they take a scratch. DoubleSurge: Add (Power Die) to the damage roll. DoubleSurge: Add (Blessing Die) to the damage roll. Deal a wound against an enemy within range 3 with a defense of 4 or less."
+			"rules": "Scorching Blast Spell Spellcasting 3+  Use the 'Blast' token and deal damage against each model under it, using (Standard Die) (Blessing Die) (Blessing Die). Against heroes and minions, if the roll meets (or exceeds) their current toughness, they take a scratch. Surge: Add (Blessing Die) to the damage roll. Surge: Add (Blessing Die) to the damage roll. Deal a wound against an enemy within range 3 with a defense of 4 or less."
 		},
 		{
 			"type": "Spell",
@@ -3411,30 +3411,30 @@
 			"type": "Spell",
 			"initiative": "2",
 			"name": "Scorching Blast",
-			"cooldown": "5",
-			"id": "a265",
+			"cooldown": "4",
+			"id": "a267",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
-				"surge",
+				"doublesurge",
 				"surge"
 			],
-			"rules": "Scorching Blast Spell Spellcasting 3+  Use the 'Blast' token and deal damage against each model under it, using (Standard Die) (Blessing Die) (Blessing Die). Against heroes and minions, if the roll meets (or exceeds) their current toughness, they take a scratch. Surge: Add (Blessing Die) to the damage roll. Surge: Add (Blessing Die) to the damage roll. Deal a wound against an enemy within range 3 with a defense of 4 or less."
+			"rules": "Scorching Blast Spell Spellcasting 3+  Use the 'Blast' token and deal damage against each model under it, using (Power Die). Against heroes and minions, if the roll meets (or exceeds) their current toughness, they take a scratch. DoubleSurge: Add (Power Die) to the damage roll. DoubleSurge: Add (Blessing Die) to the damage roll. Deal a wound against an enemy within range 3 with a defense of 4 or less."
 		},
 		{
 			"type": "Spell",
 			"initiative": "2",
 			"name": "Shadow Clone",
 			"cooldown": "4",
-			"id": "a270",
+			"id": "a268",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Shadow Clone Spell Ongoing  Spellcasting 2+  Summon a Shadow Clone minion of yourself within range 5. It has a toughness of 2, dies with the second wound and has a speed of 4.  The Shadow Clone adds (Blessing Die) to its own attacks and defense.  You can perform actions from your Shadow Clone's position as if you were there yourself. Melee Attack an enemy within range 4."
+			"rules": "Shadow Clone Spell Ongoing  Spellcasting 2+  Summon a Shadow Clone minion of yourself within range 5. It has a toughness of 2, dies with the second wound and has a speed of 4.  You can perform actions from your Shadow Clone's position as if you were there yourself. Melee Attack an enemy within range 4."
 		},
 		{
 			"type": "Spell",
@@ -3455,28 +3455,29 @@
 			"initiative": "2",
 			"name": "Shadow Clone",
 			"cooldown": "4",
-			"id": "a268",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [
-				"ongoing"
-			],
-			"spends": [],
-			"rules": "Shadow Clone Spell Ongoing  Spellcasting 2+  Summon a Shadow Clone minion of yourself within range 5. It has a toughness of 2, dies with the second wound and has a speed of 4.  You can perform actions from your Shadow Clone's position as if you were there yourself. Melee Attack an enemy within range 4."
-		},
-		{
-			"type": "Defense",
-			"initiative": "5",
-			"name": "Shield Wall",
-			"cooldown": "3",
-			"id": "a66",
+			"id": "a270",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Shield Wall Defense Ongoing  Whenever you or an adjacent ally have to defend, you may grant (Power Die). Immediately reduce the duration of this effect by 1 if you do so. Move (2)  Cause 'Knockback (1)' against any one adjacent model."
+			"rules": "Shadow Clone Spell Ongoing  Spellcasting 2+  Summon a Shadow Clone minion of yourself within range 5. It has a toughness of 2, dies with the second wound and has a speed of 4.  The Shadow Clone adds (Blessing Die) to its own attacks and defense.  You can perform actions from your Shadow Clone's position as if you were there yourself. Melee Attack an enemy within range 4."
+		},
+		{
+			"type": "Defense",
+			"initiative": "2",
+			"name": "Shield Wall",
+			"cooldown": "3",
+			"id": "a64",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing",
+				"interrupt"
+			],
+			"spends": [],
+			"rules": "Shield Wall Defense Interrupt  If an adjacent ally has to defend, you can perform the defense roll for them (using your dice pool and spending options). They still remain the target of the attack.  Ongoing  Add (Blessing Die) to defense.  This bonus counts for you and all adjacent allies. Move (2)  Cause 'Knockback (1)' against any one adjacent model."
 		},
 		{
 			"type": "Defense",
@@ -3495,27 +3496,26 @@
 		},
 		{
 			"type": "Defense",
-			"initiative": "2",
+			"initiative": "5",
 			"name": "Shield Wall",
 			"cooldown": "3",
-			"id": "a64",
+			"id": "a66",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
-				"ongoing",
-				"interrupt"
+				"ongoing"
 			],
 			"spends": [],
-			"rules": "Shield Wall Defense Interrupt  If an adjacent ally has to defend, you can perform the defense roll for them (using your dice pool and spending options). They still remain the target of the attack.  Ongoing  Add (Blessing Die) to defense.  This bonus counts for you and all adjacent allies. Move (2)  Cause 'Knockback (1)' against any one adjacent model."
+			"rules": "Shield Wall Defense Ongoing  Whenever you or an adjacent ally have to defend, you may grant (Power Die). Immediately reduce the duration of this effect by 1 if you do so. Move (2)  Cause 'Knockback (1)' against any one adjacent model."
 		},
 		{
 			"type": "Meta",
 			"initiative": "6",
 			"name": "Spontaneous Magick",
-			"cooldown": "3",
-			"id": "a174",
+			"cooldown": "5",
+			"id": "a172",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"interrupt"
 			],
@@ -3540,10 +3540,10 @@
 			"type": "Meta",
 			"initiative": "6",
 			"name": "Spontaneous Magick",
-			"cooldown": "5",
-			"id": "a172",
+			"cooldown": "3",
+			"id": "a174",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"interrupt"
 			],
@@ -3552,18 +3552,18 @@
 		},
 		{
 			"type": "Ranged",
-			"initiative": "3",
+			"initiative": "2",
 			"name": "Steady Aim",
-			"cooldown": "2",
-			"id": "a201",
+			"cooldown": "3",
+			"id": "a199",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
 				"surge",
 				"surge"
 			],
-			"rules": "Steady Aim Ranged Ranged Attack, add (Enhancement Die).    For this attack, you don't need a line of sight to your target. Surge: +1 Power. Surge: Cause 'Bleed (2)'. Ranged Attack, add (Blessing Die)."
+			"rules": "Steady Aim Ranged Ranged Attack, add (Enhancement Die).    The range of this attack is doubled. Surge: +1 Power. Surge: Cause 'Bleed (2)'. Ranged Attack, add (Blessing Die)."
 		},
 		{
 			"type": "Ranged",
@@ -3582,32 +3582,32 @@
 		},
 		{
 			"type": "Ranged",
-			"initiative": "2",
+			"initiative": "3",
 			"name": "Steady Aim",
-			"cooldown": "3",
-			"id": "a199",
+			"cooldown": "2",
+			"id": "a201",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
 				"surge",
 				"surge"
 			],
-			"rules": "Steady Aim Ranged Ranged Attack, add (Enhancement Die).    The range of this attack is doubled. Surge: +1 Power. Surge: Cause 'Bleed (2)'. Ranged Attack, add (Blessing Die)."
+			"rules": "Steady Aim Ranged Ranged Attack, add (Enhancement Die).    For this attack, you don't need a line of sight to your target. Surge: +1 Power. Surge: Cause 'Bleed (2)'. Ranged Attack, add (Blessing Die)."
 		},
 		{
 			"type": "Meta",
 			"initiative": "6",
 			"name": "Stealth",
 			"cooldown": "2",
-			"id": "a177",
+			"id": "a175",
 			"category": "ability",
-			"variant": "Beta",
-			"effects": [],
-			"spends": [
-				"surge"
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
 			],
-			"rules": "Stealth Meta Ongoing  While active, enemies ignore you as a viable target and you gain 'Nimble'. Turn this effect face down when you attack or cast a spell, but add (Standard Die) (Power Die) to your first melee attack from out of stealth.  You may use the below spending option on that attack. Surge: +3 Power if there is an ally on the opposing tile of the target. Move (2) (gain 'Slippery' and 'Nimble')"
+			"spends": [],
+			"rules": "Stealth Meta Ongoing  While active, enemies ignore you as a viable target. Turn this effect face down when you attack or cast a spell, but add (Standard Die) (Power Die) to your first melee attack from out of stealth. Move (2) (gain 'Slippery' and 'Nimble')"
 		},
 		{
 			"type": "Meta",
@@ -3626,26 +3626,26 @@
 			"initiative": "6",
 			"name": "Stealth",
 			"cooldown": "2",
-			"id": "a175",
+			"id": "a177",
 			"category": "ability",
-			"variant": "Basic",
-			"effects": [
-				"ongoing"
+			"variant": "Beta",
+			"effects": [],
+			"spends": [
+				"surge"
 			],
-			"spends": [],
-			"rules": "Stealth Meta Ongoing  While active, enemies ignore you as a viable target. Turn this effect face down when you attack or cast a spell, but add (Standard Die) (Power Die) to your first melee attack from out of stealth. Move (2) (gain 'Slippery' and 'Nimble')"
+			"rules": "Stealth Meta Ongoing  While active, enemies ignore you as a viable target and you gain 'Nimble'. Turn this effect face down when you attack or cast a spell, but add (Standard Die) (Power Die) to your first melee attack from out of stealth.  You may use the below spending option on that attack. Surge: +3 Power if there is an ally on the opposing tile of the target. Move (2) (gain 'Slippery' and 'Nimble')"
 		},
 		{
 			"type": "Melee",
 			"initiative": "3",
 			"name": "Stomping Leap",
 			"cooldown": "4",
-			"id": "a93",
+			"id": "a91",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [],
-			"rules": "Stomping Leap Melee Assume a new position within range 3.  Then perform a melee attack against each enemy within reach, but add (Cursed Die) to them.    After these attacks, cause 'Knockback (2)' against each enemy hit. Move (2) (gain 'Nimble')  Attack"
+			"rules": "Stomping Leap Melee Assume a new position within range 3.  Then perform a melee attack against each enemy within reach, but add (Cursed Die) to them. Move (2) (gain 'Nimble')  Attack"
 		},
 		{
 			"type": "Melee",
@@ -3664,29 +3664,28 @@
 			"initiative": "3",
 			"name": "Stomping Leap",
 			"cooldown": "4",
-			"id": "a91",
+			"id": "a93",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [],
-			"rules": "Stomping Leap Melee Assume a new position within range 3.  Then perform a melee attack against each enemy within reach, but add (Cursed Die) to them. Move (2) (gain 'Nimble')  Attack"
+			"rules": "Stomping Leap Melee Assume a new position within range 3.  Then perform a melee attack against each enemy within reach, but add (Cursed Die) to them.    After these attacks, cause 'Knockback (2)' against each enemy hit. Move (2) (gain 'Nimble')  Attack"
 		},
 		{
 			"type": "Spell",
 			"initiative": "1",
 			"name": "Summon Mummy",
 			"cooldown": "4",
-			"id": "a273",
+			"id": "a271",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
-				"surge",
 				"surge"
 			],
-			"rules": "Summon Mummy Spell Ongoing  Spellcasting 2+  Summon a Mummy minion within range 2. It has a toughness of 4, dies with the second wound and has a speed of 2. Surge: Add (Blessing Die) to its attacks. Surge: Additionally remove a (Balsamic) 'Bandage' and the Mummy heals one scratch each turn (or wound if there are no scratches). Move (1), then draw four item cards. If one of them is a (Balsamic) 'Bandage', you may keep it."
+			"rules": "Summon Mummy Spell Ongoing  Spellcasting 2+  Summon a Mummy minion within range 2. It has a toughness of 4, dies with the second wound and has a speed of 2. Surge: Additionally remove a (Balsamic) 'Bandage' and add (Power Die) to the Mummy's attacks. Its attacks also cause 'Dazed'. Move (1), then draw four item cards. If one of them is a (Balsamic) 'Bandage', you may keep it."
 		},
 		{
 			"type": "Spell",
@@ -3710,28 +3709,29 @@
 			"initiative": "1",
 			"name": "Summon Mummy",
 			"cooldown": "4",
-			"id": "a271",
+			"id": "a273",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
+				"surge",
 				"surge"
 			],
-			"rules": "Summon Mummy Spell Ongoing  Spellcasting 2+  Summon a Mummy minion within range 2. It has a toughness of 4, dies with the second wound and has a speed of 2. Surge: Additionally remove a (Balsamic) 'Bandage' and add (Power Die) to the Mummy's attacks. Its attacks also cause 'Dazed'. Move (1), then draw four item cards. If one of them is a (Balsamic) 'Bandage', you may keep it."
+			"rules": "Summon Mummy Spell Ongoing  Spellcasting 2+  Summon a Mummy minion within range 2. It has a toughness of 4, dies with the second wound and has a speed of 2. Surge: Add (Blessing Die) to its attacks. Surge: Additionally remove a (Balsamic) 'Bandage' and the Mummy heals one scratch each turn (or wound if there are no scratches). Move (1), then draw four item cards. If one of them is a (Balsamic) 'Bandage', you may keep it."
 		},
 		{
 			"type": "Meta",
 			"initiative": "4",
 			"name": "Superior Order",
 			"cooldown": "1",
-			"id": "a180",
+			"id": "a178",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [],
-			"rules": "Superior Order Meta Grant the first allied minion who attacks this round (Power Die) (Blessing Die) on their attack.    Additionally, move all minions by up to 4 tiles each (and grant 'Slippery'). Heal all scratches or one wound from a minion within range 5."
+			"rules": "Superior Order Meta Grant the first allied minion who attacks this round (Power Die) (Blessing Die) on their attack. Heal all scratches or one wound from a minion within range 5."
 		},
 		{
 			"type": "Meta",
@@ -3750,27 +3750,26 @@
 			"initiative": "4",
 			"name": "Superior Order",
 			"cooldown": "1",
-			"id": "a178",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [],
-			"spends": [],
-			"rules": "Superior Order Meta Grant the first allied minion who attacks this round (Power Die) (Blessing Die) on their attack. Heal all scratches or one wound from a minion within range 5."
-		},
-		{
-			"type": "Spell",
-			"initiative": "5",
-			"name": "Swap Teleport",
-			"cooldown": "2",
-			"id": "a276",
+			"id": "a180",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [],
+			"spends": [],
+			"rules": "Superior Order Meta Grant the first allied minion who attacks this round (Power Die) (Blessing Die) on their attack.    Additionally, move all minions by up to 4 tiles each (and grant 'Slippery'). Heal all scratches or one wound from a minion within range 5."
+		},
+		{
+			"type": "Spell",
+			"initiative": "4",
+			"name": "Swap Teleport",
+			"cooldown": "3",
+			"id": "a274",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
 			"spends": [
-				"surge",
 				"surge"
 			],
-			"rules": "Swap Teleport Spell Spellcasting 2+  Swap the position of two models.  Both need to be within range 6 of you. Surge: Instead of swapping, you can bring one target to be adjacent to the other target. Surge: Increase the maximum range by 2 (then reassess which targets you want to affect). Assume a new position within range 3."
+			"rules": "Swap Teleport Spell Spellcasting 2+  Swap the position of two models.  Both need to be within range 6 of you. Surge: Increase the maximum range by 2 (then reassess which targets you want to affect). Assume a new position within range 3."
 		},
 		{
 			"type": "Spell",
@@ -3790,35 +3789,34 @@
 		},
 		{
 			"type": "Spell",
-			"initiative": "4",
+			"initiative": "5",
 			"name": "Swap Teleport",
-			"cooldown": "3",
-			"id": "a274",
+			"cooldown": "2",
+			"id": "a276",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
+				"surge",
 				"surge"
 			],
-			"rules": "Swap Teleport Spell Spellcasting 2+  Swap the position of two models.  Both need to be within range 6 of you. Surge: Increase the maximum range by 2 (then reassess which targets you want to affect). Assume a new position within range 3."
+			"rules": "Swap Teleport Spell Spellcasting 2+  Swap the position of two models.  Both need to be within range 6 of you. Surge: Instead of swapping, you can bring one target to be adjacent to the other target. Surge: Increase the maximum range by 2 (then reassess which targets you want to affect). Assume a new position within range 3."
 		},
 		{
 			"type": "Spell",
 			"initiative": "4",
 			"name": "Swarm Of Spiders",
-			"cooldown": "4",
-			"id": "a279",
+			"cooldown": "3",
+			"id": "a277",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
-				"surge",
-				"surge",
 				"surge"
 			],
-			"rules": "Swarm Of Spiders Spell Ongoing  Spellcasting 2+  Place a spider token within range 3.  Whenever you reduce this card's duration, move the token by exactly 2 tiles in a straight or diagonal line, then deal a wound to one adjacent enemy and cause 'Stun'. Surge: If the spider did not cause a wound, you may increase the duration of this effect by 1. Surge: You may alternatively move the token by exactly 3 tiles (decide each movement). Surge: Duration +1. Roll (Enhancement Die):  On (Surge): Deal a wound to an enemy within range 6."
+			"rules": "Swarm Of Spiders Spell Ongoing  Spellcasting 2+  Place a spider token within range 3.  Whenever you reduce this card's duration, move the token by exactly 2 tiles in a straight or diagonal line, then deal a wound to one adjacent enemy and cause 'Stun'. Surge: Duration +1. Roll (Enhancement Die):  On (Surge): Deal a wound to an enemy within range 6."
 		},
 		{
 			"type": "Spell",
@@ -3842,33 +3840,33 @@
 			"type": "Spell",
 			"initiative": "4",
 			"name": "Swarm Of Spiders",
-			"cooldown": "3",
-			"id": "a277",
+			"cooldown": "4",
+			"id": "a279",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
-				"surge"
-			],
-			"rules": "Swarm Of Spiders Spell Ongoing  Spellcasting 2+  Place a spider token within range 3.  Whenever you reduce this card's duration, move the token by exactly 2 tiles in a straight or diagonal line, then deal a wound to one adjacent enemy and cause 'Stun'. Surge: Duration +1. Roll (Enhancement Die):  On (Surge): Deal a wound to an enemy within range 6."
-		},
-		{
-			"type": "Melee",
-			"initiative": "2",
-			"name": "Tactical Strike",
-			"cooldown": "2",
-			"id": "a96",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [],
-			"spends": [
-				"star",
+				"surge",
 				"surge",
 				"surge"
 			],
-			"rules": "Tactical Strike Melee Melee Attack, add (Blessing Die).    Move (2) (gain 'Nimble' and 'Slippery'). Star: Deal a wound to any one enemy within reach. Star: +1 Power. Surge: +1 Power. Attack, add (Cursed Die).  Move (2) (gain 'Nimble' and 'Slippery')"
+			"rules": "Swarm Of Spiders Spell Ongoing  Spellcasting 2+  Place a spider token within range 3.  Whenever you reduce this card's duration, move the token by exactly 2 tiles in a straight or diagonal line, then deal a wound to one adjacent enemy and cause 'Stun'. Surge: If the spider did not cause a wound, you may increase the duration of this effect by 1. Surge: You may alternatively move the token by exactly 3 tiles (decide each movement). Surge: Duration +1. Roll (Enhancement Die):  On (Surge): Deal a wound to an enemy within range 6."
+		},
+		{
+			"type": "Melee",
+			"initiative": "4",
+			"name": "Tactical Strike",
+			"cooldown": "2",
+			"id": "a94",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"surge"
+			],
+			"rules": "Tactical Strike Melee Melee Attack, add (Blessing Die).    Move (2) (gain 'Nimble' and 'Slippery'). Surge: +1 Power. Attack  Move (1)"
 		},
 		{
 			"type": "Melee",
@@ -3888,31 +3886,33 @@
 		},
 		{
 			"type": "Melee",
-			"initiative": "4",
+			"initiative": "2",
 			"name": "Tactical Strike",
 			"cooldown": "2",
-			"id": "a94",
+			"id": "a96",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
+				"star",
+				"surge",
 				"surge"
 			],
-			"rules": "Tactical Strike Melee Melee Attack, add (Blessing Die).    Move (2) (gain 'Nimble' and 'Slippery'). Surge: +1 Power. Attack  Move (1)"
+			"rules": "Tactical Strike Melee Melee Attack, add (Blessing Die).    Move (2) (gain 'Nimble' and 'Slippery'). Star: Deal a wound to any one enemy within reach. Star: +1 Power. Surge: +1 Power. Attack, add (Cursed Die).  Move (2) (gain 'Nimble' and 'Slippery')"
 		},
 		{
 			"type": "Meta",
 			"initiative": "6",
 			"name": "Taunt",
-			"cooldown": "2",
-			"id": "a183",
+			"cooldown": "3",
+			"id": "a181",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Taunt Meta Ongoing  Declare two enemies. While the effect lasts, the targeted enemies will prioritize you as their target whenever possible. Cause 'Dazed' against an adjacent enemy."
+			"rules": "Taunt Meta Ongoing  Declare an enemy. While the effect lasts, the targeted enemy will prioritize you as their target whenever possible. Cause 'Dazed' against an adjacent enemy."
 		},
 		{
 			"type": "Meta",
@@ -3932,29 +3932,27 @@
 			"type": "Meta",
 			"initiative": "6",
 			"name": "Taunt",
-			"cooldown": "3",
-			"id": "a181",
+			"cooldown": "2",
+			"id": "a183",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Taunt Meta Ongoing  Declare an enemy. While the effect lasts, the targeted enemy will prioritize you as their target whenever possible. Cause 'Dazed' against an adjacent enemy."
+			"rules": "Taunt Meta Ongoing  Declare two enemies. While the effect lasts, the targeted enemies will prioritize you as their target whenever possible. Cause 'Dazed' against an adjacent enemy."
 		},
 		{
 			"type": "Spell",
 			"initiative": "1",
 			"name": "Telekinesis",
-			"cooldown": "2",
-			"id": "a282",
+			"cooldown": "3",
+			"id": "a280",
 			"category": "ability",
-			"variant": "Beta",
-			"effects": [
-				"interrupt"
-			],
+			"variant": "Basic",
+			"effects": [],
 			"spends": [],
-			"rules": "Telekinesis Spell Spellcasting 1+  Open any one door or pick up any one treasure.    Interrupt  Spellcasting 1+  Move any one model by 2. Move any one model by 2."
+			"rules": "Telekinesis Spell Spellcasting 1+  Open any one door or pick up any one treasure. Move any one model by 2."
 		},
 		{
 			"type": "Spell",
@@ -3975,29 +3973,31 @@
 			"type": "Spell",
 			"initiative": "1",
 			"name": "Telekinesis",
-			"cooldown": "3",
-			"id": "a280",
+			"cooldown": "2",
+			"id": "a282",
 			"category": "ability",
-			"variant": "Basic",
-			"effects": [],
+			"variant": "Beta",
+			"effects": [
+				"interrupt"
+			],
 			"spends": [],
-			"rules": "Telekinesis Spell Spellcasting 1+  Open any one door or pick up any one treasure. Move any one model by 2."
+			"rules": "Telekinesis Spell Spellcasting 1+  Open any one door or pick up any one treasure.    Interrupt  Spellcasting 1+  Move any one model by 2. Move any one model by 2."
 		},
 		{
 			"type": "Attack",
 			"initiative": "1",
 			"name": "The Last Straw",
 			"cooldown": "5",
-			"id": "a39",
+			"id": "a37",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
 				"star",
 				"doublesurge",
 				"surge"
 			],
-			"rules": "The Last Straw Attack Attack, add (Power Die) (Power Die).    After the attack, the used weapon suffers a fault. Star: Cooldown -4. Star: Deal a wound. DoubleSurge: +3 Power. Suffer one scratch. If you do:  Attack, add (Power Die)."
+			"rules": "The Last Straw Attack Attack, add (Power Die) (Power Die).    After the attack, the used weapon suffers a fault. Star: Deal a wound. Star: Deal a wound. DoubleSurge: +3 Power. Suffer one scratch. If you do:  Attack, add (Power Die)."
 		},
 		{
 			"type": "Attack",
@@ -4018,32 +4018,30 @@
 			"initiative": "1",
 			"name": "The Last Straw",
 			"cooldown": "5",
-			"id": "a37",
+			"id": "a39",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
 				"star",
 				"doublesurge",
 				"surge"
 			],
-			"rules": "The Last Straw Attack Attack, add (Power Die) (Power Die).    After the attack, the used weapon suffers a fault. Star: Deal a wound. Star: Deal a wound. DoubleSurge: +3 Power. Suffer one scratch. If you do:  Attack, add (Power Die)."
+			"rules": "The Last Straw Attack Attack, add (Power Die) (Power Die).    After the attack, the used weapon suffers a fault. Star: Cooldown -4. Star: Deal a wound. DoubleSurge: +3 Power. Suffer one scratch. If you do:  Attack, add (Power Die)."
 		},
 		{
 			"type": "Spell",
 			"initiative": "5",
 			"name": "Totem: Earth",
 			"cooldown": "5",
-			"id": "a285",
+			"id": "a283",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
-			"spends": [
-				"surge"
-			],
-			"rules": "Totem: Earth Spell Ongoing  Spellcasting 2+  Place an earth totem token within range 5.  You and allies within range 5 to it get +1 Power to their defense rolls. Surge: Prevents one death of a hero within the effect's range. Then the effect ends. Provide an ally with +1 Power on their defense rolls for the remainder of the round."
+			"spends": [],
+			"rules": "Totem: Earth Spell Ongoing  Spellcasting 2+  Place an earth totem token within range 5.  You and allies within range 5 to it get +1 Power to their defense rolls. Provide an ally with +1 Power on their defense rolls for the remainder of the round."
 		},
 		{
 			"type": "Spell",
@@ -4066,32 +4064,32 @@
 			"initiative": "5",
 			"name": "Totem: Earth",
 			"cooldown": "5",
-			"id": "a283",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [
-				"ongoing"
-			],
-			"spends": [],
-			"rules": "Totem: Earth Spell Ongoing  Spellcasting 2+  Place an earth totem token within range 5.  You and allies within range 5 to it get +1 Power to their defense rolls. Provide an ally with +1 Power on their defense rolls for the remainder of the round."
-		},
-		{
-			"type": "Spell",
-			"initiative": "3",
-			"name": "Totem: Fire",
-			"cooldown": "3",
-			"id": "a288",
+			"id": "a285",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
-				"surge",
-				"surge",
 				"surge"
 			],
-			"rules": "Totem: Fire Spell Ongoing  Spellcasting 2+  Place a fire totem token within range 5.  Whenever you reduce the totem's duration, damage all enemies within range 3 to it using (Standard Die) (Blessing Die). Surge: Duration +1. Surge: Add (Blessing Die) to the damage roll. Surge: Add (Blessing Die) to the damage roll. Deal damage to an enemy within range 3 using only (Standard Die) (Standard Die)."
+			"rules": "Totem: Earth Spell Ongoing  Spellcasting 2+  Place an earth totem token within range 5.  You and allies within range 5 to it get +1 Power to their defense rolls. Surge: Prevents one death of a hero within the effect's range. Then the effect ends. Provide an ally with +1 Power on their defense rolls for the remainder of the round."
+		},
+		{
+			"type": "Spell",
+			"initiative": "3",
+			"name": "Totem: Fire",
+			"cooldown": "3",
+			"id": "a286",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"surge"
+			],
+			"rules": "Totem: Fire Spell Ongoing  Spellcasting 2+  Place a fire totem token within range 5.  Whenever you reduce the totem's duration, damage all enemies within range 3 to it using (Standard Die) (Blessing Die). Surge: Add (Blessing Die) to the damage roll. Deal damage to an enemy within range 3 using only (Standard Die) (Standard Die)."
 		},
 		{
 			"type": "Spell",
@@ -4114,7 +4112,25 @@
 			"initiative": "3",
 			"name": "Totem: Fire",
 			"cooldown": "3",
-			"id": "a286",
+			"id": "a288",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"surge",
+				"surge",
+				"surge"
+			],
+			"rules": "Totem: Fire Spell Ongoing  Spellcasting 2+  Place a fire totem token within range 5.  Whenever you reduce the totem's duration, damage all enemies within range 3 to it using (Standard Die) (Blessing Die). Surge: Duration +1. Surge: Add (Blessing Die) to the damage roll. Surge: Add (Blessing Die) to the damage roll. Deal damage to an enemy within range 3 using only (Standard Die) (Standard Die)."
+		},
+		{
+			"type": "Spell",
+			"initiative": "1",
+			"name": "Totem: Lightning",
+			"cooldown": "3",
+			"id": "a289",
 			"category": "ability",
 			"variant": "Basic",
 			"effects": [
@@ -4123,25 +4139,7 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Totem: Fire Spell Ongoing  Spellcasting 2+  Place a fire totem token within range 5.  Whenever you reduce the totem's duration, damage all enemies within range 3 to it using (Standard Die) (Blessing Die). Surge: Add (Blessing Die) to the damage roll. Deal damage to an enemy within range 3 using only (Standard Die) (Standard Die)."
-		},
-		{
-			"type": "Spell",
-			"initiative": "1",
-			"name": "Totem: Lightning",
-			"cooldown": "3",
-			"id": "a291",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [
-				"ongoing"
-			],
-			"spends": [
-				"doublesurge",
-				"surge",
-				"surge"
-			],
-			"rules": "Totem: Lightning Spell Ongoing  Spellcasting 2+  Summon a Lightning Totem minion within range 5. It has a toughness of 1, dies with the second wound and is immobile. Its attacks have a range of 5. DoubleSurge: The totem can attack two different enemies per turn. DoubleSurge: Increase the totem's range by +2. Surge: Adds (Blessing Die) to its attacks. Deal damage to two enemies within range 5 using only (Blessing Die) (Blessing Die) (Blessing Die)."
+			"rules": "Totem: Lightning Spell Ongoing  Spellcasting 2+  Summon a Lightning Totem minion within range 5. It has a toughness of 1, dies with the second wound and is immobile. Its attacks have a range of 5. Surge: Adds (Blessing Die) to its attacks. Deal damage to two enemies within range 5 using only (Blessing Die) (Blessing Die) (Blessing Die)."
 		},
 		{
 			"type": "Spell",
@@ -4166,32 +4164,32 @@
 			"initiative": "1",
 			"name": "Totem: Lightning",
 			"cooldown": "3",
-			"id": "a289",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [
-				"ongoing"
-			],
-			"spends": [
-				"surge"
-			],
-			"rules": "Totem: Lightning Spell Ongoing  Spellcasting 2+  Summon a Lightning Totem minion within range 5. It has a toughness of 1, dies with the second wound and is immobile. Its attacks have a range of 5. Surge: Adds (Blessing Die) to its attacks. Deal damage to two enemies within range 5 using only (Blessing Die) (Blessing Die) (Blessing Die)."
-		},
-		{
-			"type": "Spell",
-			"initiative": "1",
-			"name": "Totem: Water",
-			"cooldown": "3",
-			"id": "a294",
+			"id": "a291",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
-				"star"
+				"doublesurge",
+				"surge",
+				"surge"
 			],
-			"rules": "Totem: Water Spell Ongoing  Spellcasting 3+  Place a water totem token within range 5.  Whenever you reduce the totem's duration, heal one scratch of a hero within range 5 to it. Star: Remove one scratch from every hero within range each time instead. Heal one scratch from an ally within range 3."
+			"rules": "Totem: Lightning Spell Ongoing  Spellcasting 2+  Summon a Lightning Totem minion within range 5. It has a toughness of 1, dies with the second wound and is immobile. Its attacks have a range of 5. DoubleSurge: The totem can attack two different enemies per turn. DoubleSurge: Increase the totem's range by +2. Surge: Adds (Blessing Die) to its attacks. Deal damage to two enemies within range 5 using only (Blessing Die) (Blessing Die) (Blessing Die)."
+		},
+		{
+			"type": "Spell",
+			"initiative": "1",
+			"name": "Totem: Water",
+			"cooldown": "3",
+			"id": "a292",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Totem: Water Spell Ongoing  Spellcasting 3+  Place a water totem token within range 5.  Whenever you reduce the totem's duration, heal one scratch of a hero within range 5 to it. Heal one scratch from an ally within range 3."
 		},
 		{
 			"type": "Spell",
@@ -4215,31 +4213,30 @@
 			"initiative": "1",
 			"name": "Totem: Water",
 			"cooldown": "3",
-			"id": "a292",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [
-				"ongoing"
-			],
-			"spends": [],
-			"rules": "Totem: Water Spell Ongoing  Spellcasting 3+  Place a water totem token within range 5.  Whenever you reduce the totem's duration, heal one scratch of a hero within range 5 to it. Heal one scratch from an ally within range 3."
-		},
-		{
-			"type": "Spell",
-			"initiative": "6",
-			"name": "Totem: Wind",
-			"cooldown": "2",
-			"id": "a297",
+			"id": "a294",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
-				"surge",
-				"surge"
+				"star"
 			],
-			"rules": "Totem: Wind Spell Ongoing  Spellcasting 2+  Place a wind totem token within range 5.  All models within range 5 to it that move closer to it need to spend 2 movement per tile, and models that move away move 2 tiles per movement spent. Surge: +1 Power to your spellcasting roll. Surge: Duration +1. Move any one model by 2."
+			"rules": "Totem: Water Spell Ongoing  Spellcasting 3+  Place a water totem token within range 5.  Whenever you reduce the totem's duration, heal one scratch of a hero within range 5 to it. Star: Remove one scratch from every hero within range each time instead. Heal one scratch from an ally within range 3."
+		},
+		{
+			"type": "Spell",
+			"initiative": "6",
+			"name": "Totem: Wind",
+			"cooldown": "2",
+			"id": "a295",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Totem: Wind Spell Ongoing  Spellcasting 2+  Place a wind totem token within range 5.  All models within range 5 to it that move closer to it need to spend 2 movement per tile, and models that move away move 2 tiles per movement spent. Move any one model by 2."
 		},
 		{
 			"type": "Spell",
@@ -4260,28 +4257,31 @@
 			"initiative": "6",
 			"name": "Totem: Wind",
 			"cooldown": "2",
-			"id": "a295",
+			"id": "a297",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
-			"spends": [],
-			"rules": "Totem: Wind Spell Ongoing  Spellcasting 2+  Place a wind totem token within range 5.  All models within range 5 to it that move closer to it need to spend 2 movement per tile, and models that move away move 2 tiles per movement spent. Move any one model by 2."
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Totem: Wind Spell Ongoing  Spellcasting 2+  Place a wind totem token within range 5.  All models within range 5 to it that move closer to it need to spend 2 movement per tile, and models that move away move 2 tiles per movement spent. Surge: +1 Power to your spellcasting roll. Surge: Duration +1. Move any one model by 2."
 		},
 		{
 			"type": "Meta",
 			"initiative": "4",
 			"name": "Trap",
 			"cooldown": "2",
-			"id": "a186",
+			"id": "a184",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Trap Meta Ongoing  Place two trap tokens within range 2. If an enemy moves onto one, it gets removed.  Then roll (Power Die) (Power Die) (Power Die) (minus one die for each remaining round of duration) and deal that as damage.  Add Power to the damage equal to the current chapter tier. The first enemy that ends their movement adjacent to you this round suffers a wound."
+			"rules": "Trap Meta Ongoing  Place a trap token within range 2. If an enemy moves onto it, it gets removed.  Then roll (Power Die) (Power Die) (Power Die) (minus one die for each remaining round of duration) and deal that as damage.  Add Power to the damage equal to the current chapter tier. The first enemy that ends their movement adjacent to you this round suffers a wound."
 		},
 		{
 			"type": "Meta",
@@ -4302,26 +4302,28 @@
 			"initiative": "4",
 			"name": "Trap",
 			"cooldown": "2",
-			"id": "a184",
+			"id": "a186",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Trap Meta Ongoing  Place two trap tokens within range 2. If an enemy moves onto one, it gets removed.  Then roll (Power Die) (Power Die) (Power Die) (minus one die for each remaining round of duration) and deal that as damage.  Add Power to the damage equal to the current chapter tier. The first enemy that ends their movement adjacent to you this round suffers a wound."
+		},
+		{
+			"type": "Meta",
+			"initiative": "2",
+			"name": "Treat Wound",
+			"cooldown": "4",
+			"id": "a187",
 			"category": "ability",
 			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Trap Meta Ongoing  Place a trap token within range 2. If an enemy moves onto it, it gets removed.  Then roll (Power Die) (Power Die) (Power Die) (minus one die for each remaining round of duration) and deal that as damage.  Add Power to the damage equal to the current chapter tier. The first enemy that ends their movement adjacent to you this round suffers a wound."
-		},
-		{
-			"type": "Meta",
-			"initiative": "4",
-			"name": "Treat Wound",
-			"cooldown": "3",
-			"id": "a189",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [],
-			"spends": [],
-			"rules": "Treat Wound Meta An adjacent ally gets one wound healed (but keeps scratches). Move (2)"
+			"rules": "Treat Wound Meta Ongoing  Declare an adjacent ally when playing this card.  While the effect lasts, they ignore (Cursed Die) from wounds.  Once the effect ends, that ally gets one wound healed (but keeps scratches). Move (2)"
 		},
 		{
 			"type": "Meta",
@@ -4339,33 +4341,30 @@
 		},
 		{
 			"type": "Meta",
-			"initiative": "2",
+			"initiative": "4",
 			"name": "Treat Wound",
-			"cooldown": "4",
-			"id": "a187",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [
-				"ongoing"
-			],
-			"spends": [],
-			"rules": "Treat Wound Meta Ongoing  Declare an adjacent ally when playing this card.  While the effect lasts, they ignore (Cursed Die) from wounds.  Once the effect ends, that ally gets one wound healed (but keeps scratches). Move (2)"
-		},
-		{
-			"type": "Attack",
-			"initiative": "3",
-			"name": "Wagering Strike",
-			"cooldown": "2",
-			"id": "a42",
+			"cooldown": "3",
+			"id": "a189",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [],
+			"spends": [],
+			"rules": "Treat Wound Meta An adjacent ally gets one wound healed (but keeps scratches). Move (2)"
+		},
+		{
+			"type": "Attack",
+			"initiative": "2",
+			"name": "Wagering Strike",
+			"cooldown": "2",
+			"id": "a40",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
 			"spends": [
 				"star",
-				"surge",
 				"surge"
 			],
-			"rules": "Wagering Strike Attack Attack, add (Standard Die) (Standard Die). Star: +4 Power. Star: Ignore one botched result from this roll. Surge: Cooldown -1. Attack, add (Standard Die)."
+			"rules": "Wagering Strike Attack Attack, add (Standard Die) (Standard Die). Star: +4 Power. Star: Cooldown -1. Attack, add (Standard Die)."
 		},
 		{
 			"type": "Attack",
@@ -4385,36 +4384,36 @@
 		},
 		{
 			"type": "Attack",
-			"initiative": "2",
+			"initiative": "3",
 			"name": "Wagering Strike",
 			"cooldown": "2",
-			"id": "a40",
+			"id": "a42",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
 				"star",
+				"surge",
 				"surge"
 			],
-			"rules": "Wagering Strike Attack Attack, add (Standard Die) (Standard Die). Star: +4 Power. Star: Cooldown -1. Attack, add (Standard Die)."
+			"rules": "Wagering Strike Attack Attack, add (Standard Die) (Standard Die). Star: +4 Power. Star: Ignore one botched result from this roll. Surge: Cooldown -1. Attack, add (Standard Die)."
 		},
 		{
 			"type": "Spell",
 			"initiative": "1",
 			"name": "Wall Of Stone",
-			"cooldown": "4",
-			"id": "a300",
+			"cooldown": "3",
+			"id": "a298",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
 				"star",
-				"doublesurge",
 				"surge"
 			],
-			"rules": "Wall Of Stone Spell Ongoing  Spellcasting 3+  Place a (1x3 tiles) wall token within range 4.  It may overlap with walls, but you cannot place it where there's already a model. Star: Duration +1. Star: You may end the wall at any time. DoubleSurge: Range +2. Cause 'Cripple' against an enemy within range 4."
+			"rules": "Wall Of Stone Spell Ongoing  Spellcasting 3+  Place a (1x3 tiles) wall token within range 4.  It may overlap with walls, but you cannot place it where there's already a model. Star: Duration +1. Star: Range +2. Cause 'Cripple' against an enemy within range 4."
 		},
 		{
 			"type": "Spell",
@@ -4437,34 +4436,35 @@
 			"type": "Spell",
 			"initiative": "1",
 			"name": "Wall Of Stone",
-			"cooldown": "3",
-			"id": "a298",
+			"cooldown": "4",
+			"id": "a300",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
 				"star",
+				"doublesurge",
 				"surge"
 			],
-			"rules": "Wall Of Stone Spell Ongoing  Spellcasting 3+  Place a (1x3 tiles) wall token within range 4.  It may overlap with walls, but you cannot place it where there's already a model. Star: Duration +1. Star: Range +2. Cause 'Cripple' against an enemy within range 4."
+			"rules": "Wall Of Stone Spell Ongoing  Spellcasting 3+  Place a (1x3 tiles) wall token within range 4.  It may overlap with walls, but you cannot place it where there's already a model. Star: Duration +1. Star: You may end the wall at any time. DoubleSurge: Range +2. Cause 'Cripple' against an enemy within range 4."
 		},
 		{
 			"type": "Spell",
 			"initiative": "4",
 			"name": "Water Rush",
-			"cooldown": "2",
-			"id": "a303",
+			"cooldown": "1",
+			"id": "a301",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
 			"spends": [
-				"star",
+				"surge",
 				"surge",
 				"surge"
 			],
-			"rules": "Water Rush Spell Spellcasting 1+  Immediately move by 6 tiles in a straight or diagonal line. Star: Heal one wound if you moved for at least 6 tiles. Star: Heal one scratch from yourself for each 2 tiles moved. Surge: +2 movement. Move (2)"
+			"rules": "Water Rush Spell Spellcasting 1+  Immediately move by 4 tiles in a straight or diagonal line. Surge: Heal one scratch from yourself for each 2 tiles moved. Surge: Gain 'Slippery'. Surge: +2 movement. Move (2)"
 		},
 		{
 			"type": "Spell",
@@ -4486,31 +4486,31 @@
 			"type": "Spell",
 			"initiative": "4",
 			"name": "Water Rush",
-			"cooldown": "1",
-			"id": "a301",
+			"cooldown": "2",
+			"id": "a303",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
 			"spends": [
-				"surge",
+				"star",
 				"surge",
 				"surge"
 			],
-			"rules": "Water Rush Spell Spellcasting 1+  Immediately move by 4 tiles in a straight or diagonal line. Surge: Heal one scratch from yourself for each 2 tiles moved. Surge: Gain 'Slippery'. Surge: +2 movement. Move (2)"
+			"rules": "Water Rush Spell Spellcasting 1+  Immediately move by 6 tiles in a straight or diagonal line. Star: Heal one wound if you moved for at least 6 tiles. Star: Heal one scratch from yourself for each 2 tiles moved. Surge: +2 movement. Move (2)"
 		},
 		{
 			"type": "Attack",
 			"initiative": "3",
 			"name": "Weapon Drill",
-			"cooldown": "5",
-			"id": "a45",
+			"cooldown": "3",
+			"id": "a43",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Weapon Drill Attack Ongoing  Once during each round (including the round that you play this), choose one of the following effects:  • Move an adjacent enemy by 2.  • Reduce the one of your cooldowns by 1.  • Add (Blessing Die) to a defense roll. Attack, add (Blessing Die).  Move (2)"
+			"rules": "Weapon Drill Attack Ongoing  Once during each turn (including the turn that you play this), choose one of the following effects:  • Move (2).  • Attack, add (Cursed Die).  • Spend (Star) on an attack to remove a fault from your weapon. Attack, add (Blessing Die).  Move (2)"
 		},
 		{
 			"type": "Attack",
@@ -4530,31 +4530,32 @@
 			"type": "Attack",
 			"initiative": "3",
 			"name": "Weapon Drill",
-			"cooldown": "3",
-			"id": "a43",
+			"cooldown": "5",
+			"id": "a45",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Weapon Drill Attack Ongoing  Once during each turn (including the turn that you play this), choose one of the following effects:  • Move (2).  • Attack, add (Cursed Die).  • Spend (Star) on an attack to remove a fault from your weapon. Attack, add (Blessing Die).  Move (2)"
+			"rules": "Weapon Drill Attack Ongoing  Once during each round (including the round that you play this), choose one of the following effects:  • Move an adjacent enemy by 2.  • Reduce the one of your cooldowns by 1.  • Add (Blessing Die) to a defense roll. Attack, add (Blessing Die).  Move (2)"
 		},
 		{
 			"type": "Spell",
 			"initiative": "5",
 			"name": "Weapon Enchantment",
 			"cooldown": "3",
-			"id": "a306",
+			"id": "a304",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
-				"surge"
+				"star",
+				"doublesurge"
 			],
-			"rules": "Weapon Enchantment Spell Ongoing  Spellcasting 2+  Declare one of your weapons or an ally's. It adds (Power Die) to attacks.    It also gains the below spending option for each attack. Surge: Cause 'Knockback (4)'. Add (Enhancement Die) (Blessing Die) to your next attack this round."
+			"rules": "Weapon Enchantment Spell Ongoing  Spellcasting 1+  Declare one of your weapons or an ally's. It adds (Enhancement Die) to attacks.    It also gains the below spending options for each attack. Star: Cause 'Bleed (2)'. Star: Cause 'Bleed (2)'. Add (Enhancement Die) (Blessing Die) to your next attack this round."
 		},
 		{
 			"type": "Spell",
@@ -4578,31 +4579,30 @@
 			"initiative": "5",
 			"name": "Weapon Enchantment",
 			"cooldown": "3",
-			"id": "a304",
+			"id": "a306",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"ongoing"
 			],
 			"spends": [
-				"star",
-				"doublesurge"
+				"surge"
 			],
-			"rules": "Weapon Enchantment Spell Ongoing  Spellcasting 1+  Declare one of your weapons or an ally's. It adds (Enhancement Die) to attacks.    It also gains the below spending options for each attack. Star: Cause 'Bleed (2)'. Star: Cause 'Bleed (2)'. Add (Enhancement Die) (Blessing Die) to your next attack this round."
+			"rules": "Weapon Enchantment Spell Ongoing  Spellcasting 2+  Declare one of your weapons or an ally's. It adds (Power Die) to attacks.    It also gains the below spending option for each attack. Surge: Cause 'Knockback (4)'. Add (Enhancement Die) (Blessing Die) to your next attack this round."
 		},
 		{
 			"type": "Spell",
-			"initiative": "1",
+			"initiative": "3",
 			"name": "Well Of Power",
-			"cooldown": "4",
-			"id": "a309",
+			"cooldown": "2",
+			"id": "a307",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Well Of Power Spell Interrupt  Spellcasting 1+  Grant an ally or yourself +2 Power or (Star) to a spellcasting roll. Play the minor action of a spell from your hand, but don't get an additional cooldown reduction from it."
+			"rules": "Well Of Power Spell Interrupt  Spellcasting 1+  Grant an ally or yourself +1 Power to a spellcasting roll. Grant +1 Power to the next spellcasting roll this round."
 		},
 		{
 			"type": "Spell",
@@ -4620,29 +4620,32 @@
 		},
 		{
 			"type": "Spell",
-			"initiative": "3",
+			"initiative": "1",
 			"name": "Well Of Power",
-			"cooldown": "2",
-			"id": "a307",
+			"cooldown": "4",
+			"id": "a309",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Well Of Power Spell Interrupt  Spellcasting 1+  Grant an ally or yourself +1 Power to a spellcasting roll. Grant +1 Power to the next spellcasting roll this round."
+			"rules": "Well Of Power Spell Interrupt  Spellcasting 1+  Grant an ally or yourself +2 Power or (Star) to a spellcasting roll. Play the minor action of a spell from your hand, but don't get an additional cooldown reduction from it."
 		},
 		{
 			"type": "Attack",
 			"initiative": "5",
 			"name": "Whirlwind",
-			"cooldown": "4",
-			"id": "a48",
+			"cooldown": "5",
+			"id": "a46",
 			"category": "ability",
-			"variant": "Beta",
+			"variant": "Basic",
 			"effects": [],
-			"spends": [],
-			"rules": "Whirlwind Attack Attack once with each equipped weapon.    You can repeat this process up to two more times, but first you suffer 'Weaken (2)', then 'Stun (2)'. Move (1)  Attack, add (Cursed Die) (Cursed Die).  Attack, add (Cursed Die) (Cursed Die)."
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Whirlwind Attack Attack, add (Enhancement Die).  Then attack with your other equipped weapon.    You may use the spending options on either attack, but not on both. Surge: Cooldown -1. Surge: Hit a second enemy within range. Move (1)  Attack, add (Cursed Die) (Cursed Die).  Attack, add (Cursed Die) (Cursed Die)."
 		},
 		{
 			"type": "Attack",
@@ -4663,16 +4666,13 @@
 			"type": "Attack",
 			"initiative": "5",
 			"name": "Whirlwind",
-			"cooldown": "5",
-			"id": "a46",
+			"cooldown": "4",
+			"id": "a48",
 			"category": "ability",
-			"variant": "Basic",
+			"variant": "Beta",
 			"effects": [],
-			"spends": [
-				"surge",
-				"surge"
-			],
-			"rules": "Whirlwind Attack Attack, add (Enhancement Die).  Then attack with your other equipped weapon.    You may use the spending options on either attack, but not on both. Surge: Cooldown -1. Surge: Hit a second enemy within range. Move (1)  Attack, add (Cursed Die) (Cursed Die).  Attack, add (Cursed Die) (Cursed Die)."
+			"spends": [],
+			"rules": "Whirlwind Attack Attack once with each equipped weapon.    You can repeat this process up to two more times, but first you suffer 'Weaken (2)', then 'Stun (2)'. Move (1)  Attack, add (Cursed Die) (Cursed Die).  Attack, add (Cursed Die) (Cursed Die)."
 		}
 	],
 	"items": [
