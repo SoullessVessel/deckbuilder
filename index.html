@@ -450,28 +450,33 @@
 			#modal_confirmclear,
 			#modal_confirmdelete,
 			#modal_deckname,
-			#modal_confirmoverwrite{
+			#modal_confirmoverwrite,
+			#modal_classselect{
 				text-align:center;
 			}
 
 			#modal_confirmclear h1,
 			#modal_confirmdelete h1,
 			#modal_deckname h1,
-			#modal_confirmoverwrite h1{
+			#modal_confirmoverwrite h1,
+			#modal_classselect h1{
 				
 			}
 
 			#modal_confirmclear p,
 			#modal_confirmdelete p,
 			#modal_deckname p,
-			#modal_confirmoverwrite p{
+			#modal_confirmoverwrite p,
+			#modal_classselect p{
 				font-size:120%;
 			}
 			
 			#modal_confirmclear input,
 			#modal_confirmdelete input,
 			#modal_deckname input,
-			#modal_confirmoverwrite input{
+			#modal_confirmoverwrite input,
+			#modal_classselect select{
+				appearance:none;
 				display:block;
 				background-color:rgba(8,8,8,0.7);
 				height:2.0em;
@@ -489,8 +494,21 @@
 			#modal_confirmclear .button,
 			#modal_confirmdelete .button,
 			#modal_deckname .button,
-			#modal_confirmoverwrite .button{
+			#modal_confirmoverwrite .button,
+			#modal_classselect .button{
 				display:inline-block;
+			}
+			
+			.class-wrapper{
+				position:relative;
+			}
+			.class-wrapper::after{
+				content: "▼";
+				font-size: 1.0em;
+				top: 1.0em;
+				right: 2.0em;
+				position: absolute;
+				pointer-events:none;
 			}
 		
 		</style>	
@@ -925,6 +943,15 @@
 				}
 				if( localStorage.getItem( "activeDeck" ) ){
 					document.getElementById( "name" ).value = localStorage.getItem( "activeDeck" );
+				}
+				
+				// Populate the list of starter classes
+				var classSelect = document.getElementById( "classSelect" );
+				for( var i = 0; i < data.starterClasses.length; i++ ){
+					var opt = document.createElement( "option" );
+						opt.value = i;
+						opt.innerHTML = data.starterClasses[i].name;
+					classSelect.appendChild( opt );
 				}
 				
 				// Add loading functionality to the deck list
@@ -2053,9 +2080,46 @@
 				// Close the modal if needed
 				modal_hide("modal_confirmclear");
 				
+				// Present the option to pick a starting class
+				tryClassSelect();
+				
+			}
+			
+			function tryClassSelect(){
+				modal_show("modal_classselect");
+			}
+			
+			function confirmClassSelect(){
+				
+				// Set the starting cards for the deck
+				var classPicker = document.getElementById( "classSelect" );
+				var classKey = classPicker.value;
+				
+				if( classKey != "none" ){
+				
+					var classData = data.starterClasses[ parseInt( classKey ) ];
+					var catalogue = document.querySelectorAll( "div[page=abilities] .card" );
+					for( var i = 0; i < classData.abilities.length; i++ ){
+						activeDeck.abilities.push( {id:classData.abilities[i]} );
+						activeDeck.allCards.push( classData.abilities[i] );
+						for( var c = 0; c < catalogue.length; c++ ){
+							if( catalogue[c].getAttribute( "cid" ) == classData.abilities[i] ){
+								catalogue[c].setAttribute( "indeck", "" );
+								break;
+							}
+						}
+					}
+				
+				}
+				
+				presentDeck( activeDeck );
+				
+				// Close the class select dialog
+				modal_hide("modal_classselect");
+				
 				// Present the opportunity to name the new deck
 				trySaveAs();
-				
+
 			}
 			
 			function resetDeck(){
@@ -2307,7 +2371,18 @@
 				<h1>Set Build Name</h1>
 				<input type="text" id="nameInput" />
 				<div class="button" closeModal="modal_deckname"><span>Cancel</span></div>
-				<div class="button" onclick="confirmSaveAs(false);"><span>Create</span></div>
+				<div class="button" onclick="confirmSaveAs(false);"><span>Save</span></div>
+			</div>
+
+			<div class="modal" id="modal_classselect">
+				<h1>Select Starter Class</h1>
+				<div class="class-wrapper">
+					<select id="classSelect">
+						<option value="none">None</option>
+					</select>
+				</div>
+				<div class="button" closeModal="modal_classselect"><span>Cancel</span></div>
+				<div class="button" onclick="confirmClassSelect();"><span>Select</span></div>
 			</div>
 		
 		</div>
