@@ -9,7 +9,9 @@ var files = [
 	{ key:"abilities", name:"Deckbuilder - Data - Abilities.csv", done:false },
 	{ key:"basicItems", name:"Deckbuilder - Data - Basic Items.csv", done:false },
 	{ key:"legendaryItems", name:"Deckbuilder - Data - Legendary Items.csv", done:false },
-	{ key:"soulShopItems", name:"Deckbuilder - Data - Soul Shop Items.csv", done:false }
+	{ key:"soulShopItems", name:"Deckbuilder - Data - Soul Shop Items.csv", done:false },
+	{ key:"vessels", name:"Deckbuilder - Data - Vessel.csv", done:false },
+	{ key:"starterDecks", name:"Deckbuilder - Data - Starter Decks.csv", done:false }
 ];
 	
 // Load and parse each CSV into JSON data
@@ -39,7 +41,7 @@ function load(){
 
 }
 
-data = {abilities:[],items:[],types:{}}
+data = {abilities:[],items:[],types:{},starterClasses:[],vessels:[]}
 function build(){
 
 	console.log( "\r\nBuilding data..." );
@@ -49,6 +51,9 @@ function build(){
 		
 		var raw = rawData.abilities[i];
 		var entry = {};
+		
+		if( raw.publish != "x" )
+			continue;
 		
 		entry.type = raw.type_01;
 		entry.initiative = raw.initiative;
@@ -115,6 +120,9 @@ function build(){
 		
 		var raw = combinedItems[i];
 		var entry = {};
+		
+		if( raw.publish != "x" )
+			continue;
 		
 		entry.name = raw.name;
 		entry.abundance = raw.abundance;
@@ -189,6 +197,65 @@ function build(){
 		
 	}
 	
+	// Clean and reformat starter deck data
+	var classMap = {};
+	for( var i = 0; i < rawData.starterDecks.length; i++ ){
+		var raw = rawData.starterDecks[i];
+		
+		if( !classMap[ raw[ "starter-deck" ] ] )
+			classMap[ raw[ "starter-deck" ] ] = [];
+		
+		classMap[ raw[ "starter-deck" ] ].push( raw[ "card-id" ] );
+	}
+	for( var [key, value] of Object.entries( classMap ) ) {
+		data.starterClasses.push( { name:key, abilities:value } );
+	}
+	
+	// Clean and refromat vessel data
+	for( var i = 0; i < rawData.vessels.length; i++ ){
+
+		var raw = rawData.vessels[i];
+		var entry = {};
+
+		if( raw.publish != "x" )
+			continue;
+		
+		entry.name = raw.name;
+		entry.speed = raw.speed;
+		entry.category = "vessel";
+		
+		entry.wounds = [ parseInt( raw.wt1), parseInt( raw.wt2 ), parseInt( raw.wt3 ) ];
+		entry.scratches = parseInt( raw.wt1 ) + parseInt( raw.wt2 ) + parseInt( raw.wt3 );
+
+		entry.id = raw[ "@portrait" ].replace( "/images/", "" ).replace( ".png", "" );
+		
+		entry.rules = raw.name + " " + raw.surgeSpend;
+		entry.rules += " " + raw.defaultPerkTitle + " " + raw.defaultPerk;
+		entry.rules += " " + raw.perk1ATitle + " " + raw.perk1A;
+		entry.rules += " " + raw.perk1BTitle + " " + raw.perk1B;
+		entry.rules += " " + raw.perk2ATitle + " " + raw.perk2A;
+		entry.rules += " " + raw.perk2BTitle + " " + raw.perk2B;
+		entry.rules = cleanRulesText( entry.rules );
+		
+		switch( raw[ "@background-image" ] ){
+			case "/images/common-bg.png":
+				entry.rarity = "common";
+				break;
+			case "/images/legendary-bg.png":
+				entry.rarity = "legendary";
+				break;
+			case "/images/rare-bg.png":
+				entry.rarity = "rare";
+				break;
+			case "/images/mythical-bg.png":
+				entry.rarity = "mythical";
+				break;
+		}
+		
+		data.vessels.push( entry );
+		
+	}
+	
 	// Sort the entries alphabetically by name
 	data.abilities.sort( function( a,b ){
 
@@ -224,6 +291,20 @@ function build(){
 	} );
 	
 	data.items.sort( function( a,b ){
+		
+		if( a.name > b.name ) return 1;
+		else return -1;
+		
+	} );
+	
+	data.starterClasses.sort( function( a,b ){
+		
+		if( a.name > b.name ) return 1;
+		else return -1;
+		
+	} );
+	
+	data.vessels.sort( function( a,b ){
 		
 		if( a.name > b.name ) return 1;
 		else return -1;

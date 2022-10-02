@@ -1,0 +1,91 @@
+starter-deck,card-name,card-id
+Bulwark,Challenge,a1
+Bulwark,Taunt,a181
+Bulwark,Block,a52
+Bulwark,Shield Wall,a64
+Bulwark,Concussion,a7
+Bulwark,Bind,a49
+Mountain,Challenge,a1
+Mountain,Puncture,a31
+Mountain,Catch Breath,a112
+Mountain,Ignore Pain,a139
+Mountain,Tactical Strike,a94
+Mountain,Intimidating Assault,a28
+Vanguard,Challenge,a1
+Vanguard,Weapon Drill,a43
+Vanguard,Iron Defense,a58
+Vanguard,Lethal Blow,a82
+Vanguard,Forceful Attack,a25
+Vanguard,Displacing Blow,a10
+Fury,Forceful Attack,a25
+Fury,Charge Attack,a73
+Fury,Double Trouble,a13
+Fury,Whirlwind,a46
+Fury,Dual Strike,a79
+Fury,Growing Rage,a130
+Barbarian,Forceful Attack,a25
+Barbarian,Charge Attack,a73
+Barbarian,Lethal Blow,a82
+Barbarian,Dispersion,a4
+Barbarian,Lunging Slash,a85
+Barbarian,Stomping Leap,a91
+Martial Artist,Barrage,a22
+Martial Artist,Charge Attack,a73
+Martial Artist,Brawler,a106
+Martial Artist,Whirlwind,a46
+Martial Artist,Flash of Strikes,a19
+Martial Artist,Displacing Blow,a10
+Marksman,Barrage,a22
+Marksman,Quickshot,a196
+Marksman,Steady Aim,a199
+Marksman,Crippling Shot,a190
+Marksman,Center,a115
+Marksman,Dispersion,a4
+Assassin,Assassin's Strike,a67
+Assassin,Wagering Strike,a40
+Assassin,Double Trouble,a13
+Assassin,Stealth,a175
+Assassin,Lightning Reflexes,a157
+Assassin,Backstab,a70
+Duelist,Barrage,a22
+Duelist,Combo,a310
+Duelist,Riposte,a61
+Duelist,Heroic Opportunity,a136
+Duelist,Dodge,a55
+Duelist,Open Thrust,a88
+Necromancer,Intensified Channeling,a151
+Necromancer,Black Magic,a100
+Necromancer,Necromancy,a256
+Necromancer,Leech Life,a247
+Necromancer,Corpse Explosion,a220
+Necromancer,Blood Sorcery,a208
+Citadel Warlock,Shadow Clone,a268
+Citadel Warlock,Beam Of Destruction,a202
+Citadel Warlock,Water Rush,a301
+Citadel Warlock,Curse Of The Citadel,a223
+Citadel Warlock,Weapon Enchantment,a304
+Citadel Warlock,Combat Mage's Strike,a76
+Arcanist,Intensified Channeling,a151
+Arcanist,Beam Of Destruction,a202
+Arcanist,Earthen Armor,a229
+Arcanist,Mind Control,a250
+Arcanist,Gust,a238
+Arcanist,Telekinesis,a280
+Leader,First Aid,a124
+Leader,Cautious Advance,a34
+Leader,Group Tactics,a127
+Leader,Leadership,a154
+Leader,Inspire,a148
+Leader,Saving Warning,a166
+Chirurgeon,First Aid,a124
+Chirurgeon,Cautious Advance,a34
+Chirurgeon,Treat Wound,a187
+Chirurgeon,Ray Of Healing,a259
+Chirurgeon,Crippling Shot,a190
+Chirurgeon,Exploit,a16
+Tinkerer,First Aid,a124
+Tinkerer,Cautious Advance,a34
+Tinkerer,Improvise,a145
+Tinkerer,Scavenge & Craft,a169
+Tinkerer,Bouncing Bomb,a103
+Tinkerer,Telekinesis,a280
