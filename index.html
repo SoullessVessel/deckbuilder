@@ -1745,30 +1745,30 @@
 
 				for( var i = 0; i < activeDeck.hands.length; i++ ){
 					var cardData = cardLookup[ activeDeck.hands[i].id ];
-					if( cardData.tier <= 3 && ( 
-						( rune.types.includes( "weapon" ) && cardData.types.includes( "weapon" ) ) || 
+					if(
+						( rune.types.includes( "weapon" ) && cardData.types.includes( "weapon" ) && cardData.tier <= 3 ) || 
 						( rune.types.includes( "armor" )  && cardData.types.includes( "armor"  ) ) 
-					) ){
+					){
 						list.appendChild( createCard( cardData, null, {rune:rune.id,group:"hands",index:i} ) );
 						count++;
 					}
 				}
 				for( var i = 0; i < activeDeck.armor.length; i++ ){
 					var cardData = cardLookup[ activeDeck.armor[i].id ];
-					if( cardData.tier <= 3 && ( 
-						( rune.types.includes( "weapon" ) && cardData.types.includes( "weapon" ) ) || 
+					if(
+						( rune.types.includes( "weapon" ) && cardData.types.includes( "weapon" ) && cardData.tier <= 3 ) || 
 						( rune.types.includes( "armor" )  && cardData.types.includes( "armor"  ) ) 
-					) ){
+					){
 						list.appendChild( createCard( cardData, null, {rune:rune.id,group:"armor",index:i} ) );
 						count++;
 					}
 				}
 				for( var i = 0; i < activeDeck.pack.length; i++ ){
 					var cardData = cardLookup[ activeDeck.pack[i].id ];
-					if( cardData.tier <= 3 && ( 
-						( rune.types.includes( "weapon" ) && cardData.types.includes( "weapon" ) ) || 
+					if(
+						( rune.types.includes( "weapon" ) && cardData.types.includes( "weapon" ) && cardData.tier <= 3 ) || 
 						( rune.types.includes( "armor" )  && cardData.types.includes( "armor"  ) ) 
-					) ){
+					){
 						list.appendChild( createCard( cardData, null, {rune:rune.id,group:"pack",index:i} ) );
 						count++;
 					}
