@@ -1900,28 +1900,30 @@
 				}
 				
 				// Add a nested rune card if applicable
-				if( data.tier <= 3 && ( data.types.includes( "weapon" ) || data.types.includes( "armor" ) ) ){
-					var runeGroup = document.createElement( "div" );
-						runeGroup.className = "rune-group";
-					var runeButton = document.createElement( "div" );
-						runeButton.className = "card adder rune";
-						runeButton.setAttribute( "goto_tab", "items" );
-						runeButton.setAttribute( "goto_filter", "types:rune" );
-						runeButton.onclick = tab_goto;
-					var runeSlot = document.createElement( "div" );
-						runeSlot.className = "card-slot rune-slot";
+				if( data.category == "item" ){
+					if( ( data.tier <= 3 && data.types.includes( "weapon" ) ) || data.types.includes( "armor" ) ){
+						var runeGroup = document.createElement( "div" );
+							runeGroup.className = "rune-group";
+						var runeButton = document.createElement( "div" );
+							runeButton.className = "card adder rune";
+							runeButton.setAttribute( "goto_tab", "items" );
+							runeButton.setAttribute( "goto_filter", "types:rune" );
+							runeButton.onclick = tab_goto;
+						var runeSlot = document.createElement( "div" );
+							runeSlot.className = "card-slot rune-slot";
+							
+						if( rune ){
 						
-					if( rune ){
-					
-						var rune = createCard( rune );
-						runeSlot.appendChild( rune );
-					
+							var rune = createCard( rune );
+							runeSlot.appendChild( rune );
+						
+						}
+							
+						runeGroup.appendChild( runeButton );
+						runeGroup.appendChild( runeSlot );
+						card.appendChild( runeGroup );
+						card.setAttribute( "acceptsRunes", "" );
 					}
-						
-					runeGroup.appendChild( runeButton );
-					runeGroup.appendChild( runeSlot );
-					card.appendChild( runeGroup );
-					card.setAttribute( "acceptsRunes", "" );
 				}
 
 				return card;
