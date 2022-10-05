@@ -1971,6 +1971,19 @@
 					}
 				}
 				document.getElementById( "ability-count" ).innerHTML = abilityCount;
+				
+				// Toggle visibility on ability cards
+				var vesselCount = 0;
+				for ( var i = 0; i < data.vessels.length; i++ ){
+					if( checkFilter( pattern, data.vessels[i] ) ){
+						vesselCount++;
+						data.vessels[i].card.className = data.vessels[i].card.className.replace( / hidden/g, "" );
+					}
+					else{
+						data.vessels[i].card.className += " hidden";
+					}
+				}
+				document.getElementById( "vessel-count" ).innerHTML = vesselCount;
 
 				// Toggle visibility on item cards
 				var itemCount = 0;
