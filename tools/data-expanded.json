@@ -46,7 +46,7 @@
 			"variant": "Basic",
 			"effects": [],
 			"spends": [],
-			"rules": "Assassin's Strike Melee Move up to 2 (Gain Nimble and Slippery) in a straight or diagonal line.  Repeat this up to two more times.    Then perform one melee attack against each enemy you have moved over, adding (Enhancement Die). Move (2) (gain Nimble)  Attack, add (Cursed Die)."
+			"rules": "Assassin's Strike Melee Move up to 2 (Gain Nimble and Slippery) in a straight or diagonal line.  Repeat this up to two more times.    Then perform one melee attack against each enemy you have moved over at least once, adding (Enhancement Die). Move (2) (gain Nimble)  Attack, add (Cursed Die)."
 		},
 		{
 			"type": "Melee",
@@ -58,7 +58,7 @@
 			"variant": "Alpha",
 			"effects": [],
 			"spends": [],
-			"rules": "Assassin's Strike Melee Move up to 2 (Gain Nimble and Slippery) in a straight or diagonal line.  You may repeat this movement, but increase the cooldown by +1 each time.    Then perform one melee attack against each enemy you have moved over, adding (Enhancement Die). Move (2) (gain Nimble)  Attack, add (Cursed Die)."
+			"rules": "Assassin's Strike Melee Move up to 2 (Gain Nimble and Slippery) in a straight or diagonal line.  You may repeat this movement, but increase the cooldown by +1 each time.    Then perform one melee attack against each enemy you have moved over at least once, adding (Enhancement Die). Move (2) (gain Nimble)  Attack, add (Cursed Die)."
 		},
 		{
 			"type": "Melee",
@@ -70,7 +70,7 @@
 			"variant": "Beta",
 			"effects": [],
 			"spends": [],
-			"rules": "Assassin's Strike Melee Move up to 3 (Gain Nimble and Slippery) in a straight or diagonal line.  Repeat this up to two more times.    Then perform one melee attack against each enemy you have moved over, adding (Enhancement Die). Move (2) (gain Nimble)  Attack, add (Cursed Die)."
+			"rules": "Assassin's Strike Melee Move up to 3 (Gain Nimble and Slippery) in a straight or diagonal line.  Repeat this up to two more times.    Then perform one melee attack against each enemy you have moved over at least once, adding (Enhancement Die). Move (2) (gain Nimble)  Attack, add (Cursed Die)."
 		},
 		{
 			"type": "Melee",
@@ -335,7 +335,7 @@
 			"variant": "Beta",
 			"effects": [],
 			"spends": [],
-			"rules": "Black Magic Meta Suffer Stun (2).  Add one of the following bonusses to your next spellcasting roll this round (after rolling):  • Add +4 Power.  • Add (Double Surge).  • Add +2 Power and (Surge).  • Add (Star). Reduce the cooldown of one of your spells by 1."
+			"rules": "Black Magic Meta Suffer Stun (2).  Add one of the following bonuses to your next spellcasting roll this round (after rolling):  • Add +4 Power.  • Add (Double Surge).  • Add +2 Power and (Surge).  • Add (Star). Reduce the cooldown of one of your spells by 1."
 		},
 		{
 			"type": "Spell",
@@ -562,7 +562,7 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Boon Of Protection Spell Interrupt  Spellcasting 3+  Prevent the effects of a just drawn dreadful event from happening.    Ongoing  Spellcasting 2+  Declare an ally (or yourself). Reduce the duration of all incoming negative effects by 1. Reduce the duration of any one ongoing negative effect by 1."
+			"rules": "Boon Of Protection Spell Interrupt  Spellcasting 3+  Prevent the effects of a just rolled event from happening.    Ongoing  Spellcasting 2+  Declare an ally (or yourself). Reduce the duration of all incoming negative effects by 1. Reduce the duration of any one ongoing negative effect by 1."
 		},
 		{
 			"type": "Spell",
@@ -746,53 +746,6 @@
 				"doublesurge"
 			],
 			"rules": "Catch Breath Meta Roll (Power Die).  The total power is the amount of scratches that you may heal from yourself. DoubleSurge: Heal one wound from yourself. Heal one scratch from yourself."
-		},
-		{
-			"type": "Attack",
-			"initiative": "4",
-			"name": "Cautious Advance",
-			"cooldown": "1",
-			"id": "a34",
-			"category": "ability",
-			"variant": "Basic",
-			"effects": [],
-			"spends": [
-				"surge",
-				"surge"
-			],
-			"rules": "Cautious Advance Attack Attack, add (Blessing Die). Surge: +1 Power. Surge: Treat botched results as +1 Power instead. Attack, add (Blessing Die)."
-		},
-		{
-			"type": "Attack",
-			"initiative": "4",
-			"name": "Cautious Advance",
-			"cooldown": "1",
-			"id": "a35",
-			"category": "ability",
-			"variant": "Alpha",
-			"effects": [],
-			"spends": [
-				"surge",
-				"surge",
-				"surge"
-			],
-			"rules": "Cautious Advance Attack Attack, add (Blessing Die). Surge: Increase the cooldown by +2, but reduce one of your other cooldowns by 2. Surge: +1 Power. Surge: Treat botched results as +1 Power instead. Attack, add (Blessing Die)."
-		},
-		{
-			"type": "Attack",
-			"initiative": "5",
-			"name": "Cautious Advance",
-			"cooldown": "1",
-			"id": "a36",
-			"category": "ability",
-			"variant": "Beta",
-			"effects": [],
-			"spends": [
-				"surge",
-				"surge",
-				"surge"
-			],
-			"rules": "Cautious Advance Attack Attack, add (Blessing Die). Surge: Cooldown -1. Surge: +1 Power. Surge: Treat botched results as +1 Power instead. Attack, add (Blessing Die)."
 		},
 		{
 			"type": "Meta",
@@ -1292,7 +1245,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Corpse Explosion Spell Interrupt  Spellcasting 2+  If an enemy just died, you can deal damage to all models within range 2 of it. Heroes take a scratch, each enemy takes damage using (Standard Die) (Standard Die). Star: Add (Power Die) to the damage. Star: Cuase Knockback (2) to all affected models (originating from the targeted square). Surge: Add (Blessing Die) to the damage. Attack two enemies within range 5 using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die) (Cursed Die)."
+			"rules": "Corpse Explosion Spell Interrupt  Spellcasting 2+  If an enemy just died, you can deal damage to all models within range 2 of it. Heroes take a scratch, each enemy takes damage using (Standard Die) (Standard Die). Star: Add (Power Die) to the damage. Star: Cause Knockback (2) to all affected models (originating from the targeted square). Surge: Add (Blessing Die) to the damage. Attack two enemies within range 5 using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die) (Cursed Die)."
 		},
 		{
 			"type": "Ranged",
@@ -1706,7 +1659,7 @@
 			"variant": "Basic",
 			"effects": [],
 			"spends": [],
-			"rules": "Dual Strike Melee Melee Attack, add (Blessing Die).    Additionally add the bonus dice (and options) of your other equipped weapon to the roll. Melee Attack  Add (Standard Die) if you wield two 1h weapons."
+			"rules": "Dual Strike Melee Melee Attack, add (Blessing Die).    Additionally add the bonus dice (and options) of your other equipped weapon to the roll. Melee Attack  Add (Standard Die) if you wield two 1h weapons (shields do not count)."
 		},
 		{
 			"type": "Melee",
@@ -1721,7 +1674,7 @@
 				"star",
 				"surge"
 			],
-			"rules": "Dual Strike Melee Melee Attack, add (Blessing Die).    Additionally add the bonus dice (and options) of your other equipped weapon to the roll. Star: Cooldown -3. Star: +2 Power. Melee Attack  Add (Standard Die) if you wield two 1h weapons."
+			"rules": "Dual Strike Melee Melee Attack, add (Blessing Die).    Additionally add the bonus dice (and options) of your other equipped weapon to the roll. Star: Cooldown -3. Star: +2 Power. Melee Attack  Add (Standard Die) if you wield two 1h weapons (shields do not count)."
 		},
 		{
 			"type": "Melee",
@@ -1733,7 +1686,7 @@
 			"variant": "Beta",
 			"effects": [],
 			"spends": [],
-			"rules": "Dual Strike Melee Melee Attack, add (Blessing Die).    Additionally add the bonus dice (and options) of your other equipped weapon to the roll.    You may distribute the total dealt damage freely among all enemies within reach. Melee Attack  Add (Standard Die) if you wield two 1h weapons."
+			"rules": "Dual Strike Melee Melee Attack, add (Blessing Die).    Additionally add the bonus dice (and options) of your other equipped weapon to the roll.    You may distribute the total damage dealt freely among all enemies within reach. Melee Attack  Add (Standard Die) if you wield two 1h weapons (shields do not count)."
 		},
 		{
 			"type": "Spell",
@@ -1804,7 +1757,7 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Elemental Familiar Spell Ongoing  Spellcasting 3+  Summon an Elemental minion within range 2. It has a toughness of 3, dies with the second wound and has a speed of 4. DoubleSurge: Add (Power Die) to its attacks. DoubleSurge: Duration +1. Move (3)"
+			"rules": "Elemental Familiar Spell Ongoing  Spellcasting 3+  Summon an Elemental minion within range 2. It has a toughness of 6 and a speed of 4. DoubleSurge: Add (Power Die) to its attacks. DoubleSurge: Duration +1. Move (3)"
 		},
 		{
 			"type": "Spell",
@@ -1822,7 +1775,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Elemental Familiar Spell Ongoing  Spellcasting 4+  Summon an Elemental minion within range 6. It has a toughness of 4, dies with the second wound and has a speed of 4. DoubleSurge: Add (Power Die) to its attacks. DoubleSurge: Its attacks always cause Knockback (3). Surge: Its attacks always cause Stun. Move (3)"
+			"rules": "Elemental Familiar Spell Ongoing  Spellcasting 4+  Summon an Elemental minion within range 6. It has a toughness of 8 and a speed of 4. DoubleSurge: Add (Power Die) to its attacks. DoubleSurge: Its attacks always cause Knockback (3). Surge: Its attacks always cause Stun. Move (3)"
 		},
 		{
 			"type": "Spell",
@@ -1840,7 +1793,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Elemental Familiar Spell Ongoing  Spellcasting 3+  Summon an Elemental minion within range 2. It has a toughness of 3, dies with the second wound and has a speed of 4. Surge: Add (Power Die) to its attacks. Surge: It can also perform ranged attacks with a range of 6. Surge: Duration +1. Move (3)"
+			"rules": "Elemental Familiar Spell Ongoing  Spellcasting 3+  Summon an Elemental minion within range 2. It has a toughness of 6 and a speed of 4. Surge: Add (Power Die) to its attacks. Surge: It can also perform ranged attacks with a range of 6. Surge: Duration +1. Move (3)"
 		},
 		{
 			"type": "Attack",
@@ -2349,7 +2302,7 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Haste Meta Interrupt  Allow an ally to repeat a card that you / they have just played. Reduce one of your cooldowns by 2."
+			"rules": "Haste Meta Interrupt  Allow an ally or yourself to repeat a card that they or you have just played. Reduce one of your cooldowns by 2."
 		},
 		{
 			"type": "Meta",
@@ -2633,7 +2586,7 @@
 				"star",
 				"surge"
 			],
-			"rules": "Improvise Meta Roll a single (Enhancement Die) and use the below spending options.    Take the corresponding item from the item deck, then reshuffle it. Star: Obtain 'Weak Healing Potion'. Star: Obtain 'Bandages'. Surge: Obtain 'Talisman'. Reduce the duration of an ongoing effect on yourself or an ally by 1."
+			"rules": "Improvise Meta Roll a single (Enhancement Die) and use the below spending options.    Take the corresponding item from the item deck, then reshuffle it. Star: Obtain 'Healing Potion'. Star: Obtain 'Bandages'. Surge: Obtain 'Talisman'. Reduce the duration of an ongoing effect on yourself or an ally by 1."
 		},
 		{
 			"type": "Meta",
@@ -2672,7 +2625,7 @@
 			"variant": "Beta",
 			"effects": [],
 			"spends": [],
-			"rules": "Inspire Meta Interrupt  Allow an ally to change the rolled result of one (Standard Die) to any result of your choice. Move an ally by 2 squares.  Move (2)"
+			"rules": "Inspire Meta Interrupt  Allow an ally to change the rolled result of one (Standard Die) to any result of their choice. Move an ally by 2 squares.  Move (2)"
 		},
 		{
 			"type": "Meta",
@@ -3109,7 +3062,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Mirage Spell Ongoing  Spellcasting 1+  Create an immobile minion within range 3. It has a toughness of 0 and dies with the first wound.  If it gets destroyed by a melee attack, the attacker takes damage using (Standard Die) (Blessing Die) (Blessing Die). Ignore the next scratch that you would suffer this round."
+			"rules": "Mirage Spell Ongoing  Spellcasting 1+  Create an immobile minion within range 3. It has a toughness of 0.  If it gets destroyed by a melee attack, the attacker takes damage using (Standard Die) (Blessing Die) (Blessing Die). Ignore the next scratch that you would suffer this round."
 		},
 		{
 			"type": "Spell",
@@ -3123,7 +3076,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Mirage Spell Ongoing  Spellcasting 1+  Create an immobile minion within range 3. It has a toughness of 0, dies with the first wound and counts as the most wounded / scratched target.  If it gets destroyed by a melee attack, the attacker takes damage using (Standard Die) (Blessing Die) (Blessing Die). Ignore the next scratch that you would suffer this round."
+			"rules": "Mirage Spell Ongoing  Spellcasting 1+  Create an immobile minion within range 3. It has a toughness of 0 and counts as the most wounded / scratched target.  If it gets destroyed by a melee attack, the attacker takes damage using (Standard Die) (Blessing Die) (Blessing Die). Ignore the next scratch that you would suffer this round."
 		},
 		{
 			"type": "Spell",
@@ -3137,7 +3090,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Mirage Spell Ongoing  Spellcasting 1+  Create an immobile minion within range 3. It has a toughness of 0 and dies with the first wound.  If it gets destroyed, it deals damage to all enemies adjacent to it using (Standard Die) (Blessing Die) (Blessing Die). Ignore the next scratch that you would suffer this round."
+			"rules": "Mirage Spell Ongoing  Spellcasting 1+  Create an immobile minion within range 3. It has a toughness of 0.  If it gets destroyed, it deals damage to all enemies adjacent to it using (Standard Die) (Blessing Die) (Blessing Die). Ignore the next scratch that you would suffer this round."
 		},
 		{
 			"type": "Meta",
@@ -3196,7 +3149,7 @@
 				"star",
 				"surge"
 			],
-			"rules": "Necromancy Spell Ongoing  Spellcasting 3+  Summon a Skeleton Warrior minion within range 2. It has a toughness of 2, dies with the second wound and has a speed of 3. Star: The Skeleton Warriors add (Blessing Die) to their attacks. Star: Summon a second Skeleton Warrior minion. Suffer a scratch, then deal damage to an enemy within range 5 using your spellcasting dice pool, adding (Standard Die)."
+			"rules": "Necromancy Spell Ongoing  Spellcasting 3+  Summon a Skeleton Warrior minion within range 2. It has a toughness of 4 and a speed of 3. Star: The Skeleton Warriors add (Blessing Die) to their attacks. Star: Summon a second Skeleton Warrior minion. Suffer a scratch, then deal damage to an enemy within range 5 using your spellcasting dice pool, adding (Standard Die)."
 		},
 		{
 			"type": "Spell",
@@ -3214,7 +3167,7 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Necromancy Spell Ongoing  Spellcasting 3+  Summon a Skeleton Warrior minion within range 2. It has a toughness of 3, dies with the second wound and has a speed of 3. Star: The Skeleton Warriors add (Blessing Die) to their attacks. Star: Summon a third Skeleton Warrior minion. DoubleSurge: Summon a second Skeleton Warrior minion. Suffer a scratch, then deal damage to an enemy within range 5 using your spellcasting dice pool, adding (Standard Die)."
+			"rules": "Necromancy Spell Ongoing  Spellcasting 3+  Summon a Skeleton Warrior minion within range 2. It has a toughness of 6 and a speed of 3. Star: The Skeleton Warriors add (Blessing Die) to their attacks. Star: Summon a third Skeleton Warrior minion. DoubleSurge: Summon a second Skeleton Warrior minion. Suffer a scratch, then deal damage to an enemy within range 5 using your spellcasting dice pool, adding (Standard Die)."
 		},
 		{
 			"type": "Spell",
@@ -3232,7 +3185,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Necromancy Spell Ongoing  Spellcasting 3+  Summon a Skeleton Warrior minion within range 2. It has a toughness of 2, dies with the second wound and has a speed of 4. Star: The Skeleton Warriors add (Blessing Die) to their attacks. Star: They can also perform ranged attacks with a range of 5. Surge: Summon a second Skeleton Warrior minion. Suffer a scratch, then deal damage to an enemy within range 5 using your spellcasting dice pool, adding (Standard Die)."
+			"rules": "Necromancy Spell Ongoing  Spellcasting 3+  Summon a Skeleton Warrior minion within range 2. It has a toughness of 4 and a speed of 4. Star: The Skeleton Warriors add (Blessing Die) to their attacks. Star: They can also perform ranged attacks with a range of 5. Surge: Summon a second Skeleton Warrior minion. Suffer a scratch, then deal damage to an enemy within range 5 using your spellcasting dice pool, adding (Standard Die)."
 		},
 		{
 			"type": "Melee",
@@ -3329,7 +3282,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Overgrowth Spell Ongoing  Spellcasting 2+  Place an 'Overgrowth' token within range 5. Treat that square and all squares within range 2 of it as difficult terrain. Surge: Increase the area of effect by 2. Surge: Whenever you reduce this effect's duration, you may move the token by 1. Surge: Duration +1. Cause Cripple against an enemy within range 5."
+			"rules": "Overgrowth Spell Ongoing  Spellcasting 2+  Place an 'Overgrowth' token within range 5. Treat that square and all squares within range 2 of it as difficult terrain. Surge: Increase the area of effect by 2. Surge: Whenever you reduce this effect's duration, you may move the token by 1 square. Surge: Duration +1. Cause Cripple against an enemy within range 5."
 		},
 		{
 			"type": "Melee",
@@ -3609,7 +3562,7 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Ring of Restoration Spell Ongoing  Spellcasting 3+  Place a \"Ring Of Restoration\" token on a square within range 4.  Once this effect ends, every hero or minion within range 1 of it will heal 2 scratches from themselves. DoubleSurge: Heal one additional scratch from each of the affected targets. DoubleSurge: Heal one additional scratch from one of the affected targets. Roll a single (Blessing Die):  If it shows a number or 'Star', you may heal one scratch from up to two allies within range 3."
+			"rules": "Ring of Restoration Spell Ongoing  Spellcasting 3+  Place a \"Ring Of Restoration\" token on a square within range 4.  Once this effect ends, every hero or minion within range 1 of it will heal 2 scratches from themselves. DoubleSurge: Heal one additional scratch from each of the affected targets. DoubleSurge: Heal one additional scratch from one of the affected targets. Roll a single (Blessing Die):  If it shows a number or (Star), you may heal one scratch from up to two allies within range 3."
 		},
 		{
 			"type": "Spell",
@@ -3627,7 +3580,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Ring of Restoration Spell Ongoing  Spellcasting 3+  Place a \"Ring Of Restoration\" token on a square within range 6.  Once this effect ends, every hero or minion within range 1 of it will heal 2 scratches from themselves. DoubleSurge: Heal one additional scratch from each of the affected targets. DoubleSurge: Reduce the duration of a negative ongoing effect on each target by 1. Surge: Heal one additional scratch from one of the affected targets. Roll a single (Blessing Die):  If it shows a number or 'Star', you may heal one scratch from up to two allies within range 3."
+			"rules": "Ring of Restoration Spell Ongoing  Spellcasting 3+  Place a \"Ring Of Restoration\" token on a square within range 6.  Once this effect ends, every hero or minion within range 1 of it will heal 2 scratches from themselves. DoubleSurge: Heal one additional scratch from each of the affected targets. DoubleSurge: Reduce the duration of a negative ongoing effect on each target by 1. Surge: Heal one additional scratch from one of the affected targets. Roll a single (Blessing Die):  If it shows a number or (Star), you may heal one scratch from up to two allies within range 3."
 		},
 		{
 			"type": "Spell",
@@ -3645,7 +3598,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Ring of Restoration Spell Ongoing  Spellcasting 3+  Place a \"Ring Of Restoration\" token on a square within range 4.  Once this effect ends, every hero or minion within range 1 of it will heal 2 scratches from themselves. DoubleSurge: Heal one additional scratch from each of the affected targets. DoubleSurge: Heal one additional scratch from one of the affected targets. Surge: Increase the area of effect by 2. Roll a single (Blessing Die):  If it shows a number or 'Star', you may heal one scratch from up to two allies within range 3."
+			"rules": "Ring of Restoration Spell Ongoing  Spellcasting 3+  Place a \"Ring Of Restoration\" token on a square within range 4.  Once this effect ends, every hero or minion within range 1 of it will heal 2 scratches from themselves. DoubleSurge: Heal one additional scratch from each of the affected targets. DoubleSurge: Heal one additional scratch from one of the affected targets. Surge: Increase the area of effect by 2. Roll a single (Blessing Die):  If it shows a number or (Star), you may heal one scratch from up to two allies within range 3."
 		},
 		{
 			"type": "Defense",
@@ -3824,7 +3777,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Scorching Blast Spell Spellcasting 3+  Use the 'Blast' token and deal damage against each model under it, using (Standard Die) (Blessing Die) (Blessing Die). Against heroes and minions, if the roll meets (or exceeds) their current toughness, they take a scratch. Surge: Add (Blessing Die) to the damage roll. Surge: Add (Blessing Die) to the damage roll. Deal a wound against an enemy within range 3 with a defense of 4 or less."
+			"rules": "Scorching Blast Spell Spellcasting 3+  Use the 'Blast' template and deal damage against each model under it, using (Standard Die) (Blessing Die) (Blessing Die). Against heroes and minions, if the roll meets (or exceeds) their current toughness, they take a scratch. Surge: Add (Blessing Die) to the damage roll. Surge: Add (Blessing Die) to the damage roll. Deal a wound against an enemy within range 3 with a defense of 4 or less."
 		},
 		{
 			"type": "Spell",
@@ -3839,7 +3792,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Scorching Blast Spell Spellcasting 3+  Use the 'Blast' token and deal damage against each enemy under it, using (Standard Die) (Blessing Die) (Blessing Die). Surge: Add (Blessing Die) to the damage roll. Surge: Add (Blessing Die) to the damage roll. Deal a wound against an enemy within range 3 with a defense of 4 or less."
+			"rules": "Scorching Blast Spell Spellcasting 3+  Use the 'Blast' template and deal damage against each enemy under it, using (Standard Die) (Blessing Die) (Blessing Die). Surge: Add (Blessing Die) to the damage roll. Surge: Add (Blessing Die) to the damage roll. Deal a wound against an enemy within range 3 with a defense of 4 or less."
 		},
 		{
 			"type": "Spell",
@@ -3854,7 +3807,7 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Scorching Blast Spell Spellcasting 3+  Use the 'Blast' token and deal damage against each model under it, using (Power Die). Against heroes and minions, if the roll meets (or exceeds) their current toughness, they take a scratch. DoubleSurge: Add (Power Die) to the damage roll. DoubleSurge: Add (Blessing Die) to the damage roll. Deal a wound against an enemy within range 3 with a defense of 4 or less."
+			"rules": "Scorching Blast Spell Spellcasting 3+  Use the 'Blast' template and deal damage against each model under it, using (Power Die). Against heroes and minions, if the roll meets (or exceeds) their current toughness, they take a scratch. DoubleSurge: Add (Power Die) to the damage roll. DoubleSurge: Add (Blessing Die) to the damage roll. Deal a wound against an enemy within range 3 with a defense of 4 or less."
 		},
 		{
 			"type": "Spell",
@@ -3868,7 +3821,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Shadow Clone Spell Ongoing  Spellcasting 2+  Summon a Shadow Clone minion of yourself within range 5. It has a toughness of 2, dies with the second wound and has a speed of 4.  You can perform actions from your Shadow Clone's position as if you were there yourself. Melee Attack an enemy within range 4."
+			"rules": "Shadow Clone Spell Ongoing  Spellcasting 2+  Summon a Shadow Clone minion within range 5. It has a toughness of 4 and a speed of 4.  You can perform actions from your Shadow Clone's position as if you were there yourself. Melee Attack an enemy within range 4."
 		},
 		{
 			"type": "Spell",
@@ -3882,7 +3835,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Shadow Clone Spell Ongoing  Spellcasting 2+  Summon a Shadow Clone minion of yourself within range 10. It has a toughness of 2, dies with the second wound and has a speed of 4.  You can perform actions from your Shadow Clone's position as if you were there yourself.    When the spell ends, you may assume the position where the Shadow Clone was (given it was still alive). Melee Attack an enemy within range 4."
+			"rules": "Shadow Clone Spell Ongoing  Spellcasting 2+  Summon a Shadow Clone minion within range 10. It has a toughness of 4 and a speed of 4.  You can perform actions from your Shadow Clone's position as if you were there yourself.    When the spell ends, you may assume the position where the Shadow Clone was (given it was still alive). Melee Attack an enemy within range 4."
 		},
 		{
 			"type": "Spell",
@@ -3896,7 +3849,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Shadow Clone Spell Ongoing  Spellcasting 2+  Summon a Shadow Clone minion of yourself within range 5. It has a toughness of 2, dies with the second wound and has a speed of 4.  The Shadow Clone adds (Blessing Die) to its own attacks and defense.  You can perform actions from your Shadow Clone's position as if you were there yourself. Melee Attack an enemy within range 4."
+			"rules": "Shadow Clone Spell Ongoing  Spellcasting 2+  Summon a Shadow Clone minion within range 5. It has a toughness of 4 and a speed of 4.  The Shadow Clone adds (Blessing Die) to its own attacks and defense.  You can perform actions from your Shadow Clone's position as if you were there yourself. Melee Attack an enemy within range 4."
 		},
 		{
 			"type": "Spell",
@@ -3991,6 +3944,53 @@
 			],
 			"spends": [],
 			"rules": "Shield Wall Defense Ongoing  Whenever you or an adjacent ally have to defend, you may grant (Power Die). Immediately reduce the duration of this effect by 1 if you do so. Move (2)  Cause Knockback (1) against any one adjacent model."
+		},
+		{
+			"type": "Attack",
+			"initiative": "4",
+			"name": "Simple Strike",
+			"cooldown": "1",
+			"id": "a34",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Simple Strike Attack Attack, add (Blessing Die). Surge: +1 Power. Surge: Treat botched results as +1 Power instead. Attack, add (Blessing Die)."
+		},
+		{
+			"type": "Attack",
+			"initiative": "4",
+			"name": "Simple Strike",
+			"cooldown": "1",
+			"id": "a35",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [
+				"surge",
+				"surge",
+				"surge"
+			],
+			"rules": "Simple Strike Attack Attack, add (Blessing Die). Surge: Increase the cooldown by +2, but reduce one of your other cooldowns by 2. Surge: +1 Power. Surge: Treat botched results as +1 Power instead. Attack, add (Blessing Die)."
+		},
+		{
+			"type": "Attack",
+			"initiative": "5",
+			"name": "Simple Strike",
+			"cooldown": "1",
+			"id": "a36",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [],
+			"spends": [
+				"surge",
+				"surge",
+				"surge"
+			],
+			"rules": "Simple Strike Attack Attack, add (Blessing Die). Surge: Cooldown -1. Surge: +1 Power. Surge: Treat botched results as +1 Power instead. Attack, add (Blessing Die)."
 		},
 		{
 			"type": "Meta",
@@ -4169,7 +4169,7 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Summon Mummy Spell Ongoing  Spellcasting 2+  Summon a Mummy minion within range 2. It has a toughness of 4, dies with the second wound and has a speed of 2. Surge: Additionally remove a (Balsamic) 'Bandage' and add (Power Die) to the Mummy's attacks. Its attacks also cause Dazed. Move (1), then draw four item cards. If one of them is a (Balsamic) 'Bandage', you may keep it."
+			"rules": "Summon Mummy Spell Ongoing  Spellcasting 2+  Summon a Mummy minion within range 2. It has a toughness of 8 and a speed of 2. Surge: Additionally remove a (Balsamic) 'Bandage' and add (Power Die) to the Mummy's attacks. Its attacks also cause Dazed. Move (1), then draw four item cards. If one of them is a (Balsamic) 'Bandage', you may keep it."
 		},
 		{
 			"type": "Spell",
@@ -4186,7 +4186,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Summon Mummy Spell Ongoing  Spellcasting 2+  Summon a Mummy minion within range 2. It has a toughness of 4, dies with the second wound and has a speed of 2. Surge: Remove one more (Balsamic) 'Bandage' to add (Blessing Die) (Blessing Die) to its attacks. Surge: Additionally remove a (Balsamic) 'Bandage' and add (Power Die) to the Mummy's attacks. Its attacks also cause Dazed. Move (1), then draw four item cards. If one of them is a (Balsamic) 'Bandage', you may keep it."
+			"rules": "Summon Mummy Spell Ongoing  Spellcasting 2+  Summon a Mummy minion within range 2. It has a toughness of 8 and a speed of 2. Surge: Remove one more (Balsamic) 'Bandage' to add (Blessing Die) (Blessing Die) to its attacks. Surge: Additionally remove a (Balsamic) 'Bandage' and add (Power Die) to the Mummy's attacks. Its attacks also cause Dazed. Move (1), then draw four item cards. If one of them is a (Balsamic) 'Bandage', you may keep it."
 		},
 		{
 			"type": "Spell",
@@ -4203,7 +4203,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Summon Mummy Spell Ongoing  Spellcasting 2+  Summon a Mummy minion within range 2. It has a toughness of 4, dies with the second wound and has a speed of 2. Surge: Add (Blessing Die) to its attacks. Surge: Additionally remove a (Balsamic) 'Bandage' and the Mummy heals one scratch each turn (or wound if there are no scratches). Move (1), then draw four item cards. If one of them is a (Balsamic) 'Bandage', you may keep it."
+			"rules": "Summon Mummy Spell Ongoing  Spellcasting 2+  Summon a Mummy minion within range 2. It has a toughness of 8 and a speed of 2. Surge: Add (Blessing Die) to its attacks. Surge: Additionally remove a (Balsamic) 'Bandage' and the Mummy heals one scratch on each of its turns. Move (1), then draw four item cards. If one of them is a (Balsamic) 'Bandage', you may keep it."
 		},
 		{
 			"type": "Meta",
@@ -4215,7 +4215,7 @@
 			"variant": "Basic",
 			"effects": [],
 			"spends": [],
-			"rules": "Superior Order Meta Grant the first allied minion who attacks this round (Power Die) (Blessing Die) on their attack. Heal all scratches or one wound from a minion within range 5."
+			"rules": "Superior Order Meta Grant the first allied minion who attacks this round (Power Die) (Blessing Die) on their attack. Heal four scratches from a minion within range 5."
 		},
 		{
 			"type": "Meta",
@@ -4227,7 +4227,7 @@
 			"variant": "Alpha",
 			"effects": [],
 			"spends": [],
-			"rules": "Superior Order Meta Grant the first two allied minions who attack this round (Power Die) (Blessing Die) on their attacks. Heal all scratches or one wound from a minion within range 5."
+			"rules": "Superior Order Meta Grant the first two allied minions who attack this round (Power Die) (Blessing Die) on their attacks. Heal four scratches from a minion within range 5."
 		},
 		{
 			"type": "Meta",
@@ -4239,7 +4239,7 @@
 			"variant": "Beta",
 			"effects": [],
 			"spends": [],
-			"rules": "Superior Order Meta Grant the first allied minion who attacks this round (Power Die) (Blessing Die) on their attack.    Additionally, move all minions by up to 4 squares each (and grant Slippery). Heal all scratches or one wound from a minion within range 5."
+			"rules": "Superior Order Meta Grant the first allied minion who attacks this round (Power Die) (Blessing Die) on their attack.    Additionally, move all minions by up to 4 squares each (and grant Slippery). Heal four scratches from a minion within range 5."
 		},
 		{
 			"type": "Spell",
@@ -4336,7 +4336,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Swarm Of Spiders Spell Ongoing  Spellcasting 2+  Place a spider token within range 3.  Whenever you reduce this card's duration, move the token by exactly 2 squares in a straight or diagonal line, then deal a wound to one adjacent enemy and cause Stun. Surge: If the spider did not cause a wound, you may increase the duration of this effect by 1. Surge: You may alternatively move the token by exactly 3 squares (decide each movement). Surge: Duration +1. Roll (Enhancement Die):  On (Surge): Deal a wound to an enemy within range 6."
+			"rules": "Swarm Of Spiders Spell Ongoing  Spellcasting 2+  Place a spider token within range 3.  Whenever you reduce this card's duration, move the token by exactly 2 squares in a straight or diagonal line, then deal a wound to one adjacent enemy and cause Stun. Surge: Whenever the spider did not cause a wound, you may increase the duration of this effect by 1. Surge: You may alternatively move the token by exactly 3 squares (decide each movement). Surge: Duration +1. Roll (Enhancement Die):  On (Surge): Deal a wound to an enemy within range 6."
 		},
 		{
 			"type": "Melee",
@@ -4436,7 +4436,7 @@
 			"variant": "Basic",
 			"effects": [],
 			"spends": [],
-			"rules": "Telekinesis Spell Spellcasting 1+  Open any one door or pick up any one treasure. Move any one model by 2."
+			"rules": "Telekinesis Spell Spellcasting 1+  Open any one door or pick up any one treasure. Move any one model by 2 squares."
 		},
 		{
 			"type": "Spell",
@@ -4451,7 +4451,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Telekinesis Spell Spellcasting 1+  Open any one door or pick up any one treasure. Surge: Move an item from one hero's inventory to another's. Surge: Move an item from one hero's inventory to another's. Move any one model by 2."
+			"rules": "Telekinesis Spell Spellcasting 1+  Open any one door or pick up any one treasure. Surge: Move an item from one hero's inventory to another's. Surge: Move an item from one hero's inventory to another's. Move any one model by 2 squares."
 		},
 		{
 			"type": "Spell",
@@ -4465,7 +4465,7 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Telekinesis Spell Spellcasting 1+  Open any one door or pick up any one treasure.    Interrupt  Spellcasting 1+  Move any one model by 2. Move any one model by 2."
+			"rules": "Telekinesis Spell Spellcasting 1+  Open any one door or pick up any one treasure.    Interrupt  Spellcasting 1+  Move any one model by 2. Move any one model by 2 squares."
 		},
 		{
 			"type": "Attack",
@@ -4623,7 +4623,7 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Totem: Lightning Spell Ongoing  Spellcasting 2+  Summon a Lightning Totem minion within range 5. It has a toughness of 1, dies with the second wound and is immobile. Its attacks have a range of 5. Surge: Adds (Blessing Die) to its attacks. Deal damage to two enemies within range 5 using only (Blessing Die) (Blessing Die) (Blessing Die)."
+			"rules": "Totem: Lightning Spell Ongoing  Spellcasting 2+  Summon a Lightning Totem minion within range 5. It has a toughness of 3 and is immobile. Its attacks have a range of 5. Surge: Adds (Blessing Die) to its attacks. Deal damage to two enemies within range 5 using only (Blessing Die) (Blessing Die) (Blessing Die)."
 		},
 		{
 			"type": "Spell",
@@ -4641,7 +4641,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Totem: Lightning Spell Ongoing  Spellcasting 2+  Summon a Lightning Totem minion within range 5. It has a toughness of 2, dies with the second wound and is immobile. Its attacks have a range of 5. Star: Add (Standard Die) to its attacks. Star: Duration +1. Surge: Adds (Blessing Die) to its attacks. Deal damage to two enemies within range 5 using only (Blessing Die) (Blessing Die) (Blessing Die)."
+			"rules": "Totem: Lightning Spell Ongoing  Spellcasting 2+  Summon a Lightning Totem minion within range 5. It has a toughness of 5 and is immobile. Its attacks have a range of 5. Star: Add (Standard Die) to its attacks. Star: Duration +1. Surge: Adds (Blessing Die) to its attacks. Deal damage to two enemies within range 5 using only (Blessing Die) (Blessing Die) (Blessing Die)."
 		},
 		{
 			"type": "Spell",
@@ -4659,7 +4659,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Totem: Lightning Spell Ongoing  Spellcasting 2+  Summon a Lightning Totem minion within range 5. It has a toughness of 1, dies with the second wound and is immobile. Its attacks have a range of 5. DoubleSurge: The totem can attack two different enemies per turn. DoubleSurge: Increase the totem's range by +2. Surge: Adds (Blessing Die) to its attacks. Deal damage to two enemies within range 5 using only (Blessing Die) (Blessing Die) (Blessing Die)."
+			"rules": "Totem: Lightning Spell Ongoing  Spellcasting 2+  Summon a Lightning Totem minion within range 5. It has a toughness of 3 and is immobile. Its attacks have a range of 5. DoubleSurge: The totem can attack two different enemies during each of its turns. DoubleSurge: Increase the totem's range by +2. Surge: Adds (Blessing Die) to its attacks. Deal damage to two enemies within range 5 using only (Blessing Die) (Blessing Die) (Blessing Die)."
 		},
 		{
 			"type": "Spell",
@@ -4720,7 +4720,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Totem: Wind Spell Ongoing  Spellcasting 2+  Place a wind totem token within range 5.  All models within range 5 to it that move closer to it need to spend 2 movement per square, and models that move away move 2 squares per movement spent. Move any one model by 2."
+			"rules": "Totem: Wind Spell Ongoing  Spellcasting 2+  Place a wind totem token within range 5.  All models within range 5 to it that move closer to it need to spend 2 movement per square, and models that move away move 2 squares per movement spent. Move any one model by 2 squares."
 		},
 		{
 			"type": "Spell",
@@ -4734,7 +4734,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Totem: Wind Spell Ongoing  Spellcasting 2+  Place a wind totem token within range 5.  All models within range 8 to it that move closer to it need to spend 2 movement per square, and models that move away move 2 squares per movement spent. Move any one model by 2."
+			"rules": "Totem: Wind Spell Ongoing  Spellcasting 2+  Place a wind totem token within range 5.  All models within range 8 to it that move closer to it need to spend 2 movement per square, and models that move away move 2 squares per movement spent. Move any one model by 2 squares."
 		},
 		{
 			"type": "Spell",
@@ -4751,7 +4751,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Totem: Wind Spell Ongoing  Spellcasting 2+  Place a wind totem token within range 5.  All models within range 5 to it that move closer to it need to spend 2 movement per square, and models that move away move 2 squares per movement spent. Surge: +1 Power to your spellcasting roll. Surge: Duration +1. Move any one model by 2."
+			"rules": "Totem: Wind Spell Ongoing  Spellcasting 2+  Place a wind totem token within range 5.  All models within range 5 to it that move closer to it need to spend 2 movement per square, and models that move away move 2 squares per movement spent. Surge: +1 Power to your spellcasting roll. Surge: Duration +1. Move any one model by 2 squares."
 		},
 		{
 			"type": "Meta",
@@ -4897,7 +4897,7 @@
 				"star",
 				"surge"
 			],
-			"rules": "Wall Of Stone Spell Ongoing  Spellcasting 3+  Place a (1x3 squares) wall token within range 4.  It may overlap with walls, but you cannot place it where there's already a model. Star: Duration +1. Star: Range +2. Cause Cripple against an enemy within range 4."
+			"rules": "Wall Of Stone Spell Ongoing  Spellcasting 3+  Place a (1x3 squares) 'Wall Of Stone' token within range 4.  It may overlap with walls, but you cannot place it where there's already a model. Star: Duration +1. Star: Range +2. Cause Cripple against an enemy within range 4."
 		},
 		{
 			"type": "Spell",
@@ -4914,7 +4914,7 @@
 				"star",
 				"surge"
 			],
-			"rules": "Wall Of Stone Spell Ongoing  Spellcasting 3+  Place a (1x3 squares) wall token within range 4.  It may overlap with walls. If placed where there's already a model, push them aside. Star: Duration +1. Star: Range +2. Cause Cripple against an enemy within range 4."
+			"rules": "Wall Of Stone Spell Ongoing  Spellcasting 3+  Place a (1x3 squares) 'Wall Of Stone' token within range 4.  It may overlap with walls. If placed where there's already a model, push them aside. Star: Duration +1. Star: Range +2. Cause Cripple against an enemy within range 4."
 		},
 		{
 			"type": "Spell",
@@ -4932,7 +4932,7 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Wall Of Stone Spell Ongoing  Spellcasting 3+  Place a (1x3 squares) wall token within range 4.  It may overlap with walls, but you cannot place it where there's already a model. Star: Duration +1. Star: You may end the wall at any time. DoubleSurge: Range +2. Cause Cripple against an enemy within range 4."
+			"rules": "Wall Of Stone Spell Ongoing  Spellcasting 3+  Place a (1x3 squares) 'Wall Of Stone' token within range 4.  It may overlap with walls, but you cannot place it where there's already a model. Star: Duration +1. Star: You may end the wall at any time. DoubleSurge: Range +2. Cause Cripple against an enemy within range 4."
 		},
 		{
 			"type": "Spell",
@@ -4948,7 +4948,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Water Rush Spell Spellcasting 1+  Immediately move by 4 squares in a straight or diagonal line. Surge: Heal one scratch from yourself for each 2 squares moved. Surge: Gain Slippery. Surge: +2 movement. Move (2)"
+			"rules": "Water Rush Spell Spellcasting 1+  Move (4) in a straight or diagonal line. Surge: Heal one scratch from yourself for each 2 squares moved. Surge: Gain Slippery. Surge: +2 movement. Move (2)"
 		},
 		{
 			"type": "Spell",
@@ -4964,7 +4964,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Water Rush Spell Spellcasting 1+  Immediately move yourself or an ally by 4 squares in a straight or diagonal line. Surge: The target heals one scratch for each 2 squares moved. Surge: Grant Slippery and Nimble. Surge: +2 movement. Move (2)"
+			"rules": "Water Rush Spell Spellcasting 1+  Move yourself or an ally by 4 squares in a straight or diagonal line. Surge: The target heals one scratch for each 2 squares moved. Surge: Grant Slippery and Nimble. Surge: +2 movement. Move (2)"
 		},
 		{
 			"type": "Spell",
@@ -4980,7 +4980,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Water Rush Spell Spellcasting 1+  Immediately move by 6 squares in a straight or diagonal line. Star: Heal one wound if you moved for at least 6 squares. Star: Heal one scratch from yourself for each 2 squares moved. Surge: +2 movement. Move (2)"
+			"rules": "Water Rush Spell Spellcasting 1+  Move (6) in a straight or diagonal line. Star: Heal one wound if you moved for at least 6 squares. Star: Heal one scratch from yourself for each 2 squares moved. Surge: +2 movement. Move (2)"
 		},
 		{
 			"type": "Attack",
@@ -4994,7 +4994,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Weapon Drill Attack Ongoing  Once during each turn (including the turn that you play this), choose one of the following effects:  • Move (2).  • Attack, add (Cursed Die).  • Spend (Star) on an attack to remove one 'Wear' token from your weapon. Attack, add (Blessing Die).  Move (2)"
+			"rules": "Weapon Drill Attack Ongoing  Once during your turn (including the turn that you play this), choose one of the following effects:  • Move (2).  • Attack, add (Cursed Die).  • Spend (Star) on an attack to remove one 'Wear' token from your weapon. Attack, add (Blessing Die).  Move (2)"
 		},
 		{
 			"type": "Attack",
@@ -5008,7 +5008,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Weapon Drill Attack Ongoing  Once during each turn (including the turn that you play this), choose one of the following effects:  • Move (2).  • Add (Blessing Die) to your next roll this round.  • Prevent one 'Wear' symbol on one of your rolls.  • Extend the duration of this effect by +2. Attack, add (Blessing Die).  Move (2)"
+			"rules": "Weapon Drill Attack Ongoing  Once during your turn (including the turn that you play this), choose one of the following effects:  • Move (2).  • Add (Blessing Die) to your next roll this round.  • Prevent one 'Wear' symbol on one of your rolls.  • Extend the duration of this effect by +2. Attack, add (Blessing Die).  Move (2)"
 		},
 		{
 			"type": "Attack",
@@ -5072,7 +5072,7 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Weapon Enchantment Spell Ongoing  Spellcasting 2+  Declare one of your weapons or an ally's. It adds (Power Die) to attacks.    It also gains the below spending option for each attack. Surge: Cause Knockback (4). Add (Enhancement Die) (Blessing Die) to your next attack this round."
+			"rules": "Weapon Enchantment Spell Ongoing  Spellcasting 2+  Declare one of your weapons or an ally's. It adds (Power Die) to attacks.    It also gains the below spending option for each attack. Surge: Cause Knockback (2). Add (Enhancement Die) (Blessing Die) to your next attack this round."
 		},
 		{
 			"type": "Spell",
@@ -5244,7 +5244,7 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Wildshape: Lynx Spell Ongoing  Spellcasting 3+  While the effect lasts, temporarily use the 'Lynx' standee instead of your own.  You have 5 speed instead of your regular vessel's speed and you may spend (Surge) on melee attacks to cause Bleed (2). Star: Perform a free melee attack each turn. Star: Gain +1 speed, Nimble and Slippery. DoubleSurge: Duration +1. Move (2) (gain Nimble and Slippery)"
+			"rules": "Wildshape: Lynx Spell Ongoing  Spellcasting 3+  While the effect lasts, temporarily use the 'Lynx' standee instead of your own.  You have 5 speed instead of your regular vessel's speed and you may spend (Surge) on melee attacks to cause Bleed (2). Star: Perform a free melee attack during each of your turns. Star: Gain +1 speed, Nimble and Slippery. DoubleSurge: Duration +1. Move (2) (gain Nimble and Slippery)"
 		},
 		{
 			"type": "Spell",
@@ -5262,7 +5262,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Wildshape: Lynx Spell Ongoing  Spellcasting 3+  While the effect lasts, temporarily use the 'Lynx' standee instead of your own.  You have 5 speed instead of your regular vessel's speed and you may spend (Surge) on melee attacks to cause Bleed (2). DoubleSurge: Gain +1 speed, Nimble and Slippery. DoubleSurge: Once per turn, you may assume a position within range 3. Surge: Duration +1. Move (2) (gain Nimble and Slippery)"
+			"rules": "Wildshape: Lynx Spell Ongoing  Spellcasting 3+  While the effect lasts, temporarily use the 'Lynx' standee instead of your own.  You have 5 speed instead of your regular vessel's speed and you may spend (Surge) on melee attacks to cause Bleed (2). DoubleSurge: Gain +1 speed, Nimble and Slippery. DoubleSurge: Once during your turn, you may assume a position within range 3. Surge: Duration +1. Move (2) (gain Nimble and Slippery)"
 		},
 		{
 			"type": "Spell",
@@ -5330,13 +5330,13 @@
 				"hand"
 			],
 			"spends": [],
-			"rules": "Advance Lance 1h weapon melee polearm hand Add (Enhancement Die) (Blessing Die) to attacks.    Gain Reach.    Before performing a melee attack, you may Move (2) in a straight or diagonal line (gainSlippery)."
+			"rules": "Advance Lance 1h weapon melee polearm hand Gain Reach.  Add (Enhancement Die) (Blessing Die) to attacks.    Before performing a melee attack, you may Move (2) in a straight or diagonal line (gainSlippery)."
 		},
 		{
 			"name": "Ambrosia",
 			"abundance": "1",
 			"durability": "0",
-			"price": "12",
+			"price": "12*",
 			"id": "si3",
 			"category": "item",
 			"currency": "SoulShards",
@@ -5400,7 +5400,7 @@
 				"hand"
 			],
 			"spends": [],
-			"rules": "Arcane Tome 1h weapon magical tome hand Add (Blessing Die) to spellcasting.  While equipped, perform a free ranged attack at the end of each turn against an enemy within range 6, using your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
+			"rules": "Arcane Tome 1h weapon magical tome hand Add (Blessing Die) to spellcasting.  While equipped, perform a free ranged attack at the end of your turn against an enemy within range 6, using your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
 		},
 		{
 			"name": "Archer's Garments",
@@ -5471,7 +5471,7 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Astral Gloves gear gloves magical After casting a spell, you put another spell from your hand on cooldown 5, then double the amount of wounds that spell causes (this also applies to all wounds a summoned minion would cause)."
+			"rules": "Astral Gloves gear gloves magical After casting a spell, you may put another spell from your hand on cooldown 5, then double the amount of wounds that spell causes (this also applies to all wounds a summoned minion would cause)."
 		},
 		{
 			"name": "Balsamic Bandages",
@@ -5535,7 +5535,7 @@
 				"back"
 			],
 			"spends": [],
-			"rules": "Baron Murkgrad's Mantle gear back Become immune against Cursed.    Gain +1 speed for each wound you have."
+			"rules": "Baron Murkgrad's Mantle gear back Become immune against Cursed.    Gain +1 speed."
 		},
 		{
 			"name": "Blade Of Swiftness",
@@ -5596,7 +5596,7 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Book Of Conjuring gear magical Once per adventure, summon a demon minion with a toughness of 4 that dies with second wound.  It has a speed of 5 and adds (Power Die) (Enhancement Die) to its attacks.  It suffers a scratch after each of its turns."
+			"rules": "Book Of Conjuring gear magical Once per adventure, summon a demon minion with a toughness of 8 and a speed of 5. It adds (Power Die) (Enhancement Die) to its attacks.  It suffers a scratch after each of its turns."
 		},
 		{
 			"name": "Boots Of Speed",
@@ -5756,7 +5756,7 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Brooch Of Soothing Winds gear magical Once per turn, you may spend 2 movement points to heal one scratch from an ally within range 2."
+			"rules": "Brooch Of Soothing Winds gear magical Once during your turn, you may spend 2 movement points to heal one scratch from an ally within range 2."
 		},
 		{
 			"name": "Buckler",
@@ -5807,14 +5807,14 @@
 			"types": [
 				"1h",
 				"weapon",
-				"melee",
+				"melee/ranged",
 				"blade",
 				"hand"
 			],
 			"spends": [
 				"doublesurge"
 			],
-			"rules": "Chakram Of Solstice 1h weapon melee blade hand Add (Blessing Die) (Blessing Die) to attacks.  If you are not adjacent to an ally, add another (Enhancement Die).    May be used as a ranged weapon with a range of 4.  You may use the below spending options on attacks. DoubleSurge: Perform a free attack (max. 2 per round)."
+			"rules": "Chakram Of Solstice 1h weapon melee/ranged blade hand Add (Blessing Die) (Blessing Die) to attacks.  If you are not adjacent to an ally, add another (Enhancement Die).    May be used as a ranged weapon with a range of 4.  You may use the below spending options on attacks. DoubleSurge: Perform a free attack (max. 2 per round)."
 		},
 		{
 			"name": "Circlet Of The Marksman",
@@ -5850,7 +5850,7 @@
 			"spends": [
 				"star"
 			],
-			"rules": "Claws of Ebberesk 2h weapon melee slashing hand Add (Enhancement Die) to your attacks.  Your attacks are still considered 'unarmed' and as if you had your hands free.    Add the below spending options to attacks. Star: Cause Bleed (2)."
+			"rules": "Claws of Ebberesk 2h weapon melee slashing hand Add (Enhancement Die) to your attacks.  Your attacks are still considered 'unarmed' and as if you had your hands free.    You may use the below spending options on attacks. Star: Cause Bleed (2)."
 		},
 		{
 			"name": "Combat Gloves",
@@ -6050,7 +6050,7 @@
 				"star",
 				"surge"
 			],
-			"rules": "Druid's Shillelagh 2h weapon melee polearm hand Add (Enhancement Die) to spellcasting. Add another (Blessing Die) for each active ongoing spell that you have cast.  You may use the below spending options on spellcasting. Star: Ignore one botched result. Star: Extend the duration of one of your ongoing spells by 1."
+			"rules": "Druid's Shillelagh 2h weapon melee polearm hand Add (Enhancement Die) to spellcasting. Add another (Blessing Die) for each active ongoing spell that you have cast.  You may use the below spending options on spellcasting. Star: Ignore one botched result. Star: Extend the duration of one of your active ongoing spells by 1."
 		},
 		{
 			"name": "Duelist's Medallion",
@@ -6533,7 +6533,7 @@
 				"witchcraft"
 			],
 			"spends": [],
-			"rules": "Infinite Breadcrumbs gear witchcraft Once per adventure, you may determine the layout of a just discovered room (instead of rolling for it).    You may also permanently discard this item to heal two wounds from yourself."
+			"rules": "Infinite Breadcrumbs gear witchcraft Once per adventure, you may either determine the layout of a just discovered room (instead of rolling for it) or heal a wound from yourself."
 		},
 		{
 			"name": "Katana",
@@ -6609,7 +6609,7 @@
 				"shoulder"
 			],
 			"spends": [],
-			"rules": "Knight's Pauldrons gear shoulder Add (Blessing Die) to defense.    You may prevent 2 scratches by assigning a 'Wear' token to this item."
+			"rules": "Knight's Pauldrons gear shoulder Add (Blessing Die) to defense.    You may prevent 2 scratches by assigning wear to this item."
 		},
 		{
 			"name": "Kris Of Leeching",
@@ -6649,7 +6649,7 @@
 				"potion"
 			],
 			"spends": [],
-			"rules": "Laraksian Tea consumable potion Consume to regenerate a scratch.    This item refills itself as soon as you defeat an enemy (deliver the final blow)."
+			"rules": "Laraksian Tea consumable potion Consume to regenerate a scratch, then turn this item face down.    This item refills itself as soon as you defeat an enemy (deliver the final blow), in which case you turn it face up again."
 		},
 		{
 			"name": "Leather Rags",
@@ -6748,6 +6748,30 @@
 			"rules": "Longsword 1h weapon melee blade hand Add (Standard Die) (Enhancement Die) to attacks."
 		},
 		{
+			"name": "Mage Blade",
+			"abundance": "1",
+			"durability": "3",
+			"price": "70",
+			"tier": "2",
+			"id": "i97",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"1h",
+				"weapon",
+				"melee",
+				"blade",
+				"magical",
+				"hand"
+			],
+			"spends": [
+				"star",
+				"star",
+				"surge"
+			],
+			"rules": "Mage Blade 1h weapon melee blade magical hand Add (Blessing Die) to spellcasting and melee attacks.    You may use the below spending options on attacks and spellcasting. Star: (Melee only:) Play a spell from your hand (max. once per round). Star: +2 Power. Star: +1 Power."
+		},
+		{
 			"name": "Mage Order Robes",
 			"abundance": "1",
 			"durability": "3",
@@ -6780,7 +6804,7 @@
 				"mundane"
 			],
 			"spends": [],
-			"rules": "Mercenary Contract gear mundane Start each adventure with a Mercenary minion who has a toughness of 3, a speed of 4 and who dies with the second wound.    Add (Blessing Die) (Blessing Die) to its attacks as long as you have this contract equipped."
+			"rules": "Mercenary Contract gear mundane Start each adventure with a Mercenary minion who has a toughness of 6 and a speed of 4.    Add (Blessing Die) (Blessing Die) to its attacks as long as you have this contract equipped."
 		},
 		{
 			"name": "Mirror Of Envy",
@@ -6813,7 +6837,7 @@
 			"spends": [
 				"doublesurge"
 			],
-			"rules": "Mithril Chainmail armor medium Add (Power Die) to defense.  Gain +2 speed.  Add (Cursed Die) to attacks.    Add the below spending options to defense. DoubleSurge: +2 Power."
+			"rules": "Mithril Chainmail armor medium Add (Power Die) to defense.  Gain +2 speed.  Add (Cursed Die) to attacks.    You may use the below spending options on defense. DoubleSurge: +2 Power."
 		},
 		{
 			"name": "Necklace Of Binding",
@@ -6957,7 +6981,7 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Power Cube gear magical At the end of each turn, reduce one of your cooldowns by 1."
+			"rules": "Power Cube gear magical At the end of your turn, reduce one of your cooldowns by 1."
 		},
 		{
 			"name": "Primitive Bow",
@@ -7075,7 +7099,7 @@
 				"star",
 				"surge"
 			],
-			"rules": "Repeating Crossbow 2h weapon ranged crossbow hand Range 6  Add (Blessing Die) (Blessing Die) to attacks.  Perform a free ranged attack at the end of each turn.    You may use the below spending options on attacks. Star: +2 Power. Star: +1 Power."
+			"rules": "Repeating Crossbow 2h weapon ranged crossbow hand Range 6  Add (Blessing Die) (Blessing Die) to attacks.  Perform a free ranged attack at the end of your turn.    You may use the below spending options on attacks. Star: +2 Power. Star: +1 Power."
 		},
 		{
 			"name": "Retrain",
@@ -7090,7 +7114,7 @@
 				"immediate"
 			],
 			"spends": [],
-			"rules": "Retrain consumable immediate Replace the default (Surge) spending option of your vessel with another one of your choice    OR    Change the learned perks of your vessel."
+			"rules": "Retrain consumable immediate Replace the default (Surge) spending option of your vessel with another one of your choice (from the bag of \"Alternative Spending Option\")    OR    Change the learned perks of your vessel."
 		},
 		{
 			"name": "Ring Of Invulnerability",
@@ -7430,7 +7454,7 @@
 			"name": "Scythe",
 			"abundance": "2",
 			"durability": "2",
-			"price": "40",
+			"price": "50",
 			"tier": "1",
 			"id": "i25",
 			"category": "item",
@@ -7446,7 +7470,7 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Scythe 2h weapon melee polearm hand You may use the below spending options on attacks. DoubleSurge: Hit a third, adjacent enemy (deal max. one wound). DoubleSurge: Hit one additional, adjacent enemy (deal max. one wound)."
+			"rules": "Scythe 2h weapon melee polearm hand Gain Reach.    Add (Blessing Die)    You may use the below spending options on attacks. DoubleSurge: Hit a third, adjacent enemy (deal max. one wound). DoubleSurge: Hit one additional, adjacent enemy (deal max. one wound)."
 		},
 		{
 			"name": "Sell Soul Shard",
@@ -7820,7 +7844,7 @@
 			"name": "Temporal Signet",
 			"abundance": "1",
 			"durability": "2",
-			"price": "90",
+			"price": "70",
 			"tier": "3",
 			"id": "i62",
 			"category": "item",
@@ -7881,7 +7905,7 @@
 				"hand"
 			],
 			"spends": [],
-			"rules": "Thief's Blade 1h weapon melee blade hand Add (Enhancement Die) (Blessing Die) (Blessing Die) to attacks.    At the end of each turn, you may Move (3) (gain Nimble) in a straight or diagonal line and perform a free attack against one enemy that was within reach on that path."
+			"rules": "Thief's Blade 1h weapon melee blade hand Add (Enhancement Die) (Blessing Die) (Blessing Die) to attacks.    At the end of your turn, you may Move (3) (gain Nimble) in a straight or diagonal line and perform a free attack against one enemy that was within reach on that path."
 		},
 		{
 			"name": "Throwing Knives",
@@ -7901,6 +7925,22 @@
 			],
 			"spends": [],
 			"rules": "Throwing Knives 1h weapon ranged throwing hand Range 3  Doesn't have to be equipped to be used.    Add (Blessing Die) to attacks (if in backpack).  Add (Enhancement Die) to attacks (if in hand)."
+		},
+		{
+			"name": "Tinkerer's Toolkit",
+			"abundance": "2",
+			"durability": "0",
+			"price": "5",
+			"tier": "2",
+			"id": "i96",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"consumable",
+				"mundane"
+			],
+			"spends": [],
+			"rules": "Tinkerer's Toolkit consumable mundane Consume to remove one 'Wear' token from an item that you carry."
 		},
 		{
 			"name": "Tome Of Demons",
@@ -8047,7 +8087,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Whip Of The Succubus 1h weapon melee slashing hand Add (Enhancement Die) to your attacks.  Gain Reach.    Add the below spending options to attacks. Surge: Cause Dazed. Surge: Cause Stun."
+			"rules": "Whip Of The Succubus 1h weapon melee slashing hand Gain Reach.  Add (Enhancement Die) to your attacks.    You may use the below spending options on attacks. Surge: Cause Dazed. Surge: Cause Stun."
 		},
 		{
 			"name": "Whistleheart Axe",
@@ -8126,6 +8166,7 @@
 		"back": true,
 		"shoulder": true,
 		"immediate": true,
+		"melee/ranged": true,
 		"rune": true
 	},
 	"starterClasses": [
@@ -8391,7 +8432,7 @@
 			],
 			"scratches": 14,
 			"id": "commander",
-			"rules": "Commander Move an ally by 1 square  (grant Slippery) Commanding Presence Once during your turn, you may do one of the following:  • Reduce an ally's cooldown by 1.  • Move an ally by 1.  • Grant an ally (Blessing Die) on their next roll this round. Defensive Order Once per round, you can provide an ally within range 4 with (Power Die) on their defense roll. Offensive Order Once per round, you can provide an ally within range 4 with an additional (Enhancement Die) on their attack roll. Get Ready! On any roll: Spend (Star) to reduce one of the cooldowns of an ally by 2. Coordinate Once per round, at any time, you can provide an ally with an additional (Surge) on their roll (before dice get rolled).",
+			"rules": "Commander Move an ally by 1 square  (grant Slippery) Commanding Presence Once during your turn, you may do one of the following:  • Reduce an ally's cooldown by 1.  • Move an ally by 1 square.  • Grant an ally (Blessing Die) on their next roll this round. Defensive Order Once per round, you can provide an ally within range 4 with (Power Die) on their defense roll. Offensive Order Once per round, you can provide an ally within range 4 with an additional (Enhancement Die) on their attack roll. Get Ready! On any roll: Spend (Star) to reduce one of the cooldowns of an ally by 2. Coordinate Once per round, at any time, you can provide an ally with an additional (Surge) on their roll (before dice get rolled).",
 			"rarity": "rare"
 		},
 		{
@@ -8405,7 +8446,7 @@
 			],
 			"scratches": 13,
 			"id": "courtesan",
-			"rules": "Courtesan Move an ally by 1 square  (grant Slippery) Comforting Words Once during each turn, heal a scratch from an ally within range 3 or reduce the duration of an ongoing effect on them by 1. Incarnated Passion Once per adventure, you may grant yourself and all allies (Enhancement Die) (Blessing Die) on all rolls for one round. Surprising Stab Once per round, at any time, you may perform a free melee attack, but you add (Blessing Die) (Blessing Die) instead of what your weapons provide.  You may spend each (Surge) to add +1 power. Worth Dying For Once per round, you may redirect an attack targeted against you to an adjacent ally. They add (Blessing Die) (Blessing Die) to their defense. Empathetic Fighting Whenever you perform a major action, you may reduce the cooldown of an ally's card by 1. ",
+			"rules": "Courtesan Move an ally by 1 square  (grant Slippery) Comforting Words Once during your turn, heal a scratch from an ally within range 3 or reduce the duration of an ongoing effect on them by 1. Incarnated Passion Once per adventure, you may grant yourself and all allies (Enhancement Die) (Blessing Die) on all rolls for one round. Surprising Stab Once per round, at any time, you may perform a free melee attack, but you add (Blessing Die) (Blessing Die) instead of what your weapons provide.  You may spend each (Surge) to add +1 power. Worth Dying For Once per round, you may redirect an attack targeted against you to an adjacent ally. They add (Blessing Die) (Blessing Die) to their defense. Empathetic Fighting Whenever you perform a major action, you may reduce the cooldown of an ally's card by 1. ",
 			"rarity": "legendary"
 		},
 		{
@@ -8433,7 +8474,7 @@
 			],
 			"scratches": 14,
 			"id": "elvenranger",
-			"rules": "Elven Ranger Move (1)  (gain Slippery) Survivalist At the end of each turn, if you don't have any wounds, regenerate one scratch or reduce the cooldown of one your cards by 1. Armed To The Teeth Consider the first weapon in your backpack to be equipped in addition to the weapons in your hand, but it must be of a different type (ranged vs. melee). It doesn‘t matter if it's a one- or two-handed weapon. You cannot use shields any longer. Arcane Archery Your ranged attacks can be aimed around one corner. You need Line-of-Sight to one spot and from that spot to the target (the total range must still match). Adaptive Fighting You may treat 'Ranged Attack' cards / actions as 'Melee Attack' cards / actions and vice versa. Sniper Shot Gain +1 range with ranged attacks and if you attack an enemy who is at least 6 squares away, add (Blessing Die) and cause Weaken when causing at least one wound.",
+			"rules": "Elven Ranger Move (1)  (gain Slippery) Survivalist At the end of your turn, if you don't have any wounds, regenerate one scratch or reduce the cooldown of one your cards by 1. Armed To The Teeth Consider the first weapon in your backpack to be equipped in addition to the weapons in your hand, but it must be of a different type (ranged vs. melee). It doesn‘t matter if it's a one- or two-handed weapon. You cannot use shields any longer. Arcane Archery Your ranged attacks can be aimed around one corner. You need Line-of-Sight to one spot and from that spot to the target (the total range must still match). Adaptive Fighting You may treat 'Ranged Attack' cards / actions as 'Melee Attack' cards / actions and vice versa. Sniper Shot Gain +1 range with ranged attacks and if you attack an enemy who is at least 6 squares away, add (Blessing Die) and cause Weaken when causing at least one wound.",
 			"rarity": "legendary"
 		},
 		{
@@ -8461,7 +8502,7 @@
 			],
 			"scratches": 16,
 			"id": "joanathepaladin",
-			"rules": "Joana The Paladin Reduce one of your cooldowns by 1 Holy Steed Spend 1 movement point to get on or off your horse.  While mounted, gain Bulky and Slippery and add (Blessing Die) to defense. While not mounted, add (Enhancement Die) (Enhancement Die) to any non-damaging and non-summoning spell. Divine Light Instead of performing a major action, you may make a spellcasting (2+) roll. If successfull, heal a scratch from a hero within range 5, plus one scratch per (Surge) spent. Put the overridden card on cooldown 4. Smite Instead of performing a major action, you may make a spellcasting (2+) roll.  If successful, cause Dazed or Cripple against enemy within range 5, or both effects by spending (Surge).  Put the overridden card on cooldown 1. Charge While mounted, right before or after performing a melee attack, you may Move (3) in a straight or diagonal line. Trample Your mount is considered its own minion while you ride it, with a speed of 3 and adding (Blessing Die) (Blessing Die) to its attacks. It cannot become a direct target.",
+			"rules": "Joana The Paladin Reduce one of your cooldowns by 1 Holy Steed Spend 1 movement point to get on or off your horse.  While mounted, gain Bulky and Slippery and add (Blessing Die) to defense. While not mounted, add (Enhancement Die) (Enhancement Die) to any non-damaging and non-summoning spell. Divine Light Instead of performing a major action, you may make a spellcasting (2+) roll. If successfull, heal a scratch from a hero within range 5, plus one scratch per (Surge) spent. Put the overridden card on cooldown 4. Smite Instead of performing a major action, you may make a spellcasting (2+) roll.  If successful, cause Dazed or Cripple against enemy within range 5, or both effects by spending (Surge).  Put the overridden card on cooldown 1. Charge While mounted, right before or after performing a melee attack, you may Move (3) in a straight or diagonal line. Combat Mount While mounted, at the end or beginning of your turn you may Move (3).  At the end of your turn, your horse performs an attack like a minion, adding (Blessing Die) (Blessing Die).",
 			"rarity": "mythical"
 		},
 		{
@@ -8475,7 +8516,7 @@
 			],
 			"scratches": 15,
 			"id": "king",
-			"rules": "King Move an enemy within range 2 by 1 square Legacy When obtaining this vessel, obtain any one weapon or armor of your choice of the current tier and up to +2 tiers (Soul Shop & Legendary items may not be selected).  That item never suffers wear as long as it remains with the king. Royal Blood If you get assigned scratches from 'Life Bond' (from heroes without a vessel), you may ignore these scratches.  Additionally, generate one Soul Shard whenever you finish an adventure. Retainer I Start each adventure with a bodyguard minion who has a toughness of 3, 4 speed and who dies with the second wound.  They add (Blessing Die) to their attacks. Tax Collector Whenever you finish an adventure as a King, gain 50 coins. Retainer II Start each adventure with an (additional) bodyguard minion as per 'Retainer I'.",
+			"rules": "King Move an enemy within range 2 by 1 square Legacy When obtaining this vessel, obtain any one weapon or armor of your choice of the current tier and up to +2 tiers (Soul Shop & Legendary items may not be selected).  That item never suffers wear as long as it remains with the king. Royal Blood If you get assigned scratches from 'Life Bond' (from heroes without a vessel), you may ignore these scratches.  Additionally, generate one Soul Shard whenever you finish an adventure. Retainer I Start each adventure with a bodyguard minion who has a toughness of 6 and 4 speed.  They add (Blessing Die) to their attacks. Tax Collector Whenever you finish an adventure as a King, gain 50 coins. Retainer II Start each adventure with an (additional) bodyguard minion as per 'Retainer I'.",
 			"rarity": "legendary"
 		},
 		{
@@ -8517,7 +8558,7 @@
 			],
 			"scratches": 14,
 			"id": "monk",
-			"rules": "Monk Move an ally by 1 square  (grant Slippery) Sermon Collect a Ki token at the beginning of each round (max. 6).  Up to twice per turn, you can spend a Ki token to reduce the duration of an ongoing effect from yourself or an ally by 1. Divine Protection You may add one (Standard Die) or (Blessing Die) for each Ki token you spend on your defense. Secret Techniques During your turn, you may spend 3 Ki tokens to increase the duration of one of your ongoing effects by 2. Restoration During your turn, you may spend 5 Ki tokens to heal a wound from yourself or an adjacent ally. Combat Monk Whenever you deal at least one wound during your turn, you receive one additional Ki token.",
+			"rules": "Monk Move an ally by 1 square  (grant Slippery) Sermon Collect a Ki token at the beginning of each round (max. 6).  Up to twice during your turn, you can spend a Ki token to reduce the duration of an ongoing effect from yourself or an ally by 1. Divine Protection You may add one (Standard Die) or (Blessing Die) for each Ki token you spend on your defense. Secret Techniques During your turn, you may spend 3 Ki tokens to increase the duration of one of your ongoing effects by 2. Restoration During your turn, you may spend 5 Ki tokens to heal a wound from yourself or an adjacent ally. Combat Monk Whenever you deal at least one wound during your turn, you receive one additional Ki token.",
 			"rarity": "rare"
 		},
 		{
@@ -8573,7 +8614,7 @@
 			],
 			"scratches": 15,
 			"id": "seraphim",
-			"rules": "Seraphim Move an ally by 1 square  (grant Slippery) Blessed You may convert each (Blessing Die) into one (Enhancement Die) on any type of roll. Steel Defense As long as you wield two melee weapons (shields do not count), you may reroll each defense once, but you have to reroll all dice and keep the new result. Celestial Flight Once per turn, you may put any one card on cooldown 4 to immediately Move (6) (gain Nimble). Noble Sacrifice At any time, once per adventure, you may heal 3 scratches from every hero (including yourself). Swiftness Once per round, when playing a major action, you may also use the minor action of that card (in any order), but don't get the usual cooldown reduction from this.",
+			"rules": "Seraphim Move an ally by 1 square  (grant Slippery) Blessed You may convert each (Blessing Die) into one (Enhancement Die) on any type of roll. Steel Defense As long as you wield two melee weapons (shields do not count), you may reroll each defense once, but you have to reroll all dice and keep the new result. Celestial Flight Once during your turn, you may put any one card on cooldown 4 to immediately Move (6) (gain Nimble). Noble Sacrifice At any time, once per adventure, you may heal 3 scratches from every hero (including yourself). Swiftness Once per round, when playing a major action, you may also use the minor action of that card (in any order), but don't get the usual cooldown reduction from this.",
 			"rarity": "legendary"
 		},
 		{
@@ -8601,7 +8642,7 @@
 			],
 			"scratches": 14,
 			"id": "shinobi",
-			"rules": "Shinobi Move (1)  (gain Slippery) Wall Jump Once per turn, if you are adjacent to a wall, you may assume a new position within range 3. School Of Mirrors Add 'Shadow Clone' (A) to your hand cards (does not affect your card purchase costs). It always succeeds automatically.    If you lose this vessel, that card is lost as well. School Of Shadows Add 'Stealth' (B) to your hand cards (does not affect your card purchase costs).    If you lose this vessel, that card is lost as well. Toxic Thread Add (Power Die) to your first attack each turn if that enemy has the same or lower initiative than you. Shinobi's Toolkit You may add (Power Die) (Power Die) (Blessing Die) to an attack by discarding a weapon from your backpack.",
+			"rules": "Shinobi Move (1)  (gain Slippery) Wall Jump Once during your turn, if you are adjacent to a wall, you may assume a new position within range 3. School Of Mirrors Add 'Shadow Clone' (A) to your hand cards (does not affect your card purchase costs). It always succeeds automatically.    If you lose this vessel, that card is lost as well. School Of Shadows Add 'Stealth' (B) to your hand cards (does not affect your card purchase costs).    If you lose this vessel, that card is lost as well. Toxic Thread Add (Power Die) to your first attack each turn if that enemy has the same or lower initiative than you. Shinobi's Toolkit You may add (Power Die) (Power Die) (Blessing Die) to an attack by discarding a weapon from your backpack.",
 			"rarity": "rare"
 		},
 		{
@@ -8643,7 +8684,7 @@
 			],
 			"scratches": 15,
 			"id": "vampire",
-			"rules": "Vampire Reduce one of your cooldowns by 1 Vampire's Kiss Once per turn, you can deal an adjacent hero a scratch to gain a blood token (max. 6).  Spend two blood tokens on any type of roll to add (Power Die). Blood Potency Automatically gain one blood token at the beginning of each round. Vampiric Superiority You can spend two blood tokens to either add (Star) or (Double Surge) to any of your rolls. Bloodbath If you defeat an enemy (by delivering the final blow), you gain a blood token. Unholy Regeneration During your turn, you can spend four blood tokens to heal one wound or 3 scratches from yourself.",
+			"rules": "Vampire Reduce one of your cooldowns by 1 Vampire's Kiss Once during your turn, you can deal an adjacent hero a scratch to gain a blood token (max. 6).  Spend two blood tokens on any type of roll to add (Power Die). Blood Potency Automatically gain one blood token at the beginning of each round. Vampiric Superiority You can spend two blood tokens to either add (Star) or (Double Surge) to any of your rolls. Bloodbath If you defeat an enemy (by delivering the final blow), you gain a blood token. Unholy Regeneration During your turn, you can spend four blood tokens to heal one wound or 3 scratches from yourself.",
 			"rarity": "legendary"
 		},
 		{
@@ -8657,7 +8698,7 @@
 			],
 			"scratches": null,
 			"id": "vessellesssoul",
-			"rules": "Vesselless Soul Heal a scratch of an ally in range 5  (max. once per round) Life Bond & Incorporeal At the beginning of each turn, roll (Cursed Die) (Cursed Die) (Cursed Die). Deal the highest die-result as scratches to two heroes of your choice each.    You still act as usual, but gain Nimble, cannot open doors / treasure chests and fully get ignored as a viable enemy target.        ",
+			"rules": "Vesselless Soul Heal a scratch of an ally in range 5  (max. once per round) Life Bond & Incorporeal At the beginning your turn turn, roll (Cursed Die) (Cursed Die) (Cursed Die). Deal the highest die-result as scratches to two heroes of your choice each.    You still act as usual, but gain Nimble, cannot open doors / treasure chests and fully get ignored as a viable enemy target.        ",
 			"rarity": "common"
 		},
 		{
