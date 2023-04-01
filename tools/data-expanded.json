@@ -3,6 +3,48 @@
 		{
 			"type": "Meta",
 			"initiative": "1",
+			"name": "Animal Tamer",
+			"cooldown": "5",
+			"id": "a367",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Animal Tamer Meta Ongoing  Place a raccoon minion within range 2. It has a speed of 5 and is Nimble, but can never be targeted or suffer damage. It can perform all special movement actions like heroes (but not interact with vessel tokens), and it can carry up to two items.  When this minion disappears, place a \"Dropped Item\" token on its position with the items it was carrying.  Any items held by the raccoon at the end of an adventure are carried over to the Town Phase. Move 3 (gain Nimble)"
+		},
+		{
+			"type": "Meta",
+			"initiative": "1",
+			"name": "Animal Tamer",
+			"cooldown": "5",
+			"id": "a368",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Animal Tamer Meta Ongoing  Place a raccoon minion within range 2. It has a speed of 5, but can never be targeted or suffer damage. It can perform all special movement actions like heroes (but not interact with vessel tokens), and it can carry up to four items.  When this minion disappears, place a \"Dropped Item\" token on its position with the items it was carrying.  Any items held by the raccoon at the end of an adventure are carried over to the Town Phase. Move 3 (gain Nimble)"
+		},
+		{
+			"type": "Meta",
+			"initiative": "1",
+			"name": "Animal Tamer",
+			"cooldown": "5",
+			"id": "a369",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Animal Tamer Meta Ongoing  Place a raccoon minion within range 2. It has a speed of 5 and is Nimble, but can never be targeted or suffer damage. It can perform all special movement actions like heroes (but not interact with vessel tokens), and it can carry up to two items.  The raccoon's attacks cause Weaken.  When this minion disappears, place a \"Dropped Item\" token on its position with the items it was carrying.  Any items held by the raccoon at the end of an adventure are carried over to the Town Phase. Move 3 (gain Nimble)"
+		},
+		{
+			"type": "Meta",
+			"initiative": "1",
 			"name": "Arcane Manipulation",
 			"cooldown": "1",
 			"id": "a97",
@@ -1617,7 +1659,7 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Double Trouble Attack Attack with both weapons.    You may only use the spending options on the first attack. Surge: Cooldown -1. Move (2)  Attack"
+			"rules": "Double Trouble Attack Perform a separate attack with two of your equipped weapons.    You may only use the spending options on the first attack. Surge: Cooldown -1. Move (2)  Attack"
 		},
 		{
 			"type": "Attack",
@@ -1632,7 +1674,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Double Trouble Attack Attack with both weapons.    You may only use the spending options on the first attack. Surge: Cooldown -1. Surge: Cooldown -1. Attack, add (Cursed Die).  Attack, add (Cursed Die) (Cursed Die) (with your other equipped weapon)."
+			"rules": "Double Trouble Attack Perform a separate attack with two of your equipped weapons.    You may only use the spending options on the first attack. Surge: Cooldown -1. Surge: Cooldown -1. Attack, add (Cursed Die).  Attack, add (Cursed Die) (Cursed Die) (with your other equipped weapon)."
 		},
 		{
 			"type": "Attack",
@@ -1647,7 +1689,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Double Trouble Attack Attack with both weapons.    You may use the spending options on either attack, but not on both. Surge: Cause Cripple. Surge: Cause Bleed (2). Move (2)  Attack"
+			"rules": "Double Trouble Attack Perform a separate attack with two of your equipped weapons.    You may use the spending options on either attack, but not on both. Surge: Cause Cripple. Surge: Cause Bleed (2). Move (2)  Attack"
 		},
 		{
 			"type": "Melee",
@@ -2288,7 +2330,7 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Haste Meta Interrupt  Allow an ally to repeat a card that they have just played. Allow an ally to immediately play a card from their hand.  Then suffer Stun (2)."
+			"rules": "Haste Meta Interrupt  Allow an ally to repeat a card that they have just played.  Not usable on ongoing effects. Allow an ally to immediately play a card from their hand.  Then suffer Stun (2)."
 		},
 		{
 			"type": "Meta",
@@ -2302,7 +2344,7 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Haste Meta Interrupt  Allow an ally or yourself to repeat a card that they or you have just played. Reduce one of your cooldowns by 2."
+			"rules": "Haste Meta Interrupt  Allow an ally or yourself to repeat a card that they or you have just played.  Not usable on ongoing effects. Reduce one of your cooldowns by 2."
 		},
 		{
 			"type": "Meta",
@@ -2373,7 +2415,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Ice Lance Spell Treat this spell like a ranged attack with a range of 6, using your spellcasting dice pool. Surge: +1 Power. Surge: Cause Cripple. Attack an enemy within range 6 using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
+			"rules": "Ice Lance Spell Treat this spell like a ranged attack with a range of 6, using your spellcasting dice pool. Surge: +1 Power. Surge: Cause Cripple. Attack an enemy within range 6 using your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
 		},
 		{
 			"type": "Spell",
@@ -2388,7 +2430,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Ice Lance Spell Treat this spell like a ranged attack with a range of 8, using your spellcasting dice pool. Surge: +1 Power. Surge: Cause Cripple. Attack an enemy within range 6 using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
+			"rules": "Ice Lance Spell Treat this spell like a ranged attack with a range of 8, using your spellcasting dice pool. Surge: +1 Power. Surge: Cause Cripple. Attack an enemy within range 6 using your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
 		},
 		{
 			"type": "Spell",
@@ -2404,7 +2446,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Ice Lance Spell Treat this spell like a ranged attack with a range of 6, using your spellcasting dice pool. Star: +2 Power. Star: +2 Power. Surge: Cause Cripple. Attack an enemy within range 6 using only your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
+			"rules": "Ice Lance Spell Treat this spell like a ranged attack with a range of 6, using your spellcasting dice pool. Star: +2 Power. Star: +2 Power. Surge: Cause Cripple. Attack an enemy within range 6 using your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
 		},
 		{
 			"type": "Spell",
@@ -3412,6 +3454,48 @@
 			"rules": "Puncture Attack Attack, add (Enhancement Die). DoubleSurge: Place this like an ongoing effect with a duration of 3. While it lasts, the target suffers from Weaken. DoubleSurge: Cause Weaken. Move (1)  Attack"
 		},
 		{
+			"type": "Meta",
+			"initiative": "2",
+			"name": "Puppetmaster",
+			"cooldown": "3",
+			"id": "a364",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Puppetmaster Meta Ongoing  During each of your turns (including the turn that you play this), you may do each of the following:  • Move a minion by 2 squares.  • Grant a minion (Standard Die) on their next roll this round.  • Heal one scratch from a minion within range 5. Perform only one of the options listed for the major action."
+		},
+		{
+			"type": "Meta",
+			"initiative": "2",
+			"name": "Puppetmaster",
+			"cooldown": "3",
+			"id": "a365",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Puppetmaster Meta Ongoing  During each of your turns (including the turn that you play this), you may do each of the following:  • Move a minion by 2 squares.  • Grant a minion (Standard Die) on their next roll this round.  • Heal one scratch from a minion within range 5.  • Extend the duration of one of your ongoing spells that summoned a minion by +1. Perform only one of the options listed for the major action."
+		},
+		{
+			"type": "Meta",
+			"initiative": "2",
+			"name": "Puppetmaster",
+			"cooldown": "3",
+			"id": "a366",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Puppetmaster Meta Ongoing  During each of your turns (including the turn that you play this), you may do one of the following that hasn't been performed already:  • Move a minion by 4 squares (grant Slippery and Nimble).  • Grant a minion (Power Die) (Blessing Die) on their next roll this round.  • Completely heal a minion within range 5. Grant a minion (Standard Die) (Blessing Die) on their next roll this round."
+		},
+		{
 			"type": "Ranged",
 			"initiative": "6",
 			"name": "Quickshot",
@@ -4204,6 +4288,208 @@
 				"surge"
 			],
 			"rules": "Summon Mummy Spell Ongoing  Spellcasting 2+  Summon a Mummy minion within range 2. It has a toughness of 8 and a speed of 2. Surge: Add (Blessing Die) to its attacks. Surge: Additionally remove a (Balsamic) 'Bandage' and the Mummy heals one scratch on each of its turns. Move (1), then draw four item cards. If one of them is a (Balsamic) 'Bandage', you may keep it."
+		},
+		{
+			"type": "Spell",
+			"initiative": "4",
+			"name": "Summon Raging Bull",
+			"cooldown": "3",
+			"id": "a370",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Summon Raging Bull Spell Ongoing  Spellcasting 4+  Summon a Raging Bull minion within range 4. It is Bulky, has a speed of 6 and a toughness of 6. When it moves, it may only move in a single straight or diagonal line. DoubleSurge: When the Raging Bull ends its movement and displaces enemies, it causes Knockback (4) against them. DoubleSurge: Duration +1. Move (3) (displace other models as if you were Bulky during this movement)"
+		},
+		{
+			"type": "Spell",
+			"initiative": "4",
+			"name": "Summon Raging Bull",
+			"cooldown": "3",
+			"id": "a371",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"surge",
+				"surge",
+				"surge"
+			],
+			"rules": "Summon Raging Bull Spell Ongoing  Spellcasting 4+  Summon a Raging Bull minion within range 4. It is Bulky, has a speed of 6 and a toughness of 6. Surge: For each square the Raging Bull moves, it may perform Pull (1) on an ally within range 2. Surge: Increase the Raging Bull's speed by +2. Surge: Duration +1. Move (3) (displace other models as if you were Bulky during this movement)"
+		},
+		{
+			"type": "Spell",
+			"initiative": "4",
+			"name": "Summon Raging Bull",
+			"cooldown": "3",
+			"id": "a372",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"doublesurge",
+				"surge",
+				"surge"
+			],
+			"rules": "Summon Raging Bull Spell Ongoing  Spellcasting 4+  Summon a Raging Bull minion within range 4. It is Bulky, has a speed of 6 and a toughness of 8. When it moves, it may only move in a single straight or diagonal line. DoubleSurge: When the Raging Bull ends its movement and displaces enemies, it causes Knockback (4) against them. DoubleSurge: Add (Power Die) to its defense. Surge: Duration +1. Move (3) (displace other models as if you were Bulky during this movement)"
+		},
+		{
+			"type": "Spell",
+			"initiative": "1",
+			"name": "Summon Succubus",
+			"cooldown": "3",
+			"id": "a358",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"star",
+				"surge",
+				"surge"
+			],
+			"rules": "Summon Succubus Spell Ongoing  Spellcasting 3+  Summon a Succubus minion within range 2. She has a speed of 4 and a toughness of 4. Her attacks cause Dazed. Star: Instead of performing an attack, the Succubus may heal a scratch from a hero within range 3. Star: Her attacks cause Stun instead of Dazed. Surge: Duration +1. Cause Dazed against an adjacent enemy."
+		},
+		{
+			"type": "Spell",
+			"initiative": "1",
+			"name": "Summon Succubus",
+			"cooldown": "5",
+			"id": "a359",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Summon Succubus Spell Ongoing  Spellcasting 3+  Summon a Succubus minion within range 2. She has a speed of 4 and a toughness of 4. Her attacks cause Dazed. DoubleSurge: At the end of the Succubus' turn, she may heal a scratch from a hero within range 3. DoubleSurge: Increase her toughness and speed by +1. Cause Dazed against an adjacent enemy."
+		},
+		{
+			"type": "Spell",
+			"initiative": "1",
+			"name": "Summon Succubus",
+			"cooldown": "3",
+			"id": "a360",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"doublesurge",
+				"surge",
+				"surge"
+			],
+			"rules": "Summon Succubus Spell Ongoing  Spellcasting 3+  Summon a Succubus minion within range 2. She has a speed of 4 and a toughness of 4. DoubleSurge: The Succubus' attacks cause Dazed, Stun, Weaken and Cripple. DoubleSurge: Her attacks gain Reach. Surge: Duration +1. Cause Dazed against an adjacent enemy."
+		},
+		{
+			"type": "Spell",
+			"initiative": "1",
+			"name": "Summon Totem Golem",
+			"cooldown": "4",
+			"id": "a373",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Summon Totem Golem Spell Ongoing  Spellcasting 3+  Summon an Totem Golem minion within range 2. It is Bulky, has a speed of 2 and a toughness of 4. It gains benefits based on other \"Totem\" spells as long as they are present:  Fire: Add (Enhancement Die) to its attacks.  Earth: +4 toughness.  Water: It regenerates a scratch each turn.  Wind: +2 speed.  Lightning: Its attacks have range 4. Increase or decrease the duration of an ongoing \"Totem\" spell of yours by 2."
+		},
+		{
+			"type": "Spell",
+			"initiative": "1",
+			"name": "Summon Totem Golem",
+			"cooldown": "4",
+			"id": "a374",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Summon Totem Golem Spell Ongoing  Spellcasting 3+  Summon an Totem Golem minion within range 2. It is Bulky, has a speed of 2 and a toughness of 6. Its benefits change based on the active \"Totem\" spell with the highest remaining duration at the beginning of a round (pick on a tie):  Fire: Add (Power Die) (Enhancement Die) to its attacks.  Earth: Add (Power Die) to its defense.  Water: It regenerates 3 scratches each turn.  Wind: +4 speed and Slippery. Lightning: Its attacks have range 8. Increase or decrease the duration of an ongoing \"Totem\" spell of yours by 2."
+		},
+		{
+			"type": "Spell",
+			"initiative": "1",
+			"name": "Summon Totem Golem",
+			"cooldown": "5",
+			"id": "a375",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Summon Totem Golem Spell Ongoing  Spellcasting 3+  Summon an Totem Golem minion within range 4. It is Bulky, has a speed of 2 and a toughness of 4. It gains benefits based on other \"Totem\" spells as long as they are present:  Fire: Add (Enhancement Die) to its attacks.  Earth: +4 toughness.  Water: It regenerates a scratch each turn.  Wind: +2 speed.  Lightning: Its attacks have range 4.    While the Totem Golem is present, gain +1 power when attempting to cast a \"Totem\" spell. Increase or decrease the duration of an ongoing \"Totem\" spell of yours by 2."
+		},
+		{
+			"type": "Spell",
+			"initiative": "2",
+			"name": "Summon Wolves",
+			"cooldown": "4",
+			"id": "a361",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"star",
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Summon Wolves Spell Ongoing  Spellcasting 3+  Summon two Wolf minions adjacent to each other within range 5. They each have a toughness of 2 and a speed of 6. Star: Increase their toughness by +2. Star: Add (Blessing Die) to their attacks. DoubleSurge: They gain Nimble and Slippery. Move (2)  Perform a melee attack using your spellcasting dice pool."
+		},
+		{
+			"type": "Spell",
+			"initiative": "2",
+			"name": "Summon Wolves",
+			"cooldown": "4",
+			"id": "a362",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"star",
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Summon Wolves Spell Ongoing  Spellcasting 3+  Summon two Wolf minions adjacent to each other within range 5. They each have a toughness of 2 and a speed of 6.    They have Nimble and Slippery. Star: Increase their toughness by +2. Star: Add (Blessing Die) to their attacks. DoubleSurge: When a Wolf causes a wound, they also cause Bleed (2). Move (2)  Perform a melee attack using your spellcasting dice pool."
+		},
+		{
+			"type": "Spell",
+			"initiative": "2",
+			"name": "Summon Wolves",
+			"cooldown": "5",
+			"id": "a363",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"star",
+				"surge",
+				"surge"
+			],
+			"rules": "Summon Wolves Spell Ongoing  Spellcasting 3+  Summon two Wolf minions adjacent to each other within range 5. They each have a toughness of 2 and a speed of 6. Star: Increase their toughness by +4. Star: Add (Enhancement Die) to their attacks. Surge: They gain Nimble and Slippery. Move (2)  Perform a melee attack using your spellcasting dice pool."
 		},
 		{
 			"type": "Meta",
@@ -5213,6 +5499,58 @@
 		},
 		{
 			"type": "Spell",
+			"initiative": "1",
+			"name": "Wildshape: Dryad",
+			"cooldown": "3",
+			"id": "a376",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Wildshape: Dryad Spell Ongoing  Spellcasting 2+  While the effect lasts, temporarily use the 'Dryad' standee instead of your own. For any ability that you perform that could heal at least one scratch or wound, you may re-roll one die.  You suffer -1 vessel speed. DoubleSurge: At the end of your turns, reduce the cooldown of one of your cards that could heal at least one scratch or wound by 1. DoubleSurge: Duration +1. Heal one scratch from an adjacent ally or yourself."
+		},
+		{
+			"type": "Spell",
+			"initiative": "1",
+			"name": "Wildshape: Dryad",
+			"cooldown": "4",
+			"id": "a377",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Wildshape: Dryad Spell Ongoing  Spellcasting 2+  While the effect lasts, temporarily use the 'Dryad' standee instead of your own. For any ability that you perform that could heal at least one scratch or wound, you may re-roll one die.  You suffer -1 vessel speed. Surge: Immediately add 'First Aid', 'Ray Of Healing' or 'Flash Heal' to your hand (base level). You lose the card when the wildshape effect ends. Surge: Duration +1. Heal one scratch from an adjacent ally and one from yourself."
+		},
+		{
+			"type": "Spell",
+			"initiative": "1",
+			"name": "Wildshape: Dryad",
+			"cooldown": "3",
+			"id": "a378",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"surge",
+				"surge",
+				"surge"
+			],
+			"rules": "Wildshape: Dryad Spell Ongoing  Spellcasting 2+  While the effect lasts, temporarily use the 'Dryad' standee instead of your own. You are immobile, but you can heal one scratch from two allies within range 6 during each of your turns (including the turn that you play this). Surge: During each of your turns, you may throw one adjacent ally. They assume a position within range 5 of you. Surge: You may end the effect at any time. Surge: Add (Power Die) to your defense. Heal one scratch from an adjacent ally or yourself."
+		},
+		{
+			"type": "Spell",
 			"initiative": "5",
 			"name": "Wildshape: Lynx",
 			"cooldown": "4",
@@ -5263,6 +5601,58 @@
 				"surge"
 			],
 			"rules": "Wildshape: Lynx Spell Ongoing  Spellcasting 3+  While the effect lasts, temporarily use the 'Lynx' standee instead of your own.  You have 5 speed instead of your regular vessel's speed and you may spend (Surge) on melee attacks to cause Bleed (2). DoubleSurge: Gain +1 speed, Nimble and Slippery. DoubleSurge: Once during your turn, you may assume a position within range 3. Surge: Duration +1. Move (2) (gain Nimble and Slippery)"
+		},
+		{
+			"type": "Spell",
+			"initiative": "1",
+			"name": "Wildshape: Raven",
+			"cooldown": "2",
+			"id": "a379",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Wildshape: Raven Spell Ongoing  Spellcasting 2+  While the effect lasts, temporarily use the 'Raven' standee instead of your own. You get ignored as a viable target, and you turn this effect face down as soon as you attack or cast a spell. Gain +5 vessel speed. Surge: If you discover a new room, you may re-roll the layout once. Surge: Gain another +3 vessel speed. Move (3) (gain Nimble)"
+		},
+		{
+			"type": "Spell",
+			"initiative": "1",
+			"name": "Wildshape: Raven",
+			"cooldown": "3",
+			"id": "a380",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"surge",
+				"surge",
+				"surge"
+			],
+			"rules": "Wildshape: Raven Spell Ongoing  Spellcasting 2+  While the effect lasts, temporarily use the 'Raven' standee instead of your own. You get ignored as a viable target, and you take this card back into your hand as soon you attack or cast a spell. Gain +5 vessel speed and Nimble. Surge: If you discover a new room, you may re-roll the layout once. Surge: Gain another +5 vessel speed. Surge: Duration +1. Move (3) (gain Nimble)"
+		},
+		{
+			"type": "Spell",
+			"initiative": "1",
+			"name": "Wildshape: Raven",
+			"cooldown": "2",
+			"id": "a381",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Wildshape: Raven Spell Ongoing  Spellcasting 2+  While the effect lasts, temporarily use the 'Raven' standee instead of your own. You get ignored as a viable target, and you turn this effect face down as soon as you attack or cast a spell. Gain +5 vessel speed. Surge: Once the effect ends, perform a free melee attack. Surge: Gain +1 Power to the first attack or spell that you perform while in 'Raven' form. Move (2)  Attack"
 		},
 		{
 			"type": "Spell",
@@ -8321,7 +8711,7 @@
 				"a145",
 				"a169",
 				"a103",
-				"a280"
+				"a184"
 			]
 		},
 		{
@@ -8432,7 +8822,7 @@
 			],
 			"scratches": 14,
 			"id": "commander",
-			"rules": "Commander Move an ally by 1 square  (grant Slippery) Commanding Presence Once during your turn, you may do one of the following:  • Reduce an ally's cooldown by 1.  • Move an ally by 1 square.  • Grant an ally (Blessing Die) on their next roll this round. Defensive Order Once per round, you can provide an ally within range 4 with (Power Die) on their defense roll. Offensive Order Once per round, you can provide an ally within range 4 with an additional (Enhancement Die) on their attack roll. Get Ready! On any roll: Spend (Star) to reduce one of the cooldowns of an ally by 2. Coordinate Once per round, at any time, you can provide an ally with an additional (Surge) on their roll (before dice get rolled).",
+			"rules": "Commander Move an ally by 1 square  (grant Slippery) Commanding Presence Once during your turn, you may do one of the following:  • Reduce an ally's cooldown by 1.  • Move an ally by 1 square.  • Grant an ally (Blessing Die) on their next roll this round. Defensive Order Once per round, you can provide an ally within range 4 with (Power Die) on their defense roll. Offensive Order Once per round, you can provide an ally within range 4 with an additional (Enhancement Die) on their attack roll. Get Ready! On any of your rolls: Spend (Star) to reduce one of the cooldowns of an ally by 2. Coordinate Once per round, at any time, you can provide an ally with an additional (Surge) on their roll (before dice get rolled).",
 			"rarity": "rare"
 		},
 		{
@@ -8450,6 +8840,34 @@
 			"rarity": "legendary"
 		},
 		{
+			"name": "Dhuvin The Strong",
+			"speed": "4",
+			"category": "vessel",
+			"wounds": [
+				5,
+				6,
+				6
+			],
+			"scratches": 17,
+			"id": "dhuvinthestrong",
+			"rules": "Dhuvin The Strong Move (1)  (gain Slippery) Two Heads, One Body Bulky. You and Kilikor are considered to be one shared model and count as a single \"ally\" (only one of you benefits from any positive outcomes). If Dhuvin dies, Kilikor dies as well. By default, only you control this model's movement. Tough And Fast Reduce the attack value of all incoming enemy attacks by 1.  If you perform a minor action, the Kilikor player may perform a minor action from their hand (without cooldown reduction). Relentlessly Aggressive Increase your initiative by up to +2 each round.  If you perform a minor action, grant the Kilikor player (Enhancement Die) (Blessing Die) to their next roll this round - this bonus can stack. Brother, What Now? At the end of your turns, shuffle your hand cards and give two random ones to the Kilikor player. They choose one which you may then perform immediately (either as minor or major), but you suffer a scratch in the process. Majestic Slap At the end of your turns, you may cause Knockback (6) against one adjacent enemy.  Additionally, Kilikor does not suffer a penalty when performing a ranged attack while being adjacent to an enemy.",
+			"rarity": "mythical"
+		},
+		{
+			"name": "Druid",
+			"speed": "2",
+			"category": "vessel",
+			"wounds": [
+				4,
+				5,
+				6
+			],
+			"scratches": 15,
+			"id": "druid",
+			"rules": "Druid Reduce one of your cooldowns by 1 Shapeshifter Once per round, you may play a \"Wildshape\" spell like an interrupt.  If you do this and override an already ongoing Wildshape spell, that spell goes back into your hand. Regenerating Form Whenever you successfully cast a \"Wildshape\" spell and change your shape, you regenerate one scratch. Nature Magic Whenever an ongoing spell of yours would end, you may immediately reset it back to its unmodified base duration, but you need to put a hand card on cooldown 4 in the process. Perfected Form Whenever you cast a \"Wildshape\" spell, you automatically add a (Surge) to your spellcasting roll. Druid Spit During your turn, you may spend one movement point and put a hand card on cooldown 5. Then you may heal half the current scratches of an adjacent ally (round up). ",
+			"rarity": "rare"
+		},
+		{
 			"name": "Dwarven Slayer",
 			"speed": "3",
 			"category": "vessel",
@@ -8460,7 +8878,7 @@
 			],
 			"scratches": 16,
 			"id": "dwarvenslayer",
-			"rules": "Dwarven Slayer Move (1)  (gain Slippery) Grudge At the beginning of an adventure, declare one enemy type. Your attacks automatically add +2 Power against that enemy type. Unshakeable Reduce the duration of all incoming negative effects against you by 1, to a minimum of 1. Trophy Hunter Whenever you kill at least one model of a group with traits, take one of the trait cards (once the group is defeated).  At the end of the adventure, obtain 15 coins for each card collected. Honed Fighting Style Ignore any (Cursed Die) you would add from weapons or armor. Relieving Violence Whenever you kill an enemy, heal one scratch from yourself.  If you don't have a scratch, heal a wound instead, but the current (new) bar will be filled with scratches.",
+			"rules": "Dwarven Slayer Move (1)  (gain Slippery) Grudge At the beginning of an adventure, declare one enemy type. Your attacks automatically add +2 Power against that enemy type. Unshakeable Reduce the duration of all incoming negative effects against you by 1, to a minimum of 1. Trophy Hunter Whenever you kill at least one model of a group with traits, take one of the trait cards (once the group is defeated).  At the end of the adventure, obtain 20 coins for each card collected, up to a maximum of 60 coins. Honed Fighting Style Ignore any (Cursed Die) you would add from weapons or armor. Relieving Violence Whenever you kill an enemy, heal one scratch from yourself.  If you don't have a scratch, heal a wound instead, but the current (new) bar will be filled with scratches.",
 			"rarity": "rare"
 		},
 		{
@@ -8503,6 +8921,20 @@
 			"scratches": 16,
 			"id": "joanathepaladin",
 			"rules": "Joana The Paladin Reduce one of your cooldowns by 1 Holy Steed Spend 1 movement point to get on or off your horse.  While mounted, gain Bulky and Slippery and add (Blessing Die) to defense. While not mounted, add (Enhancement Die) (Enhancement Die) to any non-damaging and non-summoning spell. Divine Light Instead of performing a major action, you may make a spellcasting (2+) roll. If successfull, heal a scratch from a hero within range 5, plus one scratch per (Surge) spent. Put the overridden card on cooldown 4. Smite Instead of performing a major action, you may make a spellcasting (2+) roll.  If successful, cause Dazed or Cripple against enemy within range 5, or both effects by spending (Surge).  Put the overridden card on cooldown 1. Charge While mounted, right before or after performing a melee attack, you may Move (3) in a straight or diagonal line. Combat Mount While mounted, at the end or beginning of your turn you may Move (3).  At the end of your turn, your horse performs an attack like a minion, adding (Blessing Die) (Blessing Die).",
+			"rarity": "mythical"
+		},
+		{
+			"name": "Kilikor The Wise",
+			"speed": "1",
+			"category": "vessel",
+			"wounds": [
+				null,
+				null,
+				null
+			],
+			"scratches": null,
+			"id": "kilikorthewise",
+			"rules": "Kilikor The Wise Reduce one of your cooldowns by 1 The Smart One Once per round, at any time, you may allow Dhuvin to Move (2) (grant Slippery).    Whenever you would be targeted, Dhuvin gets targeted instead. Any scratches / wounds you'd suffer or heal, Dhuvin suffers / heals instead. Moment Of Respite Whenever the Dhuvin player performs a major action, reduce one of your cooldowns by 1. Will Of The Mind Whenever the Dhuvin player performs a major action, you may play the minor action of a spell from your hand (without cooldown reduction). Reliable Tag Team At the beginning of each round, you may give one of your hand cards to the Dhuvin player. They can use it as if it was theirs. Once used, it goes back into your hand (minor action) or lands on your cooldown / duration tracker (major action). Push Through At the end of your turns, if the Dhuvin player suffers from at least one negative ongoing effect, you may heal Dhuvin by one scratch or reduce one of your cooldowns by 1.",
 			"rarity": "mythical"
 		},
 		{
@@ -8604,6 +9036,20 @@
 			"rarity": "legendary"
 		},
 		{
+			"name": "Ser Wynhall",
+			"speed": "3",
+			"category": "vessel",
+			"wounds": [
+				5,
+				5,
+				6
+			],
+			"scratches": 16,
+			"id": "serwynhall",
+			"rules": "Ser Wynhall Move an enemy within range 2 by 1 square Titan Grip You can wield up to one two-handed melee weapon in a single hand. Knight's Training Ignore penalties from armor and add (Blessing Die) to defense when wearing heavy armor. Desperate Strikes Add +2 power to the attacks of major actions for each wound you are suffering from. Chivalry Once per round, at any time, you may Move (2) (gain Nimble) and then cause Knockback (2) against any one adjacent enemy. Shield Throw You can perform attacks with your shield over a range of 3 (you may even use 'Melee Attack' cards for that purpose).  Add (Power Die) to these attacks.",
+			"rarity": "mythical"
+		},
+		{
 			"name": "Seraphim",
 			"speed": "5",
 			"category": "vessel",
@@ -8658,6 +9104,20 @@
 			"id": "summoner",
 			"rules": "Summoner Reduce one of your cooldowns by 1 Conjuring Mastery When you cast a spell to summon a minion, add (Power Die) to spellcasting. Blood Magick You may suffer one scratch to add (Power Die) to spellcasting. Anchored Summons Your summoned minions add (Blessing Die) to their defense rolls.    Additionally they may spend each (Surge) to add +1 Power to defense. Blood Ritual Once per round, you may suffer a scratch to reduce one of your cooldowns by 2. Ferocious Summons Your summoned minions add (Blessing Die) to their attacks.    Add another (Blessing Die) if your passive spellcasting dice pool consists of at least five dice or at least one (Power Die).",
 			"rarity": "rare"
+		},
+		{
+			"name": "The Weird Twins",
+			"speed": "3",
+			"category": "vessel",
+			"wounds": [
+				4,
+				4,
+				6
+			],
+			"scratches": 14,
+			"id": "theweirdtwins",
+			"rules": "The Weird Twins Reduce one of your cooldowns by 1 Pair Treat both miniatures as if they are the same hero (you can perform actions from both positions). Spend 1 movement point to merge both miniatures as one at either location, or to split them off within range 1. While merged, add (Blessing Die) to all tests. Symbiosis While the twins are split, once per round, if you perform a minor action, the other twin performs the same minor action.    Additionally, moving one twin automatically allows to move the other twin for an equal amount. Gang Up If you attack an enemy and both twins are adjacent to it (while being split), add (Standard Die) and you may ignore botches and wear on that roll. Amped You may spend your (Surge) spending options up to twice per roll while the twins are merged. Together Forever After splitting or merging, you add (Blessing Die) (Blessing Die) to your defense for the remainder of the round.  Additionally, you may increase your intiative by up to two steps each round.",
+			"rarity": "mythical"
 		},
 		{
 			"name": "Thief",
