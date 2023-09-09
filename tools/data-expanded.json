@@ -143,7 +143,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Backstab Melee You may swap positions with an adjacent enemy.  In either case, melee attack that enemy, adding (Enhancement Die). Surge: +4 Power if there is an ally on the opposing square of the target. Surge: Move the enemy by 1. Surge: +2 Power. Move (2) (gain Slippery and Nimble)  Attack, add (Cursed Die)."
+			"rules": "Backstab Melee You may swap positions with an adjacent enemy.  In either case, melee attack that enemy, adding (Enhancement Die). Surge: +4 Power if there is an ally on the opposing square of the target. Surge: Move the enemy by 1 square. Surge: +2 Power. Move (2) (gain Slippery and Nimble)  Attack, add (Cursed Die)."
 		},
 		{
 			"type": "Melee",
@@ -434,37 +434,29 @@
 			"type": "Defense",
 			"initiative": "1",
 			"name": "Block",
-			"cooldown": "5",
+			"cooldown": "3",
 			"id": "a52",
 			"category": "ability",
 			"variant": "Basic",
 			"effects": [
-				"ongoing",
 				"interrupt"
 			],
-			"spends": [
-				"surge",
-				"surge"
-			],
-			"rules": "Block Defense Interrupt  Prevent one scratch after a defense. Put the card on cooldown 2 instead of 5.    Ongoing  While the effect lasts, you may use the below spending options on your defense. Surge: +1 Power. Surge: +1 Power. Move (4)"
+			"spends": [],
+			"rules": "Block Defense Interrupt  If an ally within range 3 is about to defend, you may Move (2) (gain Slippery). If you move adjacent to them, they can use the benefits of your shield for their defense. Move (4)"
 		},
 		{
 			"type": "Defense",
 			"initiative": "1",
 			"name": "Block",
-			"cooldown": "5",
+			"cooldown": "2",
 			"id": "a53",
 			"category": "ability",
 			"variant": "Alpha",
 			"effects": [
-				"ongoing"
+				"interrupt"
 			],
-			"spends": [
-				"surge",
-				"surge",
-				"surge"
-			],
-			"rules": "Block Defense Ongoing  While the effect lasts, you may use the below spending options on your defense. Surge: +2 Power, but reduce the duration of 'Block' by 1. Surge: +1 Power. Surge: +1 Power. Move (4)"
+			"spends": [],
+			"rules": "Block Defense Interrupt  If an ally within range 4 is about to defend, you may Move (3) (gain Slippery & Nimble). If you move adjacent to them, they can use the benefits of your shield for their defense. Move (4)"
 		},
 		{
 			"type": "Defense",
@@ -478,7 +470,7 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Block Defense Interrupt  Add +2 Power to your current defense roll. Move (4)"
+			"rules": "Block Defense Interrupt  If an ally within range 2 would suffer a wound, you can prevent it by redirecting all overflowing scratches onto you. Against these scratches you may perform a separate defense roll. Move (4)"
 		},
 		{
 			"type": "Spell",
@@ -521,7 +513,7 @@
 			"variant": "Beta",
 			"effects": [],
 			"spends": [],
-			"rules": "Blood Sorcery Spell Spellcasting 1+  Remove a Bleed token from an enemy within range 5, then play two cards from your hand.    Alternatively remove 2 scratches from a hero within range 5. Transfer a scratch from one hero to another.  Move (3)"
+			"rules": "Blood Sorcery Spell Spellcasting 1+  Remove a Bleed token from an enemy within range 5, then play two cards from your handor remove 2 scratches from a hero within range 5. Transfer a scratch from one hero to another.  Move (3)"
 		},
 		{
 			"type": "Spell",
@@ -997,6 +989,20 @@
 			"rules": "Charge Attack Melee Move up to 6 squares in a straight or diagonal line. You gain Nimble during that movement.    Melee Attack Star: Roll (Power Die) against each enemy you moved over (and deal the result as damage). Star: +1 Power for each square moved. Move (3)  Attack, add (Cursed Die)."
 		},
 		{
+			"type": "Meta",
+			"initiative": "1",
+			"name": "Cleansing Beam Of The Sun",
+			"cooldown": "5",
+			"id": "a385",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Cleansing Beam Of The Sun Meta Ongoing At any time during your turn, you may use this effect to call a solar beam along a straight or diagonal line from your position, up to range 5. Enemies along the line suffer 2 wounds, and heroes have all negative effects reduced by 1. Afterwards, suffer scratches equal to this effect's remaining duration, and then return it to your hand. Cast a straight or diagonal line up to range 5.  All enemies on that line suffer Weaken."
+		},
+		{
 			"type": "Melee",
 			"initiative": "3",
 			"name": "Combat Mage's Strike",
@@ -1006,9 +1012,10 @@
 			"variant": "Basic",
 			"effects": [],
 			"spends": [
+				"surge",
 				"surge"
 			],
-			"rules": "Combat Mage's Strike Melee Melee Attack    Additionally add your spellcasting bonus dice to this melee attack. Surge: Reduce the cooldown of all your spells by 2. Melee Attack  Add (Enhancement Die) to your next roll using your spellcasting dice pool this round."
+			"rules": "Combat Mage's Strike Melee Melee Attack    Additionally add your spellcasting bonus dice to this melee attack. Surge: Reduce the cooldown of one of your spells by 2. Surge: +2 Power. Melee Attack  Add (Enhancement Die) to your next roll using your spellcasting dice pool this round."
 		},
 		{
 			"type": "Melee",
@@ -1020,10 +1027,11 @@
 			"variant": "Alpha",
 			"effects": [],
 			"spends": [
+				"doublesurge",
 				"surge",
 				"surge"
 			],
-			"rules": "Combat Mage's Strike Melee Melee Attack    Additionally add your spellcasting bonus dice to this melee attack. Surge: End the cooldown of one of your spells. Surge: Reduce the cooldown of all your spells by 2. Melee Attack  Add (Enhancement Die) to your next roll using your spellcasting dice pool this round."
+			"rules": "Combat Mage's Strike Melee Melee Attack    Additionally add your spellcasting bonus dice to this melee attack. DoubleSurge: End the cooldown of one of your spells. DoubleSurge: Reduce the cooldown of one of your spells by 2. Surge: +2 Power. Melee Attack  Add (Enhancement Die) to your next roll using your spellcasting dice pool this round."
 		},
 		{
 			"type": "Melee",
@@ -1035,9 +1043,11 @@
 			"variant": "Beta",
 			"effects": [],
 			"spends": [
+				"doublesurge",
+				"surge",
 				"surge"
 			],
-			"rules": "Combat Mage's Strike Melee Melee Attack, add (Power Die).    Additionally add your spellcasting bonus dice to this melee attack. Surge: Reduce the cooldown of all your spells by 2. Melee Attack  Add (Enhancement Die) to your next roll using your spellcasting dice pool this round."
+			"rules": "Combat Mage's Strike Melee Melee Attack, add (Power Die).    Additionally add your spellcasting bonus dice to this melee attack. DoubleSurge: Add (Power Die) to your next spellcasting roll this round. DoubleSurge: Cause Knockback (3). Surge: Reduce the cooldown of one of your spells by 2. Melee Attack  Add (Enhancement Die) to your next roll using your spellcasting dice pool this round."
 		},
 		{
 			"type": "Meta",
@@ -1380,7 +1390,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Curse Of The Citadel Spell Spellcasting 1+  Target an enemy within range 6 and cause Dazed. Star: Cause Stun. Star: Perform a free melee attack against the target. Surge: Cause Weaken. Cause Knockback (3) against a model within range 6."
+			"rules": "Curse Of The Citadel Spell Spellcasting 1+  Target an enemy within range 6 and cause Dazed. Star: Cause Stun. Star: Perform a free melee attack against the target (even if it is not in melee range). Surge: Cause Weaken. Cause Knockback (3) against a model within range 6."
 		},
 		{
 			"type": "Meta",
@@ -2359,7 +2369,7 @@
 			"type": "Meta",
 			"initiative": "3",
 			"name": "Heroic Opportunity",
-			"cooldown": "X",
+			"cooldown": "5",
 			"id": "a136",
 			"category": "ability",
 			"variant": "Basic",
@@ -2367,13 +2377,13 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Heroic Opportunity Meta Interrupt  Play a card from your hand. Suffer Stun (2), then put 'Heroic Opportunity' on cooldown 3.    Interrupt  You may spend (Surge) on one of your attack, spellcasting or defense rolls to add +1 Power. Then put 'Heroic Opportunity' on cooldown 1. Play a minor action from your hand, but don't get a cooldown reduction from it in addition."
+			"rules": "Heroic Opportunity Meta Interrupt  Reduce one of your cooldowns by 2. Play a minor action from your hand, but don't get a cooldown reduction from it in addition."
 		},
 		{
 			"type": "Meta",
 			"initiative": "3",
 			"name": "Heroic Opportunity",
-			"cooldown": "X",
+			"cooldown": "5",
 			"id": "a137",
 			"category": "ability",
 			"variant": "Alpha",
@@ -2381,13 +2391,13 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Heroic Opportunity Meta Interrupt  Play a card from your hand. Then put 'Heroic Opportunity' on cooldown 5.    Interrupt  You may spend (Surge) on one of your attack, spellcasting or defense rolls to add +2 Power. Then put 'Heroic Opportunity' on cooldown 2. Play a minor action from your hand, but don't get a cooldown reduction from it in addition."
+			"rules": "Heroic Opportunity Meta Interrupt  Reduce one of your cooldowns by 2.  Then either Move (2) (gain Slippery) - or - perform a free attack, adding (Cursed Die) (Cursed Die). Play a minor action from your hand, but don't get a cooldown reduction from it in addition."
 		},
 		{
 			"type": "Meta",
 			"initiative": "5",
 			"name": "Heroic Opportunity",
-			"cooldown": "5",
+			"cooldown": "4",
 			"id": "a138",
 			"category": "ability",
 			"variant": "Beta",
@@ -2395,7 +2405,7 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Heroic Opportunity Meta Interrupt  Allow yourself and an ally to each play a card from the hand. You suffer Stun (2). Play a minor action from your hand, but don't get a cooldown reduction from it in addition."
+			"rules": "Heroic Opportunity Meta Interrupt  You may spend (Surge) on one of your attack, spellcasting or defense rolls to add +2 Power. Play a minor action from your hand, but don't get a cooldown reduction from it in addition."
 		},
 		{
 			"type": "Spell",
@@ -2498,7 +2508,7 @@
 			"type": "Meta",
 			"initiative": "1",
 			"name": "Ignore Pain",
-			"cooldown": "4",
+			"cooldown": "5",
 			"id": "a139",
 			"category": "ability",
 			"variant": "Basic",
@@ -2506,39 +2516,35 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Ignore Pain Meta Ongoing  For each scratch that you would suffer, roll (Blessing Die) and use the below spending options. null: Ignore the scratch. Attack, add (Blessing Die) for each scratch that you have."
-		},
-		{
-			"type": "Meta",
-			"initiative": "1",
-			"name": "Ignore Pain",
-			"cooldown": "4",
-			"id": "a140",
-			"category": "ability",
-			"variant": "Alpha",
-			"effects": [
-				"ongoing"
-			],
-			"spends": [
-				"surge"
-			],
-			"rules": "Ignore Pain Meta Ongoing  For each scratch that you would suffer, roll (Blessing Die) and use the below spending options. Surge: Extend the duration of this effect by 1. Surge: Ignore the scratch. Attack, add (Blessing Die) for each scratch that you have."
+			"rules": "Ignore Pain Meta Ongoing  Before performing a defense roll, you may decrease the duration of this ability by 1 to decrease the incoming attack value by 1. Attack, add (Blessing Die) for each scratch that you have."
 		},
 		{
 			"type": "Meta",
 			"initiative": "1",
 			"name": "Ignore Pain",
 			"cooldown": "5",
+			"id": "a140",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Ignore Pain Meta Ongoing  Before performing a defense roll, you may decrease the duration of this ability by 1 to decrease the incoming attack value by 1.  This effect does not automatically decrease its duration at the beginning of each round. Attack, add (Blessing Die) for each scratch that you have."
+		},
+		{
+			"type": "Meta",
+			"initiative": "1",
+			"name": "Ignore Pain",
+			"cooldown": "2",
 			"id": "a141",
 			"category": "ability",
 			"variant": "Beta",
 			"effects": [
-				"ongoing"
+				"interrupt"
 			],
-			"spends": [
-				"star"
-			],
-			"rules": "Ignore Pain Meta Ongoing  For each scratch that you would suffer, roll (Blessing Die) and use the below spending options. Star: Ignore the scratch. Star: Ignore the scratch. Attack, add (Blessing Die) for each scratch that you have."
+			"spends": [],
+			"rules": "Ignore Pain Meta Interrupt  Prevent one scratch against yourself. Attack, add (Blessing Die) for each scratch that you have."
 		},
 		{
 			"type": "Meta",
@@ -3051,7 +3057,7 @@
 			"variant": "Basic",
 			"effects": [],
 			"spends": [],
-			"rules": "Mind Control Spell Spellcasting 3+  Attach this card to a single enemy model. On their next activation, you control them instead and add (Standard Die) to their attacks (adding it to their regular attack value). Then this card goes on cooldown.    Their abilities work as usual (to your favor) as long as it makes sense. Move an enemy by 2 squares."
+			"rules": "Mind Control Spell Spellcasting 3+  Attach this card to a single enemy model (not a boss). On their next activation, you control them instead and add (Standard Die) to their attacks (adding it to their regular attack value). Then this card goes on cooldown.    Their abilities work as usual (to your favor) as long as it makes sense. Move an enemy by 2 squares."
 		},
 		{
 			"type": "Spell",
@@ -3065,7 +3071,7 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Mind Control Spell Spellcasting 4+  Attach this card to an enemy group. On their next activation, you control them instead and add (Standard Die) to their attacks (adding it to their regular attack value). Then this card goes on cooldown.    Their abilities work as usual (to your favor) as long as it makes sense. Surge: The controlled enemies have +2 speed. Move an enemy by 2 squares."
+			"rules": "Mind Control Spell Spellcasting 4+  Attach this card to an enemy group (not a boss). On their next activation, you control them instead and add (Standard Die) to their attacks (adding it to their regular attack value). Then this card goes on cooldown.    Their abilities work as usual (to your favor) as long as it makes sense. Surge: The controlled enemies have +2 speed. Move an enemy by 2 squares."
 		},
 		{
 			"type": "Spell",
@@ -3080,7 +3086,7 @@
 				"star",
 				"surge"
 			],
-			"rules": "Mind Control Spell Spellcasting 3+  Attach this card to a single enemy model. On their next activation, you control them instead and add (Standard Die) to their attacks (adding it to their regular attack value). Then this card goes on cooldown.    Their abilities work as usual (to your favor) as long as it makes sense. Star: Cooldown -1. Star: Cooldown -1. Move an enemy by 2 squares."
+			"rules": "Mind Control Spell Spellcasting 3+  Attach this card to a single enemy model (not a boss). On their next activation, you control them instead and add (Standard Die) to their attacks (adding it to their regular attack value). Then this card goes on cooldown.    Their abilities work as usual (to your favor) as long as it makes sense. Star: Cooldown -1. Star: Cooldown -1. Move an enemy by 2 squares."
 		},
 		{
 			"type": "Spell",
@@ -3136,11 +3142,11 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Mirroring Technique Meta Interrupt  Mirror a just performed major or minor action with cooldown 3 or less of an ally (but no ongoing effects or spells) and attempt it yourself.    The cooldown is the mirrored action's cooldown +2. Move (3)  OR  Attack"
+			"rules": "Mirroring Technique Meta When performing this major action, treat it like any one major action on your hand (except ongoing effects). The cooldown is equal to the copied card's cooldown. Move (3)  OR  Attack"
 		},
 		{
 			"type": "Meta",
-			"initiative": "4",
+			"initiative": "2",
 			"name": "Mirroring Technique",
 			"cooldown": "X",
 			"id": "a161",
@@ -3150,11 +3156,11 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Mirroring Technique Meta Interrupt  Mirror a just performed major or minor action with a cooldown 3 or less of an ally (but no ongoing effects) and attempt it yourself.    The cooldown is the mirrored action's cooldown +2. Move (3)  OR  Attack"
+			"rules": "Mirroring Technique Meta When performing this major action, treat it like any one major action on your hand or that you have on cooldown - you cannot copy an ongoing effect. The cooldown is equal to the copied card's cooldown. Move (3)  OR  Attack"
 		},
 		{
 			"type": "Meta",
-			"initiative": "2",
+			"initiative": "6",
 			"name": "Mirroring Technique",
 			"cooldown": "X",
 			"id": "a162",
@@ -3164,7 +3170,7 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Mirroring Technique Meta Interrupt  Mirror a just performed major action with a cooldown of 4 or less of an ally (but no ongoing effects or spells) and attempt it yourself.    The cooldown is the mirrored action's cooldown +1. Move (3)  OR  Attack"
+			"rules": "Mirroring Technique Meta When performing this major action, treat it like any one major action that one of your allies has placed for this round. The cooldown is equal to the copied card's cooldown. Attack OR allow an ally to perform an attack."
 		},
 		{
 			"type": "Spell",
@@ -3706,7 +3712,7 @@
 			"type": "Defense",
 			"initiative": "6",
 			"name": "Riposte",
-			"cooldown": "2",
+			"cooldown": "3",
 			"id": "a63",
 			"category": "ability",
 			"variant": "Beta",
@@ -3909,7 +3915,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Shadow Clone Spell Ongoing  Spellcasting 2+  Summon a Shadow Clone minion within range 10. It has a toughness of 4 and a speed of 4.  Before you perform a minor or major action, you may swap the position with your shadow clone. Melee Attack an enemy within range 4."
+			"rules": "Shadow Clone Spell Ongoing  Spellcasting 2+  Summon a Shadow Clone minion within range 10. It has a toughness of 4 and a speed of 4.  Before you perform a minor or major action, you may swap the position with your shadow clone, and you may swap back after resolving it. Melee Attack an enemy within range 4."
 		},
 		{
 			"type": "Spell",
@@ -3994,7 +4000,7 @@
 			"type": "Defense",
 			"initiative": "2",
 			"name": "Shield Wall",
-			"cooldown": "2",
+			"cooldown": "4",
 			"id": "a65",
 			"category": "ability",
 			"variant": "Alpha",
@@ -4003,7 +4009,7 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Shield Wall Defense Interrupt  If an adjacent ally has to defend, you can perform the defense roll for them (using your dice pool and spending options). They still remain the target of the attack.  Ongoing  Add (Blessing Die) (Blessing Die) to defense.  This bonus counts for you and all adjacent allies. Move (2)  Cause Knockback (1) against any one adjacent model."
+			"rules": "Shield Wall Defense Interrupt  If an ally within range 2 has to defend, you can perform the defense roll for them (using your dice pool and spending options). They still remain the target of the attack.  Ongoing  Add (Enhancement Die) to defense.  This bonus counts for you and all adjacent allies. Move (2)  Cause Knockback (1) against any one adjacent model."
 		},
 		{
 			"type": "Defense",
@@ -4078,7 +4084,7 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Spontaneous Magick Meta Interrupt  Immediately play a spell from your hand and resolve it as usual, but add (Cursed Die) (Cursed Die) to the spellcasting test. Add (Blessing Die) (Blessing Die) to your next roll using your spellcasting dice pool roll this round."
+			"rules": "Spontaneous Magick Meta Interrupt  Immediately play a spell from your hand and resolve it as usual, but add (Cursed Die) (Cursed Die) to the spellcasting roll. Add (Blessing Die) (Blessing Die) to your next roll using your spellcasting dice pool roll this round."
 		},
 		{
 			"type": "Meta",
@@ -4106,7 +4112,7 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Spontaneous Magick Meta Interrupt  Immediately play a spell from your hand and resolve it as usual, but add (Cursed Die) (Cursed Die) to the spellcasting test. Add (Blessing Die) (Blessing Die) to your next roll using your spellcasting dice pool roll this round."
+			"rules": "Spontaneous Magick Meta Interrupt  Immediately play a spell from your hand and resolve it as usual, but add (Cursed Die) (Cursed Die) to the spellcasting roll. Add (Blessing Die) (Blessing Die) to your next roll using your spellcasting dice pool roll this round."
 		},
 		{
 			"type": "Ranged",
@@ -4165,7 +4171,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Stealth Meta Ongoing  While active, enemies ignore you as a viable target. Turn this effect face down when you attack or cast a spell, but add (Standard Die) (Power Die) to your first melee attack from out of stealth. Move (2) (gain Slippery and Nimble)"
+			"rules": "Stealth Meta Ongoing  While active, enemies ignore you as a viable target. Turn this effect face down when you attack or use a 'spell' type card, but add (Standard Die) (Power Die) to your first melee attack from out of stealth. Move (2) (gain Slippery and Nimble)"
 		},
 		{
 			"type": "Meta",
@@ -4175,9 +4181,11 @@
 			"id": "a176",
 			"category": "ability",
 			"variant": "Alpha",
-			"effects": [],
+			"effects": [
+				"ongoing"
+			],
 			"spends": [],
-			"rules": "Stealth Meta Ongoing  While active, enemies ignore you as a viable target. Take this card back into your hand when you attack or cast a spell, but add (Standard Die) (Power Die) to your first melee attack from out of stealth. Move (2) (gain Slippery and Nimble)"
+			"rules": "Stealth Meta Ongoing  While active, enemies ignore you as a viable target. Take this card back into your hand when you attack or use a 'spell' type card, but add (Standard Die) (Power Die) to your first melee attack from out of stealth. Move (2) (gain Slippery and Nimble)"
 		},
 		{
 			"type": "Meta",
@@ -4187,11 +4195,13 @@
 			"id": "a177",
 			"category": "ability",
 			"variant": "Beta",
-			"effects": [],
+			"effects": [
+				"ongoing"
+			],
 			"spends": [
 				"surge"
 			],
-			"rules": "Stealth Meta Ongoing  While active, enemies ignore you as a viable target and you gain Nimble. Turn this effect face down when you attack or cast a spell, but add (Standard Die) (Power Die) to your first melee attack from out of stealth.  You may use the below spending option on that attack. Surge: +3 Power if there is an ally on the opposing square of the target. Move (2) (gain Slippery and Nimble)"
+			"rules": "Stealth Meta Ongoing  While active, enemies ignore you as a viable target and you gain Nimble. Turn this effect face down when you attack or use a 'spell' type card, but add (Standard Die) (Power Die) to your first melee attack from out of stealth.  You may use the below spending option on that attack. Surge: +3 Power if there is an ally on the opposing square of the target. Move (2) (gain Slippery and Nimble)"
 		},
 		{
 			"type": "Melee",
@@ -4678,13 +4688,13 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Tactical Strike Melee Melee Attack, add (Blessing Die).    Move yourself or an ally by 2 (grant Nimble and Slippery). Surge: +1 Power. Attack  Move (1)"
+			"rules": "Tactical Strike Melee Melee Attack, add (Blessing Die).    Allow yourself or an ally to Move (2) \r\n(grant Nimble and Slippery). Surge: +1 Power. Attack  Move (1)"
 		},
 		{
 			"type": "Melee",
 			"initiative": "5",
 			"name": "Tactical Strike",
-			"cooldown": "2",
+			"cooldown": "1",
 			"id": "a95",
 			"category": "ability",
 			"variant": "Alpha",
@@ -4694,7 +4704,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Tactical Strike Melee Melee Attack, add (Blessing Die).    Move yourself or an ally by 2 (grant Nimble and Slippery). Star: Add +2 movement to the movement above. Star: Add +1 movement to the movement above. Surge: +1 Power. Attack  Move (1)"
+			"rules": "Tactical Strike Melee Melee Attack, add (Blessing Die).    Allow yourself or an ally to Move (2) \r\n(grant Nimble and Slippery). Star: Add +2 movement to the movement above. Star: Add +1 movement to the movement above. Surge: +1 Power. Attack  Move (1)"
 		},
 		{
 			"type": "Melee",
@@ -4710,7 +4720,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Tactical Strike Melee Melee Attack, add (Blessing Die).    Move yourself or an ally by 2 (grant Nimble and Slippery). Star: Deal a wound to any one enemy within reach. Star: +1 Power. Surge: +1 Power. Attack, add (Cursed Die).  Move (2) (gain Nimble and Slippery)"
+			"rules": "Tactical Strike Melee Melee Attack, add (Blessing Die).    Allow yourself or an ally to Move (2) \r\n(grant Nimble and Slippery). Star: Deal a wound to any one enemy within reach. Star: +1 Power. Surge: +1 Power. Attack, add (Cursed Die).  Move (2) (gain Nimble and Slippery)"
 		},
 		{
 			"type": "Meta",
@@ -4724,7 +4734,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Taunt Meta Ongoing  Declare an enemy. While the effect lasts, the targeted enemy will prioritize you as their target whenever possible. Cause Dazed against an adjacent enemy."
+			"rules": "Taunt Meta Ongoing  Declare an enemy model. While the effect lasts, the targeted enemy will prioritize you as their target whenever possible. Cause Dazed against an adjacent enemy."
 		},
 		{
 			"type": "Meta",
@@ -4738,7 +4748,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Taunt Meta Ongoing  Declare an enemy. While the effect lasts, the targeted enemy will prioritize you as their target whenever possible.    You may end this effect at any time and take it back into your hand. Cause Dazed against an adjacent enemy."
+			"rules": "Taunt Meta Ongoing  Declare an enemy model. While the effect lasts, the targeted enemy will prioritize you as their target whenever possible.    You may end this effect at any time and take it back into your hand. Cause Dazed against an adjacent enemy."
 		},
 		{
 			"type": "Meta",
@@ -4752,7 +4762,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Taunt Meta Ongoing  Declare two enemies. While the effect lasts, the targeted enemies will prioritize you as their target whenever possible. Cause Dazed against an adjacent enemy."
+			"rules": "Taunt Meta Ongoing  Declare two enemy models. While the effect lasts, the targeted enemies will prioritize you as their target whenever possible. Cause Dazed against an adjacent enemy."
 		},
 		{
 			"type": "Spell",
@@ -5110,7 +5120,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Trap Meta Ongoing  Place a trap token within range 2. If an enemy moves onto it, it gets removed.  Then roll (Power Die) (Power Die) (Power Die) (Power Die) (Power Die) (minus one die for each remaining round of duration) and deal that as damage.  Add Power to the damage equal to the current chapter tier. The first enemy that ends their movement adjacent to you this round suffers a wound."
+			"rules": "Trap Meta Ongoing  Place a trap token within range 2. If an enemy moves onto it, it gets removed.  Then roll (Power Die) (Power Die) (Power Die) and deal that as damage.  Add Power to the damage equal to the current chapter tier. The first enemy that ends their movement adjacent to you this round suffers a wound."
 		},
 		{
 			"type": "Meta",
@@ -5365,11 +5375,8 @@
 			"effects": [
 				"ongoing"
 			],
-			"spends": [
-				"star",
-				"doublesurge"
-			],
-			"rules": "Weapon Enchantment Spell Ongoing  Spellcasting 1+  Declare one of your weapons or an ally's. It adds (Enhancement Die) to attacks and gains the 'Magical' tag.    It also gains the below spending options for each attack. Star: Cause Bleed (2). Star: Cause Bleed (2). Add (Enhancement Die) (Blessing Die) to your next attack this round."
+			"spends": [],
+			"rules": "Weapon Enchantment Spell Ongoing  Spellcasting 1+  Declare one of your weapons or an ally's. It adds (Enhancement Die) to attacks and gains the 'Magical' tag. Add (Enhancement Die) (Blessing Die) to your next attack this round."
 		},
 		{
 			"type": "Spell",
@@ -5383,10 +5390,10 @@
 				"ongoing"
 			],
 			"spends": [
-				"star",
+				"surge",
 				"surge"
 			],
-			"rules": "Weapon Enchantment Spell Ongoing  Spellcasting 1+  Declare one of your weapons or an ally's. It adds (Enhancement Die) to attacks and gains the 'Magical' tag.    It also gains the below spending options for each attack. Star: +2 Power. Star: Cause Bleed (2). Add (Enhancement Die) (Blessing Die) to your next attack this round."
+			"rules": "Weapon Enchantment Spell Ongoing  Spellcasting 1+  Declare one of your weapons or an ally's. It adds (Enhancement Die) to attacks and gains the 'Magical' tag. Surge: You can add a (Blessing Die) to the weapon instead of (Enhancement Die). Surge: Duration +1. Add (Enhancement Die) (Blessing Die) to your next attack this round."
 		},
 		{
 			"type": "Spell",
@@ -5400,9 +5407,10 @@
 				"ongoing"
 			],
 			"spends": [
+				"surge",
 				"surge"
 			],
-			"rules": "Weapon Enchantment Spell Ongoing  Spellcasting 2+  Declare one of your weapons or an ally's. It adds (Power Die) to attacks and gains the 'Magical' tag.    It also gains the below spending option for each attack. Surge: Cause Knockback (2). Add (Enhancement Die) (Blessing Die) to your next attack this round."
+			"rules": "Weapon Enchantment Spell Ongoing  Spellcasting 2+  Declare one of your weapons or an ally's. Attacks may add (Power Die) and the 'Magical' tag.    Whenever the these benefits are added, reduce the duration of this effect by 1. Surge: Duration +1. Surge: Duration +1. Add (Enhancement Die) (Blessing Die) to your next attack this round."
 		},
 		{
 			"type": "Spell",
@@ -5661,7 +5669,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Wildshape: Raven Spell Ongoing  Spellcasting 2+  While the effect lasts, temporarily use the 'Raven' standee instead of your own. You get ignored as a viable target, and you turn this effect face down as soon as you attack or cast a spell. Gain +5 vessel speed. Surge: If you discover a new room, you may re-roll the layout once. Surge: Gain another +3 vessel speed. Move (3) (gain Nimble)"
+			"rules": "Wildshape: Raven Spell Ongoing  Spellcasting 2+  While the effect lasts, temporarily use the 'Raven' standee instead of your own. You get ignored as a viable target, and you turn this effect face down as soon as you attack or use a 'spell' type card. Gain +5 vessel speed. Surge: If you discover a new room, you may re-roll the layout once. Surge: Gain another +3 vessel speed. Move (3) (gain Nimble)"
 		},
 		{
 			"type": "Spell",
@@ -5679,7 +5687,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Wildshape: Raven Spell Ongoing  Spellcasting 2+  While the effect lasts, temporarily use the 'Raven' standee instead of your own. You get ignored as a viable target, and you take this card back into your hand as soon you attack or cast a spell. Gain +5 vessel speed and Nimble. Surge: If you discover a new room, you may re-roll the layout once. Surge: Gain another +5 vessel speed. Surge: Duration +1. Move (3) (gain Nimble)"
+			"rules": "Wildshape: Raven Spell Ongoing  Spellcasting 2+  While the effect lasts, temporarily use the 'Raven' standee instead of your own. You get ignored as a viable target, and you take this card back into your hand as soon you attack or use a 'spell' type card. Gain +5 vessel speed and Nimble. Surge: If you discover a new room, you may re-roll the layout once. Surge: Gain another +5 vessel speed. Surge: Duration +1. Move (3) (gain Nimble)"
 		},
 		{
 			"type": "Spell",
@@ -5696,7 +5704,52 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Wildshape: Raven Spell Ongoing  Spellcasting 2+  While the effect lasts, temporarily use the 'Raven' standee instead of your own. You get ignored as a viable target, and you turn this effect face down as soon as you attack or cast a spell. Gain +5 vessel speed. Surge: Once the effect ends, perform a free melee attack. Surge: Gain +1 Power to the first attack or spell that you perform while in 'Raven' form. Move (2)  Attack"
+			"rules": "Wildshape: Raven Spell Ongoing  Spellcasting 2+  While the effect lasts, temporarily use the 'Raven' standee instead of your own. You get ignored as a viable target, and you turn this effect face down as soon as you attack or use a 'spell' type card. Gain +5 vessel speed. Surge: Once the effect ends, perform a free melee attack. Surge: Gain +1 Power to the first attack or spell that you perform while in 'Raven' form. Move (2)  Attack"
+		},
+		{
+			"type": "Meta",
+			"initiative": "1",
+			"name": "Witchhunter Style",
+			"cooldown": "3",
+			"id": "a386",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Witchhunter Style Meta Ongoing  If you wield a 1h melee weapon in one hand and a 1h ranged weapon in the other, you may attack with both weapons whenever you are allowed to perform an attack with either. Reduce the duration of this effect by 1 whenever you make use of this.  If this effect ends, put it on cooldown 5 instead of into your hand. Attack.\nAdd (Blessing Die) (Blessing Die) if you wield a 1h melee attack and a 1h ranged attack at the same time."
+		},
+		{
+			"type": "Meta",
+			"initiative": "1",
+			"name": "Witchhunter Style",
+			"cooldown": "5",
+			"id": "a387",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Witchhunter Style Meta Ongoing  If you wield a 1h melee weapon in one hand and a 1h ranged weapon in the other, add (Enhancement Die) to your attacks and gain the following spending options: Surge: Move (2) (gain Slippery) Surge: +2 Power. Attack.\nAdd (Blessing Die) (Blessing Die) if you wield a 1h melee attack and a 1h ranged attack at the same time."
+		},
+		{
+			"type": "Meta",
+			"initiative": "1",
+			"name": "Witchhunter Style",
+			"cooldown": "2",
+			"id": "a388",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"interrupt"
+			],
+			"spends": [],
+			"rules": "Witchhunter Style Meta Interrupt  Move (1) (gain Slippery) OR Pull (4)  Additionally, if you just performed an attack with a 1h melee weapon, you may perform a free attack with your 1h ranged weapon in the other hand - or vice versa. Attack.\nAdd (Blessing Die) (Blessing Die) if you wield a 1h melee attack and a 1h ranged attack at the same time."
 		},
 		{
 			"type": "Spell",
@@ -5764,7 +5817,7 @@
 				"hand"
 			],
 			"spends": [],
-			"rules": "Advance Lance 1h weapon melee polearm hand Gain Reach.  Add (Enhancement Die) (Blessing Die) to attacks.    Before performing a melee attack, you may Move (2) in a straight or diagonal line (gainSlippery)."
+			"rules": "Advance Lance 1h weapon melee polearm hand Gain Reach.  Add (Enhancement Die) (Blessing Die) to attacks.    Before performing a melee attack, you may Move (2) in a straight or diagonal line (gain Slippery)."
 		},
 		{
 			"name": "Ambrosia",
@@ -5815,7 +5868,7 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Ancient Cuirass armor medium Add (Enhancement Die) (Blessing Die) to defense.    You may use the below spending options on defense. DoubleSurge: +2 Power. DoubleSurge: +1 Power."
+			"rules": "Ancient Cuirass armor medium Add (Enhancement Die) to defense.  If you suffer from at least one wound or 2 scratches, add (Blessing Die) to your attacks.    You may use the below spending options on defense. DoubleSurge: +2 Power. DoubleSurge: +1 Power."
 		},
 		{
 			"name": "Arcane Tome",
@@ -5833,8 +5886,10 @@
 				"tome",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Arcane Tome 1h weapon magical tome hand Add (Blessing Die) to spellcasting.  While equipped, perform a free ranged attack at the end of your turn against an enemy within range 6, using your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
+			"spends": [
+				"doublesurge"
+			],
+			"rules": "Arcane Tome 1h weapon magical tome hand Add (Blessing Die) to spellcasting.  This item can be used like a ranged weapon with a range of 4. In that case, use your spellcasting dice pool for the ranged attack, but add (Cursed Die).  You may use the below spending options on attacks. DoubleSurge: Reduce the cooldown of one of your spells by 2."
 		},
 		{
 			"name": "Archer's Garments",
@@ -5851,7 +5906,7 @@
 			"spends": [
 				"doublesurge"
 			],
-			"rules": "Archer's Garments armor light Add (Blessing Die) (Blessing Die) to defense.  Add (Standard Die) to ranged attacks.    Add the below spending options to attacks. DoubleSurge: Ignore one wear or botch symbol rolled."
+			"rules": "Archer's Garments armor light Add (Blessing Die) to defense.  Add (Standard Die) to ranged attacks.    Add the below spending options to attacks. DoubleSurge: Ignore one wear or botch symbol rolled."
 		},
 		{
 			"name": "Archmage's Cloak",
@@ -5883,13 +5938,13 @@
 			"currency": "Gold",
 			"types": [
 				"armor",
-				"light"
+				"medium"
 			],
 			"spends": [
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Armor of the Nightwatch armor light Add (Blessing Die) to defense.  Add another (Enhancement Die) if you don't have any wounds.    You may use the below spending options on defense. DoubleSurge: +2 Power. DoubleSurge: +1 Power."
+			"rules": "Armor of the Nightwatch armor medium Add (Blessing Die) to defense.  Add another (Power Die) if you don't have any wounds or scratches.    You may use the below spending options on defense. DoubleSurge: +2 Power. DoubleSurge: +1 Power."
 		},
 		{
 			"name": "Astral Gloves",
@@ -5905,7 +5960,26 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Astral Gloves gear gloves magical After casting a spell, you may put another spell from your hand on cooldown 5, then double the amount of wounds that spell causes (this also applies to all wounds a summoned minion would cause)."
+			"rules": "Astral Gloves gear gloves magical After using a 'spell' type card, you may put another spell from your hand on cooldown 5, then double the amount of wounds that spell causes (this also applies to all wounds a summoned minion would cause)."
+		},
+		{
+			"name": "Attunable Armor Of Darkmoor",
+			"abundance": "1",
+			"durability": "5",
+			"price": "120",
+			"tier": "1",
+			"id": "li17",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"armor",
+				"medium"
+			],
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Attunable Armor Of Darkmoor armor medium Add (Enhancement Die) (Blessing Die) to defense. At the beginning of each adventure, choose one additional benefit:  Add (Enhancement Die) to spellcasting - or - Ignore the first scratch suffered each round.  Spending options on defense: DoubleSurge: Reduce one of your cooldowns by 1. DoubleSurge: +1 Power."
 		},
 		{
 			"name": "Balsamic Bandages",
@@ -5969,7 +6043,7 @@
 				"back"
 			],
 			"spends": [],
-			"rules": "Baron Murkgrad's Mantle gear back Become immune against Cursed.    Gain +1 speed."
+			"rules": "Baron Murkgrad's Mantle gear back Ignore the effects of Cursed.    Gain +1 speed."
 		},
 		{
 			"name": "Blade Of Swiftness",
@@ -5991,7 +6065,7 @@
 				"star",
 				"surge"
 			],
-			"rules": "Blade Of Swiftness 1h weapon melee blade hand Add (Blessing Die) (Blessing Die) to attacks.  You may adjust your initiative by one step at the beginning of each round.    You may use the below spending options on attacks. Star: Perform a free attack (max. 2 per round). Star: +1 Power."
+			"rules": "Blade Of Swiftness 1h weapon melee blade hand Add (Blessing Die) (Blessing Die) to attacks.  You may adjust your initiative by one step after revealing your ability cards.    You may use the below spending options on attacks. Star: Perform a free attack (max. 2 per round). Star: +1 Power."
 		},
 		{
 			"name": "Bladed Staff",
@@ -6007,14 +6081,15 @@
 				"weapon",
 				"melee",
 				"blade",
+				"polearm",
 				"hand"
 			],
 			"spends": [
-				"star",
 				"doublesurge",
+				"surge",
 				"surge"
 			],
-			"rules": "Bladed Staff 2h weapon melee blade hand Gain Reach.  Add (Power Die) to attacks and melee defense.    You may use the below spending options on attacks. Star: Perform a free attack (max. 1 per round), then Move (1) (gain Slippery). Star: +2 Power. DoubleSurge: +1 Power."
+			"rules": "Bladed Staff 2h weapon melee blade polearm hand Gain Reach.  Add (Enhancement Die) (Enhancement Die) to attacks and melee defense.    You may use the below spending options on attacks. DoubleSurge: +2 Power. DoubleSurge: Perform a free attack against an unwounded enemy (max 2. per round). Surge: +1 Power."
 		},
 		{
 			"name": "Book Of Conjuring",
@@ -6047,7 +6122,7 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Boots Of Speed gear boots magical Gain +1 speed."
+			"rules": "Boots Of Speed gear boots magical Gain +1 speed.  At the beginning of each round, you may Move (1) (gain Slippery)."
 		},
 		{
 			"name": "Bottomless Backpack",
@@ -6063,7 +6138,7 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Bottomless Backpack gear back magical At the beginning of each adventure, draw item cards until you found two consumable items.  You may keep those for free."
+			"rules": "Bottomless Backpack gear back magical At the beginning of each adventure, draw item cards until you found two consumable items.  You may keep those for free.  Additionally, as long as you have this item equipped as a Gear item you can carry three additional consumable items."
 		},
 		{
 			"name": "Bow Of Lightning",
@@ -6078,10 +6153,11 @@
 				"weapon",
 				"ranged",
 				"bow",
+				"magical",
 				"hand"
 			],
 			"spends": [],
-			"rules": "Bow Of Lightning 2h weapon ranged bow hand Range 7  Add (Enhancement Die) (Blessing Die) to attacks.    You may spend each (Surge) to add +1 Power OR to hit one additional target within range (deal max. 1 wound to those additional targets each)."
+			"rules": "Bow Of Lightning 2h weapon ranged bow magical hand Range 7  Add (Enhancement Die) (Blessing Die) to attacks.    You may spend each (Surge) to add +1 Power OR to hit one additional target within range (deal max. 1 wound to those additional targets each)."
 		},
 		{
 			"name": "Bow Of The Shaman",
@@ -6138,7 +6214,7 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Brigandine armor heavy Add (Enhancement Die) to defense.  Add (Cursed Die) to attacks.(red##)    You may use the below spending options on defense. Surge: +1 Power."
+			"rules": "Brigandine armor heavy Add (Enhancement Die) to defense.  You may use the below spending option on defense. Surge: +1 Power."
 		},
 		{
 			"name": "Broadhead Arrows",
@@ -6153,10 +6229,8 @@
 				"gear",
 				"mundane"
 			],
-			"spends": [
-				"surge"
-			],
-			"rules": "Broadhead Arrows gear mundane Add (Power Die) to ranged attacks if you have 2 or less cards on cooldown, otherwise add (Blessing Die).    You may use the below spending options on attacks. Surge: +1 Power."
+			"spends": [],
+			"rules": "Broadhead Arrows gear mundane If your ranged attacks with a bow or crossbow cause at least one wound, also cause Bleed (2)."
 		},
 		{
 			"name": "Broken Staff",
@@ -6264,7 +6338,7 @@
 				"helmet"
 			],
 			"spends": [],
-			"rules": "Circlet Of The Marksman gear helmet Add (Enhancement Die) to your ranged attacks if you have moved 2 squares or less during your turn."
+			"rules": "Circlet Of The Marksman gear helmet If you perform a ranged attack and your target is in a straight or diagonal line to you, add an automatic (Surge) to your roll."
 		},
 		{
 			"name": "Claws of Ebberesk",
@@ -6315,11 +6389,14 @@
 				"1h",
 				"weapon",
 				"melee",
-				"polearm",
+				"crushing",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Combat Wand 1h weapon melee polearm hand Add (Blessing Die) (Blessing Die) to spellcasting."
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Combat Wand 1h weapon melee crushing hand Add (Blessing Die) (Blessing Die) to spellcasting. Add (Blessing Die) to attacks. You may use the below spending options on attacks. DoubleSurge: +2 Power. DoubleSurge: Cause Dazed"
 		},
 		{
 			"name": "Composite War Bow",
@@ -6380,7 +6457,7 @@
 		{
 			"name": "Dagger",
 			"abundance": "5",
-			"durability": "2",
+			"durability": "3",
 			"price": "20",
 			"tier": "1",
 			"id": "i14",
@@ -6393,8 +6470,10 @@
 				"blade",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Dagger 1h weapon melee blade hand Add (Blessing Die) (Blessing Die) to attacks."
+			"spends": [
+				"surge"
+			],
+			"rules": "Dagger 1h weapon melee blade hand Add (Standard Die) (Blessing Die) to attacks. Surge: -1 Cooldown for one of your cards at cooldown 3 to 5."
 		},
 		{
 			"name": "Decorated Cape",
@@ -6501,7 +6580,7 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Duelist's Medallion gear necklace magical You may treat any minor action either as \"Move (2) (gain Slippery)\" or \"Attack, add (Blessing Die)\" instead of what is written on the card."
+			"rules": "Duelist's Medallion gear necklace magical If you are adjacent to a single enemy, but not to any other allies or enemies, add (Blessing Die) to your attacks and defense rolls."
 		},
 		{
 			"name": "Elegant Dagger",
@@ -6519,8 +6598,11 @@
 				"blade",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Elegant Dagger 1h weapon melee blade hand Add (Enhancement Die) (Blessing Die) to attacks."
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Elegant Dagger 1h weapon melee blade hand Add (Enhancement Die) (Blessing Die) to attacks. DoubleSurge: Move (3) (gain Nimble) DoubleSurge: -1 Cooldown for one of your cards at cooldown 4 or 5."
 		},
 		{
 			"name": "Embershard Scepter",
@@ -6535,11 +6617,14 @@
 				"1h",
 				"weapon",
 				"melee",
-				"slashing",
+				"crushing",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Embershard Scepter 1h weapon melee slashing hand Add (Enhancement Die) to spellcasting and melee attacks.    Each botch during a spellcasting test causes one 'Wear' token on this item.(red##)"
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Embershard Scepter 1h weapon melee crushing hand Add (Enhancement Die) to spellcasting and melee attacks.    You may use the below spending options on spellcasting and attacks. DoubleSurge: +4 Power, but this item suffers Wear. DoubleSurge: +1 Power."
 		},
 		{
 			"name": "Energizing Concoction",
@@ -6606,7 +6691,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Exotic Cuirass armor medium Add (Enhancement Die) (Blessing Die) to defense.  Add (Cursed Die) to attacks.(red##)    You may use the below spending options on defense. Surge: +1 Power. Surge: Reduce the cooldown of one of your cards with an interrupt effect by 1."
+			"rules": "Exotic Cuirass armor medium Add (Enhancement Die) (Blessing Die) to defense.  You may use the below spending options on defense. Surge: +1 Power. Surge: Reduce the cooldown of one of your cards with an interrupt effect by 1."
 		},
 		{
 			"name": "Fairnwood Staff",
@@ -6646,8 +6731,10 @@
 				"magical",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Falchion Of The Seven Winds 1h weapon melee blade magical hand Add (Blessing Die) (Blessing Die) to attacks.    Attacks with this weapon automatically hit an enemy on a square behind the original target (adjacent but further away)."
+			"spends": [
+				"surge"
+			],
+			"rules": "Falchion Of The Seven Winds 1h weapon melee blade magical hand Add (Blessing Die) (Blessing Die) to attacks.    Attacks with this weapon automatically hit an enemy on a square behind the original target (adjacent but further away). Surge: -1 Cooldown for one of your cards at cooldown 4 or 5."
 		},
 		{
 			"name": "Fiery Claymore",
@@ -6690,9 +6777,10 @@
 				"hand"
 			],
 			"spends": [
+				"star",
 				"surge"
 			],
-			"rules": "Flail 1h weapon melee slashing hand Add (Enhancement Die) to attacks.  Reduce your initiative by 1 while having this equipped.(red##)    You may use the below spending option on attacks. Surge: Treat the target's defense to be 1 lower (min. 1)."
+			"rules": "Flail 1h weapon melee slashing hand Add (Enhancement Die) to attacks.  You may use the below spending option on attacks. Star: Hit one additional enemy adjacent to your target. Star: Treat the target's defense to be 1 lower (min. 1)."
 		},
 		{
 			"name": "Glaive",
@@ -6708,13 +6796,15 @@
 				"weapon",
 				"melee",
 				"polearm",
+				"slashing",
 				"hand"
 			],
 			"spends": [
 				"surge",
+				"surge",
 				"surge"
 			],
-			"rules": "Glaive 2h weapon melee polearm hand Gain Reach.  Add (Enhancement Die) to attacks.    You may use the below spending options on attacks. Surge: Hit one additional enemy within range (deal max. 1 wound). Surge: +1 Power."
+			"rules": "Glaive 2h weapon melee polearm slashing hand Gain Reach.  Add (Enhancement Die) to attacks.    You may use the below spending options on attacks. Surge: Hit one additional enemy within reach (deal max. 1 wound). Surge: Cause Weaken. Surge: +2 Power."
 		},
 		{
 			"name": "Golden Hawk",
@@ -6756,10 +6846,11 @@
 				"hand"
 			],
 			"spends": [
-				"star",
+				"surge",
+				"surge",
 				"surge"
 			],
-			"rules": "Halberd 2h weapon melee polearm hand Gain Reach.  Add (Enhancement Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Cause Weaken. Star: Cause Knockback (2)."
+			"rules": "Halberd 2h weapon melee polearm hand Gain Reach.  Add (Enhancement Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Surge: Provide an adjacent ally with (Blessing Die) to their next attack this round. Surge: +1 Power and move the enemy by 1 square. Surge: +1 Power."
 		},
 		{
 			"name": "Hammer Of Justice",
@@ -6774,14 +6865,14 @@
 				"1h",
 				"weapon",
 				"melee",
-				"slashing",
+				"crushing",
 				"hand"
 			],
 			"spends": [
 				"star",
 				"surge"
 			],
-			"rules": "Hammer Of Justice 1h weapon melee slashing hand Add (Power Die) to attacks.    You may use the below spending options on attacks. On the damage rolls from Knockback, treat each (Surge) as +2 Power. Star: Cause Knockback (5). Star: Cause Knockback (2)."
+			"rules": "Hammer Of Justice 1h weapon melee crushing hand Add (Power Die) to attacks.    You may use the below spending options on attacks. On the damage rolls from Knockback, treat each (Surge) as +2 Power. Star: Cause Knockback (5). Star: Cause Knockback (2)."
 		},
 		{
 			"name": "Hand Crossbow",
@@ -6816,12 +6907,12 @@
 			"currency": "Gold",
 			"types": [
 				"armor",
-				"light"
+				"medium"
 			],
 			"spends": [
 				"surge"
 			],
-			"rules": "Hardened Leather Cuirass armor light Add (Blessing Die) to defense.    You may use the below spending options on defense. Surge: +2 Power."
+			"rules": "Hardened Leather Cuirass armor medium Add (Standard Die) (Enhancement Die) to defense.    You may use the below spending options on defense. Surge: Gain +2 Power for your next attack against that enemy. Does not stack."
 		},
 		{
 			"name": "Healing Potion",
@@ -6853,7 +6944,7 @@
 				"witchcraft"
 			],
 			"spends": [],
-			"rules": "Heart Of Gazhuatl consumable witchcraft Become immune against Cripple and Bleed as long as you carry this.    If your vessel would die, you may consume this to prevent its death, restoring all wounds except one."
+			"rules": "Heart Of Gazhuatl consumable witchcraft Ignore the effects of Cripple and Bleed as long as you have this in your inventory.    If your vessel would die, you may consume this (without having to spend movement points) to prevent its death, restoring all wounds except one."
 		},
 		{
 			"name": "Heavy Crossbow",
@@ -6871,8 +6962,10 @@
 				"crossbow",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Heavy Crossbow 2h weapon ranged crossbow hand Range 7  Add (Power Die) to first attack each round with this weapon."
+			"spends": [
+				"doublesurge"
+			],
+			"rules": "Heavy Crossbow 2h weapon ranged crossbow hand Range 7  Add (Power Die) to the first attack each round with this weapon.  You may use the below spending options on attacks. DoubleSurge: +3 Power."
 		},
 		{
 			"name": "Hidden Dagger",
@@ -6890,8 +6983,10 @@
 				"blade",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Hidden Dagger 1h weapon melee blade hand Doesn't have to be equipped to be attacked with.    Add (Blessing Die) (Blessing Die) to attacks (if in backpack).  Add (Enhancement Die) (Enhancement Die) to attacks (if equipped)."
+			"spends": [
+				"surge"
+			],
+			"rules": "Hidden Dagger 1h weapon melee blade hand Add (Power Die) to attacks.  Once per adventure, at any time, you can equip this item without spending movement points and then perform a free attack, adding another (Power Die).  You may use the below spending options on attacks. Surge: -1 Cooldown for one of your cards at cooldown 4 or 5."
 		},
 		{
 			"name": "Horned Mace",
@@ -6906,13 +7001,31 @@
 				"1h",
 				"weapon",
 				"melee",
-				"slashing",
+				"crushing",
 				"hand"
 			],
 			"spends": [
+				"star",
 				"doublesurge"
 			],
-			"rules": "Horned Mace 1h weapon melee slashing hand Add (Blessing Die) (Blessing Die) (Blessing Die) to attacks.  Causes Stun or Dazed when dealing at least one wound.    You may use the below spending options on attacks. DoubleSurge: +4 Power."
+			"rules": "Horned Mace 1h weapon melee crushing hand Add (Blessing Die) (Blessing Die) (Blessing Die) to attacks.  Causes Dazed when dealing at least 2 wounds at once.    You may use the below spending options on attacks. Star: Cause Stun. Star: +4 Power."
+		},
+		{
+			"name": "Hzasdin Bloodline Amulet",
+			"abundance": "1",
+			"durability": "4",
+			"price": "60",
+			"tier": "3",
+			"id": "li16",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"gear",
+				"necklace",
+				"magical"
+			],
+			"spends": [],
+			"rules": "Hzasdin Bloodline Amulet gear necklace magical At the end of your turn, you can play a card from your hand (as major or minor action), but you have to put another, random hand card on cooldown 5 when doing so."
 		},
 		{
 			"name": "Imperial Armor",
@@ -7027,7 +7140,7 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Kite Shield 1h weapon shield hand Add (Enhancement Die) to defense.    You may use the below spending options on defense. Star: +2 Power. Star: +1 Power. DoubleSurge: Reduce the cooldown of one of your cards with an interrupt effect by 1."
+			"rules": "Kite Shield 1h weapon shield hand Add (Enhancement Die) to defense.    You may use the below spending options on defense. Star: +2 Power. Star: +1 Power. DoubleSurge: After defending, cause Knockback (2) against the attacker."
 		},
 		{
 			"name": "Knight's Pauldrons",
@@ -7067,7 +7180,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Kris Of Leeching 1h weapon melee blade magical hand Add (Enhancement Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Heal a scratch from an ally within range 3. Star: Deal a wound. Surge: +2 Power."
+			"rules": "Kris Of Leeching 1h weapon melee blade magical hand Add (Enhancement Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Heal a scratch from yourself or an ally within range 3. Star: Deal a wound. Surge: -1 Cooldown for one of your cards at cooldown 4 or 5."
 		},
 		{
 			"name": "Laraksian Tea",
@@ -7083,11 +7196,11 @@
 				"potion"
 			],
 			"spends": [],
-			"rules": "Laraksian Tea consumable potion Consume to regenerate a scratch, then turn this item face down.    This item refills itself as soon as you defeat an enemy (deliver the final blow), in which case you turn it face up again."
+			"rules": "Laraksian Tea consumable potion Consume to heal one scratch from yourself, then turn this item face down.    This item refills itself as soon as you defeat an enemy (deliver the final blow), in which case you turn it face up again."
 		},
 		{
 			"name": "Leather Rags",
-			"abundance": "4",
+			"abundance": "2",
 			"durability": "2",
 			"price": "20",
 			"tier": "1",
@@ -7098,10 +7211,8 @@
 				"armor",
 				"light"
 			],
-			"spends": [
-				"surge"
-			],
-			"rules": "Leather Rags armor light Add (Blessing Die) to defense.    You may use the below spending options on defense. Surge: +1 Power."
+			"spends": [],
+			"rules": "Leather Rags armor light At the beginning of each round, you may extend the duration of one of your ongoing effects by 1. This may not affect a spell card."
 		},
 		{
 			"name": "Leyforest Cloak",
@@ -7140,6 +7251,28 @@
 			"rules": "Leyforest Greaves gear boots magical Gain +2 speed.    Gain +1 toughness on all rows."
 		},
 		{
+			"name": "Light Merchant's Crossbow",
+			"abundance": "1",
+			"durability": "4",
+			"price": "60",
+			"tier": "3",
+			"id": "i98",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"1h",
+				"weapon",
+				"ranged",
+				"crossbow",
+				"hand"
+			],
+			"spends": [
+				"star",
+				"surge"
+			],
+			"rules": "Light Merchant's Crossbow 1h weapon ranged crossbow hand Range 4  Add (Standard Die) (Blessing Die) to attacks.  You may use the below spending options on attacks. Star: +2 Power and cause Weaken. Star: +3 Power if this is the first attack with this weapon this round."
+		},
+		{
 			"name": "Longbow",
 			"abundance": "2",
 			"durability": "3",
@@ -7160,7 +7293,7 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Longbow 2h weapon ranged bow hand Range 8  Add (Enhancement Die) to attacks.    You may use the below spending options on attacks. Star: +2 Power. Star: Cause Cripple. DoubleSurge: +1 Power."
+			"rules": "Longbow 2h weapon ranged bow hand Range 8  Add (Enhancement Die) to attacks.    You may use the below spending options on attacks. Star: Deal one wound. Star: Cause Cripple. DoubleSurge: +1 Power."
 		},
 		{
 			"name": "Longsword",
@@ -7178,8 +7311,11 @@
 				"blade",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Longsword 1h weapon melee blade hand Add (Standard Die) (Enhancement Die) to attacks."
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Longsword 1h weapon melee blade hand Add (Standard Die) (Enhancement Die) to attacks. DoubleSurge: Move 2 (gain Slippery). DoubleSurge: -1 Cooldown for one of your cards at cooldown 4 or 5."
 		},
 		{
 			"name": "Mage Blade",
@@ -7200,10 +7336,10 @@
 			],
 			"spends": [
 				"star",
-				"star",
+				"doublesurge",
 				"surge"
 			],
-			"rules": "Mage Blade 1h weapon melee blade magical hand Add (Blessing Die) to spellcasting and melee attacks.    You may use the below spending options on attacks and spellcasting. Star: (Melee only:) Play a spell from your hand (max. once per round). Star: +2 Power. Star: +1 Power."
+			"rules": "Mage Blade 1h weapon melee blade magical hand Add (Blessing Die) to spellcasting and (Enhancement Die) (Blessing Die) to melee attacks.    You may use the below spending options on attacks and spellcasting. Star: (Melee only:) Play a spell from your hand (max. once per round). Star: +2 Power. DoubleSurge: +1 Power."
 		},
 		{
 			"name": "Mage Order Robes",
@@ -7222,7 +7358,7 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Mage Order Robes armor light magical Add (Enhancement Die) to spellcasting.    You may use the below spending options on defense. Surge: +1 Power."
+			"rules": "Mage Order Robes armor light magical Add (Enhancement Die) to spellcasting.    You may use the below spending options on defense and spellcasting. Surge: +1 Power."
 		},
 		{
 			"name": "Mercenary Contract",
@@ -7238,7 +7374,7 @@
 				"mundane"
 			],
 			"spends": [],
-			"rules": "Mercenary Contract gear mundane Start each adventure with a Mercenary minion who has a toughness of 6 and a speed of 4.    Add (Blessing Die) (Blessing Die) to its attacks as long as you have this contract equipped."
+			"rules": "Mercenary Contract gear mundane Start each adventure with a Mercenary minion who has a toughness of 6 and a speed of 4.  Increase their toughness by +2 for each campaign chapter that has been completed.    Add (Blessing Die) (Blessing Die) to the Mercenary's attacks as long as you have this contract equipped."
 		},
 		{
 			"name": "Mirror Of Envy",
@@ -7295,7 +7431,7 @@
 			"name": "Necklace of War",
 			"abundance": "1",
 			"durability": "3",
-			"price": "6",
+			"price": "4",
 			"id": "si21",
 			"category": "item",
 			"currency": "SoulShards",
@@ -7367,7 +7503,7 @@
 		{
 			"name": "Pitchfork",
 			"abundance": "2",
-			"durability": "3",
+			"durability": "4",
 			"price": "20",
 			"tier": "1",
 			"id": "i22",
@@ -7381,9 +7517,10 @@
 				"hand"
 			],
 			"spends": [
+				"surge",
 				"surge"
 			],
-			"rules": "Pitchfork 2h weapon melee polearm hand You may use the below spending options on attacks. Surge: +3 Power."
+			"rules": "Pitchfork 2h weapon melee polearm hand Gain Reach.  Add (Standard Die) to your attacks.  You may use the below spending options on attacks. Surge: Add (Blessing Die) to your next defense this round. Surge: +3 Power."
 		},
 		{
 			"name": "Potent Healing Potion",
@@ -7433,8 +7570,10 @@
 				"bow",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Primitive Bow 2h weapon ranged bow hand Range 4  Add (Blessing Die) to attacks."
+			"spends": [
+				"surge"
+			],
+			"rules": "Primitive Bow 2h weapon ranged bow hand Range 4  Add (Blessing Die) to attacks. Surge: +1 Power."
 		},
 		{
 			"name": "Purifying Elixir",
@@ -7468,8 +7607,10 @@
 				"polearm",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Quarterstaff 2h weapon melee polearm hand Gain Reach.  Add (Blessing Die) (Blessing Die) to spellcasting and attacks."
+			"spends": [
+				"surge"
+			],
+			"rules": "Quarterstaff 2h weapon melee polearm hand Gain Reach.  Add (Blessing Die) (Blessing Die) to spellcasting and attacks.  You may use the below spending options on attacks. Surge: +1 Power and move the enemy by 1 square."
 		},
 		{
 			"name": "Quiver",
@@ -7487,7 +7628,7 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Quiver gear back Add (Blessing Die) to ranged attacks.    You may use the below spending options on ranged attacks. Surge: Cooldown -1."
+			"rules": "Quiver gear back Add (Blessing Die) to ranged attacks with bows or crossbows.    You may use the below spending options on ranged attacks. Surge: Cooldown -1."
 		},
 		{
 			"name": "Reaper's Axe",
@@ -7508,10 +7649,10 @@
 			],
 			"spends": [
 				"star",
-				"surge",
+				"doublesurge",
 				"surge"
 			],
-			"rules": "Reaper's Axe 1h weapon melee slashing magical hand Add (Power Die) to attacks.  Add (Cursed Die) to melee defense.(red##)    You may use the below spending options on attacks. Star: +2 Power. Star: +2 Power. Surge: Heal one scratch from yourself."
+			"rules": "Reaper's Axe 1h weapon melee slashing magical hand Add (Power Die) to attacks.  Add (Cursed Die) to melee defense.(red##)    You may use the below spending options on attacks. Star: +2 Power. Star: Hit one additional enemy within reach. DoubleSurge: Heal one scratch from yourself."
 		},
 		{
 			"name": "Repeating Crossbow",
@@ -7587,7 +7728,7 @@
 			"name": "Robe of the Mender",
 			"abundance": "1",
 			"durability": "4",
-			"price": "8",
+			"price": "6",
 			"id": "si24",
 			"category": "item",
 			"currency": "SoulShards",
@@ -7655,6 +7796,21 @@
 			"rules": "Rune: Adamant rune armor Attach this to an armor.    Add (Blessing Die) to defense.    Can only attach one rune per armor."
 		},
 		{
+			"name": "Rune: Astral Extension",
+			"abundance": "1",
+			"durability": "0",
+			"price": "3",
+			"id": "si43",
+			"category": "item",
+			"currency": "SoulShards",
+			"types": [
+				"rune",
+				"weapon"
+			],
+			"spends": [],
+			"rules": "Rune: Astral Extension rune weapon Attach this to a tier 3 or lower weapon (including Soul Shop items).    When attacking, you may gain Reach and the 'Magical' tag, but add (Cursed Die) when doing so.  Can only attach one rune per weapon."
+		},
+		{
 			"name": "Rune: Drain",
 			"abundance": "1",
 			"durability": "0",
@@ -7667,7 +7823,7 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Drain rune weapon Attach this to a tier 3 or lower weapon.    When killing an enemy, heal one scratch from yourself.    Can only attach one rune per weapon."
+			"rules": "Rune: Drain rune weapon Attach this to a tier 3 or lower weapon (including Soul Shop items).    When killing an enemy, heal one scratch from yourself.    Can only attach one rune per weapon."
 		},
 		{
 			"name": "Rune: Enchant",
@@ -7682,7 +7838,7 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Enchant rune weapon Attach this to a tier 3 or lower weapon.    Convert a (Blessing Die) it adds into an (Enhancement Die).    Can only attach one rune per weapon."
+			"rules": "Rune: Enchant rune weapon Attach this to a tier 3 or lower weapon (including Soul Shop items).    Convert a (Blessing Die) it adds into an (Enhancement Die).    Can only attach one rune per weapon."
 		},
 		{
 			"name": "Rune: Focus",
@@ -7697,13 +7853,13 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Focus rune weapon Attach this to a tier 3 or lower weapon.    When attacking, you may spend one (Star) to reduce one of your cooldowns by 2.    Can only attach one rune per weapon."
+			"rules": "Rune: Focus rune weapon Attach this to a tier 3 or lower weapon (including Soul Shop items).    When attacking, you may spend one (Star) to reduce one of your cooldowns by 2.    Can only attach one rune per weapon."
 		},
 		{
 			"name": "Rune: Fortune",
 			"abundance": "1",
 			"durability": "0",
-			"price": "3",
+			"price": "4",
 			"id": "si35",
 			"category": "item",
 			"currency": "SoulShards",
@@ -7712,7 +7868,7 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Fortune rune weapon Attach this to a tier 3 or lower weapon.    When attacking, you may convert one botch into (Star).    Can only attach one rune per weapon."
+			"rules": "Rune: Fortune rune weapon Attach this to a tier 3 or lower weapon (including Soul Shop items).    When attacking, you may convert one botch into (Star).    Can only attach one rune per weapon."
 		},
 		{
 			"name": "Rune: Fuel",
@@ -7727,7 +7883,21 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Fuel rune weapon Attach this to a tier 3 or lower weapon.    When attacking, you may suffer 2 scratches to add (Power Die) (Blessing Die).    Can only attach one rune per weapon."
+			"rules": "Rune: Fuel rune weapon Attach this to a tier 3 or lower weapon (including Soul Shop items).    When attacking, you may suffer 2 scratches to add (Power Die) (Blessing Die).    Can only attach one rune per weapon."
+		},
+		{
+			"name": "Rune: Hardening",
+			"abundance": "1",
+			"durability": "0",
+			"price": "2",
+			"id": "si44",
+			"category": "item",
+			"currency": "SoulShards",
+			"types": [
+				"rune"
+			],
+			"spends": [],
+			"rules": "Rune: Hardening rune Attach thiss to a tier 3 item.  The item is considered to have +2 durability.  Can only attach one rune per item."
 		},
 		{
 			"name": "Rune: Holy",
@@ -7742,7 +7912,7 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Holy rune weapon Attach this to a tier 3 or lower weapon.    When attacking, you may spend (Star) (Star) to heal 2 scratches from yourself. If you don't have any scratches, heal a wound instead.    Can only attach one rune per weapon."
+			"rules": "Rune: Holy rune weapon Attach this to a tier 3 or lower weapon (including Soul Shop items).    When attacking, you may spend (Star) (Star) to heal 2 scratches from yourself. If you don't have any scratches, heal a wound instead.    Can only attach one rune per weapon."
 		},
 		{
 			"name": "Rune: Mark",
@@ -7757,7 +7927,7 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Mark rune weapon Attach this to a tier 3 or lower weapon.    When attacking, you may spend (Star) to cause Weaken.    Can only attach one rune per weapon."
+			"rules": "Rune: Mark rune weapon Attach this to a tier 3 or lower weapon (including Soul Shop items).    When attacking, you may spend (Star) to cause Weaken.    Can only attach one rune per weapon."
 		},
 		{
 			"name": "Rune: Protection",
@@ -7808,7 +7978,7 @@
 			"name": "Rune: Void",
 			"abundance": "1",
 			"durability": "0",
-			"price": "4",
+			"price": "3",
 			"id": "si37",
 			"category": "item",
 			"currency": "SoulShards",
@@ -7817,7 +7987,7 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Void rune weapon Attach this to a tier 3 or lower weapon.    When attacking, count any rolled blanks as (Surge) instead.    Can only attach one rune per weapon."
+			"rules": "Rune: Void rune weapon Attach this to a tier 3 or lower weapon (including Soul Shop items).    When attacking, count up to one rolled blank as (Surge) instead.    Can only attach one rune per weapon."
 		},
 		{
 			"name": "Sacred Bead",
@@ -7898,13 +8068,14 @@
 				"weapon",
 				"melee",
 				"polearm",
+				"slashing",
 				"hand"
 			],
 			"spends": [
-				"doublesurge",
+				"surge",
 				"surge"
 			],
-			"rules": "Scythe 2h weapon melee polearm hand Gain Reach.    Add (Blessing Die)    You may use the below spending options on attacks. DoubleSurge: Hit a third, adjacent enemy (deal max. one wound). DoubleSurge: Hit one additional, adjacent enemy (deal max. one wound)."
+			"rules": "Scythe 2h weapon melee polearm slashing hand Gain Reach.    Add (Blessing Die)    You may use the below spending options on attacks. Surge: Hit one additional enemy within reach (deal max. 1 wound). Surge: Hit one additional enemy within reach (deal max. 1 wound)."
 		},
 		{
 			"name": "Sell Soul Shard",
@@ -7946,7 +8117,7 @@
 		{
 			"name": "Shield Of The Bulwark",
 			"abundance": "1",
-			"durability": "4",
+			"durability": "5",
 			"price": "150",
 			"tier": "5",
 			"id": "li14",
@@ -7963,7 +8134,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Shield Of The Bulwark 1h weapon shield hand Add (Enhancement Die) (Blessing Die) to defense.    You may use the below spending options on defense. DoubleSurge: After determining the result, prevent one scratch. DoubleSurge: +5 Power, but the shield suffers one 'Wear' token. Surge: Reduce the cooldown of one of your cards with an interrupt effect by 1."
+			"rules": "Shield Of The Bulwark 1h weapon shield hand Add (Enhancement Die) (Blessing Die) to defense.    You may use the below spending options on defense. DoubleSurge: After determining the result, prevent one scratch. DoubleSurge: +3 Power, but the shield suffers one 'Wear' token. Surge: Reduce the cooldown of one of your cards with an interrupt effect by 1."
 		},
 		{
 			"name": "Shield Of The Templar",
@@ -8001,8 +8172,10 @@
 				"blade",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Shiv 1h weapon melee blade hand Add (Blessing Die) to attacks."
+			"spends": [
+				"surge"
+			],
+			"rules": "Shiv 1h weapon melee blade hand Add (Blessing Die) to attacks. Surge: -1 Cooldown for one of your cards at cooldown 4 or 5."
 		},
 		{
 			"name": "Short Bow",
@@ -8029,7 +8202,7 @@
 		{
 			"name": "Short Sword",
 			"abundance": "3",
-			"durability": "4",
+			"durability": "5",
 			"price": "30",
 			"tier": "1",
 			"id": "i27",
@@ -8042,8 +8215,11 @@
 				"blade",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Short Sword 1h weapon melee blade hand Add (Standard Die) (Blessing Die) to attacks."
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Short Sword 1h weapon melee blade hand Add (Enhancement Die) to attacks.  You may use the below spending options on attacks. DoubleSurge: +2 Power. DoubleSurge: -1 Cooldown for one of your cards at cooldown 4 or 5."
 		},
 		{
 			"name": "Slate Of Fate",
@@ -8076,8 +8252,10 @@
 				"crushing",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Sledgehammer 2h weapon melee crushing hand Add (Enhancement Die) to attacks."
+			"spends": [
+				"surge"
+			],
+			"rules": "Sledgehammer 2h weapon melee crushing hand Add (Enhancement Die) to attacks. Surge: Deal one wound."
 		},
 		{
 			"name": "Sorcerer's Focus",
@@ -8134,7 +8312,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Spear 2h weapon melee polearm hand Gain Reach.    You may use the below spending options on attacks. Surge: +1 Power. Surge: +2 Power."
+			"rules": "Spear 2h weapon melee polearm hand Gain Reach.  Add (Standard Die) (Enhancement Die) to attacks.  You may use the below spending options on attacks. Surge: +1 Power. Surge: +2 Power."
 		},
 		{
 			"name": "Spell Focus Staff",
@@ -8167,13 +8345,14 @@
 				"1h",
 				"weapon",
 				"melee",
-				"slashing",
+				"crushing",
 				"hand"
 			],
 			"spends": [
-				"doublesurge"
+				"surge",
+				"surge"
 			],
-			"rules": "Spiked Mace 1h weapon melee slashing hand Add (Power Die) to attacks.  Add (Cursed Die) to defense against melee attacks.(red##)    You may use the below spending options on attacks. DoubleSurge: Cause Dazed."
+			"rules": "Spiked Mace 1h weapon melee crushing hand Add (Power Die) to attacks.  Add (Cursed Die) to defense against melee attacks.(red##)    You may use the below spending options on attacks. Surge: Cause Knockback (2). Surge: Cause Dazed."
 		},
 		{
 			"name": "Staff Of Telekinesis",
@@ -8191,8 +8370,10 @@
 				"polearm",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Staff Of Telekinesis 2h weapon melee polearm hand Add (Power Die) to spellcasting.    Whenever you have played the minor or major action of a spell card, move any one model by 1 square."
+			"spends": [
+				"doublesurge"
+			],
+			"rules": "Staff Of Telekinesis 2h weapon melee polearm hand Gain Reach.  Add (Power Die) to spellcasting and attacks.    Whenever you have played the minor or major action of a spell card, move any one model by 1 square.    You may use the below spending options on attacks. DoubleSurge: +3 Power and move the enemy by 1 square."
 		},
 		{
 			"name": "Studded Tunic",
@@ -8210,7 +8391,7 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Studded Tunic armor medium Add (Standard Die) (Blessing Die) to defense.    You may use the below spending options on defense. Surge: +1 Power."
+			"rules": "Studded Tunic armor medium Add (Blessing Die) (Blessing Die) (Blessing Die) to a single defense roll each round (decide before rolling).    You may use the below spending options on defense. Surge: +1 Power."
 		},
 		{
 			"name": "Sword Of Flowing Water",
@@ -8231,9 +8412,10 @@
 			],
 			"spends": [
 				"star",
+				"surge",
 				"surge"
 			],
-			"rules": "Sword Of Flowing Water 1h weapon melee blade magical hand Add (Blessing Die) (Blessing Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Move (3) (gain Slippery) after the attack. Star: Move (1) (gain Slippery) after the attack."
+			"rules": "Sword Of Flowing Water 1h weapon melee blade magical hand Add (Blessing Die) (Blessing Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Move (3) (gain Slippery) after the attack. Star: Move (1) (gain Slippery) after the attack. Surge: -1 Cooldown for one of your cards at cooldown 4 or 5."
 		},
 		{
 			"name": "Sword of the Executioner",
@@ -8320,7 +8502,7 @@
 				"ring"
 			],
 			"spends": [],
-			"rules": "The Tactician's Ring gear ring After you have performed two minor actions during your turn, you may immediately allow an ally to play a major action from their hand."
+			"rules": "The Tactician's Ring gear ring If you perform at least two minor actions during a round, you may immediately allow an ally to play a major action from their hand."
 		},
 		{
 			"name": "Thief's Blade",
@@ -8338,8 +8520,10 @@
 				"blade",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Thief's Blade 1h weapon melee blade hand Add (Enhancement Die) (Blessing Die) (Blessing Die) to attacks.    At the end of your turn, you may Move (3) (gain Nimble) in a straight or diagonal line and perform a free attack against one enemy that was within reach on that path."
+			"spends": [
+				"doublesurge"
+			],
+			"rules": "Thief's Blade 1h weapon melee blade hand Add (Enhancement Die) (Blessing Die) (Blessing Die) to attacks.    At the end of your turn, you may Move (3) (gain Nimble) in a straight or diagonal line and perform a free attack against one enemy that was within reach on that path.  You may use the below spending options on attacks. DoubleSurge: -2 Cooldown for one of your cards at cooldown 5."
 		},
 		{
 			"name": "Throwing Knives",
@@ -8440,8 +8624,10 @@
 				"slashing",
 				"hand"
 			],
-			"spends": [],
-			"rules": "War Axe 1h weapon melee slashing hand Add (Power Die) to attacks.    Add (Cursed Die) (Cursed Die) to defense against melee attacks.(red##)"
+			"spends": [
+				"surge"
+			],
+			"rules": "War Axe 1h weapon melee slashing hand Add (Power Die) to attacks.    Add (Cursed Die) (Cursed Die) to defense against melee attacks.(red##)  You may use the below spending options on attacks. Surge: Hit one additional enemy within reach (deal max. 1 wound)."
 		},
 		{
 			"name": "Wardancer's Spear",
@@ -8460,10 +8646,11 @@
 				"hand"
 			],
 			"spends": [
-				"doublesurge",
+				"surge",
+				"surge",
 				"surge"
 			],
-			"rules": "Wardancer's Spear 2h weapon melee polearm hand Gain Reach.  Add (Enhancement Die) (Enhancement Die) to attacks.    You may use the below spending options on attacks. DoubleSurge: Hit an additional target within range. DoubleSurge: +2 Power."
+			"rules": "Wardancer's Spear 2h weapon melee polearm hand Gain Reach.  Add (Power Die) (Enhancement Die) to attacks.    You may use the below spending options on attacks. Surge: Add (Blessing Die) to your next defense this round. Surge: Cause Weaken. Surge: +2 Power."
 		},
 		{
 			"name": "Warhammer",
@@ -8482,9 +8669,10 @@
 				"hand"
 			],
 			"spends": [
-				"star"
+				"star",
+				"surge"
 			],
-			"rules": "Warhammer 2h weapon melee crushing hand Add (Enhancement Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Deal a wound and cause Knockback (2)."
+			"rules": "Warhammer 2h weapon melee crushing hand Add (Enhancement Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Cause Stun. Star: Cause Dazed."
 		},
 		{
 			"name": "Weapon Oil",
@@ -8514,14 +8702,14 @@
 				"1h",
 				"weapon",
 				"melee",
-				"slashing",
+				"crushing",
 				"hand"
 			],
 			"spends": [
 				"surge",
 				"surge"
 			],
-			"rules": "Whip Of The Succubus 1h weapon melee slashing hand Gain Reach.  Add (Enhancement Die) to your attacks.    You may use the below spending options on attacks. Surge: Cause Dazed. Surge: Cause Stun."
+			"rules": "Whip Of The Succubus 1h weapon melee crushing hand Gain Reach.  Add (Enhancement Die) to your attacks.    You may use the below spending options on attacks. Surge: Cause Dazed. Surge: Cause Stun."
 		},
 		{
 			"name": "Whistleheart Axe",
@@ -8559,9 +8747,10 @@
 				"hand"
 			],
 			"spends": [
+				"surge",
 				"surge"
 			],
-			"rules": "Zweihaender 2h weapon melee blade hand Add (Blessing Die) (Blessing Die) (Blessing Die) to attacks and melee defense.    You may use the below spending option on attacks and defense. Surge: +1 Power."
+			"rules": "Zweihaender 2h weapon melee blade hand Add (Blessing Die) (Blessing Die) (Blessing Die) to attacks and melee defense.    You may use the below spending option on attacks and defense. Surge: +1 Power. Surge: -1 Cooldown for one of your cards at cooldown 4 or 5."
 		}
 	],
 	"types": {
@@ -8591,11 +8780,11 @@
 		"ring": true,
 		"potion": true,
 		"crossbow": true,
+		"slashing": true,
 		"necklace": true,
 		"medium": true,
 		"witchcraft": true,
 		"throwing": true,
-		"slashing": true,
 		"tome": true,
 		"boots": true,
 		"back": true,
@@ -8881,7 +9070,7 @@
 			],
 			"scratches": 13,
 			"id": "courtesan",
-			"rules": "Courtesan Move an ally by 1 square  (grant Slippery) Comforting Words Once during your turn, heal a scratch from an ally within range 3 or reduce the duration of an ongoing effect on them by 1. Incarnated Passion Once per adventure, you may grant yourself and all allies (Enhancement Die) (Blessing Die) on all rolls for one round. Surprising Stab Once per round, at any time, you may perform a free melee attack, but you add (Blessing Die) (Blessing Die) instead of what your weapons provide.  You may spend each (Surge) to add +1 power. Worth Dying For Once per round, you may redirect an attack targeted against you to an adjacent ally. They add (Blessing Die) (Blessing Die) to their defense. Empathetic Fighting Whenever you perform a major action, you may reduce the cooldown of an ally's card by 1. ",
+			"rules": "Courtesan Move an ally by 1 square  (grant Slippery) Comforting Words Once during your turn, heal a scratch from an ally within range 3 or reduce the duration of an ongoing effect on them by 1. Instill Passion You may treat any of your played minor actions as: \"Increase the duration of any one ongoing effect (on yourself or an ally) by 1.\", instead of what is written on the card. Surprising Stab Once per round, at any time, you may perform a free melee attack, but you add (Blessing Die) (Blessing Die) instead of what your weapons provide.  You may spend each (Surge) to add +1 power. Worth Dying For Once per round, you may redirect an attack targeted against you to an adjacent ally. They add (Blessing Die) (Blessing Die) to their defense. Empathetic Fighting Whenever you perform a major action, you may reduce the cooldown of an ally's card by 1. ",
 			"rarity": "legendary"
 		},
 		{
@@ -8937,7 +9126,7 @@
 			],
 			"scratches": 16,
 			"id": "dwarvenslayer",
-			"rules": "Dwarven Slayer Move (1)  (gain Slippery) Grudge At the beginning of an adventure, declare one enemy type. Your attacks automatically add +2 Power against that enemy type. Unshakeable Reduce the duration of all incoming negative effects against you by 1, to a minimum of 1. Trophy Hunter Whenever you kill at least one model of a group with traits, take one of the trait cards (once the group is defeated).  At the end of the adventure, obtain 20 coins for each card collected, up to a maximum of 60 coins. Honed Fighting Style Ignore any (Cursed Die) you would add from weapons or armor. Relieving Violence Whenever you kill an enemy, heal one scratch from yourself.  If you don't have a scratch, heal a wound instead, but the current (new) bar will be filled with scratches.",
+			"rules": "Dwarven Slayer Move (1)  (gain Slippery) Grudge At the beginning of an adventure, declare one enemy type (not a boss). Your attacks automatically add +2 Power against that enemy type. Unshakeable Reduce the duration of all incoming negative effects against you by 1, to a minimum of 1. Trophy Hunter Whenever you kill at least one model of a group with traits, take one of the trait cards (once the group is defeated).  At the end of the adventure, obtain 20 coins for each card collected, up to a maximum of 60 coins. Honed Fighting Style When attacking or defending, treat the results from (Cursed Die) as positive power instead. Relieving Violence Whenever you kill an enemy, heal one scratch from yourself.  If you don't have a scratch, heal a wound instead, but the current (new) bar will be filled with scratches.",
 			"rarity": "rare"
 		},
 		{
@@ -8951,7 +9140,7 @@
 			],
 			"scratches": 14,
 			"id": "elvenranger",
-			"rules": "Elven Ranger Move (1)  (gain Slippery) Survivalist At the end of your turn, if you don't have any wounds, regenerate one scratch or reduce the cooldown of one your cards by 1. Armed To The Teeth Consider the first weapon in your backpack to be equipped in addition to the weapons in your hand, but it must be of a different type (ranged vs. melee). It doesn‘t matter if it's a one- or two-handed weapon. You cannot use shields any longer. Arcane Archery Your ranged attacks can be aimed around one corner. You need Line-of-Sight to one spot and from that spot to the target (the total range must still match). Adaptive Fighting You may treat 'Ranged Attack' cards / actions as 'Melee Attack' cards / actions and vice versa. Sniper Shot Gain +1 range with ranged attacks and if you attack an enemy who is at least 6 squares away, add (Blessing Die) and cause Weaken when causing at least one wound.",
+			"rules": "Elven Ranger Move (1)  (gain Slippery) Survivalist At the end of your turn, if you don't have any wounds, regenerate one scratch or reduce the cooldown of one your cards by 1. Armed To The Teeth Consider the first weapon in your backpack to be equipped in addition to the weapons in your hand, but it must be of a different type (ranged vs. melee). It doesn‘t matter if it's a one- or two-handed weapon. You cannot use shields any longer. Arcane Archery Your ranged attacks can be aimed around one corner. You need Line-of-Sight to one spot and from that spot to the target (the total range must still match). Adaptive Fighting You may perform a ranged attack instead of any melee attack you would perform and vice-versa. Sniper Shot Gain +1 range with ranged attacks and if you attack an enemy who is at least 6 squares away, add (Blessing Die) and cause Weaken when causing at least one wound.",
 			"rarity": "legendary"
 		},
 		{
@@ -8967,6 +9156,20 @@
 			"id": "halfgiant",
 			"rules": "Half Giant Move (1)  (gain Slippery) Giant Stature You are always considered Bulky, but cannot wear armor. Add (Power Die) to defense.  If you would get forcefully moved, you can prevent it by putting a hand card on cooldown 2. Iron Toughness Reduce the attack value of enemies by 1 before rolling for your defense. Reach All your melee attacks gain Reach.  Weapons that already grant Reach add (Blessing Die) to your attacks. Hard To Kill Whenever you would suffer a wound, roll (Blessing Die). If it shows a number or (Star), ignore the wound (but keep the current bar at full scratches). Brutish Strength On your melee attacks, you may spend (Surge) to cause Knockback (3), Stun OR  Dazed (only one of these spending options per attack).",
 			"rarity": "legendary"
+		},
+		{
+			"name": "Hunter",
+			"speed": "4",
+			"category": "vessel",
+			"wounds": [
+				4,
+				4,
+				6
+			],
+			"scratches": 14,
+			"id": "hunter",
+			"rules": "Hunter Move (1)  (gain Slippery) Companion Start each adventure with a Dog minion. It has a toughness of 6 and a speed of 4.   Add +2 to its toughness and +1 power to its attack rolls for each campaign chapter you have completed. Dog Commands Once per round, at any time, you can let your Dog perform one action (choose):  • Move (3) (grant Slippery & Nimble) and attack.  • Move (2) and grant an adjacent ally (Enhancement Die) on their next roll this round. Tag Team If you attack an enemy and your Dog is adjacent to it, add (Blessing Die) to your attacks. Your dog has the same advantage against enemies you are adjacent to. Veterinary If your Dog has been defeated, at the beginning of your turn, you can forfeit all your placed actions (take them back into your hand without any effect) to instead revive your Dog within range 2 of you - it comes back with 4 scratches. Hunt Down Once per round, after causing a wound with a ranged attack, you can immediately Move (6) and then perform a free melee attack.",
+			"rarity": "rare"
 		},
 		{
 			"name": "Izelga The Half-Demon",
@@ -9030,12 +9233,12 @@
 			"category": "vessel",
 			"wounds": [
 				5,
-				5,
+				6,
 				6
 			],
-			"scratches": 16,
+			"scratches": 17,
 			"id": "knight",
-			"rules": "Knight Move an enemy within range 2 by 1 square Irrepressible Once per adventure, at any point during your turn, you may heal all scratches from yourself. Armor Mastery If you wear medium or heavy armor, add (Blessing Die) to your defense. Counter Attack When defending: You may spend (Star) to perform a free melee attack against the attacker. Pull Together Ignore (Cursed Die) that you'd get for having wounds. Last Stand Add (Power Die) to your attacks if your party has a total of two wounds or least one ally is without a vessel.",
+			"rules": "Knight Move an enemy within range 2 by 1 square Irrepressible Once per adventure, at any point during your turn, you may heal all scratches from yourself. Armor Mastery If you wear medium or heavy armor, you may spend (Surge) to add +1 Power to your defense. Counter Attack When defending, once per round: You may spend (Star) to perform a free melee attack against the attacker. Pull Together Ignore (Cursed Die) that you'd get for having wounds. Last Stand Add (Power Die) to your attacks if your party has a total of two wounds or least one ally is without a vessel.",
 			"rarity": "common"
 		},
 		{
@@ -9105,7 +9308,7 @@
 			],
 			"scratches": 16,
 			"id": "samurai",
-			"rules": "Samurai Move an enemy within range 2 by 1 square Bushido Cannot use shields. Whenever you defend, gain an honor token (max. 6). You may spend 4 honor tokens at any time to play a card from your hand. Honorable Challenge You may spend 3 honor tokens to force an adjacent enemy to attack you instead of an ally. Retaliate Once you suffered a total of 3 or more scratches during a round, perform a free attack against all adjacent enemies, and cause Knockback (2) with it. Combat Meditation You may spend 2 movement points to generate 1 honor token. Standoff If you attack or defend against an enemy while not being adjacent to other enemies or allies, add (Enhancement Die) to those rolls.",
+			"rules": "Samurai Move an enemy within range 2 by 1 square Bushido Cannot use shields. Whenever you defend, gain an honor token (max. 6). You may spend 4 honor tokens at any time to play a major action from your hand. Honorable Challenge You may spend 3 honor tokens to force an adjacent enemy to attack you instead of an ally. Retaliate Once you suffered a total of 3 or more scratches during a round, perform a free attack against all adjacent enemies, and cause Knockback (2) with it. Combat Meditation You may spend 2 movement points to generate 1 honor token. Standoff If you attack or defend against an enemy while not being adjacent to other enemies or allies, add (Enhancement Die) to those rolls.",
 			"rarity": "legendary"
 		},
 		{
@@ -9119,7 +9322,7 @@
 			],
 			"scratches": 16,
 			"id": "serwynhall",
-			"rules": "Ser Wynhall Move an enemy within range 2 by 1 square Titan Grip You can wield up to one two-handed melee weapon in a single hand. Knight's Training Ignore penalties from armor and add (Blessing Die) to defense when wearing heavy armor. Desperate Strikes Add +2 power to the attacks of major actions for each wound you are suffering from. Chivalry Once per round, at any time, you may Move (2) (gain Nimble) and then cause Knockback (2) against any one adjacent enemy. Shield Bash / Throw You can perform melee attacks with your shield within range 3.  Add (Power Die) to attacks with your shield.",
+			"rules": "Ser Wynhall Move an enemy within range 2 by 1 square Titan Grip You can wield up to one two-handed melee weapon in a single hand. Knight's Training While wearing heavy armor, you may spend (Surge) on your defense roll to ignore one 'Wear' result. Desperate Strikes Add +2 power to the attacks of major actions for each wound you are suffering from. Chivalry Once per round, at any time, you may Move (2) (gain Nimble) and then cause Knockback (2) against any one adjacent enemy. Shield Bash / Throw You can perform melee attacks with your shield within range 3.  Add (Power Die) to attacks with your shield.",
 			"rarity": "mythical"
 		},
 		{
@@ -9203,7 +9406,7 @@
 			],
 			"scratches": 14,
 			"id": "thief",
-			"rules": "Thief Move (1)  (gain Slippery) Greedy Eye If you loot a treasure chest, draw three item cards and pick two. Combat Dancer Passively gain Slippery (automatically pass all escape tests). Acrobatics Passively gain Nimble (ability to move through other models). Alertness Once per round, if an enemy would get adjacent to you, you may immediately Move (3). Quick Wits Increase your initiative by up to +2.",
+			"rules": "Thief Move (1)  (gain Slippery) Sleight Of Hand If you loot a treasure chest, draw three item cards and pick two.  Additionally, you don't have to spend movement points to trade items with adjacent heroes. Combat Dancer Passively gain Slippery and +1 speed. Acrobatics Passively gain Nimble and a free (Surge) on every defense roll. Alertness Once per round, if an enemy would get adjacent to you, you may immediately Move (4). Quick Wits Increase your initiative by up to +2 when determining it.  If you don't increase your initiative, gain (Blessing Die) on your first attack during that round.",
 			"rarity": "common"
 		},
 		{
