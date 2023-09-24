@@ -9256,6 +9256,20 @@
 			"rarity": "rare"
 		},
 		{
+			"name": "Martial Artist",
+			"speed": "3",
+			"category": "vessel",
+			"wounds": [
+				4,
+				5,
+				6
+			],
+			"scratches": 15,
+			"id": "martialartist",
+			"rules": "Martial Artist Move (1)  (gain Slippery) Momentum Add (Blessing Die) to unarmed attacks. Gain one Combo token (max. 6) after each performed melee attack, but lose half of them at the end of each round (round up). Flashy Parry At any time, you can spend 3 Combo tokens to Move (2) (gain Slippery) and add (Power Die) to your next defense this round. Furious Fist On your melee attacks you can spend 2 Combo tokens and (Surge) to add +2 Power and Dazed. My Palm Is My Blade At the beginning of an adventure, take any one-handed weapon of up to the current tier and set it aside for that adventure. You can use its spending options on your unarmed attacks by additionally spending 1 Combo each. Seven Gates Chakra You can spend 4 Combo tokens before performing a melee attack to add seven dice of your choice to the attack. Afterwards, reduce your maximum Combo points by 1 for the remainder of the adventure.",
+			"rarity": "rare"
+		},
+		{
 			"name": "Monk",
 			"speed": "3",
 			"category": "vessel",
