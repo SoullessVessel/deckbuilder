@@ -1,6 +1,51 @@
 {
 	"abilities": [
 		{
+			"type": "Defense",
+			"initiative": "6",
+			"name": "Aegis",
+			"cooldown": "3",
+			"id": "a404",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Aegis Defense Melee attack, add (Enhancement Die).  You may use the below spending options only if you wear a shield. Surge: Add (Enhancement Die) to any one defense roll this round (decide before rolling). Surge: Cause Dazed. Melee attack with your shield, add (Blessing Die). If you deal a wound, perform a melee attack with your other equipped weapon."
+		},
+		{
+			"type": "Defense",
+			"initiative": "6",
+			"name": "Aegis",
+			"cooldown": "2",
+			"id": "a405",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [
+				"surge",
+				"surge",
+				"surge"
+			],
+			"rules": "Aegis Defense Melee attack, add (Enhancement Die).  You may use the below spending options only if you wear a shield. Surge: Pull (3) on a single ally. If they become / are adjacent, they can use your defense dice pool on their next defense this round instead. Surge: Add (Enhancement Die) to any one defense roll this round (decide before rolling). Surge: Cause Dazed. Melee attack with your shield, add (Blessing Die). If you deal a wound, perform a melee attack with your other equipped weapon."
+		},
+		{
+			"type": "Defense",
+			"initiative": "6",
+			"name": "Aegis",
+			"cooldown": "4",
+			"id": "a406",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Aegis Defense Ongoing  After determining a defense roll, you may put a special token on your equipped shield until the end of the round.  The shield cannot be used nor unequipped as long as it has the token, but you add Power equal to half the current initiative step (round up). During one defense roll this round (after rolling), you may add a Wear token to your equipped shield to add +3 Power."
+		},
+		{
 			"type": "Meta",
 			"initiative": "1",
 			"name": "Animal Tamer",
@@ -77,6 +122,21 @@
 			"effects": [],
 			"spends": [],
 			"rules": "Arcane Manipulation Meta Extend the duration of up to two ongoing spells by +2 each.    Then you suffer a scratch. Set the duration of an ongoing spell that you have cast to 3."
+		},
+		{
+			"type": "Melee",
+			"initiative": "3",
+			"name": "Aspect Of The Wolf",
+			"cooldown": "3",
+			"id": "a391",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Aspect Of The Wolf Melee Assume a position within range 5, then perform a melee attack.  For each square of distance that you used, add +1 Power to the attack. Surge: Remove one Bleed token from the enemy to end one of your cooldowns. Surge: Cause Bleed (4) after resolving the attack. Assume a position within range 2. Cause Bleed (2) against an adjacent enemy."
 		},
 		{
 			"type": "Melee",
@@ -649,6 +709,44 @@
 			"effects": [],
 			"spends": [],
 			"rules": "Bouncing Bomb Meta Select a square in exactly range 2 that is straight or diagonal to your position.    Deal damage to all enemies on and adjacent to it using only (Standard Die) (Enhancement Die) (Blessing Die).  Cause Knockback (2) against all enemies affected, originating from the targeted square.  Add Power to the damage equal to the current chapter tier. Deal damage to an enemy within range 4 using only (Standard Die) (Enhancement Die). Add Power to the damage equal to the current chapter tier."
+		},
+		{
+			"type": "Meta",
+			"initiative": "6",
+			"name": "Brace For Impact",
+			"cooldown": "4",
+			"id": "a410",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [],
+			"rules": "Brace For Impact Meta Roll only (Standard Die) (Standard Die) (Standard Die) (Standard Die) and pick the die showing the most raw power.  Then target an ally within range 5. They ignore an amount of scratches this round equal to the power rolled. Move (2).  Declare an ally within range 5 - they may ignore one scratch this round."
+		},
+		{
+			"type": "Meta",
+			"initiative": "6",
+			"name": "Brace For Impact",
+			"cooldown": "4",
+			"id": "a411",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [],
+			"rules": "Brace For Impact Meta Roll only (Standard Die) (Standard Die) (Standard Die) (Standard Die) and pick the die showing the most raw power.  Then target two allies within range 5. If either of them suffers scratches this round, you may prevent them, but you can only prevent a total of scratches equal to the power rolled. Move (2).  Declare an ally within range 5 - they may ignore one scratch this round."
+		},
+		{
+			"type": "Meta",
+			"initiative": "6",
+			"name": "Brace For Impact",
+			"cooldown": "X",
+			"id": "a412",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Brace For Impact Meta Ongoing  When performing this ability, roll (Power Die) (Power Die) and pick the higher result - that will be the duration of this ability (to a minimum of 2).  Whenever an ally within range 5 suffers one or more scratches, you may prevent one, but reduce the duration of this effect by 1. Move (2).  Declare an ally within range 5 - they may ignore one scratch this round."
 		},
 		{
 			"type": "Meta",
@@ -1393,6 +1491,48 @@
 			"rules": "Curse Of The Citadel Spell Spellcasting 1+  Target an enemy within range 6 and cause Dazed. Star: Cause Stun. Star: Perform a free melee attack against the target (even if it is not in melee range). Surge: Cause Weaken. Cause Knockback (3) against a model within range 6."
 		},
 		{
+			"type": "Defense",
+			"initiative": "4",
+			"name": "Defensive Posture",
+			"cooldown": "3",
+			"id": "a398",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Defensive Posture Defense Ongoing Whenever you would suffer a scratch, you can reduce the duration of this effect by 1 instead and add a token to it.  When the effect ends, put this card on cooldown instead, with a duration equal to the amount of tokens on it. Suffer Stun (2). Gain +1 Power to all defense rolls this round."
+		},
+		{
+			"type": "Defense",
+			"initiative": "1",
+			"name": "Defensive Posture",
+			"cooldown": "4",
+			"id": "a399",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [],
+			"rules": "Defensive Posture Defense Ongoing Whenever you would suffer a scratch, you can increase the duration of this effect by 1 instead. If it would reach a duration of 6 (six), you have to put it on cooldown 5 immediately and may perform a free melee attack, adding (Power Die). Suffer Stun (2). Gain +1 Power to all defense rolls this round."
+		},
+		{
+			"type": "Defense",
+			"initiative": "4",
+			"name": "Defensive Posture",
+			"cooldown": "4",
+			"id": "a400",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"interrupt"
+			],
+			"spends": [],
+			"rules": "Defensive Posture Defense Interrupt  Before rolling for your defense, guess the amount of raw power that you will roll.  If your guess is correct, your defense counts as having a critical result (!). If you guessed wrong, the cooldown is 1 instead. Suffer Stun (2). Gain +1 Power to all defense rolls this round."
+		},
+		{
 			"type": "Meta",
 			"initiative": "1",
 			"name": "Delayed Weaving",
@@ -1699,6 +1839,50 @@
 			"rules": "Double Trouble Attack Perform a separate attack with two of your equipped weapons.    You may use the spending options on either attack, but not on both. Surge: Cause Cripple. Surge: Cause Bleed (2). Move (2)  Attack"
 		},
 		{
+			"type": "Spell",
+			"initiative": "2",
+			"name": "Dreadful Offering",
+			"cooldown": "2",
+			"id": "a413",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"doublesurge"
+			],
+			"rules": "Dreadful Offering Spell Spellcasting 1+  Remove a minion within range 5.  Then perform one of the following options on an ally within range 5 of you (or yourself):  • End one ongoing effect.  • Heal 2 scratches.  • Move (3) (gain Slippery) and reduce one of their cooldowns by 2. DoubleSurge: You may perform a second, different option. Immediately end any one ongoing effect that summoned one or more minions. If you do, heal one scratch from yourself."
+		},
+		{
+			"type": "Spell",
+			"initiative": "2",
+			"name": "Dreadful Offering",
+			"cooldown": "2",
+			"id": "a414",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [
+				"doublesurge"
+			],
+			"rules": "Dreadful Offering Spell Spellcasting 1+  Remove any amount of minions that you summoned.  For each minion removed, perform one of the following options on an ally within range 5 of you (or yourself):  • End one ongoing effect.  • Heal 2 scratches.  • Move (3) (gain Slippery) and reduce one of their cooldowns by 2. DoubleSurge: After resolving the ability, you may instead keep one of the minions, with all scratches healed - place it within range 2. Immediately end any one ongoing effect that summoned one or more minions. If you do, heal one scratch from yourself."
+		},
+		{
+			"type": "Spell",
+			"initiative": "6",
+			"name": "Dreadful Offering",
+			"cooldown": "5",
+			"id": "a415",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [],
+			"spends": [
+				"star",
+				"surge",
+				"surge"
+			],
+			"rules": "Dreadful Offering Spell Spellcasting 2+  Remove a minion within range 5.  Then all enemies within range 2 of it suffer damage, using (Standard Die) (Standard Die). Star: Add (Power Die) to the damage roll. Star: Increase the area of effect by 1. Surge: Add (Blessing Die) to the damage roll. Immediately end any one ongoing effect that summoned one or more minions. If you do, heal one scratch from yourself."
+		},
+		{
 			"type": "Melee",
 			"initiative": "4",
 			"name": "Dual Strike",
@@ -1846,6 +2030,56 @@
 		},
 		{
 			"type": "Attack",
+			"initiative": "2",
+			"name": "Execution",
+			"cooldown": "5",
+			"id": "a407",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"interrupt"
+			],
+			"spends": [
+				"surge"
+			],
+			"rules": "Execution Attack Interrupt Attack.  Add (Enhancement Die) if the enemy already suffered 50% or more of its maximum wounds.  If the enemy survives, it performs a free attack, preferring you as its target if possible. Surge: +1 Power. Attack. Add (Enhancement Die) if the enemy already suffered 50% or more of its maximum wounds."
+		},
+		{
+			"type": "Attack",
+			"initiative": "2",
+			"name": "Execution",
+			"cooldown": "5",
+			"id": "a408",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [
+				"interrupt"
+			],
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Execution Attack Interrupt Attack.  Add (Enhancement Die) (Blessing Die) if the enemy already suffered 50% or more of its maximum wounds.  If the enemy survives, it performs a free attack, preferring you as its target if possible. DoubleSurge: After resolving the ability, you may repeat it (only once per round). DoubleSurge: +1 Power. Attack. Add (Enhancement Die) if the enemy already suffered 50% or more of its maximum wounds."
+		},
+		{
+			"type": "Attack",
+			"initiative": "2",
+			"name": "Execution",
+			"cooldown": "5",
+			"id": "a409",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"interrupt"
+			],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Execution Attack Interrupt Attack.  Add (Power Die) if the enemy is 2 or less wounds away from defeat.  If the enemy survives, it performs a free attack, preferring you as its target if possible. Surge: If the target dies, you may force each enemy within range 3 of it to Retreat (4) and suffer Dazed. Surge: +2 Power. Attack. Add (Enhancement Die) if the enemy already suffered 50% or more of its maximum wounds."
+		},
+		{
+			"type": "Attack",
 			"initiative": "3",
 			"name": "Exploit",
 			"cooldown": "2",
@@ -1923,6 +2157,45 @@
 			"effects": [],
 			"spends": [],
 			"rules": "Explosive Arrow Ranged Ranged Attack, add (Cursed Die) (Cursed Die).    This attack automatically hits all enemies adjacent to the original target and causes Cripple and Bleed (1) against all targets hit. Ranged Attack, add (Cursed Die).  Cause Knockback (1) against the target."
+		},
+		{
+			"type": "Meta",
+			"initiative": "1",
+			"name": "Field Surgery",
+			"cooldown": "4",
+			"id": "a416",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Field Surgery Meta Roll only (Enhancement Die) (Blessing Die) (Blessing Die).  The total power is the amount of scratches that you can heal from an adjacent ally. You may use the below spending options on that roll. Surge: Discard one \"Talisman\" to end all negative effects from the target. Surge: Discard one \"Bandage\" or \"Balsamic Bandage\" to heal the target for 3 scratches, and then one wound. You may cause the armor of yourself or an adjacent ally to suffer Wear. If it suffered Wear, take a \"Bandage\" from the Pile Of Items."
+		},
+		{
+			"type": "Meta",
+			"initiative": "1",
+			"name": "Field Surgery",
+			"cooldown": "3",
+			"id": "a417",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [],
+			"rules": "Field Surgery Meta Heal all scratches or one wound from an adjacent ally.  Then roll only (Power Die). The target suffers Terror with a duration equal to the raw power rolled (no effect is suffered if no power was rolled). You may cause the armor of yourself or an adjacent ally to suffer Wear. If it suffered Wear, take a \"Bandage\" from the Pile Of Items."
+		},
+		{
+			"type": "Meta",
+			"initiative": "1",
+			"name": "Field Surgery",
+			"cooldown": "5",
+			"id": "a418",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [],
+			"spends": [],
+			"rules": "Field Surgery Meta Heal all scratches & wounds, and end all negative effects from an adjacent ally.  Then they have to discard a random hand card for the remainder of the adventure and suffer Stun (2). You may cause the armor of yourself or an adjacent ally to suffer Wear. If it suffered Wear, take a \"Bandage\" from the Pile Of Items."
 		},
 		{
 			"type": "Meta",
@@ -2456,6 +2729,22 @@
 		{
 			"type": "Spell",
 			"initiative": "4",
+			"name": "Ice Mastery",
+			"cooldown": "2",
+			"id": "a390",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"surge",
+				"surge",
+				"surge"
+			],
+			"rules": "Ice Mastery Spell Spellcasting (1+)  When succeeding at this spell, you can use the basic effect OR the spending options, not both:  Place an Ice Barrier within range 5. Surge: Remove an Ice Barrier within range 5, dealing 3 wounds to all enemies within range 2 of it. Surge: Remove one ongoing effect of an ally who is within range 2 of an Ice Barrier. Surge: Move an Ice Barrier within range 5 by 3 squares in a straight or diagonal line (treat it as Bulky). Reduce the duration of a negative ongoing effect of an ally within range 5 by 1."
+		},
+		{
+			"type": "Spell",
+			"initiative": "4",
 			"name": "Ignite",
 			"cooldown": "3",
 			"id": "a244",
@@ -2786,6 +3075,54 @@
 			],
 			"spends": [],
 			"rules": "Iron Defense Defense Interrupt  After a defense roll, you may add additional dice equal to what your armor provides and then determine the end result.    If you would only take the minimum amount of scratches (1), you also prevent that scratch. Move (1)  Attack"
+		},
+		{
+			"type": "Defense",
+			"initiative": "6",
+			"name": "Knight's Rush",
+			"cooldown": "4",
+			"id": "a395",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Knight's Rush Defense Move (4) in a straight or diagonal line.  Melee Attack, add (Enhancement Die). Surge: During this round, that enemy will prioritize you as their target if possible. Surge: +1 Power. Move (4) in a straight or diagonal line."
+		},
+		{
+			"type": "Defense",
+			"initiative": "6",
+			"name": "Knight's Rush",
+			"cooldown": "4",
+			"id": "a396",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [
+				"star",
+				"surge",
+				"surge"
+			],
+			"rules": "Knight's Rush Defense Move (4) in a straight or diagonal line (gain Slippery & Nimble).  Melee Attack, add (Enhancement Die). Star: During this round, add (Power Die) to your defense rolls against that enemy. Star: During this round, that enemy will prioritize you as their target if possible. Surge: +1 Power. Move (4) in a straight or diagonal line."
+		},
+		{
+			"type": "Defense",
+			"initiative": "1",
+			"name": "Knight's Rush",
+			"cooldown": "5",
+			"id": "a397",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"interrupt"
+			],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Knight's Rush Defense Melee attack, add (Power Die) (Enhancement Die).  Interrupt Move (4) in a straight or diagonal line.  Melee Attack, add (Enhancement  Die). Surge: During this round, that enemy will prioritize you as their target if possible. Surge: Cause Knockback (2). Attack, add (Blessing Die)  OR  Move (4) in a straight or diagonal line."
 		},
 		{
 			"type": "Ranged",
@@ -3402,6 +3739,51 @@
 				"surge"
 			],
 			"rules": "Piercing Missile Ranged Ranged Attack, add (Power Die). Surge: Hit a second enemy that is adjacent to but further away than your first target. Ranged Attack (gain +2 range)"
+		},
+		{
+			"type": "Spell",
+			"initiative": "6",
+			"name": "Portal Of Ruin",
+			"cooldown": "4",
+			"id": "a392",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"doublesurge"
+			],
+			"rules": "Portal Of Ruin Spell Spellcasting 3+  Declare an enemy within range 5. After its next activation, remove it from the game board. At the end of that round, place that enemy adjacent to any one ally. It suffers (Standard Die) (Blessing Die) as damage. DoubleSurge: Add (Power Die) to the damage if the enemy also became adjacent to you. Force an enemy within range 3 to assume a new position adjacent to an ally within range 3 of you."
+		},
+		{
+			"type": "Spell",
+			"initiative": "6",
+			"name": "Portal Of Ruin",
+			"cooldown": "4",
+			"id": "a393",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Portal Of Ruin Spell Spellcasting 3+  Declare an enemy within range 5. After its next activation, remove it from the game board. At the end of that round, place that enemy adjacent to any one ally. It then suffers (Standard Die) (Blessing Die) (Blessing Die) as damage. DoubleSurge: Declare one additional enemy within range 5. DoubleSurge: Declare one additional enemy within range 5. Force an enemy within range 3 to assume a new position adjacent to an ally within range 3 of you."
+		},
+		{
+			"type": "Spell",
+			"initiative": "6",
+			"name": "Portal Of Ruin",
+			"cooldown": "3",
+			"id": "a394",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [],
+			"spends": [
+				"surge",
+				"surge",
+				"surge"
+			],
+			"rules": "Portal Of Ruin Spell Spellcasting 3+  Declare an enemy within range 5. After its next activation, remove it from the game board. At the end of that round, place that enemy adjacent to any one ally. It then suffers (Standard Die) (Blessing Die) as damage. Surge: Add (Power Die) to the damage if the enemy also became adjacent to you. Surge: When you remove the enemy temporarily, you may assume its position. Surge: Add (Standard Die) to the damage. Force an enemy within range 3 to assume a new position adjacent to an ally within range 3 of you."
 		},
 		{
 			"type": "Attack",
@@ -4073,6 +4455,51 @@
 			"rules": "Simple Strike Attack Attack, add (Blessing Die). Surge: Cooldown -1. Surge: +2 Power. Surge: Treat botched results as +1 Power instead. Attack  Move (1)"
 		},
 		{
+			"type": "Melee",
+			"initiative": "4",
+			"name": "Smash",
+			"cooldown": "5",
+			"id": "a419",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"surge",
+				"surge"
+			],
+			"rules": "Smash Melee Melee attack, add (Power Die). Surge: If the above Knockback effect lets the target become adjacent to another enemy, both suffer (Power Die) as damage. Surge: Cause Knockback (6) if the enemy is not Bulky. This Knockback effect cannot cause damage. Attack.  Cause Knockback (2) when causing at least one wound."
+		},
+		{
+			"type": "Melee",
+			"initiative": "4",
+			"name": "Smash",
+			"cooldown": "4",
+			"id": "a420",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [
+				"surge",
+				"surge",
+				"surge"
+			],
+			"rules": "Smash Melee Melee attack, add (Power Die). Surge: You may assume any position adjacent to your target. Surge: If the above Knockback effect lets the target become adjacent to another enemy, both suffer (Power Die) as damage. Surge: Cause Knockback (6) if the enemy is not Bulky. This Knockback effect cannot cause damage. Attack.  Cause Knockback (2) when causing at least one wound."
+		},
+		{
+			"type": "Melee",
+			"initiative": "4",
+			"name": "Smash",
+			"cooldown": "3",
+			"id": "a421",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"interrupt"
+			],
+			"spends": [],
+			"rules": "Smash Melee Interrupt  After dealing at least one wound with a melee attack:  Cause Knockback (6) against the enemy hit, but this effect cannot cause damage and doesn't work against Bulky enemies. Attack.  Cause Knockback (2) when causing at least one wound."
+		},
+		{
 			"type": "Meta",
 			"initiative": "6",
 			"name": "Spontaneous Magick",
@@ -4238,6 +4665,24 @@
 			"effects": [],
 			"spends": [],
 			"rules": "Stomping Leap Melee Assume a new position within range 3.  Then perform a melee attack against each enemy within reach, but add (Cursed Die) to them.    After these attacks, cause Knockback (2) against each enemy hit. Move (2) (gain Nimble)  Attack"
+		},
+		{
+			"type": "Spell",
+			"initiative": "1",
+			"name": "Summon Drakeling",
+			"cooldown": "5",
+			"id": "a389",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [
+				"ongoing"
+			],
+			"spends": [
+				"star",
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Summon Drakeling Spell Ongoing  Spellcasting (4+)  Suffer 3 scratches, then summon a Drakeling minion within range 2. It is Bulky, has a toughness of 10, 2 speed and attack range 5. Add 2 x (Enhancement Die) to its attacks. Star: Add (Enhancement Die) to the Drakelings attacks and defense. Star: Add (Blessing Die) to the Drakelings attacks. DoubleSurge: Instead of performing a regular attack, the Drakeling can suffer 3 scratches and use a Blast template to attack each target struck. Heroes and minions struck suffer 2 scratches instead. Use the Blast Template and deal damage to all enemies struck using (Standard Die) (Blessing Die) against each."
 		},
 		{
 			"type": "Spell",
@@ -5175,6 +5620,50 @@
 			"effects": [],
 			"spends": [],
 			"rules": "Treat Wound Meta An adjacent ally gets one wound healed (but keeps scratches). Move (2)"
+		},
+		{
+			"type": "Ranged",
+			"initiative": "5",
+			"name": "Trick Shot",
+			"cooldown": "4",
+			"id": "a401",
+			"category": "ability",
+			"variant": "Basic",
+			"effects": [],
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Trick Shot Ranged Target a model within range 5. You may then perform a ranged attack as if you had that model's position, adding (Enhancement Die). DoubleSurge: Hit one additional enemy within range (from the targeted model's position). DoubleSurge: Cause Dazed. Ranged Attack (gain +2 range)."
+		},
+		{
+			"type": "Ranged",
+			"initiative": "5",
+			"name": "Trick Shot",
+			"cooldown": "4",
+			"id": "a402",
+			"category": "ability",
+			"variant": "Alpha",
+			"effects": [],
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Trick Shot Ranged Target a model within range 5. Optionally, you may target another model within range 4 of that model.  You may then perform a ranged attack as if you had either of the two models' positions, adding (Enhancement Die). DoubleSurge: Immediately add (Power Die) to the roll. You may use this spending option repeatedly. DoubleSurge: Cause Dazed or Stun. Ranged Attack (gain +2 range)."
+		},
+		{
+			"type": "Ranged",
+			"initiative": "3",
+			"name": "Trick Shot",
+			"cooldown": "2",
+			"id": "a403",
+			"category": "ability",
+			"variant": "Beta",
+			"effects": [
+				"interrupt"
+			],
+			"spends": [],
+			"rules": "Trick Shot Ranged Interrupt  Before performing any other ability that lets you perform ranged attacks, you may target a model within range 5. You may then perform the ranged attack(s) in question as if you had that model's position instead. Ranged Attack (gain +2 range)."
 		},
 		{
 			"type": "Attack",
@@ -9044,6 +9533,20 @@
 			"id": "bladedancer",
 			"rules": "Blade Dancer Move (1)  (gain Slippery) Wall Of Steel If you wield two melee weapons and just performed an attack:  Once per round, perform a free attack with your equipped weapon in the other hand. Dance Of Blades Passively gain Slippery, and add (Blessing Die) to attacks with blade weapons. Death From The Left With every melee attack you can spend (Surge) to add +1 power and cause Knockback (2). Battle Maneuvers After each melee attack, you may Move (3) (gain Nimble). Deadly Rhythm You can perform your free off-hand attack (from 'Wall Of Steel') up two twice per round.",
 			"rarity": "rare"
+		},
+		{
+			"name": "Cleric Of Tajuun",
+			"speed": "3",
+			"category": "vessel",
+			"wounds": [
+				4,
+				5,
+				6
+			],
+			"scratches": 15,
+			"id": "clericoftajuun",
+			"rules": "Cleric Of Tajuun Reduce one of your cooldowns by 1 Combat Prayers At the end of your turn, you may put one hand card aside, face down - it counts as Divine Favor and you can have up to 3. You can spend one Divine Favor at any time to add (Enhancement Die) each to any one of your rolls - take that card back into your hand. Intensified Fervor Instead of granting yourself (Enhancement Die) to your rolls with \"Combat Prayers\", you can grant a (Power Die) by spending one additional Divine Favor.  Additionally, you can spend 2 Divine Favor to reduce one of your cooldowns by 4. Balance After causing at least one wound with a melee attack, you may spend 2 Divine Favor to heal a total of 2 scratches from allies within range 5. Deep Insight You may gain up to 2 Divine Favor per turn and your maximum Divine Favor increases to 4.  Additionally, at any time you can spend 4 Divine Favor to play a major action from your hand. Cleansing At any time you may spend 3 Divine Favor to remove all negative effects of yourself and all allies within range 3.",
+			"rarity": "legendary"
 		},
 		{
 			"name": "Commander",
