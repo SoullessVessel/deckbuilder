@@ -72,20 +72,20 @@ Arcanist,Mind Control,a250
 Arcanist,Gust,a238
 Arcanist,Telekinesis,a280
 Leader,First Aid,a124
-Leader,Cautious Advance,a34
+Leader,Simple Strike,a34
 Leader,Group Tactics,a127
 Leader,Leadership,a154
 Leader,Inspire,a148
 Leader,Saving Warning,a166
 Chirurgeon,First Aid,a124
-Chirurgeon,Cautious Advance,a34
+Chirurgeon,Simple Strike,a34
 Chirurgeon,Treat Wound,a187
 Chirurgeon,Ray Of Healing,a259
 Chirurgeon,Crippling Shot,a190
 Chirurgeon,Exploit,a16
 Tinkerer,First Aid,a124
-Tinkerer,Cautious Advance,a34
+Tinkerer,Simple Strike,a34
 Tinkerer,Improvise,a145
 Tinkerer,Scavenge & Craft,a169
 Tinkerer,Bouncing Bomb,a103
-Tinkerer,Telekinesis,a280
+Tinkerer,Trap,a184
