@@ -1,0 +1,14 @@
+publish,ID,name,cost_iron,cost_wood,cost_silver,cost_cloth,options_attacks,options_spellcasting,options_defense
+x,cb001,Greatsword,2,,,,TRUE,FALSE,FALSE
+x,cb002,Blade,1,,,,TRUE,FALSE,FALSE
+x,cb003,Polearm,1,1,,,TRUE,FALSE,FALSE
+x,cb004,Axe,1,,,,TRUE,FALSE,FALSE
+x,cb005,Warhammer,1,1,,,TRUE,FALSE,FALSE
+x,cb006,Bow,,2,,,TRUE,FALSE,FALSE
+x,cb007,Throwing Knives,1,,,,TRUE,FALSE,FALSE
+x,cb008,Staff,,1,1,,TRUE,TRUE,FALSE
+x,cb009,Wand,,,1,,TRUE,TRUE,FALSE
+x,cb010,Shield,,1,,,FALSE,FALSE,TRUE
+x,cb011,Light Armor,,,,2,FALSE,FALSE,TRUE
+x,cb012,Medium Armor,1,,,1,FALSE,FALSE,TRUE
+x,cb013,Heavy Armor,2,,,,FALSE,FALSE,TRUE

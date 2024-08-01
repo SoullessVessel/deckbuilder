@@ -4692,7 +4692,8 @@
 				"hand"
 			],
 			"spends": [],
-			"rules": "Advance Lance 1h weapon melee polearm hand Add (Enhancement Die) (Blessing Die) to attacks.    Gain 'Reach'.    Before performing a melee attack, you may Move (2) in a straight or diagonal line (gain'Slippery')."
+			"rules": "Advance Lance 1h weapon melee polearm hand Add (Enhancement Die) (Blessing Die) to attacks.    Gain 'Reach'.    Before performing a melee attack, you may Move (2) in a straight or diagonal line (gain'Slippery').",
+			"craftable": false
 		},
 		{
 			"name": "Ambrosia",
@@ -4707,7 +4708,8 @@
 				"immediate"
 			],
 			"spends": [],
-			"rules": "Ambrosia consumable immediate Permanently unlock one additional perk for one player's current vessel, ignoring usual limits (they may have two perks of the same column with this)."
+			"rules": "Ambrosia consumable immediate Permanently unlock one additional perk for one player's current vessel, ignoring usual limits (they may have two perks of the same column with this).",
+			"craftable": false
 		},
 		{
 			"name": "Amulet Of Haste",
@@ -4724,7 +4726,8 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Amulet Of Haste gear necklace magical When determining your initiative, you may increase it by +1."
+			"rules": "Amulet Of Haste gear necklace magical When determining your initiative, you may increase it by +1.",
+			"craftable": false
 		},
 		{
 			"name": "Ancient Cuirass",
@@ -4743,7 +4746,8 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Ancient Cuirass armor medium Add (Enhancement Die) (Blessing Die) to defense.    You may use the below spending options on defense. DoubleSurge: +2 Power. DoubleSurge: +1 Power."
+			"rules": "Ancient Cuirass armor medium Add (Enhancement Die) to defense.  If you suffer from at least one wound or 2 scratches, add (Blessing Die) to your attacks.    You may use the below spending options on defense. DoubleSurge: +2 Power. DoubleSurge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Arcane Tome",
@@ -4761,8 +4765,11 @@
 				"tome",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Arcane Tome 1h weapon magical tome hand Add (Blessing Die) to spellcasting.  While equipped, perform a free attack at the end of each turn against an enemy within range 6, using your spellcasting dice pool, adding (Cursed Die) (Cursed Die)."
+			"spends": [
+				"doublesurge"
+			],
+			"rules": "Arcane Tome 1h weapon magical tome hand Add (Blessing Die) to spellcasting.  This item can be used like a ranged weapon with a range of 4. In that case, use your spellcasting dice pool for the ranged attack, but add (Cursed Die).  You may use the below spending options on attacks. DoubleSurge: Reduce the cooldown of one of your spells by 2.",
+			"craftable": false
 		},
 		{
 			"name": "Archer's Garments",
@@ -4779,7 +4786,8 @@
 			"spends": [
 				"doublesurge"
 			],
-			"rules": "Archer's Garments armor light Add (Blessing Die) (Blessing Die) to defense.  Add (Standard Die) to ranged attacks.    Add the below spending options to attacks. DoubleSurge: Ignore one fault or botch."
+			"rules": "Archer's Garments armor light Add (Blessing Die) (Blessing Die) to defense.  Add (Standard Die) to ranged attacks.    Add the below spending options to attacks. DoubleSurge: Ignore one fault or botch.",
+			"craftable": false
 		},
 		{
 			"name": "Archmage's Cloak",
@@ -4798,7 +4806,8 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Archmage's Cloak armor light magical Add (Blessing Die) to defense.  Add (Blessing Die) to spellcasting for each spell on your hand.    You may use the below spending options on defense. Surge: +1 Power."
+			"rules": "Archmage's Cloak armor light magical Add (Blessing Die) to defense.  Add (Blessing Die) to spellcasting for each spell on your hand.    You may use the below spending options on defense. Surge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Armor of the Nightwatch",
@@ -4811,13 +4820,14 @@
 			"currency": "Gold",
 			"types": [
 				"armor",
-				"light"
+				"medium"
 			],
 			"spends": [
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Armor of the Nightwatch armor light Add (Blessing Die) to defense.  Add another (Enhancement Die) if you don't have any wounds.    You may use the below spending options on defense. DoubleSurge: +2 Power. DoubleSurge: +1 Power."
+			"rules": "Armor of the Nightwatch armor medium Add (Blessing Die) to defense.  Add another (Power Die) if you don't have any wounds or scratches.    You may use the below spending options on defense. DoubleSurge: +2 Power. DoubleSurge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Astral Gloves",
@@ -4833,7 +4843,29 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Astral Gloves gear gloves magical After casting a spell, you may discard another spell from your hand on cooldown 5, then double the amount of wounds that spell causes (also applies to summons)."
+			"rules": "Astral Gloves gear gloves magical After casting a spell, you may discard another spell from your hand on cooldown 5, then double the amount of wounds that spell causes (also applies to summons).",
+			"craftable": false
+		},
+		{
+			"name": "Axe",
+			"abundance": "2",
+			"durability": "5",
+			"price": "30",
+			"tier": "3",
+			"id": "i102",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"1h",
+				"weapon",
+				"melee",
+				"slashing",
+				"hand"
+			],
+			"spends": [],
+			"rules": "Axe 1h weapon melee slashing hand Add (Power Die) to attacks.  Add (Cursed Die) to melee defense.",
+			"craftable": true,
+			"craftBaseId": "cb004"
 		},
 		{
 			"name": "Balsamic Bandages",
@@ -4849,7 +4881,8 @@
 				"mundane"
 			],
 			"spends": [],
-			"rules": "Balsamic Bandages consumable mundane Consume to remove all your current scratches."
+			"rules": "Balsamic Bandages consumable mundane Consume to remove all your current scratches.",
+			"craftable": false
 		},
 		{
 			"name": "Band Of Teleportation",
@@ -4865,7 +4898,8 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Band Of Teleportation gear ring magical Spend one movement point and suffer one scratch to assume any new position on the game board."
+			"rules": "Band Of Teleportation gear ring magical Spend one movement point and suffer one scratch to assume any new position on the game board.",
+			"craftable": false
 		},
 		{
 			"name": "Bandages",
@@ -4881,7 +4915,8 @@
 				"mundane"
 			],
 			"spends": [],
-			"rules": "Bandages consumable mundane Consume to heal half your current scratches (round up)."
+			"rules": "Bandages consumable mundane Consume to heal half your current scratches (round up).",
+			"craftable": false
 		},
 		{
 			"name": "Baron Murkgrad's Mantle",
@@ -4897,7 +4932,29 @@
 				"back"
 			],
 			"spends": [],
-			"rules": "Baron Murkgrad's Mantle gear back Become immune against 'Cursed'.    Gain +1 speed for each wound you have."
+			"rules": "Baron Murkgrad's Mantle gear back Become immune against 'Cursed'.    Gain +1 speed for each wound you have.",
+			"craftable": false
+		},
+		{
+			"name": "Blade",
+			"abundance": "2",
+			"durability": "5",
+			"price": "30",
+			"tier": "3",
+			"id": "i100",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"1h",
+				"weapon",
+				"melee",
+				"blade",
+				"hand"
+			],
+			"spends": [],
+			"rules": "Blade 1h weapon melee blade hand Add (Standard Die) (Blessing Die) to attacks.",
+			"craftable": true,
+			"craftBaseId": "cb002"
 		},
 		{
 			"name": "Blade Of Swiftness",
@@ -4919,7 +4976,8 @@
 				"star",
 				"surge"
 			],
-			"rules": "Blade Of Swiftness 1h weapon melee blade hand Add (Blessing Die) (Blessing Die) to attacks.  You may adjust your initiative by one step at the beginning of each round.    You may use the below spending options on attacks. Star: Perform a free attack (max. 2 per round). Star: +1 Power."
+			"rules": "Blade Of Swiftness 1h weapon melee blade hand Add (Blessing Die) (Blessing Die) to attacks.  You may adjust your initiative by one step after revealing your ability cards.    You may use the below spending options on attacks. Star: Perform a free attack (max. 2 per round). Star: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Bladed Staff",
@@ -4935,14 +4993,16 @@
 				"weapon",
 				"melee",
 				"blade",
+				"polearm",
 				"hand"
 			],
 			"spends": [
-				"star",
 				"doublesurge",
+				"surge",
 				"surge"
 			],
-			"rules": "Bladed Staff 2h weapon melee blade hand Gain 'Reach'.  Add (Power Die) to attacks and melee defense.    You may use the below spending options on attacks. Star: Perform a free attack (max. 1 per round), then Move (1) (gain 'Slippery'). Star: +2 Power. DoubleSurge: +1 Power."
+			"rules": "Bladed Staff 2h weapon melee blade polearm hand Gain Reach.  Add (Enhancement Die) (Enhancement Die) to attacks and melee defense.    You may use the below spending options on attacks. DoubleSurge: +2 Power. DoubleSurge: Perform a free attack against an unwounded enemy (max 2. per round). Surge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Book Of Conjuring",
@@ -4958,7 +5018,8 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Book Of Conjuring gear magical Once per adventure, summon a demon minion with a toughness of 4 that dies with second wound.  It has a speed of 5 and adds (Power Die) (Enhancement Die) to its attacks.  It suffers a scratch after each of its turns."
+			"rules": "Book Of Conjuring gear magical Once per adventure, summon a demon minion with a toughness of 4 that dies with second wound.  It has a speed of 5 and adds (Power Die) (Enhancement Die) to its attacks.  It suffers a scratch after each of its turns.",
+			"craftable": false
 		},
 		{
 			"name": "Boots Of Speed",
@@ -4975,7 +5036,8 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Boots Of Speed gear boots magical Gain +1 speed."
+			"rules": "Boots Of Speed gear boots magical Gain +1 speed.  At the beginning of each round, you may Move (1) (gain Slippery).",
+			"craftable": false
 		},
 		{
 			"name": "Bottomless Backpack",
@@ -4991,7 +5053,29 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Bottomless Backpack gear back magical At the beginning of each adventure, draw item cards until you found two consumable items.  You may keep those for free."
+			"rules": "Bottomless Backpack gear back magical At the beginning of each adventure, draw item cards until you found two consumable items.  You may keep those for free.",
+			"craftable": false
+		},
+		{
+			"name": "Bow",
+			"abundance": "1",
+			"durability": "5",
+			"price": "60",
+			"tier": "3",
+			"id": "i104",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"2h",
+				"weapon",
+				"ranged",
+				"bow",
+				"hand"
+			],
+			"spends": [],
+			"rules": "Bow 2h weapon ranged bow hand Range 7.  Add (Enhancement Die) to attacks.",
+			"craftable": true,
+			"craftBaseId": "cb006"
 		},
 		{
 			"name": "Bow Of Lightning",
@@ -5009,7 +5093,8 @@
 				"hand"
 			],
 			"spends": [],
-			"rules": "Bow Of Lightning 2h weapon ranged bow hand Range 7  Add (Enhancement Die) (Blessing Die) to attacks.    You may spend each (Surge) to add +1 Power OR to hit one additional target within range (deal max. 1 wound to those additional targets each)."
+			"rules": "Bow Of Lightning 2h weapon ranged bow hand Range 7  Add (Enhancement Die) (Blessing Die) to attacks.    You may spend each (Surge) to add +1 Power OR to hit one additional target within range (deal max. 1 wound to those additional targets each).",
+			"craftable": false
 		},
 		{
 			"name": "Bow Of The Shaman",
@@ -5033,7 +5118,8 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Bow Of The Shaman 2h weapon ranged bow magical hand Range 6  Add (Enhancement Die) (Enhancement Die) to attacks, and add (Blessing Die) (Blessing Die) (Blessing Die) to spellcasting.    You may use the below spending options on attacks. Star: Reduce the cooldown of one of your spells by 2. Star: +1 Power. Surge: +2 Power."
+			"rules": "Bow Of The Shaman 2h weapon ranged bow magical hand Range 6  Add (Enhancement Die) (Enhancement Die) to attacks, and add (Blessing Die) (Blessing Die) (Blessing Die) to spellcasting.    You may use the below spending options on attacks. Star: Reduce the cooldown of one of your spells by 2. Star: +1 Power. Surge: +2 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Box Of Imports",
@@ -5048,7 +5134,8 @@
 				"immediate"
 			],
 			"spends": [],
-			"rules": "Box Of Imports consumable immediate Immediately draw 10 random item cards from the next two adventure tiers. You may purchase one of them for the usual gold costs."
+			"rules": "Box Of Imports consumable immediate Immediately draw 10 random item cards from the next two adventure tiers. You may purchase one of them for the usual gold costs.",
+			"craftable": false
 		},
 		{
 			"name": "Brigandine",
@@ -5066,7 +5153,8 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Brigandine armor heavy Add (Enhancement Die) to defense.  Add (Cursed Die) to attacks.(red##)    You may use the below spending options on defense. Surge: +1 Power."
+			"rules": "Brigandine armor heavy Add (Enhancement Die) to defense.  You may use the below spending option on defense. Surge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Broadhead Arrows",
@@ -5081,10 +5169,9 @@
 				"gear",
 				"mundane"
 			],
-			"spends": [
-				"surge"
-			],
-			"rules": "Broadhead Arrows gear mundane Add (Power Die) to ranged attacks if you have 2 or less cards on cooldown, otherwise add (Blessing Die).    You may use the below spending options on attacks. Surge: +1 Power."
+			"spends": [],
+			"rules": "Broadhead Arrows gear mundane If your ranged attacks with a bow or crossbow cause at least one wound, also cause Bleed (2).",
+			"craftable": false
 		},
 		{
 			"name": "Broken Staff",
@@ -5103,7 +5190,8 @@
 				"hand"
 			],
 			"spends": [],
-			"rules": "Broken Staff 2h weapon melee polearm hand Add (Blessing Die) to spellcasting."
+			"rules": "Broken Staff 2h weapon melee polearm hand Add (Blessing Die) to spellcasting.",
+			"craftable": false
 		},
 		{
 			"name": "Brooch Of Soothing Winds",
@@ -5119,7 +5207,8 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Brooch Of Soothing Winds gear back magical Once per turn, you may spend 2 movement points to heal one scratch from an ally within range 2."
+			"rules": "Brooch Of Soothing Winds gear back magical Once per turn, you may spend 2 movement points to heal one scratch from an ally within range 2.",
+			"craftable": false
 		},
 		{
 			"name": "Buckler",
@@ -5139,7 +5228,8 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Buckler 1h weapon shield hand Add (Blessing Die) (Blessing Die) to defense.    You may use the below spending option on defense. Surge: +1 Power."
+			"rules": "Buckler 1h weapon shield hand Add (Blessing Die) (Blessing Die) to defense.    You may use the below spending option on defense. Surge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Chainmail Coif",
@@ -5157,7 +5247,8 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Chainmail Coif gear helmet Ignore bonus attack modifiers that enemies get from abilities or AI cards.    You may use the below spending option on defense. Surge: +1 Power."
+			"rules": "Chainmail Coif gear helmet Ignore bonus attack modifiers that enemies get from abilities or AI cards.    You may use the below spending option on defense. Surge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Chakram Of Solstice",
@@ -5177,7 +5268,8 @@
 			"spends": [
 				"doublesurge"
 			],
-			"rules": "Chakram Of Solstice 1h weapon melee blade hand Add (Blessing Die) (Blessing Die) to attacks.  If you are not adjacent to an ally, add another (Enhancement Die).    May be used as a ranged weapon with a range of 4. DoubleSurge: Perform a free attack (max. 2 per round)."
+			"rules": "Chakram Of Solstice 1h weapon melee blade hand Add (Blessing Die) (Blessing Die) to attacks.  If you are not adjacent to an ally, add another (Enhancement Die).    May be used as a ranged weapon with a range of 4. DoubleSurge: Perform a free attack (max. 2 per round).",
+			"craftable": false
 		},
 		{
 			"name": "Circlet Of The Marksman",
@@ -5193,7 +5285,8 @@
 				"helmet"
 			],
 			"spends": [],
-			"rules": "Circlet Of The Marksman gear helmet Add (Enhancement Die) to your ranged attacks if you have moved 2 tiles or less during your turn."
+			"rules": "Circlet Of The Marksman gear helmet If you perform a ranged attack and your target is in a straight or diagonal line to you, add an automatic (Surge) to your roll.",
+			"craftable": false
 		},
 		{
 			"name": "Claws of Ebberesk",
@@ -5213,7 +5306,8 @@
 			"spends": [
 				"star"
 			],
-			"rules": "Claws of Ebberesk 2h weapon melee slashing hand Add (Enhancement Die) to your attacks.  Your attacks are still considered 'unarmed' and as if you had your hands free.    Add the below spending options to attacks. Star: Cause 'Bleed (2)'."
+			"rules": "Claws of Ebberesk 2h weapon melee slashing hand Add (Enhancement Die) to your attacks.  Your attacks are still considered 'unarmed' and as if you had your hands free.    Add the below spending options to attacks. Star: Cause 'Bleed (2)'.",
+			"craftable": false
 		},
 		{
 			"name": "Combat Gloves",
@@ -5229,7 +5323,8 @@
 				"gloves"
 			],
 			"spends": [],
-			"rules": "Combat Gloves gear gloves Add (Blessing Die) to unarmed attacks and to melee defense."
+			"rules": "Combat Gloves gear gloves Add (Blessing Die) to unarmed attacks and to melee defense.",
+			"craftable": false
 		},
 		{
 			"name": "Combat Wand",
@@ -5244,11 +5339,15 @@
 				"1h",
 				"weapon",
 				"melee",
-				"polearm",
+				"crushing",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Combat Wand 1h weapon melee polearm hand Add (Blessing Die) (Blessing Die) to spellcasting."
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Combat Wand 1h weapon melee crushing hand Add (Blessing Die) (Blessing Die) to spellcasting. Add (Blessing Die) to attacks. You may use the below spending options on attacks. DoubleSurge: +2 Power. DoubleSurge: Cause Dazed",
+			"craftable": false
 		},
 		{
 			"name": "Composite War Bow",
@@ -5271,7 +5370,8 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Composite War Bow 2h weapon ranged bow hand Range 6  Add (Enhancement Die) to attacks.    You may use the below spending options on attacks. Star: Cause 'Knockback (3)'. Star: Cause 'Weaken'. DoubleSurge: +2 Power."
+			"rules": "Composite War Bow 2h weapon ranged bow hand Range 6  Add (Enhancement Die) to attacks.    You may use the below spending options on attacks. Star: Cause Knockback (3). Star: Cause Weaken. DoubleSurge: +2 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Crystallized Thistle",
@@ -5287,7 +5387,8 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Crystallized Thistle gear magical You may suffer a scratch to re-roll one die of your spellcasting roll.  Can be done multiple times."
+			"rules": "Crystallized Thistle gear magical You may suffer a scratch to re-roll one of your spellcasting dice.  Can be done multiple times.",
+			"craftable": false
 		},
 		{
 			"name": "Dabbler's Band",
@@ -5304,12 +5405,13 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Dabbler's Band gear ring magical Add (Blessing Die) (Blessing Die) to spellcasting if you don't get any other spellcasting bonus dice from items."
+			"rules": "Dabbler's Band gear ring magical Add (Blessing Die) (Blessing Die) to spellcasting if you don't get any other spellcasting bonus dice from items.",
+			"craftable": false
 		},
 		{
 			"name": "Dagger",
 			"abundance": "5",
-			"durability": "2",
+			"durability": "3",
 			"price": "20",
 			"tier": "1",
 			"id": "i14",
@@ -5322,8 +5424,11 @@
 				"blade",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Dagger 1h weapon melee blade hand Add (Blessing Die) (Blessing Die) to attacks."
+			"spends": [
+				"surge"
+			],
+			"rules": "Dagger 1h weapon melee blade hand Add (Standard Die) (Blessing Die) to attacks. Surge: -1 Cooldown for one of your cards at cooldown 3 to 5.",
+			"craftable": false
 		},
 		{
 			"name": "Decorated Cape",
@@ -5339,7 +5444,8 @@
 				"mundane"
 			],
 			"spends": [],
-			"rules": "Decorated Cape gear mundane Counts as equipped if it is in the backpack.    While equipped, you obtain a third 'Gear' item slot (put the 'Gear' item on top of this card)."
+			"rules": "Decorated Cape gear mundane Counts as equipped if it is in the backpack.    While equipped, you obtain a third 'Gear' item slot (put the 'Gear' item on top of this card).",
+			"craftable": false
 		},
 		{
 			"name": "Divine Essence",
@@ -5355,7 +5461,8 @@
 				"witchcraft"
 			],
 			"spends": [],
-			"rules": "Divine Essence consumable witchcraft Consume to reduce the cooldowns of all abilities (yours and allies) by 2."
+			"rules": "Divine Essence consumable witchcraft Consume to reduce the cooldowns of all abilities (yours and allies) by 2.",
+			"craftable": false
 		},
 		{
 			"name": "Dreamdust",
@@ -5371,10 +5478,11 @@
 				"witchcraft"
 			],
 			"spends": [],
-			"rules": "Dreamdust consumable witchcraft You may consume this at any time to prevent a dreadful event card from happening.    Unlike other consumables, you don't need to spend 1 movement point to use it."
+			"rules": "Dreamdust consumable witchcraft You may consume this at any time to prevent an event from happening.    Unlike other consumables, you don't need to spend 1 movement point to use it.",
+			"craftable": false
 		},
 		{
-			"name": "Dress Of The Seduction",
+			"name": "Dress Of Seduction",
 			"abundance": "1",
 			"durability": "3",
 			"price": "80",
@@ -5391,7 +5499,8 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Dress Of The Seduction armor light Add (Blessing Die) (Blessing Die) to defense.    You may use the below spending options on defense. Surge: Cause 'Weaken' or 'Stun' against the attacker. Surge: Move the attacker by 4 tiles. Surge: +1 Power."
+			"rules": "Dress Of Seduction armor light Add (Blessing Die) (Blessing Die) to defense.    You may use the below spending options on defense. Surge: Cause Weaken or Stun against the attacker. Surge: Move the attacker by 4 squares. Surge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Druid's Shillelagh",
@@ -5413,7 +5522,8 @@
 				"star",
 				"surge"
 			],
-			"rules": "Druid's Shillelagh 2h weapon melee polearm hand Add (Enhancement Die) to spellcasting. Add another (Blessing Die) for each active ongoing spell that you have cast.  You may use the below spending options on spellcasting. Star: Ignore one botched result. Star: Extend the duration of one of your ongoing spells by 1."
+			"rules": "Druid's Shillelagh 2h weapon melee polearm hand Add (Enhancement Die) to spellcasting. Add another (Blessing Die) for each active ongoing spell that you have cast.  You may use the below spending options on spellcasting. Star: Ignore one botched result. Star: Extend the duration of one of your ongoing spells by 1.",
+			"craftable": false
 		},
 		{
 			"name": "Duelist's Medallion",
@@ -5430,7 +5540,8 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Duelist's Medallion gear necklace magical You may treat any minor action either as \"Move (2) (gain 'Slippery')\" or \"Attack, add (Blessing Die)\" instead of what is written on the card."
+			"rules": "Duelist's Medallion gear necklace magical If you are adjacent to a single enemy, but not to any other allies or enemies, add (Blessing Die) to your attacks and defense rolls.",
+			"craftable": false
 		},
 		{
 			"name": "Elegant Dagger",
@@ -5448,8 +5559,12 @@
 				"blade",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Elegant Dagger 1h weapon melee blade hand Add (Enhancement Die) (Blessing Die) to attacks."
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Elegant Dagger 1h weapon melee blade hand Add (Enhancement Die) (Blessing Die) to attacks. DoubleSurge: Move (3) (gain Nimble) DoubleSurge: -1 Cooldown for one of your cards at cooldown 4 or 5.",
+			"craftable": false
 		},
 		{
 			"name": "Embershard Scepter",
@@ -5464,11 +5579,15 @@
 				"1h",
 				"weapon",
 				"melee",
-				"slashing",
+				"crushing",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Embershard Scepter 1h weapon melee slashing hand Add (Enhancement Die) to spellcasting and melee attacks.    Each botch during a spellcasting test causes a fault on this item.(red##)"
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Embershard Scepter 1h weapon melee crushing hand Add (Enhancement Die) to spellcasting and melee attacks.    You may use the below spending options on spellcasting and attacks. DoubleSurge: +4 Power, but this item suffers Wear. DoubleSurge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Energizing Concoction",
@@ -5484,7 +5603,8 @@
 				"potion"
 			],
 			"spends": [],
-			"rules": "Energizing Concoction consumable potion Consume to reduce all your cooldowns by 1."
+			"rules": "Energizing Concoction consumable potion Consume to reduce all your cooldowns by 1.",
+			"craftable": false
 		},
 		{
 			"name": "Ensorcelled Signet Ring",
@@ -5501,7 +5621,8 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Ensorcelled Signet Ring gear ring magical You can spend (Double Surge) on any attack, defense or spellcasting roll to reduce one of your cooldowns by 1."
+			"rules": "Ensorcelled Signet Ring gear ring magical You can spend (Double Surge) on any attack, defense or spellcasting roll to reduce one of your cooldowns by 1.",
+			"craftable": false
 		},
 		{
 			"name": "Enthralled Vessel",
@@ -5516,7 +5637,8 @@
 				"immediate"
 			],
 			"spends": [],
-			"rules": "Enthralled Vessel consumable immediate One player may take over a vessel of their choice (mythical vessels not allowed)."
+			"rules": "Enthralled Vessel consumable immediate One player may take over a vessel of their choice (mythical vessels not allowed).",
+			"craftable": false
 		},
 		{
 			"name": "Exotic Cuirass",
@@ -5535,7 +5657,8 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Exotic Cuirass armor medium Add (Enhancement Die) (Blessing Die) to defense.  Add (Cursed Die) to attacks.(red##)    You may use the below spending options on defense. Surge: +1 Power. Surge: Reduce the cooldown of one of your cards with an interrupt effect by 1."
+			"rules": "Exotic Cuirass armor medium Add (Enhancement Die) (Blessing Die) to defense.  You may use the below spending options on defense. Surge: +1 Power. Surge: Reduce the cooldown of one of your cards with an interrupt effect by 1.",
+			"craftable": false
 		},
 		{
 			"name": "Fairnwood Staff",
@@ -5556,7 +5679,8 @@
 			"spends": [
 				"star"
 			],
-			"rules": "Fairnwood Staff 2h weapon melee polearm hand You may add (Power Die) (Blessing Die) (Blessing Die) to spellcasting, but increase the cooldown of the spell by 1 (for ongoing spells: reduce their duration by 1).    You may use the below spending options on spellcasting. Star: Ignore the above drawback."
+			"rules": "Fairnwood Staff 2h weapon melee polearm hand You may add (Power Die) (Blessing Die) (Blessing Die) to spellcasting, but increase the cooldown of the spell by 1 (for ongoing spells: reduce their duration by 1).    You may use the below spending options on spellcasting. Star: Ignore the above drawback.",
+			"craftable": false
 		},
 		{
 			"name": "Falchion Of Seven Winds",
@@ -5576,7 +5700,8 @@
 				"hand"
 			],
 			"spends": [],
-			"rules": "Falchion Of Seven Winds 1h weapon melee blade magical hand Add (Blessing Die) (Blessing Die) to attacks.    Attacks with this weapon automatically hit an enemy on a tile behind the original target (adjacent but further away)."
+			"rules": "Falchion Of Seven Winds 1h weapon melee blade magical hand Add (Blessing Die) (Blessing Die) to attacks.    Attacks with this weapon automatically hit an enemy on a tile behind the original target (adjacent but further away).",
+			"craftable": false
 		},
 		{
 			"name": "Fiery Claymore",
@@ -5600,7 +5725,8 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Fiery Claymore 2h weapon melee blade magical hand Add (Power Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: +3 Power. Star: Immediately damage the enemy again using only (Power Die). Surge: +2 Power."
+			"rules": "Fiery Claymore 2h weapon melee blade magical hand Add (Power Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: +3 Power. Star: Immediately damage the enemy again using only (Power Die). Surge: +2 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Flail",
@@ -5619,9 +5745,11 @@
 				"hand"
 			],
 			"spends": [
+				"star",
 				"surge"
 			],
-			"rules": "Flail 1h weapon melee slashing hand Add (Enhancement Die) to attacks.  Reduce your initiative by 1 while having this equipped.(red##)    You may use the below spending option on attacks. Surge: Treat the target's defense to be 1 lower (min. 1)."
+			"rules": "Flail 1h weapon melee slashing hand Add (Enhancement Die) to attacks.  You may use the below spending option on attacks. Star: Hit one additional enemy adjacent to your target. Star: Treat the target's defense to be 1 lower (min. 1).",
+			"craftable": false
 		},
 		{
 			"name": "Glaive",
@@ -5637,13 +5765,16 @@
 				"weapon",
 				"melee",
 				"polearm",
+				"slashing",
 				"hand"
 			],
 			"spends": [
 				"surge",
+				"surge",
 				"surge"
 			],
-			"rules": "Glaive 2h weapon melee polearm hand Gain 'Reach'.  Add (Enhancement Die) to attacks.    You may use the below spending options on attacks. Surge: Hit one additional enemy within range (deal max. 1 wound). Surge: +1 Power."
+			"rules": "Glaive 2h weapon melee polearm slashing hand Gain Reach.  Add (Enhancement Die) to attacks.    You may use the below spending options on attacks. Surge: Hit one additional enemy within reach (deal max. 1 wound). Surge: Cause Weaken. Surge: +2 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Golden Hawk",
@@ -5666,7 +5797,29 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Golden Hawk 2h weapon ranged crossbow hand Range 6  Add (Power Die) to attacks.    You may use the below spending options on attacks. Star: Cause 'Cripple'. Star: Cause 'Knockback (1)'. Surge: Cause 'Knockback (2)'."
+			"rules": "Golden Hawk 2h weapon ranged crossbow hand Range 6  Add (Power Die) to attacks.    You may use the below spending options on attacks. Star: Cause 'Cripple'. Star: Cause 'Knockback (1)'. Surge: Cause 'Knockback (2)'.",
+			"craftable": false
+		},
+		{
+			"name": "Greatsword",
+			"abundance": "1",
+			"durability": "5",
+			"price": "60",
+			"tier": "3",
+			"id": "i99",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"2h",
+				"weapon",
+				"melee",
+				"blade",
+				"hand"
+			],
+			"spends": [],
+			"rules": "Greatsword 2h weapon melee blade hand Add (Enhancement Die) (Blessing Die) to attacks.",
+			"craftable": true,
+			"craftBaseId": "cb001"
 		},
 		{
 			"name": "Halberd",
@@ -5685,10 +5838,12 @@
 				"hand"
 			],
 			"spends": [
-				"star",
+				"surge",
+				"surge",
 				"surge"
 			],
-			"rules": "Halberd 2h weapon melee polearm hand Gain 'Reach'.  Add (Enhancement Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Cause 'Weaken'. Star: Cause 'Knockback (2)'."
+			"rules": "Halberd 2h weapon melee polearm hand Gain Reach.  Add (Enhancement Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Surge: Provide an adjacent ally with (Blessing Die) to their next attack this round. Surge: +1 Power and move the enemy by 1 square. Surge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Hammer Of Justice",
@@ -5703,14 +5858,15 @@
 				"1h",
 				"weapon",
 				"melee",
-				"slashing",
+				"crushing",
 				"hand"
 			],
 			"spends": [
 				"star",
 				"surge"
 			],
-			"rules": "Hammer Of Justice 1h weapon melee slashing hand Add (Power Die) to attacks.    You may use the below spending options on attacks. On the damage rolls from Knockback, treat each (Surge) as +2 Power. Star: Cause 'Knockback (5)'. Star: Cause 'Knockback (2)'."
+			"rules": "Hammer Of Justice 1h weapon melee crushing hand Add (Power Die) to attacks.    You may use the below spending options on attacks. On the damage rolls from Knockback, treat each (Surge) as +2 Power. Star: Cause Knockback (5). Star: Cause Knockback (2).",
+			"craftable": false
 		},
 		{
 			"name": "Hand Crossbow",
@@ -5732,7 +5888,8 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Hand Crossbow 1h weapon ranged crossbow hand Range 5  Add (Blessing Die) to attacks, and another (Blessing Die) against targets within range 3.    You may use the below spending options on attacks. Surge: Ignore the negative power rolled from all (Cursed Die). Surge: +1 Power."
+			"rules": "Hand Crossbow 1h weapon ranged crossbow hand Range 5  Add (Blessing Die) to attacks, and another (Blessing Die) against targets within range 3.    You may use the below spending options on attacks. Surge: Ignore the negative power rolled from all (Cursed Die). Surge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Hardened Leather Cuirass",
@@ -5745,12 +5902,13 @@
 			"currency": "Gold",
 			"types": [
 				"armor",
-				"light"
+				"medium"
 			],
 			"spends": [
 				"surge"
 			],
-			"rules": "Hardened Leather Cuirass armor light Add (Blessing Die) to defense.    You may use the below spending options on defense. Surge: +2 Power."
+			"rules": "Hardened Leather Cuirass armor medium Add (Standard Die) (Enhancement Die) to defense.    You may use the below spending options on defense. Surge: Gain +2 Power for your next attack against that enemy. Does not stack.",
+			"craftable": false
 		},
 		{
 			"name": "Healing Potion",
@@ -5766,7 +5924,8 @@
 				"potion"
 			],
 			"spends": [],
-			"rules": "Healing Potion consumable potion Consume to heal one wound from yourself."
+			"rules": "Healing Potion consumable potion Consume to heal one wound from yourself.",
+			"craftable": false
 		},
 		{
 			"name": "Heart Of Gazhuatl",
@@ -5782,7 +5941,26 @@
 				"witchcraft"
 			],
 			"spends": [],
-			"rules": "Heart Of Gazhuatl consumable witchcraft Become immune against 'Cripple' and 'Bleed' as long as you carry this.    If your vessel would die, you may consume this to prevent its death, restoring all wounds except one."
+			"rules": "Heart Of Gazhuatl consumable witchcraft Become immune against 'Cripple' and 'Bleed' as long as you carry this.    If your vessel would die, you may consume this to prevent its death, restoring all wounds except one.",
+			"craftable": false
+		},
+		{
+			"name": "Heavy Armor",
+			"abundance": "2",
+			"durability": "5",
+			"price": "50",
+			"tier": "3",
+			"id": "i111",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"armor",
+				"heavy"
+			],
+			"spends": [],
+			"rules": "Heavy Armor armor heavy Add (Enhancement Die) to defense.",
+			"craftable": true,
+			"craftBaseId": "cb013"
 		},
 		{
 			"name": "Heavy Crossbow",
@@ -5800,8 +5978,11 @@
 				"crossbow",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Heavy Crossbow 2h weapon ranged crossbow hand Range 7  Add (Power Die) to first attack each round with this weapon."
+			"spends": [
+				"doublesurge"
+			],
+			"rules": "Heavy Crossbow 2h weapon ranged crossbow hand Range 7  Add (Power Die) to the first attack each round with this weapon.  You may use the below spending options on attacks. DoubleSurge: +3 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Hidden Dagger",
@@ -5819,8 +6000,11 @@
 				"blade",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Hidden Dagger 1h weapon melee blade hand Doesn't have to be equipped to be attacked with.    Add (Blessing Die) (Blessing Die) to attacks (if in backpack).  Add (Enhancement Die) (Enhancement Die) to attacks (if equipped)."
+			"spends": [
+				"surge"
+			],
+			"rules": "Hidden Dagger 1h weapon melee blade hand Add (Power Die) to attacks.  Once per adventure, at any time, you can equip this item without spending movement points and then perform a free attack, adding another (Power Die).  You may use the below spending options on attacks. Surge: -1 Cooldown for one of your cards at cooldown 4 or 5.",
+			"craftable": false
 		},
 		{
 			"name": "Horned Mace",
@@ -5835,13 +6019,15 @@
 				"1h",
 				"weapon",
 				"melee",
-				"slashing",
+				"crushing",
 				"hand"
 			],
 			"spends": [
+				"star",
 				"doublesurge"
 			],
-			"rules": "Horned Mace 1h weapon melee slashing hand Add (Blessing Die) (Blessing Die) (Blessing Die) to attacks.  Causes 'Stun' or 'Dazed' when dealing at least one wound.    You may use the below spending options on attacks. DoubleSurge: +4 Power."
+			"rules": "Horned Mace 1h weapon melee crushing hand Add (Blessing Die) (Blessing Die) (Blessing Die) to attacks.  Causes Dazed when dealing at least 2 wounds at once.    You may use the below spending options on attacks. Star: Cause Stun. Star: +4 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Imperial Armor",
@@ -5859,7 +6045,8 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Imperial Armor armor light Add (Blessing Die) to defense.  Re-roll up to one die on each of your attack, spellcasting or defense rolls.    You may use the below spending options on defense. Surge: +1 Power."
+			"rules": "Imperial Armor armor light Add (Blessing Die) to defense.  Re-roll up to one die on each of your attack, spellcasting or defense rolls.    You may use the below spending options on defense. Surge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Improvised Shield",
@@ -5880,7 +6067,8 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Improvised Shield 1h weapon melee shield hand Add (Blessing Die) to defense.    You may use the below spending option on defense. Surge: +1 Power."
+			"rules": "Improvised Shield 1h weapon melee shield hand Add (Blessing Die) to defense.    You may use the below spending option on defense. Surge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Infinite Breadcrumbs",
@@ -5896,7 +6084,8 @@
 				"witchcraft"
 			],
 			"spends": [],
-			"rules": "Infinite Breadcrumbs gear witchcraft Once per adventure, you may determine the layout of a just discovered room (instead of rolling for it).    You may also permanently discard this item to heal two wounds from yourself."
+			"rules": "Infinite Breadcrumbs gear witchcraft Once per adventure, you may determine the layout of a just discovered room (instead of rolling for it).    You may also permanently discard this item to heal two wounds from yourself.",
+			"craftable": false
 		},
 		{
 			"name": "Katana",
@@ -5919,7 +6108,8 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Katana 2h weapon melee blade hand Add (Blessing Die) (Blessing Die) to attacks and melee defense.    You may use the below spending option on attacks and defense. Star: Treat this result like a critical. Star: +2 Power. DoubleSurge: +1 Power."
+			"rules": "Katana 2h weapon melee blade hand Add (Blessing Die) (Blessing Die) to attacks and melee defense.    You may use the below spending option on attacks and defense. Star: Treat this result like a critical. Star: +2 Power. DoubleSurge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Kindlespark Potion",
@@ -5934,7 +6124,8 @@
 				"potion"
 			],
 			"spends": [],
-			"rules": "Kindlespark Potion consumable potion Consume to regenerate a wound.    When used, the potion refills itself at the end of the adventure."
+			"rules": "Kindlespark Potion consumable potion Consume to regenerate a wound.    When used, the potion refills itself at the end of the adventure.",
+			"craftable": false
 		},
 		{
 			"name": "Kite Shield",
@@ -5956,7 +6147,8 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Kite Shield 1h weapon shield hand Add (Enhancement Die) to defense.    You may use the below spending options on defense. Star: +2 Power. Star: +1 Power. DoubleSurge: Reduce the cooldown of one of your cards with an interrupt effect by 1."
+			"rules": "Kite Shield 1h weapon shield hand Add (Enhancement Die) to defense.    You may use the below spending options on defense. Star: +2 Power. Star: +1 Power. DoubleSurge: After defending, cause Knockback (2) against the attacker.",
+			"craftable": false
 		},
 		{
 			"name": "Knight's Pauldrons",
@@ -5972,7 +6164,8 @@
 				"shoulder"
 			],
 			"spends": [],
-			"rules": "Knight's Pauldrons gear shoulder Add (Blessing Die) to defense.    You may prevent 2 scratches by assigning a fault to this item."
+			"rules": "Knight's Pauldrons gear shoulder Add (Blessing Die) to defense.    You may prevent 2 scratches by assigning wear to this item.",
+			"craftable": false
 		},
 		{
 			"name": "Kris Of Leeching",
@@ -5996,7 +6189,8 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Kris Of Leeching 1h weapon melee blade magical hand Add (Enhancement Die) (Blessing Die) to attacks. Star: Heal a scratch from an ally within range 3. Star: Deal a wound. Surge: +2 Power."
+			"rules": "Kris Of Leeching 1h weapon melee blade magical hand Add (Enhancement Die) (Blessing Die) to attacks. Star: Heal a scratch from an ally within range 3. Star: Deal a wound. Surge: +2 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Laraksian Tea",
@@ -6012,11 +6206,12 @@
 				"potion"
 			],
 			"spends": [],
-			"rules": "Laraksian Tea consumable potion Consume to regenerate a scratch.    This item refills itself as soon as you defeat an enemy (deliver the final blow)."
+			"rules": "Laraksian Tea consumable potion Consume to regenerate a scratch.    This item refills itself as soon as you defeat an enemy (deliver the final blow).",
+			"craftable": false
 		},
 		{
 			"name": "Leather Rags",
-			"abundance": "4",
+			"abundance": "2",
 			"durability": "2",
 			"price": "20",
 			"tier": "1",
@@ -6027,10 +6222,9 @@
 				"armor",
 				"light"
 			],
-			"spends": [
-				"surge"
-			],
-			"rules": "Leather Rags armor light Add (Blessing Die) to defense.    You may use the below spending options on defense. Surge: +1 Power."
+			"spends": [],
+			"rules": "Leather Rags armor light At the beginning of each round, you may extend the duration of one of your ongoing effects by 1. This may not affect a spell card.",
+			"craftable": false
 		},
 		{
 			"name": "Leyforest Cloak",
@@ -6049,7 +6243,8 @@
 			"spends": [
 				"doublesurge"
 			],
-			"rules": "Leyforest Cloak gear back magical Add (Blessing Die) to attacks, defense and spellcasting.    You may use the below spending options on any roll. DoubleSurge: Reduce one of your cooldowns by 1."
+			"rules": "Leyforest Cloak gear back magical Add (Blessing Die) to attacks, defense and spellcasting.    You may use the below spending options on any roll. DoubleSurge: Reduce one of your cooldowns by 1.",
+			"craftable": false
 		},
 		{
 			"name": "Leyforest Greaves",
@@ -6066,7 +6261,49 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Leyforest Greaves gear boots magical Gain +2 speed.    Gain +1 toughness on all rows."
+			"rules": "Leyforest Greaves gear boots magical Gain +2 speed.    Gain +1 toughness on all rows.",
+			"craftable": false
+		},
+		{
+			"name": "Light Armor",
+			"abundance": "2",
+			"durability": "5",
+			"price": "50",
+			"tier": "3",
+			"id": "i109",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"armor",
+				"light"
+			],
+			"spends": [],
+			"rules": "Light Armor armor light Once per round: Add (Power Die) to one of your attack or spellcasting rolls.",
+			"craftable": true,
+			"craftBaseId": "cb011"
+		},
+		{
+			"name": "Light Merchant's Crossbow",
+			"abundance": "1",
+			"durability": "4",
+			"price": "60",
+			"tier": "3",
+			"id": "i98",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"1h",
+				"weapon",
+				"ranged",
+				"crossbow",
+				"hand"
+			],
+			"spends": [
+				"star",
+				"surge"
+			],
+			"rules": "Light Merchant's Crossbow 1h weapon ranged crossbow hand Range 4  Add (Standard Die) (Blessing Die) to attacks.  You may use the below spending options on attacks. Star: +2 Power and cause Weaken. Star: +3 Power if this is the first attack with this weapon this round.",
+			"craftable": false
 		},
 		{
 			"name": "Longbow",
@@ -6089,7 +6326,8 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Longbow 2h weapon ranged bow hand Range 8  Add (Enhancement Die) to attacks.    You may use the below spending options on attacks. Star: +2 Power. Star: Cause 'Cripple'. DoubleSurge: +1 Power."
+			"rules": "Longbow 2h weapon ranged bow hand Range 8  Add (Enhancement Die) to attacks.    You may use the below spending options on attacks. Star: Deal one wound. Star: Cause Cripple. DoubleSurge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Longsword",
@@ -6107,8 +6345,37 @@
 				"blade",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Longsword 1h weapon melee blade hand Add (Standard Die) (Enhancement Die) to attacks."
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Longsword 1h weapon melee blade hand Add (Standard Die) (Enhancement Die) to attacks. DoubleSurge: Move 2 (gain Slippery). DoubleSurge: -1 Cooldown for one of your cards at cooldown 4 or 5.",
+			"craftable": false
+		},
+		{
+			"name": "Mage Blade",
+			"abundance": "1",
+			"durability": "3",
+			"price": "70",
+			"tier": "2",
+			"id": "i97",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"1h",
+				"weapon",
+				"melee",
+				"blade",
+				"magical",
+				"hand"
+			],
+			"spends": [
+				"star",
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Mage Blade 1h weapon melee blade magical hand Add (Blessing Die) to spellcasting and (Enhancement Die) (Blessing Die) to melee attacks.    You may use the below spending options on attacks and spellcasting. Star: (Melee only:) Play a spell from your hand (max. once per round). Star: +2 Power. DoubleSurge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Mage Order Robes",
@@ -6127,7 +6394,26 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Mage Order Robes armor light magical Add (Enhancement Die) to spellcasting.    You may use the below spending options on defense. Surge: +1 Power."
+			"rules": "Mage Order Robes armor light magical Add (Enhancement Die) to spellcasting.    You may use the below spending options on defense and spellcasting. Surge: +1 Power.",
+			"craftable": false
+		},
+		{
+			"name": "Medium Armor",
+			"abundance": "2",
+			"durability": "5",
+			"price": "50",
+			"tier": "3",
+			"id": "i110",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"armor",
+				"medium"
+			],
+			"spends": [],
+			"rules": "Medium Armor armor medium Ignore the first scratch of each round.",
+			"craftable": true,
+			"craftBaseId": "cb012"
 		},
 		{
 			"name": "Mercenary Contract",
@@ -6143,7 +6429,8 @@
 				"mundane"
 			],
 			"spends": [],
-			"rules": "Mercenary Contract gear mundane Start each adventure with a Mercenary minion who has a toughness of 3, a speed of 4 and who dies with the second wound.    Add (Blessing Die) (Blessing Die) to its attacks as long as you have this contract equipped."
+			"rules": "Mercenary Contract gear mundane Start each adventure with a Mercenary minion who has a toughness of 6 and a speed of 4.  Increase their toughness by +2 for each campaign chapter that has been completed.    Add (Blessing Die) (Blessing Die) to the Mercenary's attacks as long as you have this contract equipped.",
+			"craftable": false
 		},
 		{
 			"name": "Mirror Of Envy",
@@ -6159,7 +6446,8 @@
 				"witchcraft"
 			],
 			"spends": [],
-			"rules": "Mirror Of Envy gear witchcraft During any town phase, you may declare an item that you or an ally owns.  From that point onwards, the 'Mirror Of Envy' mimicks that item and works exactly like the copied item."
+			"rules": "Mirror Of Envy gear witchcraft During any town phase, you may declare an item that you or an ally owns.  From that point onwards, the 'Mirror Of Envy' mimicks that item and works exactly like the copied item.",
+			"craftable": false
 		},
 		{
 			"name": "Mithril Chainmail",
@@ -6176,7 +6464,8 @@
 			"spends": [
 				"doublesurge"
 			],
-			"rules": "Mithril Chainmail armor medium Add (Power Die) to defense.  Gain +2 speed.  Add (Cursed Die) to attacks.    Add the below spending options to defense. DoubleSurge: +2 Power."
+			"rules": "Mithril Chainmail armor medium Add (Power Die) to defense.  Gain +2 speed.  Add (Cursed Die) to attacks.    Add the below spending options to defense. DoubleSurge: +2 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Necklace Of Binding",
@@ -6192,7 +6481,8 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Necklace Of Binding gear necklace magical At the beginning of each adventure, declare an armor or weapon that you wear.    As you wear it, it becomes immune to faults and adds (White Die) to corresponding rolls (to rolls it already adds benefits to)."
+			"rules": "Necklace Of Binding gear necklace magical At the beginning of each adventure, declare an armor or weapon that you wear.    As you wear it, it becomes immune to faults and adds (White Die) to corresponding rolls (to rolls it already adds benefits to).",
+			"craftable": false
 		},
 		{
 			"name": "Necklace of War",
@@ -6212,7 +6502,8 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Necklace of War gear necklace magical Add the below spending options to attacks. Star: Cooldown -2. Star: Cause 'Knockback (1)'. Surge: +1 Power."
+			"rules": "Necklace of War gear necklace magical Add the below spending options to attacks. Star: Cooldown -2. Star: Cause 'Knockback (1)'. Surge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Novice Robes",
@@ -6231,7 +6522,8 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Novice Robes armor light magical Add (Blessing Die) to spellcasting.    You may use the below spending option on defense. Surge: +1 Power, but the armor suffers a fault."
+			"rules": "Novice Robes armor light magical Add (Blessing Die) to spellcasting.    You may use the below spending option on defense. Surge: +1 Power, but the armor suffers one 'Wear' token.",
+			"craftable": false
 		},
 		{
 			"name": "Orb Of Refreshment",
@@ -6247,7 +6539,8 @@
 				"witchcraft"
 			],
 			"spends": [],
-			"rules": "Orb Of Refreshment gear witchcraft You may spend 2 movement points to put one token on this item (max. 5).  At any time, you may spend 3 such tokens to end the cooldown of any one's ability card."
+			"rules": "Orb Of Refreshment gear witchcraft You may spend 2 movement points to put one token on this item (max. 5).  At any time, you may spend 3 such tokens to end the cooldown of any one's ability card.",
+			"craftable": false
 		},
 		{
 			"name": "Peasant's Garment",
@@ -6265,12 +6558,13 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Peasant's Garment armor light Add (Blessing Die) to defense.    You may use the below spending option on defense. Surge: +1 Power, but the armor suffers a fault."
+			"rules": "Peasant's Garment armor light Add (Blessing Die) to defense.    You may use the below spending option on defense. Surge: +1 Power, but the armor suffers one 'Wear' token.",
+			"craftable": false
 		},
 		{
 			"name": "Pitchfork",
 			"abundance": "2",
-			"durability": "3",
+			"durability": "4",
 			"price": "20",
 			"tier": "1",
 			"id": "i22",
@@ -6284,9 +6578,32 @@
 				"hand"
 			],
 			"spends": [
+				"surge",
 				"surge"
 			],
-			"rules": "Pitchfork 2h weapon melee polearm hand You may use the below spending options on attacks. Surge: +3 Power."
+			"rules": "Pitchfork 2h weapon melee polearm hand Gain Reach.  Add (Standard Die) to your attacks.  You may use the below spending options on attacks. Surge: Add (Blessing Die) to your next defense this round. Surge: +3 Power.",
+			"craftable": false
+		},
+		{
+			"name": "Polearm",
+			"abundance": "1",
+			"durability": "5",
+			"price": "60",
+			"tier": "3",
+			"id": "i101",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"2h",
+				"weapon",
+				"melee",
+				"polearm",
+				"hand"
+			],
+			"spends": [],
+			"rules": "Polearm 2h weapon melee polearm hand Reach.  Add (Standard Die) (Enhancement Die) to attacks.",
+			"craftable": true,
+			"craftBaseId": "cb003"
 		},
 		{
 			"name": "Potent Healing Potion",
@@ -6302,7 +6619,8 @@
 				"potion"
 			],
 			"spends": [],
-			"rules": "Potent Healing Potion consumable potion Consume to heal two wounds from yourself."
+			"rules": "Potent Healing Potion consumable potion Consume to heal two wounds from yourself.",
+			"craftable": false
 		},
 		{
 			"name": "Power Cube",
@@ -6318,7 +6636,8 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Power Cube gear magical At the end of each turn, reduce one of your cooldowns by 1."
+			"rules": "Power Cube gear magical At the end of your turn, reduce one of your cooldowns by 1.",
+			"craftable": false
 		},
 		{
 			"name": "Primitive Bow",
@@ -6336,8 +6655,11 @@
 				"bow",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Primitive Bow 2h weapon ranged bow hand Range 4  Add (Blessing Die) to attacks."
+			"spends": [
+				"surge"
+			],
+			"rules": "Primitive Bow 2h weapon ranged bow hand Range 4  Add (Blessing Die) to attacks. Surge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Purifying Elixir",
@@ -6353,7 +6675,8 @@
 				"potion"
 			],
 			"spends": [],
-			"rules": "Purifying Elixir consumable potion Consume to end up to two of your ongoing negative effects."
+			"rules": "Purifying Elixir consumable potion Consume to end up to two of your ongoing negative effects.",
+			"craftable": false
 		},
 		{
 			"name": "Quarterstaff",
@@ -6371,8 +6694,11 @@
 				"polearm",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Quarterstaff 2h weapon melee polearm hand Gain 'Reach'.  Add (Blessing Die) (Blessing Die) to spellcasting and attacks."
+			"spends": [
+				"surge"
+			],
+			"rules": "Quarterstaff 2h weapon melee polearm hand Gain Reach.  Add (Blessing Die) (Blessing Die) to spellcasting and attacks.  You may use the below spending options on attacks. Surge: +1 Power and move the enemy by 1 square.",
+			"craftable": false
 		},
 		{
 			"name": "Quiver",
@@ -6390,7 +6716,8 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Quiver gear back Add (Blessing Die) to ranged attacks.    You may use the below spending options on ranged attacks. Surge: Cooldown -1."
+			"rules": "Quiver gear back Add (Blessing Die) to ranged attacks with bows or crossbows.    You may use the below spending options on ranged attacks. Surge: Cooldown -1.",
+			"craftable": false
 		},
 		{
 			"name": "Reaper's Axe",
@@ -6411,10 +6738,11 @@
 			],
 			"spends": [
 				"star",
-				"surge",
+				"doublesurge",
 				"surge"
 			],
-			"rules": "Reaper's Axe 1h weapon melee slashing magical hand Add (Power Die) to attacks.  Add (Cursed Die) to melee defense.(red##)    You may use the below spending options on attacks. Star: +2 Power. Star: +2 Power. Surge: Heal one scratch from yourself."
+			"rules": "Reaper's Axe 1h weapon melee slashing magical hand Add (Power Die) to attacks.  Add (Cursed Die) to melee defense.(red##)    You may use the below spending options on attacks. Star: +2 Power. Star: Hit one additional enemy within reach. DoubleSurge: Heal one scratch from yourself.",
+			"craftable": false
 		},
 		{
 			"name": "Repeating Crossbow",
@@ -6436,7 +6764,8 @@
 				"star",
 				"surge"
 			],
-			"rules": "Repeating Crossbow 2h weapon ranged crossbow hand Range 6  Add (Blessing Die) (Blessing Die) to attacks.  Perform a free ranged attack at the end of each turn.    You may use the below spending options on attacks. Star: +2 Power. Star: +1 Power."
+			"rules": "Repeating Crossbow 2h weapon ranged crossbow hand Range 6  Add (Blessing Die) (Blessing Die) to attacks.  Perform a free ranged attack at the end of your turn.    You may use the below spending options on attacks. Star: +2 Power. Star: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Retrain",
@@ -6451,7 +6780,8 @@
 				"immediate"
 			],
 			"spends": [],
-			"rules": "Retrain consumable immediate Replace the default (Surge) spending option of your vessel with another one of your choice    OR    Change the learned perks of your vessel."
+			"rules": "Retrain consumable immediate Replace the default (Surge) spending option of your vessel with another one of your choice    OR    Change the learned perks of your vessel.",
+			"craftable": false
 		},
 		{
 			"name": "Ring Of Invulnerability",
@@ -6467,7 +6797,8 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Ring Of Invulnerability gear ring magical At the beginning of a round, you may activate this item, but only once per adventure.    You may then ignore any incoming scratches, wounds and negative effects during that round."
+			"rules": "Ring Of Invulnerability gear ring magical At the beginning of a round, you may activate this item, but only once per adventure.    You may then ignore any incoming scratches, wounds and negative effects during that round.",
+			"craftable": false
 		},
 		{
 			"name": "Ring Of Regeneration",
@@ -6484,7 +6815,8 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Ring Of Regeneration gear ring magical If you have an initiative of 2 or less, regenerate one scratch at the beginning of your turn."
+			"rules": "Ring Of Regeneration gear ring magical If you have an initiative of 2 or less, regenerate one scratch at the beginning of your turn.",
+			"craftable": false
 		},
 		{
 			"name": "Robe of the Mender",
@@ -6499,7 +6831,8 @@
 				"light"
 			],
 			"spends": [],
-			"rules": "Robe of the Mender armor light Add (Blessing Die) to defense.    Whenever you perform the major action of a 'meta' type card, heal one scratch from an ally within range 2."
+			"rules": "Robe of the Mender armor light Add (Blessing Die) to defense.    Whenever you perform the major action of a 'meta' type card, heal one scratch from an ally within range 2.",
+			"craftable": false
 		},
 		{
 			"name": "Round Shield",
@@ -6521,7 +6854,8 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Round Shield 1h weapon shield hand Add (Blessing Die) to defense.    You may use the below spending options on defense. Star: +1 Power. Star: +1 Power. DoubleSurge: Reduce the cooldown of one of your cards with an interrupt effect by 1."
+			"rules": "Round Shield 1h weapon shield hand Add (Blessing Die) to defense.    You may use the below spending options on defense. Star: +1 Power. Star: +1 Power. DoubleSurge: Reduce the cooldown of one of your cards with an interrupt effect by 1.",
+			"craftable": false
 		},
 		{
 			"name": "Royal Plate Armor",
@@ -6540,7 +6874,8 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Royal Plate Armor armor heavy Add (Power Die) to defense.  Add (Cursed Die) to attacks.(red##)  Move (1) before or after performing a major action.    You may use the below spending options on defense. DoubleSurge: +2 Power. DoubleSurge: +1 Power."
+			"rules": "Royal Plate Armor armor heavy Add (Power Die) to defense.  Add (Cursed Die) to attacks.(red##)  Move (1) before or after performing a major action.    You may use the below spending options on defense. DoubleSurge: +2 Power. DoubleSurge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Rune: Adamant",
@@ -6555,7 +6890,8 @@
 				"armor"
 			],
 			"spends": [],
-			"rules": "Rune: Adamant rune armor Attach this to an armor.    Add (Blessing Die) to defense.    Can only attach one rune per armor."
+			"rules": "Rune: Adamant rune armor Attach this to an armor.    Add (Blessing Die) to defense.    Can only attach one rune per armor.",
+			"craftable": false
 		},
 		{
 			"name": "Rune: Drain",
@@ -6570,7 +6906,8 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Drain rune weapon Attach this to a tier 3 or lower weapon.    When killing an enemy, heal one scratch from yourself.    Can only attach one rune per weapon."
+			"rules": "Rune: Drain rune weapon Attach this to a tier 3 or lower weapon.    When killing an enemy, heal one scratch from yourself.    Can only attach one rune per weapon.",
+			"craftable": false
 		},
 		{
 			"name": "Rune: Enchant",
@@ -6585,7 +6922,8 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Enchant rune weapon Attach this to a tier 3 or lower weapon.    Convert a (Blessing Die) it adds into an (Enhancement Die).    Can only attach one rune per weapon."
+			"rules": "Rune: Enchant rune weapon Attach this to a tier 3 or lower weapon.    Convert a (Blessing Die) it adds into an (Enhancement Die).    Can only attach one rune per weapon.",
+			"craftable": false
 		},
 		{
 			"name": "Rune: Focus",
@@ -6600,7 +6938,8 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Focus rune weapon Attach this to a tier 3 or lower weapon.    When attacking, you may spend one (Star) to reduce one of your cooldowns by 2.    Can only attach one rune per weapon."
+			"rules": "Rune: Focus rune weapon Attach this to a tier 3 or lower weapon.    When attacking, you may spend one (Star) to reduce one of your cooldowns by 2.    Can only attach one rune per weapon.",
+			"craftable": false
 		},
 		{
 			"name": "Rune: Fortune",
@@ -6615,7 +6954,8 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Fortune rune weapon Attach this to a tier 3 or lower weapon.    When attacking, you may convert one botch into (Star).    Can only attach one rune per weapon."
+			"rules": "Rune: Fortune rune weapon Attach this to a tier 3 or lower weapon.    When attacking, you may convert one botch into (Star).    Can only attach one rune per weapon.",
+			"craftable": false
 		},
 		{
 			"name": "Rune: Fuel",
@@ -6630,7 +6970,8 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Fuel rune weapon Attach this to a tier 3 or lower weapon.    When attacking, you may suffer 2 scratches to add (Power Die) (Blessing Die).    Can only attach one rune per weapon."
+			"rules": "Rune: Fuel rune weapon Attach this to a tier 3 or lower weapon.    When attacking, you may suffer 2 scratches to add (Power Die) (Blessing Die).    Can only attach one rune per weapon.",
+			"craftable": false
 		},
 		{
 			"name": "Rune: Holy",
@@ -6645,7 +6986,8 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Holy rune weapon Attach this to a tier 3 or lower weapon.    When attacking, you may spend (Star) (Star) to heal 2 scratches from yourself. If you don't have any scratches, heal a wound instead.    Can only attach one rune per weapon."
+			"rules": "Rune: Holy rune weapon Attach this to a tier 3 or lower weapon.    When attacking, you may spend (Star) (Star) to heal 2 scratches from yourself. If you don't have any scratches, heal a wound instead.    Can only attach one rune per weapon.",
+			"craftable": false
 		},
 		{
 			"name": "Rune: Mark",
@@ -6660,7 +7002,8 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Mark rune weapon Attach this to a tier 3 or lower weapon.    When attacking, you may spend (Star) to cause 'Weaken'.    Can only attach one rune per weapon."
+			"rules": "Rune: Mark rune weapon Attach this to a tier 3 or lower weapon.    When attacking, you may spend (Star) to cause 'Weaken'.    Can only attach one rune per weapon.",
+			"craftable": false
 		},
 		{
 			"name": "Rune: Protection",
@@ -6675,7 +7018,8 @@
 				"armor"
 			],
 			"spends": [],
-			"rules": "Rune: Protection rune armor Attach this to an armor.    If the armor adds only one die or less to defense, add (Enhancement Die) to its defense.    Can only attach one rune per armor."
+			"rules": "Rune: Protection rune armor Attach this to an armor.    If the armor adds only one die or less to defense, add (Enhancement Die) to its defense.    Can only attach one rune per armor.",
+			"craftable": false
 		},
 		{
 			"name": "Rune: Rage",
@@ -6690,7 +7034,8 @@
 				"armor"
 			],
 			"spends": [],
-			"rules": "Rune: Rage rune armor Attach this to an armor.    You may set aside a (Star) from a defense roll and add it to your next attack.    Can only attach one rune per armor."
+			"rules": "Rune: Rage rune armor Attach this to an armor.    You may set aside a (Star) from a defense roll and add it to your next attack.    Can only attach one rune per armor.",
+			"craftable": false
 		},
 		{
 			"name": "Rune: Stoic",
@@ -6705,7 +7050,8 @@
 				"armor"
 			],
 			"spends": [],
-			"rules": "Rune: Stoic rune armor Attach this to an armor.    You may spend (Surge) on defense to reduce the duration of a negative effect on you by 1.    Can only attach one rune per armor."
+			"rules": "Rune: Stoic rune armor Attach this to an armor.    You may spend (Surge) on defense to reduce the duration of a negative effect on you by 1.    Can only attach one rune per armor.",
+			"craftable": false
 		},
 		{
 			"name": "Rune: Void",
@@ -6720,7 +7066,8 @@
 				"weapon"
 			],
 			"spends": [],
-			"rules": "Rune: Void rune weapon Attach this to a tier 3 or lower weapon.    When attacking, count any rolled blanks as (Surge) instead.    Can only attach one rune per weapon."
+			"rules": "Rune: Void rune weapon Attach this to a tier 3 or lower weapon.    When attacking, count any rolled blanks as (Surge) instead.    Can only attach one rune per weapon.",
+			"craftable": false
 		},
 		{
 			"name": "Sacred Bead",
@@ -6736,7 +7083,8 @@
 				"witchcraft"
 			],
 			"spends": [],
-			"rules": "Sacred Bead consumable witchcraft Consume to grant yourself and all allies +2 power to all defense rolls for this round."
+			"rules": "Sacred Bead consumable witchcraft Consume to grant yourself and all allies +2 power to all defense rolls for this round.",
+			"craftable": false
 		},
 		{
 			"name": "Scalemail Suit",
@@ -6755,7 +7103,8 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Scalemail Suit armor heavy Add (Power Die) to defense.  Add (Cursed Die) to attacks.(red##)    You may use the below spending options on defense. DoubleSurge: +2 Power. DoubleSurge: +1 Power."
+			"rules": "Scalemail Suit armor heavy Add (Power Die) to defense.  Add (Cursed Die) to attacks.(red##)    You may use the below spending options on defense. DoubleSurge: +2 Power. DoubleSurge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Scroll Of Resurrection",
@@ -6770,7 +7119,8 @@
 				"immediate"
 			],
 			"spends": [],
-			"rules": "Scroll Of Resurrection consumable immediate Immediately get a vessel back that died during your last adventure. The original player who had it regains the perks that were already unlocked."
+			"rules": "Scroll Of Resurrection consumable immediate Immediately get a vessel back that died during your last adventure. The original player who had it regains the perks that were already unlocked.",
+			"craftable": false
 		},
 		{
 			"name": "Scroll of the Ancients",
@@ -6785,13 +7135,14 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Scroll of the Ancients gear magical Once per adventure, by spending two movement points, you may cast any one spell (that exists in the game).  It automatically succeeds without any spendings."
+			"rules": "Scroll of the Ancients gear magical Once per adventure, by spending two movement points, you may cast any one spell (that exists in the game).  It automatically succeeds without any spendings.",
+			"craftable": false
 		},
 		{
 			"name": "Scythe",
 			"abundance": "2",
 			"durability": "2",
-			"price": "40",
+			"price": "50",
 			"tier": "1",
 			"id": "i25",
 			"category": "item",
@@ -6801,13 +7152,15 @@
 				"weapon",
 				"melee",
 				"polearm",
+				"slashing",
 				"hand"
 			],
 			"spends": [
-				"doublesurge",
+				"surge",
 				"surge"
 			],
-			"rules": "Scythe 2h weapon melee polearm hand You may use the below spending options on attacks. DoubleSurge: Hit a third, adjacent enemy (deal max. one wound). DoubleSurge: Hit one additional, adjacent enemy (deal max. one wound)."
+			"rules": "Scythe 2h weapon melee polearm slashing hand Gain Reach.    Add (Blessing Die)    You may use the below spending options on attacks. Surge: Hit one additional enemy within reach (deal max. 1 wound). Surge: Hit one additional enemy within reach (deal max. 1 wound).",
+			"craftable": false
 		},
 		{
 			"name": "Sell Soul Shard",
@@ -6822,7 +7175,28 @@
 				"immediate"
 			],
 			"spends": [],
-			"rules": "Sell Soul Shard consumable immediate Immediately obtain 20 gold coins."
+			"rules": "Sell Soul Shard consumable immediate Immediately obtain 20 gold coins.",
+			"craftable": false
+		},
+		{
+			"name": "Shield",
+			"abundance": "1",
+			"durability": "5",
+			"price": "30",
+			"tier": "3",
+			"id": "i108",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"1h",
+				"weapon",
+				"shield",
+				"hand"
+			],
+			"spends": [],
+			"rules": "Shield 1h weapon shield hand Add (Blessing Die) (Blessing Die) to defense.",
+			"craftable": true,
+			"craftBaseId": "cb010"
 		},
 		{
 			"name": "Shield Of Reckoning",
@@ -6844,7 +7218,8 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Shield Of Reckoning 1h weapon shield hand Add (Enhancement Die) (Blessing Die) to defense.    You may use the below spending options on defense. Star: Perform a free melee attack against the attacker. Star: +1 Power. Surge: Reduce the cooldown of one of your cards with an interrupt effect by 1."
+			"rules": "Shield Of Reckoning 1h weapon shield hand Add (Enhancement Die) (Blessing Die) to defense.    You may use the below spending options on defense. Star: Perform a free melee attack against the attacker. Star: +1 Power. Surge: Reduce the cooldown of one of your cards with an interrupt effect by 1.",
+			"craftable": false
 		},
 		{
 			"name": "Shield Of The Bulwark",
@@ -6866,7 +7241,8 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Shield Of The Bulwark 1h weapon shield hand Add (Enhancement Die) (Blessing Die) to defense.    You may use the below spending options on defense. DoubleSurge: After determining the result, prevent one scratch. DoubleSurge: +5 Power, but the shield suffers a fault. Surge: Reduce the cooldown of one of your cards with an interrupt effect by 1."
+			"rules": "Shield Of The Bulwark 1h weapon shield hand Add (Enhancement Die) (Blessing Die) to defense.    You may use the below spending options on defense. DoubleSurge: After determining the result, prevent one scratch. DoubleSurge: +5 Power, but the shield suffers a fault. Surge: Reduce the cooldown of one of your cards with an interrupt effect by 1.",
+			"craftable": false
 		},
 		{
 			"name": "Shield Of The Templar",
@@ -6886,7 +7262,8 @@
 				"doublesurge",
 				"surge"
 			],
-			"rules": "Shield Of The Templar 1h weapon shield hand Add (Blessing Die) (Blessing Die) to defense and spellcasting.    Add the below spending options to defense. DoubleSurge: +3 Power. DoubleSurge: Reduce the cooldown of one of your cards with an interrupt effect by 1."
+			"rules": "Shield Of The Templar 1h weapon shield hand Add (Blessing Die) (Blessing Die) to defense and spellcasting.    Add the below spending options to defense. DoubleSurge: +3 Power. DoubleSurge: Reduce the cooldown of one of your cards with an interrupt effect by 1.",
+			"craftable": false
 		},
 		{
 			"name": "Shiv",
@@ -6904,8 +7281,11 @@
 				"blade",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Shiv 1h weapon melee blade hand Add (Blessing Die) to attacks."
+			"spends": [
+				"surge"
+			],
+			"rules": "Shiv 1h weapon melee blade hand Add (Blessing Die) to attacks. Surge: -1 Cooldown for one of your cards at cooldown 4 or 5.",
+			"craftable": false
 		},
 		{
 			"name": "Short Bow",
@@ -6927,12 +7307,13 @@
 				"star",
 				"surge"
 			],
-			"rules": "Short Bow 2h weapon ranged bow hand Range 5  Add (Standard Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Perform a free attack (max. 2 per round). Star: +1 Power."
+			"rules": "Short Bow 2h weapon ranged bow hand Range 5  Add (Standard Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Perform a free attack (max. 2 per round). Star: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Short Sword",
 			"abundance": "3",
-			"durability": "4",
+			"durability": "5",
 			"price": "30",
 			"tier": "1",
 			"id": "i27",
@@ -6945,8 +7326,12 @@
 				"blade",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Short Sword 1h weapon melee blade hand Add (Standard Die) (Blessing Die) to attacks."
+			"spends": [
+				"doublesurge",
+				"surge"
+			],
+			"rules": "Short Sword 1h weapon melee blade hand Add (Enhancement Die) to attacks.  You may use the below spending options on attacks. DoubleSurge: +2 Power. DoubleSurge: -1 Cooldown for one of your cards at cooldown 4 or 5.",
+			"craftable": false
 		},
 		{
 			"name": "Slate Of Fate",
@@ -6961,7 +7346,8 @@
 				"immediate"
 			],
 			"spends": [],
-			"rules": "Slate Of Fate consumable immediate You may play one additional adventure (to a max. of 4 per tier) in the current tier or any of the previous ones.  You may also re-attempt a failed adventure."
+			"rules": "Slate Of Fate consumable immediate You may play one additional adventure (to a max. of 4 per tier) in the current tier or any of the previous ones.  You may also re-attempt a failed adventure.",
+			"craftable": false
 		},
 		{
 			"name": "Sledgehammer",
@@ -6976,11 +7362,14 @@
 				"2h",
 				"weapon",
 				"melee",
-				"slashing",
+				"crushing",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Sledgehammer 2h weapon melee slashing hand Add (Enhancement Die) to attacks."
+			"spends": [
+				"surge"
+			],
+			"rules": "Sledgehammer 2h weapon melee crushing hand Add (Enhancement Die) to attacks. Surge: Deal one wound.",
+			"craftable": false
 		},
 		{
 			"name": "Sorcerer's Focus",
@@ -7000,7 +7389,8 @@
 				"star",
 				"surge"
 			],
-			"rules": "Sorcerer's Focus gear necklace magical You may use the below spending options on spellcasting. Star: Reduce the cooldown of the spell by 1. Star: Reduce the target number to succeed at the spell by 1."
+			"rules": "Sorcerer's Focus gear necklace magical You may use the below spending options on spellcasting. Star: Reduce the cooldown of the spell by 1. Star: Reduce the target number to succeed at the spell by 1.",
+			"craftable": false
 		},
 		{
 			"name": "Soul Infusion",
@@ -7015,7 +7405,8 @@
 				"immediate"
 			],
 			"spends": [],
-			"rules": "Soul Infusion consumable immediate Immediately gain +1 XP for one player's soul to buy or upgrade ability cards."
+			"rules": "Soul Infusion consumable immediate Immediately gain +1 XP for one player's soul to buy or upgrade ability cards.",
+			"craftable": false
 		},
 		{
 			"name": "Spear",
@@ -7037,7 +7428,8 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Spear 2h weapon melee polearm hand Gain 'Reach'.    You may use the below spending options on attacks. Surge: +1 Power. Surge: +2 Power."
+			"rules": "Spear 2h weapon melee polearm hand Gain Reach.  Add (Standard Die) (Enhancement Die) to attacks.  You may use the below spending options on attacks. Surge: +1 Power. Surge: +2 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Spell Focus Staff",
@@ -7055,7 +7447,8 @@
 				"hand"
 			],
 			"spends": [],
-			"rules": "Spell Focus Staff 1h weapon melee polearm hand Add (Surge) to each of your spellcasting rolls.    At the beginning of each adventure, declare a spell of yours. Add (Blessing Die) (Blessing Die) when attempting that spell."
+			"rules": "Spell Focus Staff 1h weapon melee polearm hand Add (Surge) to each of your spellcasting rolls.    At the beginning of each adventure, declare a spell of yours. Add (Blessing Die) (Blessing Die) when attempting that spell.",
+			"craftable": false
 		},
 		{
 			"name": "Spiked Mace",
@@ -7070,13 +7463,36 @@
 				"1h",
 				"weapon",
 				"melee",
-				"slashing",
+				"crushing",
 				"hand"
 			],
 			"spends": [
-				"doublesurge"
+				"surge",
+				"surge"
 			],
-			"rules": "Spiked Mace 1h weapon melee slashing hand Add (Power Die) to attacks.  Add (Cursed Die) to defense against melee attacks.(red##)    You may use the below spending options on attacks. DoubleSurge: Cause 'Dazed'."
+			"rules": "Spiked Mace 1h weapon melee crushing hand Add (Power Die) to attacks.  Add (Cursed Die) to defense against melee attacks.(red##)    You may use the below spending options on attacks. Surge: Cause Knockback (2). Surge: Cause Dazed.",
+			"craftable": false
+		},
+		{
+			"name": "Staff",
+			"abundance": "1",
+			"durability": "5",
+			"price": "60",
+			"tier": "3",
+			"id": "i106",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"2h",
+				"weapon",
+				"melee",
+				"polearm",
+				"hand"
+			],
+			"spends": [],
+			"rules": "Staff 2h weapon melee polearm hand Add (Enhancement Die) (Blessing Die)  to spellcasting.",
+			"craftable": true,
+			"craftBaseId": "cb008"
 		},
 		{
 			"name": "Staff Of Telekinesis",
@@ -7094,8 +7510,11 @@
 				"polearm",
 				"hand"
 			],
-			"spends": [],
-			"rules": "Staff Of Telekinesis 2h weapon melee polearm hand Add (Power Die) to spellcasting.    Whenever you have played the minor or major action of a spell card, move any one model by 1 tile."
+			"spends": [
+				"doublesurge"
+			],
+			"rules": "Staff Of Telekinesis 2h weapon melee polearm hand Gain Reach.  Add (Power Die) to spellcasting and attacks.    Whenever you have played the minor or major action of a spell card, move any one model by 1 square.    You may use the below spending options on attacks. DoubleSurge: +3 Power and move the enemy by 1 square.",
+			"craftable": false
 		},
 		{
 			"name": "Studded Tunic",
@@ -7113,7 +7532,8 @@
 			"spends": [
 				"surge"
 			],
-			"rules": "Studded Tunic armor medium Add (Standard Die) (Blessing Die) to defense.    You may use the below spending options on defense. Surge: +1 Power."
+			"rules": "Studded Tunic armor medium Add (Blessing Die) (Blessing Die) (Blessing Die) to a single defense roll each round (decide before rolling).    You may use the below spending options on defense. Surge: +1 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Sword Of Flowing Water",
@@ -7136,7 +7556,8 @@
 				"star",
 				"surge"
 			],
-			"rules": "Sword Of Flowing Water 1h weapon melee blade magical hand Add (Blessing Die) (Blessing Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Move (3) (gain 'Slippery) after the attack. Star: Move (1) (gain 'Slippery) after the attack."
+			"rules": "Sword Of Flowing Water 1h weapon melee blade magical hand Add (Blessing Die) (Blessing Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Move (3) (gain 'Slippery) after the attack. Star: Move (1) (gain 'Slippery) after the attack.",
+			"craftable": false
 		},
 		{
 			"name": "Sword of the Executioner",
@@ -7159,7 +7580,8 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Sword of the Executioner 2h weapon melee blade hand Add (Power Die) (Enhancement Die) to attacks.    You may use the below spending options on attacks. Star: Deal a wound. Star: +4 Power (if the enemy has taken at least 50% of its max. wounds). Surge: +2 Power."
+			"rules": "Sword of the Executioner 2h weapon melee blade hand Add (Power Die) (Enhancement Die) to attacks.    You may use the below spending options on attacks. Star: Deal a wound. Star: +4 Power (if the enemy has taken at least 50% of its max. wounds). Surge: +2 Power.",
+			"craftable": false
 		},
 		{
 			"name": "Talisman",
@@ -7175,13 +7597,14 @@
 				"witchcraft"
 			],
 			"spends": [],
-			"rules": "Talisman consumable witchcraft Consume to end one of your ongoing effects."
+			"rules": "Talisman consumable witchcraft Consume to end one of your ongoing effects.",
+			"craftable": false
 		},
 		{
 			"name": "Temporal Signet",
 			"abundance": "1",
 			"durability": "2",
-			"price": "90",
+			"price": "70",
 			"tier": "3",
 			"id": "i62",
 			"category": "item",
@@ -7192,7 +7615,8 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Temporal Signet gear ring magical Once per round, at the beginning of your turn, you may exchange one of your placed abilities with another one from your hand."
+			"rules": "Temporal Signet gear ring magical Once per round, at the beginning of your turn, you may exchange one of your chosen abilities for this round with another one from your hand.",
+			"craftable": false
 		},
 		{
 			"name": "The All-Penetrating Eye",
@@ -7207,7 +7631,8 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "The All-Penetrating Eye gear magical You may ignore the requirement of line-of-sight while casting a spell (range must still be fulfilled), but add (Cursed Die) to the roll."
+			"rules": "The All-Penetrating Eye gear magical You may ignore the requirement of line-of-sight while casting a spell (range must still be fulfilled), but add (Cursed Die) to the roll.",
+			"craftable": false
 		},
 		{
 			"name": "The Tactician's Ring",
@@ -7223,7 +7648,8 @@
 				"ring"
 			],
 			"spends": [],
-			"rules": "The Tactician's Ring gear ring After you have performed two minor actions during your turn, you may immediately allow an ally to play a major action from their hand."
+			"rules": "The Tactician's Ring gear ring If you perform at least two minor actions during a round, you may immediately allow an ally to play a major action from their hand.",
+			"craftable": false
 		},
 		{
 			"name": "Thief's Blade",
@@ -7241,8 +7667,32 @@
 				"blade",
 				"hand"
 			],
+			"spends": [
+				"doublesurge"
+			],
+			"rules": "Thief's Blade 1h weapon melee blade hand Add (Enhancement Die) (Blessing Die) (Blessing Die) to attacks.    At the end of your turn, you may Move (3) (gain Nimble) in a straight or diagonal line and perform a free attack against one enemy that was within reach on that path.  You may use the below spending options on attacks. DoubleSurge: -2 Cooldown for one of your cards at cooldown 5.",
+			"craftable": false
+		},
+		{
+			"name": "Throwing Knives",
+			"abundance": "1",
+			"durability": "5",
+			"price": "30",
+			"tier": "3",
+			"id": "i105",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"1h",
+				"weapon",
+				"ranged",
+				"throwing",
+				"hand"
+			],
 			"spends": [],
-			"rules": "Thief's Blade 1h weapon melee blade hand Add (Enhancement Die) (Blessing Die) (Blessing Die) to attacks.    At the end of each turn, you may Move (3) (gain 'Nimble') in a straight or diagonal line and perform a free attack against one enemy that was within reach on that path."
+			"rules": "Throwing Knives 1h weapon ranged throwing hand Range 5.  Add (Blessing Die) to attacks.",
+			"craftable": true,
+			"craftBaseId": "cb007"
 		},
 		{
 			"name": "Throwing Knives",
@@ -7261,7 +7711,26 @@
 				"hand"
 			],
 			"spends": [],
-			"rules": "Throwing Knives 1h weapon ranged throwing hand Range 3  Doesn't have to be equipped to be used.    Add (Blessing Die) to attacks (if in backpack).  Add (Enhancement Die) to attacks (if in hand)."
+			"rules": "Throwing Knives 1h weapon ranged throwing hand Range 3  Doesn't have to be equipped to be used.    Add (Blessing Die) to attacks (if in backpack).  Add (Enhancement Die) to attacks (if in hand).",
+			"craftable": true,
+			"craftBaseId": "cb007"
+		},
+		{
+			"name": "Tinkerer's Toolkit",
+			"abundance": "2",
+			"durability": "0",
+			"price": "5",
+			"tier": "2",
+			"id": "i96",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"consumable",
+				"mundane"
+			],
+			"spends": [],
+			"rules": "Tinkerer's Toolkit consumable mundane Consume to remove one 'Wear' token from an item that you carry.",
+			"craftable": false
 		},
 		{
 			"name": "Tome Of Demons",
@@ -7276,7 +7745,8 @@
 				"magical"
 			],
 			"spends": [],
-			"rules": "Tome Of Demons gear magical Your summoned minions gain +1 Power on all their attacks."
+			"rules": "Tome Of Demons gear magical Your summoned minions gain +1 Power on all their attacks.",
+			"craftable": false
 		},
 		{
 			"name": "Vessel Core",
@@ -7291,7 +7761,8 @@
 				"immediate"
 			],
 			"spends": [],
-			"rules": "Vessel Core consumable immediate Immediately gain +1 XP for one player's vessel synchronization."
+			"rules": "Vessel Core consumable immediate Immediately gain +1 XP for one player's vessel synchronization.",
+			"craftable": false
 		},
 		{
 			"name": "Volcano-tempered Helmet",
@@ -7309,7 +7780,29 @@
 			"spends": [
 				"doublesurge"
 			],
-			"rules": "Volcano-tempered Helmet gear helmet You may prevent a wound by discarding this item.    You may use the below spending options on defense. DoubleSurge: +2 Power."
+			"rules": "Volcano-tempered Helmet gear helmet You may prevent a wound by discarding this item.    You may use the below spending options on defense. DoubleSurge: +2 Power.",
+			"craftable": false
+		},
+		{
+			"name": "Wand",
+			"abundance": "1",
+			"durability": "5",
+			"price": "30",
+			"tier": "3",
+			"id": "i107",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"1h",
+				"weapon",
+				"melee",
+				"crushing",
+				"hand"
+			],
+			"spends": [],
+			"rules": "Wand 1h weapon melee crushing hand Add (Enhancement Die) to attacks and spellcasting.",
+			"craftable": true,
+			"craftBaseId": "cb009"
 		},
 		{
 			"name": "War Axe",
@@ -7327,8 +7820,11 @@
 				"slashing",
 				"hand"
 			],
-			"spends": [],
-			"rules": "War Axe 1h weapon melee slashing hand Add (Power Die) to attacks.    Add (Cursed Die) (Cursed Die) to defense against melee attacks.(red##)"
+			"spends": [
+				"surge"
+			],
+			"rules": "War Axe 1h weapon melee slashing hand Add (Power Die) to attacks.    Add (Cursed Die) (Cursed Die) to defense against melee attacks.(red##)  You may use the below spending options on attacks. Surge: Hit one additional enemy within reach (deal max. 1 wound).",
+			"craftable": false
 		},
 		{
 			"name": "Wardancer's Spear",
@@ -7347,10 +7843,33 @@
 				"hand"
 			],
 			"spends": [
-				"doublesurge",
+				"surge",
+				"surge",
 				"surge"
 			],
-			"rules": "Wardancer's Spear 2h weapon melee polearm hand Gain 'Reach'.  Add (Enhancement Die) (Enhancement Die) to attacks.    You may use the below spending options on attacks. DoubleSurge: Hit an additional target within range. DoubleSurge: +2 Power."
+			"rules": "Wardancer's Spear 2h weapon melee polearm hand Gain Reach.  Add (Power Die) (Enhancement Die) to attacks.    You may use the below spending options on attacks. Surge: Add (Blessing Die) to your next defense this round. Surge: Cause Weaken. Surge: +2 Power.",
+			"craftable": false
+		},
+		{
+			"name": "Warhammer",
+			"abundance": "1",
+			"durability": "5",
+			"price": "60",
+			"tier": "3",
+			"id": "i103",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"2h",
+				"weapon",
+				"melee",
+				"crushing",
+				"hand"
+			],
+			"spends": [],
+			"rules": "Warhammer 2h weapon melee crushing hand Add (Power Die) to attacks.",
+			"craftable": true,
+			"craftBaseId": "cb005"
 		},
 		{
 			"name": "Warhammer",
@@ -7365,13 +7884,16 @@
 				"2h",
 				"weapon",
 				"melee",
-				"slashing",
+				"crushing",
 				"hand"
 			],
 			"spends": [
-				"star"
+				"star",
+				"surge"
 			],
-			"rules": "Warhammer 2h weapon melee slashing hand Add (Enhancement Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Deal a wound and cause 'Knockback (2)'."
+			"rules": "Warhammer 2h weapon melee crushing hand Add (Enhancement Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Cause Stun. Star: Cause Dazed.",
+			"craftable": true,
+			"craftBaseId": "cb005"
 		},
 		{
 			"name": "Weapon Oil",
@@ -7387,7 +7909,8 @@
 				"mundane"
 			],
 			"spends": [],
-			"rules": "Weapon Oil consumable mundane Consume to remove up to two faults from an item that you carry."
+			"rules": "Weapon Oil consumable mundane Consume to remove up to two 'Wear' tokens from an item that you carry.",
+			"craftable": false
 		},
 		{
 			"name": "Whip Of The Succubus",
@@ -7408,7 +7931,8 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Whip Of The Succubus 1h weapon melee slashing hand Add (Enhancement Die) to your attacks.  Gain 'Reach'.    Add the below spending options to attacks. Surge: Cause 'Dazed'. Surge: Cause 'Stun'."
+			"rules": "Whip Of The Succubus 1h weapon melee slashing hand Add (Enhancement Die) to your attacks.  Gain 'Reach'.    Add the below spending options to attacks. Surge: Cause 'Dazed'. Surge: Cause 'Stun'.",
+			"craftable": false
 		},
 		{
 			"name": "Whistleheart Axe",
@@ -7427,7 +7951,8 @@
 				"hand"
 			],
 			"spends": [],
-			"rules": "Whistleheart Axe 2h weapon melee slashing hand Add (Power Die) to attacks.    Before rolling for an attack, you may add any amount of dice, but suffer 4 scratches in return."
+			"rules": "Whistleheart Axe 2h weapon melee slashing hand Add (Power Die) to attacks.    Before rolling for an attack, you may add any amount of dice, but suffer 4 scratches in return.",
+			"craftable": false
 		},
 		{
 			"name": "Zweihaender",
@@ -7446,9 +7971,11 @@
 				"hand"
 			],
 			"spends": [
+				"surge",
 				"surge"
 			],
-			"rules": "Zweihaender 2h weapon melee blade hand Add (Blessing Die) (Blessing Die) (Blessing Die) to attacks and melee defense.    You may use the below spending option on attacks and defense. Surge: +1 Power."
+			"rules": "Zweihaender 2h weapon melee blade hand Add (Blessing Die) (Blessing Die) (Blessing Die) to attacks and melee defense.    You may use the below spending option on attacks and defense. Surge: +1 Power. Surge: -1 Cooldown for one of your cards at cooldown 4 or 5.",
+			"craftable": false
 		}
 	],
 	"types": {
@@ -7464,7 +7991,7 @@
 		"2h": true,
 		"bow": true,
 		"polearm": true,
-		"slashing": true,
+		"crushing": true,
 		"shield": true,
 		"armor": true,
 		"light": true,
@@ -7478,6 +8005,7 @@
 		"ring": true,
 		"potion": true,
 		"crossbow": true,
+		"slashing": true,
 		"necklace": true,
 		"medium": true,
 		"witchcraft": true,
@@ -8090,6 +8618,1672 @@
 			"id": "wizard",
 			"rules": "Wizard Reduce one of your cooldowns by 1 Arcane Studies You may add (Standard Die) to your spellcasting dice pool (decide before rolling). Astral Burst Add (Blessing Die) to your first spellcasting roll of each round. Quickweaving Your first used spell of each round has -1 cooldown. Ready Magick Once per round, you may use (Star) (on any roll) to immediately play a spell from your hand. Infinite Wisdom Add any one spell (base level) to your hand cards (does not affect your card purchase costs). If you lose this vessel, that spell is lost as well.",
 			"rarity": "common"
+		}
+	],
+	"craftBases": {
+		"Greatsword": {
+			"name": "Greatsword",
+			"id": "cb001",
+			"costs": {
+				"iron": 2,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0
+			},
+			"options": {
+				"attacks": true,
+				"spells": false,
+				"defense": false
+			}
+		},
+		"Blade": {
+			"name": "Blade",
+			"id": "cb002",
+			"costs": {
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0
+			},
+			"options": {
+				"attacks": true,
+				"spells": false,
+				"defense": false
+			}
+		},
+		"Polearm": {
+			"name": "Polearm",
+			"id": "cb003",
+			"costs": {
+				"iron": 1,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0
+			},
+			"options": {
+				"attacks": true,
+				"spells": false,
+				"defense": false
+			}
+		},
+		"Axe": {
+			"name": "Axe",
+			"id": "cb004",
+			"costs": {
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0
+			},
+			"options": {
+				"attacks": true,
+				"spells": false,
+				"defense": false
+			}
+		},
+		"Warhammer": {
+			"name": "Warhammer",
+			"id": "cb005",
+			"costs": {
+				"iron": 1,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0
+			},
+			"options": {
+				"attacks": true,
+				"spells": false,
+				"defense": false
+			}
+		},
+		"Bow": {
+			"name": "Bow",
+			"id": "cb006",
+			"costs": {
+				"iron": 0,
+				"wood": 2,
+				"silver": 0,
+				"cloth": 0
+			},
+			"options": {
+				"attacks": true,
+				"spells": false,
+				"defense": false
+			}
+		},
+		"Throwing Knives": {
+			"name": "Throwing Knives",
+			"id": "cb007",
+			"costs": {
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0
+			},
+			"options": {
+				"attacks": true,
+				"spells": false,
+				"defense": false
+			}
+		},
+		"Staff": {
+			"name": "Staff",
+			"id": "cb008",
+			"costs": {
+				"iron": 0,
+				"wood": 1,
+				"silver": 1,
+				"cloth": 0
+			},
+			"options": {
+				"attacks": true,
+				"spells": true,
+				"defense": false
+			}
+		},
+		"Wand": {
+			"name": "Wand",
+			"id": "cb009",
+			"costs": {
+				"iron": 0,
+				"wood": 0,
+				"silver": 1,
+				"cloth": 0
+			},
+			"options": {
+				"attacks": true,
+				"spells": true,
+				"defense": false
+			}
+		},
+		"Shield": {
+			"name": "Shield",
+			"id": "cb010",
+			"costs": {
+				"iron": 0,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0
+			},
+			"options": {
+				"attacks": false,
+				"spells": false,
+				"defense": true
+			}
+		},
+		"Light Armor": {
+			"name": "Light Armor",
+			"id": "cb011",
+			"costs": {
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 2
+			},
+			"options": {
+				"attacks": false,
+				"spells": false,
+				"defense": true
+			}
+		},
+		"Medium Armor": {
+			"name": "Medium Armor",
+			"id": "cb012",
+			"costs": {
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 1
+			},
+			"options": {
+				"attacks": false,
+				"spells": false,
+				"defense": true
+			}
+		},
+		"Heavy Armor": {
+			"name": "Heavy Armor",
+			"id": "cb013",
+			"costs": {
+				"iron": 2,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0
+			},
+			"options": {
+				"attacks": false,
+				"spells": false,
+				"defense": true
+			}
+		}
+	},
+	"craftOptions": [
+		{
+			"id": "co001",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to attacks.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb002",
+				"cb003",
+				"cb004",
+				"cb006",
+				"cb007",
+				"cb009"
+			]
+		},
+		{
+			"id": "co002",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/enhancement-die.png\" class=\"CardSymbol\"> to attacks.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb003",
+				"cb005",
+				"cb006",
+				"cb009"
+			]
+		},
+		{
+			"id": "co003",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/standard-die.png\" class=\"CardSymbol\"> to attacks.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb002",
+				"cb005",
+				"cb006",
+				"cb007"
+			]
+		},
+		{
+			"id": "co004",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to attacks,<br>but <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to melee defense.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 40,
+				"iron": 0,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 1,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb005",
+				"cb006",
+				"cb008"
+			]
+		},
+		{
+			"id": "co005",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to melee defense.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb002",
+				"cb003",
+				"cb009"
+			]
+		},
+		{
+			"id": "co006",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/enhancement-die.png\" class=\"CardSymbol\"> to melee defense.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb003"
+			]
+		},
+		{
+			"id": "co007",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to spellcasting.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 1,
+				"wood": 0,
+				"silver": 1,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb002",
+				"cb003",
+				"cb006",
+				"cb008",
+				"cb009"
+			]
+		},
+		{
+			"id": "co008",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/enhancement-die.png\" class=\"CardSymbol\"> to spellcasting.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 0,
+				"wood": 1,
+				"silver": 1,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb002",
+				"cb003",
+				"cb006",
+				"cb008",
+				"cb009"
+			]
+		},
+		{
+			"id": "co009",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to spellcasting,\nbut <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to defense.",
+			"difficulty": 3,
+			"costs": {
+				"gold": 50,
+				"iron": 0,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 1,
+				"hardwood": 1
+			},
+			"compatibleItems": [
+				"cb008",
+				"cb011"
+			]
+		},
+		{
+			"id": "co010",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to defense.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 1,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb010",
+				"cb011",
+				"cb012",
+				"cb013"
+			]
+		},
+		{
+			"id": "co011",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/enhancement-die.png\" class=\"CardSymbol\"> to defense.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 1,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb010",
+				"cb012",
+				"cb013"
+			]
+		},
+		{
+			"id": "co012",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/standard-die.png\" class=\"CardSymbol\"> to defense.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 1,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb012"
+			]
+		},
+		{
+			"id": "co013",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to defense,<br>but <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to attacks.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 40,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb013"
+			]
+		},
+		{
+			"id": "co014",
+			"type": "Trait",
+			"spend": "",
+			"description": "Gain Reach",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb005",
+				"cb008"
+			]
+		},
+		{
+			"id": "co015",
+			"type": "Trait",
+			"spend": "",
+			"description": "Gain Slippery",
+			"difficulty": 3,
+			"costs": {
+				"gold": 50,
+				"iron": 0,
+				"wood": 0,
+				"silver": 1,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb003"
+			]
+		},
+		{
+			"id": "co016",
+			"type": "Trait",
+			"spend": "",
+			"description": "Gain Nimble",
+			"difficulty": 2,
+			"costs": {
+				"gold": 40,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 1,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb002",
+				"cb004"
+			]
+		},
+		{
+			"id": "co017",
+			"type": "Trait",
+			"spend": "",
+			"description": "Gain up to +1 Initiative",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 0,
+				"wood": 0,
+				"silver": 1,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb002",
+				"cb006",
+				"cb007"
+			]
+		},
+		{
+			"id": "co018",
+			"type": "Trait",
+			"spend": "",
+			"description": "Gain +1 Speed",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 1,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb004",
+				"cb007",
+				"cb011"
+			]
+		},
+		{
+			"id": "co019",
+			"type": "Trait",
+			"spend": "",
+			"description": "Gain +1 Toughness (1st row only)",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb012",
+				"cb013"
+			]
+		},
+		{
+			"id": "co020",
+			"type": "Trait",
+			"spend": "",
+			"description": "Become immune to Bleed.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 0,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 1,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 1
+			},
+			"compatibleItems": [
+				"cb012",
+				"cb013"
+			]
+		},
+		{
+			"id": "co021",
+			"type": "Trait",
+			"spend": "",
+			"description": "Become immune to Cursed.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 40,
+				"iron": 0,
+				"wood": 0,
+				"silver": 1,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb011"
+			]
+		},
+		{
+			"id": "co022",
+			"type": "Trait",
+			"spend": "",
+			"description": "Become immune to Terror.",
+			"difficulty": 3,
+			"costs": {
+				"gold": 50,
+				"iron": 0,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 1,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb011"
+			]
+		},
+		{
+			"id": "co023",
+			"type": "Trait",
+			"spend": "",
+			"description": "Become immune to Stun.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 40,
+				"iron": 0,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 1,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb010",
+				"cb013"
+			]
+		},
+		{
+			"id": "co024",
+			"type": "Trait",
+			"spend": "",
+			"description": "Become immune to Knockback.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb013"
+			]
+		},
+		{
+			"id": "co025",
+			"type": "Trait",
+			"spend": "",
+			"description": "Gain an automatic Plus on rolls with this item.",
+			"difficulty": 3,
+			"costs": {
+				"gold": 60,
+				"iron": 0,
+				"wood": 0,
+				"silver": 1,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 1,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb002",
+				"cb003",
+				"cb004",
+				"cb005",
+				"cb006",
+				"cb007",
+				"cb008",
+				"cb009",
+				"cb010",
+				"cb011",
+				"cb012",
+				"cb013"
+			]
+		},
+		{
+			"id": "co026",
+			"type": "Trait",
+			"spend": "",
+			"description": "You can apply up to 2 runes on this item.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 40,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 1,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb002",
+				"cb003",
+				"cb004",
+				"cb005",
+				"cb006",
+				"cb007",
+				"cb008",
+				"cb009",
+				"cb010",
+				"cb011",
+				"cb012",
+				"cb013"
+			]
+		},
+		{
+			"id": "co027",
+			"type": "Trait",
+			"spend": "",
+			"description": "This item ignores wear.",
+			"difficulty": 3,
+			"costs": {
+				"gold": 60,
+				"iron": 0,
+				"wood": 0,
+				"silver": 1,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb002",
+				"cb003",
+				"cb004",
+				"cb005",
+				"cb006",
+				"cb007",
+				"cb008",
+				"cb009",
+				"cb010",
+				"cb011",
+				"cb012",
+				"cb013"
+			]
+		},
+		{
+			"id": "co028",
+			"type": "Trait",
+			"spend": "",
+			"description": "Add +1 Power to all rolls with this item.",
+			"difficulty": 3,
+			"costs": {
+				"gold": 60,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 1,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb003",
+				"cb005",
+				"cb006",
+				"cb007",
+				"cb013"
+			]
+		},
+		{
+			"id": "co029",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "+1 Power.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 10,
+				"iron": 0,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb002",
+				"cb003",
+				"cb004",
+				"cb006",
+				"cb007",
+				"cb008",
+				"cb009",
+				"cb011",
+				"cb012",
+				"cb013"
+			]
+		},
+		{
+			"id": "co030",
+			"type": "Spend",
+			"spend": "PlusPlus",
+			"description": "+2 Power.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 10,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb002",
+				"cb007",
+				"cb009",
+				"cb010",
+				"cb013"
+			]
+		},
+		{
+			"id": "co031",
+			"type": "Spend",
+			"spend": "PlusPlus",
+			"description": "+3 Power.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb003",
+				"cb004",
+				"cb005",
+				"cb006",
+				"cb008"
+			]
+		},
+		{
+			"id": "co032",
+			"type": "Spend",
+			"spend": "Star",
+			"description": "+4 Power.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb001"
+			]
+		},
+		{
+			"id": "co033",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "-1 Cooldown for one of your cards at cooldown 4 or 5.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb007",
+				"cb011"
+			]
+		},
+		{
+			"id": "co034",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "-1 Cooldown for one of your cards at cooldown 3 to 5.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb002",
+				"cb009"
+			]
+		},
+		{
+			"id": "co035",
+			"type": "Spend",
+			"spend": "PlusPlus",
+			"description": "-2 Cooldown for one of your cards at cooldown 5.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb002"
+			]
+		},
+		{
+			"id": "co036",
+			"type": "Spend",
+			"spend": "Star",
+			"description": "-1 Cooldown for an ally's card.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 0,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb003",
+				"cb006",
+				"cb009"
+			]
+		},
+		{
+			"id": "co037",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "Perform a free attack against an unwounded enemy (max 2. per round).",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb002",
+				"cb010",
+				"cb012"
+			]
+		},
+		{
+			"id": "co038",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "Perform a free attack against a different enemy (max 2. per round).",
+			"difficulty": 2,
+			"costs": {
+				"gold": 40,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb002"
+			]
+		},
+		{
+			"id": "co039",
+			"type": "Spend",
+			"spend": "Star",
+			"description": "Perform a free attack (max 2. per round).",
+			"difficulty": 2,
+			"costs": {
+				"gold": 40,
+				"iron": 1,
+				"wood": 0,
+				"silver": 1,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb002",
+				"cb007",
+				"cb010"
+			]
+		},
+		{
+			"id": "co040",
+			"type": "Spend",
+			"spend": "PlusPlus",
+			"description": "Move 2 (gain Slippery)",
+			"difficulty": 1,
+			"costs": {
+				"gold": 10,
+				"iron": 0,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb002",
+				"cb008",
+				"cb010",
+				"cb012"
+			]
+		},
+		{
+			"id": "co041",
+			"type": "Spend",
+			"spend": "PlusPlus",
+			"description": "Move 3 (gain Nimble)",
+			"difficulty": 1,
+			"costs": {
+				"gold": 10,
+				"iron": 0,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb002",
+				"cb007",
+				"cb011"
+			]
+		},
+		{
+			"id": "co042",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "+1 Power and move the enemy by 1 square.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 0,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 1
+			},
+			"compatibleItems": [
+				"cb003",
+				"cb011"
+			]
+		},
+		{
+			"id": "co043",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "Cause Weaken.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 0,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 1
+			},
+			"compatibleItems": [
+				"cb003",
+				"cb006",
+				"cb007"
+			]
+		},
+		{
+			"id": "co044",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to your next defense this round.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 10,
+				"iron": 0,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb003",
+				"cb010",
+				"cb012"
+			]
+		},
+		{
+			"id": "co045",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "Provide an adjacent ally with <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to their next attack this round.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 10,
+				"iron": 0,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb003",
+				"cb010",
+				"cb013"
+			]
+		},
+		{
+			"id": "co046",
+			"type": "Spend",
+			"spend": "Star",
+			"description": "Hit one additional enemy within reach (deal max. 1 wound).",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb003",
+				"cb004",
+				"cb007"
+			]
+		},
+		{
+			"id": "co047",
+			"type": "Spend",
+			"spend": "PlusPlus",
+			"description": "Hit one additional enemy adjacent to your target.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb004"
+			]
+		},
+		{
+			"id": "co048",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "Cause Cripple.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb004",
+				"cb006",
+				"cb007"
+			]
+		},
+		{
+			"id": "co049",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "Remove a status effect token from the enemy, then deal a wound.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 10,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb004"
+			]
+		},
+		{
+			"id": "co050",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "Cause Dazed.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 1,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb005",
+				"cb007",
+				"cb009"
+			]
+		},
+		{
+			"id": "co051",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "Deal one wound.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 0,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb005"
+			]
+		},
+		{
+			"id": "co052",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "Cause Knockback (3).",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb005",
+				"cb009"
+			]
+		},
+		{
+			"id": "co053",
+			"type": "Spend",
+			"spend": "Star",
+			"description": "Cause Stun.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 1,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 1
+			},
+			"compatibleItems": [
+				"cb005"
+			]
+		},
+		{
+			"id": "co054",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "Reduce the cooldown of one of your cards with an interrupt effect by 1.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 1,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb006",
+				"cb010"
+			]
+		},
+		{
+			"id": "co055",
+			"type": "Spend",
+			"spend": "PlusPlus",
+			"description": "After defending, prevent one scratch.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb010"
+			]
+		},
+		{
+			"id": "co056",
+			"type": "Spend",
+			"spend": "PlusPlus",
+			"description": "Reduce the cooldown of one of your spells by 2.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 0,
+				"wood": 0,
+				"silver": 1,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb008",
+				"cb009"
+			]
+		},
+		{
+			"id": "co057",
+			"type": "Spend",
+			"spend": "Star",
+			"description": "Immediately play a spell from your hand (max. 1 per round).",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 0,
+				"wood": 1,
+				"silver": 1,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb006",
+				"cb008",
+				"cb009",
+				"cb011"
+			]
+		},
+		{
+			"id": "co058",
+			"type": "Spend",
+			"spend": "Star",
+			"description": "Cause Bleed (3).",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb002",
+				"cb004",
+				"cb006",
+				"cb007"
+			]
+		},
+		{
+			"id": "co059",
+			"type": "Spend",
+			"spend": "PlusPlus",
+			"description": "Heal a scratch from yourself.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb003",
+				"cb005",
+				"cb006",
+				"cb008",
+				"cb013"
+			]
+		},
+		{
+			"id": "co060",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "Ignore the negative power rolled from all <img src=\"images/cursed-die.png\" class=\"CardSymbol\">.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 1,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb002",
+				"cb007",
+				"cb008",
+				"cb009",
+				"cb012",
+				"cb013"
+			]
+		},
+		{
+			"id": "co061",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "Reduce the duration of a negative effect on you by 1.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 1,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb003",
+				"cb010",
+				"cb013"
+			]
+		},
+		{
+			"id": "co062",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "Increase the duration of an ongoing effect on you by 1.",
+			"difficulty": 2,
+			"costs": {
+				"gold": 30,
+				"iron": 0,
+				"wood": 1,
+				"silver": 1,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb008",
+				"cb011",
+				"cb012"
+			]
+		},
+		{
+			"id": "co063",
+			"type": "Spend",
+			"spend": "PlusPlus",
+			"description": "Ignore one wear or botch.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0,
+				"stell": 1
+			},
+			"compatibleItems": [
+				"cb013"
+			]
+		},
+		{
+			"id": "co064",
+			"type": "Spend",
+			"spend": "Plus",
+			"description": "+2 Power, but the item suffers wear.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 20,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb002",
+				"cb003",
+				"cb004",
+				"cb005",
+				"cb006",
+				"cb007",
+				"cb011",
+				"cb012",
+				"cb013"
+			]
 		}
 	]
 }

@@ -11,7 +11,9 @@ var files = [
 	{ key:"legendaryItems", name:"Deckbuilder - Data - Legendary Items.csv", done:false },
 	{ key:"soulShopItems", name:"Deckbuilder - Data - Soul Shop Items.csv", done:false },
 	{ key:"vessels", name:"Deckbuilder - Data - Vessel.csv", done:false },
-	{ key:"starterDecks", name:"Deckbuilder - Data - Starter Decks.csv", done:false }
+	{ key:"starterDecks", name:"Deckbuilder - Data - Starter Decks.csv", done:false },
+	{ key:"craftBases", name:"Deckbuilder - Data - Craft Bases.csv", done:false },
+	{ key:"craftOptions", name:"Deckbuilder - Data - Craft Options.csv", done:false }
 ];
 	
 // Load and parse each CSV into JSON data
@@ -41,7 +43,7 @@ function load(){
 
 }
 
-data = {abilities:[],items:[],types:{},starterClasses:[],vessels:[]}
+data = {abilities:[],items:[],types:{},starterClasses:[],vessels:[],craftBases:{},craftOptions:[]}
 function build(){
 
 	console.log( "\r\nBuilding data..." );
@@ -106,6 +108,52 @@ function build(){
 		
 		data.abilities.push( entry );
 		
+	}
+	
+	// Clean and reformat crafting data
+	for( var i = 0; i < rawData.craftBases.length; i++ ){
+		var raw = rawData.craftBases[i];
+		var entry = {};
+		
+		entry.name = raw.name;
+		entry.id = raw.ID;
+		
+		entry.costs = {iron:0,wood:0,silver:0,cloth:0};
+		if( raw.cost_iron ) entry.costs.iron = parseInt(raw.cost_iron);
+		if( raw.cost_wood ) entry.costs.wood = parseInt(raw.cost_wood);
+		if( raw.cost_silver ) entry.costs.silver = parseInt(raw.cost_silver);
+		if( raw.cost_cloth ) entry.costs.cloth = parseInt(raw.cost_cloth);
+		
+		entry.options = {attacks:false,spells:false,defense:false};
+		if( raw.options_attacks == "TRUE" ) entry.options.attacks = true;
+		if( raw.options_spellcasting == "TRUE" ) entry.options.spells = true;
+		if( raw.options_defense == "TRUE" ) entry.options.defense = true;
+		
+		data.craftBases[entry.name] = entry;
+	}
+	for( var i = 0; i < rawData.craftOptions.length; i++ ){
+		var raw = rawData.craftOptions[i];
+		var entry = {};
+		
+		entry.id = raw.ID;
+		entry.type = raw.type;
+		entry.spend = raw.spend;
+		entry.description = raw.description;
+		entry.difficulty = parseInt(raw.difficulty);
+		
+		entry.costs = {gold:0,iron:0,wood:0,silver:0,cloth:0,steel:0,celestium:0,hardwood:0};
+		if( raw.cost_gold ) entry.costs.gold = parseInt(raw.cost_gold);
+		if( raw.cost_iron ) entry.costs.iron = parseInt(raw.cost_iron);
+		if( raw.cost_wood ) entry.costs.wood = parseInt(raw.cost_wood);
+		if( raw.cost_silver ) entry.costs.silver = parseInt(raw.cost_silver);
+		if( raw.cost_cloth ) entry.costs.cloth = parseInt(raw.cost_cloth);
+		if( raw.cost_steel ) entry.costs.stell = parseInt(raw.cost_steel);
+		if( raw.cost_celestium ) entry.costs.celestium = parseInt(raw.cost_celestium);
+		if( raw.cost_hardwood ) entry.costs.hardwood = parseInt(raw.cost_hardwood);
+		
+		entry.compatibleItems = raw.compatible_items.split(",");
+		
+		data.craftOptions.push(entry);
 	}
 	
 	// Combine the different types of items for processing
@@ -192,6 +240,12 @@ function build(){
 		}	
 		
 		entry.rules = cleanRulesText( rules );
+		
+		entry.craftable = false;
+		if( data.craftBases[ entry.name ] ){
+			entry.craftable = true;
+			entry.craftBaseId = data.craftBases[ entry.name ].id;
+		}
 		
 		data.items.push( entry );	
 		
