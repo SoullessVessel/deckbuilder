@@ -1091,7 +1091,7 @@
 			}
 			#CraftingContainer .CardName{
 				position: absolute;
-				bottom: 570px;
+				bottom: 580px;
 				left: 15px;
 				color: white;
 				font-size: 3.45em;
@@ -1841,7 +1841,7 @@
 			
 				var zoomer = document.getElementById("zoom");					
 				var zoom = hoveredElement.getAttribute("zoom");
-				var craftZoom = hoveredElement.parentNode.	getAttribute("craftZoom");
+				var craftZoom = hoveredElement.parentNode.getAttribute("craftZoom");
 				if( zoom ){
 					
 					if( craftZoom ){
@@ -2390,8 +2390,7 @@
 						
 					var cdlButton = document.createElement( "div" );
 						cdlButton.className = "card adder craft download";
-						//TODO: Download the dynamically created image
-						//craftButton.onclick = tab_goto;
+						cdlButton.onclick = downloadCraftedCard;
 						
 					craftGroup.appendChild( craftButton );
 					craftGroup.appendChild( cdlButton );
@@ -2825,9 +2824,12 @@
 					if( !activeDeck[ group ][ index ] )
 						activeDeck[ group ][ index ] = {};
 
+					currentCraftSlot.setAttribute("customName",cardLookup[ baseCardId ].name);
 					var customName = document.getElementById("craftName").value;
-					if( customName )
+					if( customName ){
 						activeDeck[ group ][ index ].customName = sanitizeName(customName);
+						currentCraftSlot.setAttribute("customName",customName);
+					}
 
 					activeDeck[ group ][ index ].craftOptions = [];
 					for( var i = 0; i < selections.length; i++ ){
@@ -3099,6 +3101,16 @@
 				row.appendChild( effect );
 				return row;
 			
+			}
+		
+			function downloadCraftedCard(e){
+				
+				var card = e.target.parentNode.parentNode;
+				var link = document.createElement('a');
+				link.download = card.getAttribute( "customName" ) + ".png";
+				link.href = card.querySelector( ".cardImage" ).src;
+				link.click();
+				
 			}
 		
 		</script>
