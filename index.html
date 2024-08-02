@@ -3107,7 +3107,7 @@
 				
 				var card = e.target.parentNode.parentNode;
 				var link = document.createElement('a');
-				link.download = card.getAttribute( "customName" ) + ".png";
+				link.download = card.parentNode.getAttribute( "customName" ) + ".png";
 				link.href = card.querySelector( ".cardImage" ).src;
 				link.click();
 				
