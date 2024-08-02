@@ -1841,7 +1841,7 @@
 			
 				var zoomer = document.getElementById("zoom");					
 				var zoom = hoveredElement.getAttribute("zoom");
-				var craftZoom = hoveredElement.getAttribute("craftZoom");
+				var craftZoom = hoveredElement.parentNode.	getAttribute("craftZoom");
 				if( zoom ){
 					
 					if( craftZoom ){
