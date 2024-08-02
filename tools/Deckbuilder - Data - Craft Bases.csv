@@ -1,14 +1,14 @@
-publish,ID,name,cost_iron,cost_wood,cost_silver,cost_cloth,options_attacks,options_spellcasting,options_defense
-x,cb001,Greatsword,2,,,,TRUE,FALSE,FALSE
-x,cb002,Blade,1,,,,TRUE,FALSE,FALSE
-x,cb003,Polearm,1,1,,,TRUE,FALSE,FALSE
-x,cb004,Axe,1,,,,TRUE,FALSE,FALSE
-x,cb005,Warhammer,1,1,,,TRUE,FALSE,FALSE
-x,cb006,Bow,,2,,,TRUE,FALSE,FALSE
-x,cb007,Throwing Knives,1,,,,TRUE,FALSE,FALSE
-x,cb008,Staff,,1,1,,TRUE,TRUE,FALSE
-x,cb009,Wand,,,1,,TRUE,TRUE,FALSE
-x,cb010,Shield,,1,,,FALSE,FALSE,TRUE
-x,cb011,Light Armor,,,,2,FALSE,FALSE,TRUE
-x,cb012,Medium Armor,1,,,1,FALSE,FALSE,TRUE
-x,cb013,Heavy Armor,2,,,,FALSE,FALSE,TRUE
+publish,ID,name,cost_iron,cost_wood,cost_silver,cost_cloth,options_attacks,options_spellcasting,options_defense,base_effect
+x,cb001,Greatsword,2,,,,TRUE,FALSE,FALSE,"Add <img src=""images/enhancement-die.png"" class=""CardSymbol""> <img src=""images/blessing-die.png"" class=""CardSymbol""> to attacks."
+x,cb002,Blade,1,,,,TRUE,FALSE,FALSE,"Add <img src=""images/standard-die.png"" class=""CardSymbol""> <img src=""images/blessing-die.png"" class=""CardSymbol""> to attacks."
+x,cb003,Polearm,1,1,,,TRUE,FALSE,FALSE,"Reach.  Add <img src=""images/standard-die.png"" class=""CardSymbol""> <img src=""images/enhancement-die.png"" class=""CardSymbol""> to attacks."
+x,cb004,Axe,1,,,,TRUE,FALSE,FALSE,"Add <img src=""images/power-die.png"" class=""CardSymbol""> to attacks.  Add <img src=""images/cursed-die.png"" class=""CardSymbol""> to melee defense."
+x,cb005,Warhammer,1,1,,,TRUE,FALSE,FALSE,"Add <img src=""images/power-die.png"" class=""CardSymbol""> to attacks."
+x,cb006,Bow,,2,,,TRUE,FALSE,FALSE,"Range 7.  Add <img src=""images/enhancement-die.png"" class=""CardSymbol""> to attacks."
+x,cb007,Throwing Knives,1,,,,TRUE,FALSE,FALSE,"Range 5.  Add <img src=""images/blessing-die.png"" class=""CardSymbol""> to attacks."
+x,cb008,Staff,,1,1,,TRUE,TRUE,FALSE,"Add <img src=""images/enhancement-die.png"" class=""CardSymbol""> <img src=""images/blessing-die.png"" class=""CardSymbol"">  to spellcasting."
+x,cb009,Wand,,,1,,TRUE,TRUE,FALSE,"Add <img src=""images/enhancement-die.png"" class=""CardSymbol""> to attacks and spellcasting."
+x,cb010,Shield,,1,,,FALSE,FALSE,TRUE,"Add <img src=""images/blessing-die.png"" class=""CardSymbol""> <img src=""images/blessing-die.png"" class=""CardSymbol""> to defense."
+x,cb011,Light Armor,,,,2,FALSE,FALSE,TRUE,"Once per round: Add <img src=""images/power-die.png"" class=""CardSymbol""> to one of your attack or spellcasting rolls."
+x,cb012,Medium Armor,1,,,1,FALSE,FALSE,TRUE,Ignore the first scratch of each round.
+x,cb013,Heavy Armor,2,,,,FALSE,FALSE,TRUE,"Add <img src=""images/enhancement-die.png"" class=""CardSymbol""> to defense."

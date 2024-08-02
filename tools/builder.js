@@ -117,6 +117,7 @@ function build(){
 		
 		entry.name = raw.name;
 		entry.id = raw.ID;
+		entry.baseEffect = raw.base_effect;
 		
 		entry.costs = {iron:0,wood:0,silver:0,cloth:0};
 		if( raw.cost_iron ) entry.costs.iron = parseInt(raw.cost_iron);
@@ -239,13 +240,14 @@ function build(){
 				entry.spends.push( spend.toLowerCase() );
 		}	
 		
-		entry.rules = cleanRulesText( rules );
-		
 		entry.craftable = false;
 		if( data.craftBases[ entry.name ] ){
 			entry.craftable = true;
+			rules += " craftable";
 			entry.craftBaseId = data.craftBases[ entry.name ].id;
 		}
+
+		entry.rules = cleanRulesText( rules );
 		
 		data.items.push( entry );	
 		
