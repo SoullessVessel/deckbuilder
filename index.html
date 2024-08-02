@@ -2824,11 +2824,9 @@
 					if( !activeDeck[ group ][ index ] )
 						activeDeck[ group ][ index ] = {};
 
-					currentCraftSlot.setAttribute("customName",cardLookup[ baseCardId ].name);
 					var customName = document.getElementById("craftName").value;
 					if( customName ){
 						activeDeck[ group ][ index ].customName = sanitizeName(customName);
-						currentCraftSlot.setAttribute("customName",customName);
 					}
 
 					activeDeck[ group ][ index ].craftOptions = [];
@@ -2927,7 +2925,7 @@
 				}
 				
 				// Capture the dynamic card to a bitmap
-				captureCardImage(getItemSlotCard(group,index));
+				captureCardImage(getItemSlotCard(group,index),craftData.name);
 			}
 			
 			function sanitizeName(name){
@@ -3059,16 +3057,18 @@
 			
 			}
 		
-			function captureCardImage(targetCard){
+			function captureCardImage(targetCard,cardName){
 			
 				let div = document.getElementById('CaptureTarget');
 				var target = targetCard;
+				var name = cardName;
 				html2canvas(div).then(
 					function (canvas) {
 						var out = document.getElementById('CardRenderingOutput');
 						out.innerHTML = "";
 						out.appendChild(canvas);
 						setCardImage(target);
+						target.setAttribute("customName",name);
 					})
 					
 			}
