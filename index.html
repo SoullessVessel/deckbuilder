@@ -1414,6 +1414,33 @@
 			
 			}
 			
+			function getItemSlotCard(group,index){
+			
+				if( group == "hand" ){
+					if( index == 0 ) return document.getElementById( "deck-hand00" );
+					if( index == 1 ) return document.getElementById( "deck-hand01" );
+				}
+				if( group == "gear" ){
+					if( index == 0 ) return document.getElementById( "deck-gear00" );
+					if( index == 1 ) return document.getElementById( "deck-gear01" );
+				}
+				if( group == "armor" ){
+					if( index == 0 ) return document.getElementById( "deck-armor" );
+				}
+				if( group == "pack" ){
+					if( index == 0 ) return document.getElementById( "deck-pack00" );
+					if( index == 1 ) return document.getElementById( "deck-pack01" );
+					if( index == 2 ) return document.getElementById( "deck-pack02" );
+				}
+				if( group == "consumables" ){
+					if( index == 0 ) return document.getElementById( "deck-consumables00" );
+					if( index == 1 ) return document.getElementById( "deck-consumables01" );
+				}
+				
+				return null;
+				
+			}
+			
 			function presentDeck(deck){
 				
 				clearDeck();
@@ -1470,7 +1497,7 @@
 				if( deck.hands.length ){
 					for( var i = 0; i < deck.hands.length; i++ ){
 						var cardData = cardLookup[ deck.hands[i].id ];
-						var card = createCard( cardData, cardLookup[ deck.hands[i].rune ], null, "hands" );
+						var card = createCard( cardData, cardLookup[ deck.hands[i].rune ], null, "hands", i );
 							card.setAttribute( "group", "hands" );
 							card.setAttribute( "index", i );
 						deck.hands[i].card = card;
@@ -1490,7 +1517,7 @@
 				if( deck.gear.length ){
 					for( var i = 0; i < deck.gear.length; i++ ){
 						var cardData = cardLookup[ deck.gear[i].id ];
-						var card = createCard( cardData, null, null, "gear" );
+						var card = createCard( cardData, null, null, "gear", i );
 							card.setAttribute( "group", "gear" );
 							card.setAttribute( "index", i );
 						deck.gear[i].card = card;
@@ -1506,7 +1533,7 @@
 				
 				if( deck.armor.length ){
 					var cardData = cardLookup[ deck.armor[0].id ];
-					var card = createCard( cardData, cardLookup[ deck.armor[0].rune ], null, "armor" );
+					var card = createCard( cardData, cardLookup[ deck.armor[0].rune ], null, "armor", i );
 						card.setAttribute( "group", "armor" );
 						card.setAttribute( "index", 0 );
 					deck.armor[0].card = card;
@@ -1525,7 +1552,7 @@
 				if( deck.pack.length ){
 					for( var i = 0; i < deck.pack.length; i++ ){
 						var cardData = cardLookup[ deck.pack[i].id ];
-						var card = createCard( cardData, cardLookup[ deck.pack[i].rune ], null, "pack" );
+						var card = createCard( cardData, cardLookup[ deck.pack[i].rune ], null, "pack", i );
 							card.setAttribute( "group", "pack" );
 							card.setAttribute( "index", i );
 						deck.pack[i].card = card;
@@ -1546,7 +1573,7 @@
 				if( deck.consumables.length ){
 					for( var i = 0; i < deck.consumables.length; i++ ){
 						var cardData = cardLookup[ deck.consumables[i].id ];
-						var card = createCard( cardData, null, null, "consumables" );
+						var card = createCard( cardData, null, null, "consumables", i );
 							card.setAttribute( "group", "consumables" );
 							card.setAttribute( "index", i );
 						deck.consumables[i].card = card;
@@ -1814,8 +1841,16 @@
 			
 				var zoomer = document.getElementById("zoom");					
 				var zoom = hoveredElement.getAttribute("zoom");
+				var craftZoom = hoveredElement.getAttribute("craftZoom");
 				if( zoom ){
-					zoomer.querySelector("img").src = "cards/" + zoom + ".png";
+					
+					if( craftZoom ){
+						zoomer.querySelector("img").src = craftZoom;
+					}
+					else{
+						zoomer.querySelector("img").src = "cards/" + zoom + ".png";
+					}
+
 					if( cardLookup[ zoom ].category == "vessel" ){
 						zoomer.className += " big";
 					}
@@ -2207,7 +2242,7 @@
 			
 			}
 		
-			function createCard(data,rune,targetIndex,group){
+			function createCard(data,rune,targetIndex,group,slot){
 			
 				// Handle missing data and bad keys
 				if( !data )
@@ -2228,8 +2263,19 @@
 				// Set the image for the card
 				var img = document.createElement( "img" );
 					img.className = "cardImage";
+					
 				if( data.id ){
 					img.src = "cards/" + data.id + ".png";
+					
+					if( group && slot !== null ){
+						if( activeDeck[ group ] && activeDeck[ group ][ slot ] ){
+							var saveData = activeDeck[ group ][ slot ];
+							if( saveData.customName || saveData.craftOptions ){
+								generateCraftedCard( group, slot, data.id );
+							}
+						}
+					}
+					
 					if( data.category != "vessel" || !group )
 						card.setAttribute( "zoom", data.id );
 				}
@@ -2784,83 +2830,14 @@
 						activeDeck[ group ][ index ].customName = sanitizeName(customName);
 
 					activeDeck[ group ][ index ].craftOptions = [];
-					var selectionData = {dice:null,trait:null,spends:[]};
 					for( var i = 0; i < selections.length; i++ ){
 
 						var option = selections[i].getAttribute( "optionId" );
 						activeDeck[ group ][ index ].craftOptions.push( option );
-						
-						for( var c = 0; c < data.craftOptions.length; c++ ){
-							if( data.craftOptions[c].id == option ){
-								if( data.craftOptions[c].type == "Dice" )
-									selectionData.dice = data.craftOptions[c];
-								else if( data.craftOptions[c].type == "Trait" )
-									selectionData.trait = data.craftOptions[c];
-								else if( data.craftOptions[c].type == "Spend" )
-									selectionData.spends.push( data.craftOptions[c] );
-							}
-						}
 
 					}
 					
-					// Update the dynamic card target
-					var back = document.getElementById( "TargetBackground" );
-					var name = document.getElementById( "TargetName" );
-					var base = document.getElementById( "TargetBaseEffect" );
-					var trait = document.getElementById( "TargetTrait" );
-					var dice = document.getElementById( "TargetDice" );
-					var spendType = document.getElementById( "TargetSpendType" );
-					var spends = document.getElementById( "TargetSpends" );
-					
-					var baseData = cardLookup[ baseCardId ];
-					back.src = "cards/" + baseData.craftBaseId + ".png";
-					
-					name.innerHTML = sanitizeName(customName);
-					base.innerHTML = data.craftBases[ baseData.name ].baseEffect;
-					
-					if( selectionData.dice ){
-						dice.className.replace( " hidden", "" );
-						dice.innerHTML = selectionData.dice.description;
-					}
-					else{
-						dice.className += " hidden";
-					}
-					
-					if( selectionData.trait ){
-						trait.className.replace( " hidden", "" );
-						trait.innerHTML = selectionData.trait.description;
-					}
-					else{
-						trait.className += " hidden";
-					}
-					
-					spends.innerHTML = "";
-					if( selectionData.spends.length ){
-						spendType.className.replace( " hidden", "" );
-						spends.className.replace( " hidden", "" );
-
-						var spendFlags = data.craftBases[ baseData.name ].options;
-						var spendText = "Spending options on ";
-						if( spendFlags.attacks && spendFlags.spells )
-							spendText += "attacks and spellcasting:";
-						else if( spendFlags.attacks )
-							spendText += "attacks:";
-						else if( spendFlags.defense )
-							spendText += "defense:";
-						spendType.innerHTML = spendText;
-						
-						for( var x = 0; x < selectionData.spends.length; x++ )
-							spends.appendChild( createSpendOption( selectionData.spends[x] ) );
-						
-					}
-					else{
-						spendType.className += " hidden";
-						spends.className += " hidden";
-					}
-					
-					// Capture the dynamic card to a bitmap
-					captureCardImage(currentCraftSlot);
-									
+					generateCraftedCard(group,index,baseCardId);									
 					saveActiveDeck();
 				}
 				
@@ -2871,6 +2848,84 @@
 				
 				modal_hide("modal_crafting");
 				
+			}
+			
+			function generateCraftedCard(group,index,baseCardId){
+			
+				// Organize all the crafting data for reference
+				var craftData = {dice:null,trait:null,spends:[],baseCard:null,name:""};
+					craftData.baseCard = cardLookup[ baseCardId ];
+					craftData.name = activeDeck[ group ][ index ].customName;				
+				
+				for( var option in activeDeck[ group ][ index ].craftOptions ){
+					for( var c = 0; c < data.craftOptions.length; c++ ){
+						if( data.craftOptions[c].id == activeDeck[ group ][ index ].craftOptions[ option ] ){
+							if( data.craftOptions[c].type == "Dice" )
+								craftData.dice = data.craftOptions[c];
+							else if( data.craftOptions[c].type == "Trait" )
+								craftData.trait = data.craftOptions[c];
+							else if( data.craftOptions[c].type == "Spend" )
+								craftData.spends.push( data.craftOptions[c] );
+						}
+					}
+				}
+			
+				// Update all the fields in the template layout
+				var back = document.getElementById( "TargetBackground" );
+				back.src = "cards/" + craftData.baseCard.craftBaseId + ".png";
+				
+				var name = document.getElementById( "TargetName" );
+				name.innerHTML = sanitizeName(craftData.name);
+				
+				var base = document.getElementById( "TargetBaseEffect" );
+				base.innerHTML = data.craftBases[ craftData.baseCard.name ].baseEffect;
+
+				var trait = document.getElementById( "TargetTrait" );
+				if( craftData.trait ){
+					trait.className.replace( " hidden", "" );
+					trait.innerHTML = craftData.trait.description;
+				}
+				else{
+					trait.className += " hidden";
+				}
+				
+				var dice = document.getElementById( "TargetDice" );
+				if( craftData.dice ){
+					dice.className.replace( " hidden", "" );
+					dice.innerHTML = craftData.dice.description;
+				}
+				else{
+					dice.className += " hidden";
+				}
+				
+				var spendType = document.getElementById( "TargetSpendType" );
+				var spends = document.getElementById( "TargetSpends" );
+				spends.innerHTML = "";
+				if( craftData.spends.length ){
+					spendType.className.replace( " hidden", "" );
+					spends.className.replace( " hidden", "" );
+
+					var spendFlags = data.craftBases[ craftData.baseCard.name ].options;
+					var spendText = "Spending options on ";
+					if( spendFlags.attacks && spendFlags.spells )
+						spendText += "attacks and spellcasting:";
+					else if( spendFlags.attacks )
+						spendText += "attacks:";
+					else if( spendFlags.defense )
+						spendText += "defense:";
+					spendType.innerHTML = spendText;
+					
+					for( var x = 0; x < craftData.spends.length; x++ )
+						spends.appendChild( createSpendOption( craftData.spends[x] ) );
+					
+				}
+				else{
+					spendType.className += " hidden";
+					spends.className += " hidden";
+				}
+				
+				// Capture the dynamic card to a bitmap
+				captureCardImage(getItemSlotCard(group,index));
 			}
 			
 			function sanitizeName(name){
@@ -3018,9 +3073,10 @@
 			
 			function setCardImage(targetCard){
 				var canvas = document.getElementById('CardRenderingOutput').querySelector( "canvas" );
-				var cardImg = targetCard.parentNode.parentNode.querySelector( ".cardImage" );
+				var cardImg = targetCard.querySelector( ".cardImage" );
 					cardImg.crossOrigin = "anonymous";
 					cardImg.src = canvas.toDataURL();
+					targetCard.setAttribute("craftZoom",cardImg.src);
 			}
 			
 			function createSpendOption(option){
@@ -3259,18 +3315,15 @@
 		
 			<div id="CraftingContainer" style="background-color:red;">
 				<div id="CaptureTarget" class="Card">
-					<img src="cards/cb001.png" class="Base" id="TargetBackground">
-					<div class="CardName" id="TargetName">Improvised Shield</div>
+					<img src="backside.png" class="Base" id="TargetBackground">
+					<div class="CardName" id="TargetName"></div>
 					<div class="CardText">
-						<p id="TargetBaseEffect">Gain 'Reach'.</p>
-						<p id="TargetDice">Add <img src="images/blessing-die.png" class="CardSymbol"> to defense.</p>
-						<p id="TargetTrait">Gain 'Reach'.</p>
+						<p id="TargetBaseEffect"></p>
+						<p id="TargetDice"></p>
+						<p id="TargetTrait"></p>
 						<div class="SpendHolder">
-							<p><i id="TargetSpendType">You may use the below spending options on defense.</i></p>
+							<p><i id="TargetSpendType"></i></p>
 							<table id="TargetSpends" class="CardOptions">
-								<tr><td><img src="images/plus-icon.png" class="OptionCost"></td><td class="OptionText">Reduce the cooldown of one of your cards with an interrupt effect by 1.</td></tr>
-								<tr><td><img src="images/doubleplus-icon.png" class="OptionCost"></td><td class="OptionText">+1 Power.</td></tr>
-								<tr><td><img src="images/star-icon.png" class="OptionCost"></td><td class="OptionText">+1 Power.</td></tr>
 							</table>
 						</div>
 					</div>
