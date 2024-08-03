@@ -3139,9 +3139,13 @@
 			function setCardImage(targetCard){
 				var canvas = document.getElementById('CardRenderingOutput').querySelector( "canvas" );
 				var cardImg = targetCard.querySelector( ".cardImage" );
-					cardImg.crossOrigin = "anonymous";
-					cardImg.src = canvas.toDataURL();
-					targetCard.setAttribute("craftZoom",cardImg.src);
+					try{
+						//cardImg.crossOrigin = "anonymous";
+						cardImg.src = canvas.toDataURL();
+						targetCard.setAttribute("craftZoom",cardImg.src);					
+					} catch( error ){
+						console.log( "Cannot export canvas image due to browser security constraints!" );
+					}
 			}
 			
 			function createSpendOption(option){
