@@ -10501,7 +10501,7 @@
 		"Axe": {
 			"name": "Axe",
 			"id": "cb004",
-			"baseEffect": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to attacks.  Add <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to melee defense.",
+			"baseEffect": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to attacks.  <penalty>Add <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to melee defense.</penalty>",
 			"costs": {
 				"iron": 1,
 				"wood": 0,
@@ -10533,7 +10533,7 @@
 		"Bow": {
 			"name": "Bow",
 			"id": "cb006",
-			"baseEffect": "Range 7.  Add <img src=\"images/enhancement-die.png\" class=\"CardSymbol\"> to attacks.",
+			"baseEffect": "<range>Range 7</range>.  Add <img src=\"images/enhancement-die.png\" class=\"CardSymbol\"> to attacks.",
 			"costs": {
 				"iron": 0,
 				"wood": 2,
@@ -10549,7 +10549,7 @@
 		"Throwing Knives": {
 			"name": "Throwing Knives",
 			"id": "cb007",
-			"baseEffect": "Range 5.  Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to attacks.",
+			"baseEffect": "<range>Range 5</range>.  Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to attacks.",
 			"costs": {
 				"iron": 1,
 				"wood": 0,
@@ -10738,7 +10738,7 @@
 			"id": "co004",
 			"type": "Dice",
 			"spend": "",
-			"description": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to attacks,<br>but <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to melee defense.",
+			"description": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to attacks,<br><penalty>but <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to melee defense.</penalty>",
 			"difficulty": 2,
 			"costs": {
 				"gold": 40,
@@ -10853,7 +10853,7 @@
 			"id": "co009",
 			"type": "Dice",
 			"spend": "",
-			"description": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to spellcasting,\nbut <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to defense.",
+			"description": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to spellcasting,\n<penalty>but <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to defense.</penalty>",
 			"difficulty": 3,
 			"costs": {
 				"gold": 50,
@@ -10941,7 +10941,7 @@
 			"id": "co013",
 			"type": "Dice",
 			"spend": "",
-			"description": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to defense,<br>but <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to attacks.",
+			"description": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to defense,<br><penalty>but <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to attacks.</penalty>",
 			"difficulty": 2,
 			"costs": {
 				"gold": 40,
@@ -12037,7 +12037,7 @@
 			"id": "co061",
 			"type": "Spend",
 			"spend": "Plus",
-			"description": "Reduce the duration of a negative effect on you by 1.",
+			"description": "Reduce the <duration>duration</duration> of a negative effect on you by 1.",
 			"difficulty": 1,
 			"costs": {
 				"gold": 20,
@@ -12059,7 +12059,7 @@
 			"id": "co062",
 			"type": "Spend",
 			"spend": "Plus",
-			"description": "Increase the duration of an ongoing effect on you by 1.",
+			"description": "Increase the <duration>duration</duration> of an ongoing effect on you by 1.",
 			"difficulty": 2,
 			"costs": {
 				"gold": 30,

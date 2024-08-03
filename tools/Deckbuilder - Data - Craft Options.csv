@@ -2,17 +2,17 @@ publish,ID,type,spend,description,difficulty,cost_gold,cost_iron,cost_wood,cost_
 x,co001,Dice,,"Add <img src=""images/blessing-die.png"" class=""CardSymbol""> to attacks.",1,20,1,,,,,,,"cb002,cb003,cb004,cb006,cb007,cb009",,"cb002,","cb003,","cb004,",,"cb006,","cb007,",,cb009,,,,,Iron,,X,X,X,,X,X,,X,,,,
 x,co002,Dice,,"Add <img src=""images/enhancement-die.png"" class=""CardSymbol""> to attacks.",2,30,,,,,1,,,"cb001,cb003,cb005,cb006,cb009","cb001,",,"cb003,",,"cb005,","cb006,",,,cb009,,,,,Steel,X,,X,,X,X,,,X,,,,
 x,co003,Dice,,"Add <img src=""images/standard-die.png"" class=""CardSymbol""> to attacks.",2,30,,,,,1,,,"cb002,cb005,cb006,cb007",,"cb002,",,,"cb005,","cb006,",cb007,,,,,,,Steel,,X,,,X,X,X,,,,,,
-x,co004,Dice,,"Add <img src=""images/power-die.png"" class=""CardSymbol""> to attacks,<br>but <img src=""images/cursed-die.png"" class=""CardSymbol""> to melee defense.",2,40,,1,,,,1,,"cb005,cb006,cb008",,,,,"cb005,","cb006,",,cb008,,,,,,"Celestium, Wood",,,,,X,X,,X,,,,,
+x,co004,Dice,,"Add <img src=""images/power-die.png"" class=""CardSymbol""> to attacks,<br><penalty>but <img src=""images/cursed-die.png"" class=""CardSymbol""> to melee defense.</penalty>",2,40,,1,,,,1,,"cb005,cb006,cb008",,,,,"cb005,","cb006,",,cb008,,,,,,"Celestium, Wood",,,,,X,X,,X,,,,,
 x,co005,Dice,,"Add <img src=""images/blessing-die.png"" class=""CardSymbol""> to melee defense.",1,20,1,,,,,,,"cb002,cb003,cb009",,"cb002,","cb003,",,,,,,cb009,,,,,Iron,,X,X,,,,,,X,,,,
 x,co006,Dice,,"Add <img src=""images/enhancement-die.png"" class=""CardSymbol""> to melee defense.",2,30,1,,,,,,,"cb001,cb003","cb001,",,cb003,,,,,,,,,,,Iron,X,,X,,,,,,,,,,
 x,co007,Dice,,"Add <img src=""images/blessing-die.png"" class=""CardSymbol""> to spellcasting.",1,20,1,,1,,,,,"cb001,cb002,cb003,cb006,cb008,cb009","cb001,","cb002,","cb003,",,,"cb006,",,"cb008,",cb009,,,,,"Silver, Iron",X,X,X,,,X,,X,X,,,,
 x,co008,Dice,,"Add <img src=""images/enhancement-die.png"" class=""CardSymbol""> to spellcasting.",2,30,,1,1,,,,,"cb001,cb002,cb003,cb006,cb008,cb009","cb001,","cb002,","cb003,",,,"cb006,",,"cb008,",cb009,,,,,"Silver, Wood",X,X,X,,,X,,X,X,,,,
 x,co009,Dice,,"Add <img src=""images/power-die.png"" class=""CardSymbol""> to spellcasting,
-but <img src=""images/cursed-die.png"" class=""CardSymbol""> to defense.",3,50,,1,,,,1,1,"cb008,cb011",,,,,,,,"cb008,",,,cb011,,,"Celestium, Hardwood",,,,,,,,X,,,X,,
+<penalty>but <img src=""images/cursed-die.png"" class=""CardSymbol""> to defense.</penalty>",3,50,,1,,,,1,1,"cb008,cb011",,,,,,,,"cb008,",,,cb011,,,"Celestium, Hardwood",,,,,,,,X,,,X,,
 x,co010,Dice,,"Add <img src=""images/blessing-die.png"" class=""CardSymbol""> to defense.",1,20,1,,,1,,,,"cb010,cb011,cb012,cb013",,,,,,,,,,"cb010,","cb011,","cb012,",cb013,"Iron, Cloth",,,,,,,,,,X,X,X,X
 x,co011,Dice,,"Add <img src=""images/enhancement-die.png"" class=""CardSymbol""> to defense.",2,30,,,,1,1,,,"cb010,cb012,cb013",,,,,,,,,,"cb010,",,"cb012,",cb013,"Steel, Cloth",,,,,,,,,,X,,X,X
 x,co012,Dice,,"Add <img src=""images/standard-die.png"" class=""CardSymbol""> to defense.",2,30,,,,1,1,,,cb012,,,,,,,,,,,,cb012,,"Steel, Cloth",,,,,,,,,,,,X,
-x,co013,Dice,,"Add <img src=""images/power-die.png"" class=""CardSymbol""> to defense,<br>but <img src=""images/cursed-die.png"" class=""CardSymbol""> to attacks.",2,40,1,,,,1,,,cb013,,,,,,,,,,,,,cb013,"Iron, Steel",,,,,,,,,,,,,X
+x,co013,Dice,,"Add <img src=""images/power-die.png"" class=""CardSymbol""> to defense,<br><penalty>but <img src=""images/cursed-die.png"" class=""CardSymbol""> to attacks.</penalty>",2,40,1,,,,1,,,cb013,,,,,,,,,,,,,cb013,"Iron, Steel",,,,,,,,,,,,,X
 x,co014,Trait,,Gain <reach>Reach</reach>,1,20,1,,,,,,,"cb001,cb005,cb008","cb001,",,,,"cb005,",,,cb008,,,,,,Iron,X,,,,X,,,X,,,,,
 x,co015,Trait,,Gain <slippery>Slippery</slippery>,3,50,,,1,,1,,,"cb001,cb003","cb001,",,cb003,,,,,,,,,,,"Silver, Steel",X,,X,,,,,,,,,,
 x,co016,Trait,,Gain <nimble>Nimble</nimble>,2,40,1,,,1,,,,"cb002,cb004",,"cb002,",,cb004,,,,,,,,,,"Cloth, Iron",,X,,X,,,,,,,,,
@@ -60,7 +60,7 @@ x,co057,Spend,Star,Immediately play a spell from your hand (max. 1 per round).,2
 x,co058,Spend,Star,Cause <bleed>Bleed (3)</bleed>.,1,20,1,,,,,,,"cb001,cb002,cb004,cb006,cb007","cb001,","cb002,",,"cb004,",,"cb006,",cb007,,,,,,,Iron,X,X,,X,,X,X,,,,,,
 x,co059,Spend,PlusPlus,Heal a scratch from yourself.,1,20,1,,,,,,,"cb001,cb003,cb005,cb006,cb008,cb013","cb001,",,"cb003,",,"cb005,","cb006,",,"cb008,",,,,,cb013,Iron,X,,X,,X,X,,X,,,,,X
 x,co060,Spend,Plus,"Ignore the negative power rolled from all <img src=""images/cursed-die.png"" class=""CardSymbol"">.",1,20,,,,1,,,,"cb001,cb002,cb007,cb008,cb009,cb012,cb013","cb001,","cb002,",,,,,"cb007,","cb008,","cb009,",,,"cb012,",cb013,Cloth,X,X,,,,,X,X,X,,,X,X
-x,co061,Spend,Plus,Reduce the duration of a negative effect on you by 1.,1,20,,,,1,,,,"cb003,cb010,cb013",,,"cb003,",,,,,,,"cb010,",,,cb013,Cloth,,,X,,,,,,,X,,,X
-x,co062,Spend,Plus,Increase the duration of an ongoing effect on you by 1.,2,30,,1,1,,,,,"cb008,cb011,cb012",,,,,,,,"cb008,",,,"cb011,",cb012,,"Wood, Silver",,,,,,,,X,,,X,X,
+x,co061,Spend,Plus,Reduce the <duration>duration</duration> of a negative effect on you by 1.,1,20,,,,1,,,,"cb003,cb010,cb013",,,"cb003,",,,,,,,"cb010,",,,cb013,Cloth,,,X,,,,,,,X,,,X
+x,co062,Spend,Plus,Increase the <duration>duration</duration> of an ongoing effect on you by 1.,2,30,,1,1,,,,,"cb008,cb011,cb012",,,,,,,,"cb008,",,,"cb011,",cb012,,"Wood, Silver",,,,,,,,X,,,X,X,
 x,co063,Spend,PlusPlus,Ignore one wear or botch.,1,20,,,,,1,,,cb013,,,,,,,,,,,,,cb013,Steel,,,,,,,,,,,,,X
 x,co064,Spend,Plus,"<power>+2 Power</power>, but the item suffers wear.",1,20,1,,,,,,,"cb001,cb002,cb003,cb004,cb005,cb006,cb007,cb011,cb012,cb013","cb001,","cb002,","cb003,","cb004,","cb005,","cb006,","cb007,",,,,"cb011,","cb012,",cb013,Iron,X,X,X,X,X,X,X,,,,X,X,X
