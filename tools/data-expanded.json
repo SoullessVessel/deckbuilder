@@ -10501,7 +10501,7 @@
 		"Axe": {
 			"name": "Axe",
 			"id": "cb004",
-			"baseEffect": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to attacks.  <penalty>Add <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to melee defense.</penalty>",
+			"baseEffect": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to attacks,<br><penalty>but <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to melee defense.</penalty>",
 			"costs": {
 				"iron": 1,
 				"wood": 0,
