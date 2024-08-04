@@ -148,7 +148,7 @@ function build(){
 		if( raw.cost_wood ) entry.costs.wood = parseInt(raw.cost_wood);
 		if( raw.cost_silver ) entry.costs.silver = parseInt(raw.cost_silver);
 		if( raw.cost_cloth ) entry.costs.cloth = parseInt(raw.cost_cloth);
-		if( raw.cost_steel ) entry.costs.stell = parseInt(raw.cost_steel);
+		if( raw.cost_steel ) entry.costs.steel = parseInt(raw.cost_steel);
 		if( raw.cost_celestium ) entry.costs.celestium = parseInt(raw.cost_celestium);
 		if( raw.cost_hardwood ) entry.costs.hardwood = parseInt(raw.cost_hardwood);
 		

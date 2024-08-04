@@ -10697,10 +10697,9 @@
 				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb001",
@@ -10722,10 +10721,9 @@
 				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb002",
@@ -10905,10 +10903,9 @@
 				"wood": 0,
 				"silver": 0,
 				"cloth": 1,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb010",
@@ -10928,10 +10925,9 @@
 				"wood": 0,
 				"silver": 0,
 				"cloth": 1,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb012"
@@ -10949,10 +10945,9 @@
 				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb013"
@@ -10992,10 +10987,9 @@
 				"wood": 0,
 				"silver": 1,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb001",
@@ -11079,10 +11073,9 @@
 				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb012",
@@ -11162,10 +11155,9 @@
 				"wood": 1,
 				"silver": 0,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 1,
-				"stell": 1
+				"hardwood": 1
 			},
 			"compatibleItems": [
 				"cb010",
@@ -11268,10 +11260,9 @@
 				"wood": 0,
 				"silver": 1,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb001",
@@ -11301,10 +11292,9 @@
 				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 1,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb001",
@@ -11381,10 +11371,9 @@
 				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb001",
@@ -11407,10 +11396,9 @@
 				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb001"
@@ -11450,10 +11438,9 @@
 				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb002",
@@ -11537,10 +11524,9 @@
 				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb001",
@@ -11737,10 +11723,9 @@
 				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb004"
@@ -11822,10 +11807,9 @@
 				"wood": 1,
 				"silver": 0,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb005"
@@ -11843,10 +11827,9 @@
 				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb005",
@@ -12089,10 +12072,9 @@
 				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
-				"steel": 0,
+				"steel": 1,
 				"celestium": 0,
-				"hardwood": 0,
-				"stell": 1
+				"hardwood": 0
 			},
 			"compatibleItems": [
 				"cb013"
