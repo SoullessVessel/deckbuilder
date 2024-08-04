@@ -10664,36 +10664,11 @@
 			"id": "co001",
 			"type": "Dice",
 			"spend": "",
-			"description": "Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to attacks.",
-			"difficulty": 1,
-			"costs": {
-				"gold": 20,
-				"iron": 1,
-				"wood": 0,
-				"silver": 0,
-				"cloth": 0,
-				"steel": 0,
-				"celestium": 0,
-				"hardwood": 0
-			},
-			"compatibleItems": [
-				"cb002",
-				"cb003",
-				"cb004",
-				"cb006",
-				"cb007",
-				"cb009"
-			]
-		},
-		{
-			"id": "co002",
-			"type": "Dice",
-			"spend": "",
-			"description": "Add <img src=\"images/enhancement-die.png\" class=\"CardSymbol\"> to attacks.",
+			"description": "Add <img src=\"images/enhancement-die.png\" class=\"CardSymbol\"> to attacks and melee defense.",
 			"difficulty": 2,
 			"costs": {
-				"gold": 30,
-				"iron": 0,
+				"gold": 0,
+				"iron": 1,
 				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
@@ -10703,9 +10678,30 @@
 			},
 			"compatibleItems": [
 				"cb001",
+				"cb003"
+			]
+		},
+		{
+			"id": "co002",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/enhancement-die.png\" class=\"CardSymbol\"> to attacks and spellcasting.",
+			"difficulty": 3,
+			"costs": {
+				"gold": 0,
+				"iron": 0,
+				"wood": 1,
+				"silver": 1,
+				"cloth": 0,
+				"steel": 1,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
 				"cb003",
-				"cb005",
 				"cb006",
+				"cb008",
 				"cb009"
 			]
 		},
@@ -10713,10 +10709,55 @@
 			"id": "co003",
 			"type": "Dice",
 			"spend": "",
-			"description": "Add <img src=\"images/standard-die.png\" class=\"CardSymbol\"> to attacks.",
+			"description": "Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to attacks and melee defense.",
 			"difficulty": 2,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
+				"iron": 1,
+				"wood": 1,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb002",
+				"cb003"
+			]
+		},
+		{
+			"id": "co004",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to attacks and spellcasting.",
+			"difficulty": 3,
+			"costs": {
+				"gold": 0,
+				"iron": 1,
+				"wood": 0,
+				"silver": 1,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb002",
+				"cb003",
+				"cb006",
+				"cb008",
+				"cb009"
+			]
+		},
+		{
+			"id": "co005",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/standard-die.png\" class=\"CardSymbol\"> to attacks.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 0,
@@ -10733,13 +10774,33 @@
 			]
 		},
 		{
-			"id": "co004",
+			"id": "co006",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/enhancement-die.png\" class=\"CardSymbol\"> to attacks.",
+			"difficulty": 1,
+			"costs": {
+				"gold": 0,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 1,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb005"
+			]
+		},
+		{
+			"id": "co007",
 			"type": "Dice",
 			"spend": "",
 			"description": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to attacks,<br><penalty>but <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to melee defense.</penalty>",
-			"difficulty": 2,
+			"difficulty": 3,
 			"costs": {
-				"gold": 40,
+				"gold": 0,
 				"iron": 0,
 				"wood": 1,
 				"silver": 0,
@@ -10750,88 +10811,61 @@
 			},
 			"compatibleItems": [
 				"cb005",
-				"cb006",
-				"cb008"
-			]
-		},
-		{
-			"id": "co005",
-			"type": "Dice",
-			"spend": "",
-			"description": "Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to melee defense.",
-			"difficulty": 1,
-			"costs": {
-				"gold": 20,
-				"iron": 1,
-				"wood": 0,
-				"silver": 0,
-				"cloth": 0,
-				"steel": 0,
-				"celestium": 0,
-				"hardwood": 0
-			},
-			"compatibleItems": [
-				"cb002",
-				"cb003",
-				"cb009"
-			]
-		},
-		{
-			"id": "co006",
-			"type": "Dice",
-			"spend": "",
-			"description": "Add <img src=\"images/enhancement-die.png\" class=\"CardSymbol\"> to melee defense.",
-			"difficulty": 2,
-			"costs": {
-				"gold": 30,
-				"iron": 1,
-				"wood": 0,
-				"silver": 0,
-				"cloth": 0,
-				"steel": 0,
-				"celestium": 0,
-				"hardwood": 0
-			},
-			"compatibleItems": [
-				"cb001",
-				"cb003"
-			]
-		},
-		{
-			"id": "co007",
-			"type": "Dice",
-			"spend": "",
-			"description": "Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to spellcasting.",
-			"difficulty": 1,
-			"costs": {
-				"gold": 20,
-				"iron": 1,
-				"wood": 0,
-				"silver": 1,
-				"cloth": 0,
-				"steel": 0,
-				"celestium": 0,
-				"hardwood": 0
-			},
-			"compatibleItems": [
-				"cb001",
-				"cb002",
-				"cb003",
-				"cb006",
-				"cb008",
-				"cb009"
+				"cb006"
 			]
 		},
 		{
 			"id": "co008",
 			"type": "Dice",
 			"spend": "",
-			"description": "Add <img src=\"images/enhancement-die.png\" class=\"CardSymbol\"> to spellcasting.",
-			"difficulty": 2,
+			"description": "Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to attacks.",
+			"difficulty": 1,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
+				"iron": 1,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb004",
+				"cb006",
+				"cb007"
+			]
+		},
+		{
+			"id": "co009",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to attacks and spellcasting,<br><penalty>but <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to defense.</penalty>",
+			"difficulty": 4,
+			"costs": {
+				"gold": 0,
 				"iron": 0,
-				"wood": 1,
+				"wood": 0,
+				"silver": 1,
+				"cloth": 0,
+				"steel": 1,
+				"celestium": 1,
+				"hardwood": 1
+			},
+			"compatibleItems": [
+				"cb008"
+			]
+		},
+		{
+			"id": "co010",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to spellcasting and melee defense.",
+			"difficulty": 3,
+			"costs": {
+				"gold": 0,
+				"iron": 1,
+				"wood": 0,
 				"silver": 1,
 				"cloth": 0,
 				"steel": 0,
@@ -10839,43 +10873,17 @@
 				"hardwood": 0
 			},
 			"compatibleItems": [
-				"cb001",
-				"cb002",
-				"cb003",
-				"cb006",
-				"cb008",
 				"cb009"
 			]
 		},
 		{
-			"id": "co009",
-			"type": "Dice",
-			"spend": "",
-			"description": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to spellcasting,\n<penalty>but <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to defense.</penalty>",
-			"difficulty": 3,
-			"costs": {
-				"gold": 50,
-				"iron": 0,
-				"wood": 1,
-				"silver": 0,
-				"cloth": 0,
-				"steel": 0,
-				"celestium": 1,
-				"hardwood": 1
-			},
-			"compatibleItems": [
-				"cb008",
-				"cb011"
-			]
-		},
-		{
-			"id": "co010",
+			"id": "co011",
 			"type": "Dice",
 			"spend": "",
 			"description": "Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to defense.",
-			"difficulty": 1,
+			"difficulty": 2,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -10892,13 +10900,13 @@
 			]
 		},
 		{
-			"id": "co011",
+			"id": "co012",
 			"type": "Dice",
 			"spend": "",
 			"description": "Add <img src=\"images/enhancement-die.png\" class=\"CardSymbol\"> to defense.",
 			"difficulty": 2,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 0,
@@ -10914,13 +10922,13 @@
 			]
 		},
 		{
-			"id": "co012",
+			"id": "co013",
 			"type": "Dice",
 			"spend": "",
 			"description": "Add <img src=\"images/standard-die.png\" class=\"CardSymbol\"> to defense.",
 			"difficulty": 2,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 0,
@@ -10934,13 +10942,13 @@
 			]
 		},
 		{
-			"id": "co013",
+			"id": "co014",
 			"type": "Dice",
 			"spend": "",
 			"description": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to defense,<br><penalty>but <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to attacks.</penalty>",
 			"difficulty": 2,
 			"costs": {
-				"gold": 40,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -10954,13 +10962,33 @@
 			]
 		},
 		{
-			"id": "co014",
+			"id": "co015",
+			"type": "Dice",
+			"spend": "",
+			"description": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to spellcasting,<br><penalty>but <img src=\"images/cursed-die.png\" class=\"CardSymbol\"> to defense.</penalty>",
+			"difficulty": 4,
+			"costs": {
+				"gold": 0,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 1,
+				"hardwood": 1
+			},
+			"compatibleItems": [
+				"cb011"
+			]
+		},
+		{
+			"id": "co016",
 			"type": "Trait",
 			"spend": "",
 			"description": "Gain <reach>Reach</reach>",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -10976,13 +11004,13 @@
 			]
 		},
 		{
-			"id": "co015",
+			"id": "co017",
 			"type": "Trait",
 			"spend": "",
 			"description": "Gain <slippery>Slippery</slippery>",
 			"difficulty": 3,
 			"costs": {
-				"gold": 50,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 1,
@@ -10997,13 +11025,13 @@
 			]
 		},
 		{
-			"id": "co016",
+			"id": "co018",
 			"type": "Trait",
 			"spend": "",
 			"description": "Gain <nimble>Nimble</nimble>",
 			"difficulty": 2,
 			"costs": {
-				"gold": 40,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -11018,13 +11046,13 @@
 			]
 		},
 		{
-			"id": "co017",
+			"id": "co019",
 			"type": "Trait",
 			"spend": "",
 			"description": "Gain up to <initiative>+1 Initiative</initiative>",
 			"difficulty": 2,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 1,
@@ -11040,13 +11068,13 @@
 			]
 		},
 		{
-			"id": "co018",
+			"id": "co020",
 			"type": "Trait",
 			"spend": "",
 			"description": "Gain <speed>+1 Speed</speed>",
-			"difficulty": 2,
+			"difficulty": 1,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 0,
@@ -11062,13 +11090,13 @@
 			]
 		},
 		{
-			"id": "co019",
+			"id": "co021",
 			"type": "Trait",
 			"spend": "",
 			"description": "Gain <toughness>+1 Toughness</toughness> (1st row only)",
-			"difficulty": 2,
+			"difficulty": 1,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 0,
@@ -11083,15 +11111,15 @@
 			]
 		},
 		{
-			"id": "co020",
+			"id": "co022",
 			"type": "Trait",
 			"spend": "",
 			"description": "Become immune to <bleed>Bleed</bleed>.",
 			"difficulty": 2,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
 				"iron": 0,
-				"wood": 1,
+				"wood": 0,
 				"silver": 0,
 				"cloth": 1,
 				"steel": 0,
@@ -11104,13 +11132,13 @@
 			]
 		},
 		{
-			"id": "co021",
+			"id": "co023",
 			"type": "Trait",
 			"spend": "",
 			"description": "Become immune to <cursed>Cursed</cursed>.",
 			"difficulty": 2,
 			"costs": {
-				"gold": 40,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 1,
@@ -11124,13 +11152,13 @@
 			]
 		},
 		{
-			"id": "co022",
+			"id": "co024",
 			"type": "Trait",
 			"spend": "",
 			"description": "Become immune to <terror>Terror</terror>.",
-			"difficulty": 3,
+			"difficulty": 2,
 			"costs": {
-				"gold": 50,
+				"gold": 0,
 				"iron": 0,
 				"wood": 1,
 				"silver": 0,
@@ -11144,15 +11172,15 @@
 			]
 		},
 		{
-			"id": "co023",
+			"id": "co025",
 			"type": "Trait",
 			"spend": "",
 			"description": "Become immune to <stun>Stun</stun>.",
 			"difficulty": 2,
 			"costs": {
-				"gold": 40,
+				"gold": 0,
 				"iron": 0,
-				"wood": 1,
+				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
 				"steel": 1,
@@ -11165,13 +11193,13 @@
 			]
 		},
 		{
-			"id": "co024",
+			"id": "co026",
 			"type": "Trait",
 			"spend": "",
 			"description": "Become immune to <knockback>Knockback</knockback>.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -11185,83 +11213,19 @@
 			]
 		},
 		{
-			"id": "co025",
-			"type": "Trait",
-			"spend": "",
-			"description": "Gain an automatic<img src=\"images/plus-icon.png\" class=\"CardSymbol\">on rolls with this item.",
-			"difficulty": 3,
-			"costs": {
-				"gold": 60,
-				"iron": 0,
-				"wood": 0,
-				"silver": 1,
-				"cloth": 0,
-				"steel": 0,
-				"celestium": 1,
-				"hardwood": 0
-			},
-			"compatibleItems": [
-				"cb001",
-				"cb002",
-				"cb003",
-				"cb004",
-				"cb005",
-				"cb006",
-				"cb007",
-				"cb008",
-				"cb009",
-				"cb010",
-				"cb011",
-				"cb012",
-				"cb013"
-			]
-		},
-		{
-			"id": "co026",
-			"type": "Trait",
-			"spend": "",
-			"description": "You can apply up to 2 runes on this item.",
-			"difficulty": 2,
-			"costs": {
-				"gold": 40,
-				"iron": 0,
-				"wood": 0,
-				"silver": 0,
-				"cloth": 0,
-				"steel": 0,
-				"celestium": 1,
-				"hardwood": 0
-			},
-			"compatibleItems": [
-				"cb001",
-				"cb002",
-				"cb003",
-				"cb004",
-				"cb005",
-				"cb006",
-				"cb007",
-				"cb008",
-				"cb009",
-				"cb010",
-				"cb011",
-				"cb012",
-				"cb013"
-			]
-		},
-		{
 			"id": "co027",
 			"type": "Trait",
 			"spend": "",
-			"description": "This item ignores wear.",
-			"difficulty": 3,
+			"description": "Gain an automatic<img src=\"images/plus-icon.png\" class=\"CardSymbol\">on rolls with this item.",
+			"difficulty": 4,
 			"costs": {
-				"gold": 60,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 1,
 				"cloth": 0,
-				"steel": 1,
-				"celestium": 0,
+				"steel": 0,
+				"celestium": 1,
 				"hardwood": 0
 			},
 			"compatibleItems": [
@@ -11284,10 +11248,74 @@
 			"id": "co028",
 			"type": "Trait",
 			"spend": "",
-			"description": "Add <power>+1 Power</power> to all rolls with this item.",
+			"description": "You can apply up to 2 runes on this item.",
 			"difficulty": 3,
 			"costs": {
-				"gold": 60,
+				"gold": 0,
+				"iron": 0,
+				"wood": 0,
+				"silver": 0,
+				"cloth": 0,
+				"steel": 0,
+				"celestium": 1,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb002",
+				"cb003",
+				"cb004",
+				"cb005",
+				"cb006",
+				"cb007",
+				"cb008",
+				"cb009",
+				"cb010",
+				"cb011",
+				"cb012",
+				"cb013"
+			]
+		},
+		{
+			"id": "co029",
+			"type": "Trait",
+			"spend": "",
+			"description": "This item ignores wear.",
+			"difficulty": 3,
+			"costs": {
+				"gold": 0,
+				"iron": 0,
+				"wood": 0,
+				"silver": 1,
+				"cloth": 0,
+				"steel": 1,
+				"celestium": 0,
+				"hardwood": 0
+			},
+			"compatibleItems": [
+				"cb001",
+				"cb002",
+				"cb003",
+				"cb004",
+				"cb005",
+				"cb006",
+				"cb007",
+				"cb008",
+				"cb009",
+				"cb010",
+				"cb011",
+				"cb012",
+				"cb013"
+			]
+		},
+		{
+			"id": "co030",
+			"type": "Trait",
+			"spend": "",
+			"description": "Add <power>+1 Power</power> to all rolls with this item.",
+			"difficulty": 4,
+			"costs": {
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 0,
@@ -11306,13 +11334,13 @@
 			]
 		},
 		{
-			"id": "co029",
+			"id": "co031",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "<power>+1 Power</power>.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 10,
+				"gold": 0,
 				"iron": 0,
 				"wood": 1,
 				"silver": 0,
@@ -11336,13 +11364,13 @@
 			]
 		},
 		{
-			"id": "co030",
+			"id": "co032",
 			"type": "Spend",
 			"spend": "PlusPlus",
 			"description": "<power>+2 Power</power>.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 10,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -11360,13 +11388,13 @@
 			]
 		},
 		{
-			"id": "co031",
+			"id": "co033",
 			"type": "Spend",
 			"spend": "PlusPlus",
 			"description": "<power>+3 Power</power>.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 0,
@@ -11385,13 +11413,13 @@
 			]
 		},
 		{
-			"id": "co032",
+			"id": "co034",
 			"type": "Spend",
 			"spend": "Star",
 			"description": "<power>+4 Power</power>.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 0,
@@ -11405,13 +11433,13 @@
 			]
 		},
 		{
-			"id": "co033",
+			"id": "co035",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "<cooldown>-1 Cooldown</cooldown> for one of your cards at cooldown 4 or 5.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -11427,13 +11455,13 @@
 			]
 		},
 		{
-			"id": "co034",
+			"id": "co036",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "<cooldown>-1 Cooldown</cooldown> for one of your cards at cooldown 3 to 5.",
-			"difficulty": 2,
+			"difficulty": 1,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 0,
@@ -11448,13 +11476,13 @@
 			]
 		},
 		{
-			"id": "co035",
+			"id": "co037",
 			"type": "Spend",
 			"spend": "PlusPlus",
 			"description": "<cooldown>-2 Cooldown</cooldown> for one of your cards at cooldown 5.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -11468,13 +11496,13 @@
 			]
 		},
 		{
-			"id": "co036",
+			"id": "co038",
 			"type": "Spend",
 			"spend": "Star",
 			"description": "<cooldown>-1 Cooldown</cooldown> for an ally's card.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 0,
 				"wood": 1,
 				"silver": 0,
@@ -11490,13 +11518,13 @@
 			]
 		},
 		{
-			"id": "co037",
+			"id": "co039",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "Perform a free attack against an unwounded enemy (max 2. per round).",
-			"difficulty": 2,
+			"difficulty": 1,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -11513,13 +11541,13 @@
 			]
 		},
 		{
-			"id": "co038",
+			"id": "co040",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "Perform a free attack against a different enemy (max 2. per round).",
 			"difficulty": 2,
 			"costs": {
-				"gold": 40,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -11534,13 +11562,13 @@
 			]
 		},
 		{
-			"id": "co039",
+			"id": "co041",
 			"type": "Spend",
 			"spend": "Star",
 			"description": "Perform a free attack (max 2. per round).",
 			"difficulty": 2,
 			"costs": {
-				"gold": 40,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 1,
@@ -11556,13 +11584,13 @@
 			]
 		},
 		{
-			"id": "co040",
+			"id": "co042",
 			"type": "Spend",
 			"spend": "PlusPlus",
 			"description": "<move>Move 2</move> (gain <slippery>Slippery</slippery>)",
 			"difficulty": 1,
 			"costs": {
-				"gold": 10,
+				"gold": 0,
 				"iron": 0,
 				"wood": 1,
 				"silver": 0,
@@ -11580,13 +11608,13 @@
 			]
 		},
 		{
-			"id": "co041",
+			"id": "co043",
 			"type": "Spend",
 			"spend": "PlusPlus",
 			"description": "<move>Move 3</move> (gain <nimble>Nimble</nimble>)",
 			"difficulty": 1,
 			"costs": {
-				"gold": 10,
+				"gold": 0,
 				"iron": 0,
 				"wood": 1,
 				"silver": 0,
@@ -11603,15 +11631,15 @@
 			]
 		},
 		{
-			"id": "co042",
+			"id": "co044",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "<power>+1 Power</power> and move the enemy by 1 square.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 0,
-				"wood": 1,
+				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
 				"steel": 0,
@@ -11624,15 +11652,15 @@
 			]
 		},
 		{
-			"id": "co043",
+			"id": "co045",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "Cause <weaken>Weaken</weaken>.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 0,
-				"wood": 1,
+				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
 				"steel": 0,
@@ -11646,13 +11674,13 @@
 			]
 		},
 		{
-			"id": "co044",
+			"id": "co046",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to your next defense this round.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 10,
+				"gold": 0,
 				"iron": 0,
 				"wood": 1,
 				"silver": 0,
@@ -11668,13 +11696,13 @@
 			]
 		},
 		{
-			"id": "co045",
+			"id": "co047",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "Provide an adjacent ally with <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to their next attack this round.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 10,
+				"gold": 0,
 				"iron": 0,
 				"wood": 1,
 				"silver": 0,
@@ -11690,13 +11718,13 @@
 			]
 		},
 		{
-			"id": "co046",
+			"id": "co048",
 			"type": "Spend",
 			"spend": "Star",
 			"description": "Hit one additional enemy within reach (deal max. 1 wound).",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -11712,13 +11740,13 @@
 			]
 		},
 		{
-			"id": "co047",
+			"id": "co049",
 			"type": "Spend",
 			"spend": "PlusPlus",
 			"description": "Hit one additional enemy adjacent to your target.",
-			"difficulty": 2,
+			"difficulty": 1,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 0,
@@ -11732,13 +11760,13 @@
 			]
 		},
 		{
-			"id": "co048",
+			"id": "co050",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "Cause <cripple>Cripple</cripple>.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -11754,13 +11782,13 @@
 			]
 		},
 		{
-			"id": "co049",
+			"id": "co051",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "Remove a status effect token from the enemy, then deal a wound.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 10,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -11774,13 +11802,13 @@
 			]
 		},
 		{
-			"id": "co050",
+			"id": "co052",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "Cause <dazed>Dazed</dazed>.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 1,
 				"wood": 1,
 				"silver": 0,
@@ -11796,13 +11824,13 @@
 			]
 		},
 		{
-			"id": "co051",
+			"id": "co053",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "Deal one wound.",
 			"difficulty": 2,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
 				"iron": 0,
 				"wood": 1,
 				"silver": 0,
@@ -11816,13 +11844,13 @@
 			]
 		},
 		{
-			"id": "co052",
+			"id": "co054",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "Cause <knockback>Knockback (3)</knockback>.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 0,
@@ -11837,15 +11865,15 @@
 			]
 		},
 		{
-			"id": "co053",
+			"id": "co055",
 			"type": "Spend",
 			"spend": "Star",
 			"description": "Cause <stun>Stun</stun>.",
 			"difficulty": 2,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
 				"iron": 1,
-				"wood": 1,
+				"wood": 0,
 				"silver": 0,
 				"cloth": 0,
 				"steel": 0,
@@ -11857,13 +11885,13 @@
 			]
 		},
 		{
-			"id": "co054",
+			"id": "co056",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "Reduce the <cooldown>cooldown</cooldown> of one of your cards with an interrupt effect by 1.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 0,
@@ -11878,13 +11906,13 @@
 			]
 		},
 		{
-			"id": "co055",
+			"id": "co057",
 			"type": "Spend",
 			"spend": "PlusPlus",
 			"description": "After defending, prevent one scratch.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -11898,13 +11926,13 @@
 			]
 		},
 		{
-			"id": "co056",
+			"id": "co058",
 			"type": "Spend",
 			"spend": "PlusPlus",
 			"description": "Reduce the <cooldown>cooldown</cooldown> of one of your spells by 2.",
 			"difficulty": 2,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 1,
@@ -11919,13 +11947,13 @@
 			]
 		},
 		{
-			"id": "co057",
+			"id": "co059",
 			"type": "Spend",
 			"spend": "Star",
 			"description": "Immediately play a spell from your hand (max. 1 per round).",
 			"difficulty": 2,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
 				"iron": 0,
 				"wood": 1,
 				"silver": 1,
@@ -11942,13 +11970,13 @@
 			]
 		},
 		{
-			"id": "co058",
+			"id": "co060",
 			"type": "Spend",
 			"spend": "Star",
 			"description": "Cause <bleed>Bleed (3)</bleed>.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -11966,13 +11994,13 @@
 			]
 		},
 		{
-			"id": "co059",
+			"id": "co061",
 			"type": "Spend",
 			"spend": "PlusPlus",
 			"description": "Heal a scratch from yourself.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
@@ -11991,13 +12019,13 @@
 			]
 		},
 		{
-			"id": "co060",
+			"id": "co062",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "Ignore the negative power rolled from all <img src=\"images/cursed-die.png\" class=\"CardSymbol\">.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 0,
@@ -12017,13 +12045,13 @@
 			]
 		},
 		{
-			"id": "co061",
+			"id": "co063",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "Reduce the <duration>duration</duration> of a negative effect on you by 1.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 0,
@@ -12039,13 +12067,13 @@
 			]
 		},
 		{
-			"id": "co062",
+			"id": "co064",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "Increase the <duration>duration</duration> of an ongoing effect on you by 1.",
 			"difficulty": 2,
 			"costs": {
-				"gold": 30,
+				"gold": 0,
 				"iron": 0,
 				"wood": 1,
 				"silver": 1,
@@ -12061,13 +12089,13 @@
 			]
 		},
 		{
-			"id": "co063",
+			"id": "co065",
 			"type": "Spend",
 			"spend": "PlusPlus",
 			"description": "Ignore one wear or botch.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 0,
 				"wood": 0,
 				"silver": 0,
@@ -12081,13 +12109,13 @@
 			]
 		},
 		{
-			"id": "co064",
+			"id": "co066",
 			"type": "Spend",
 			"spend": "Plus",
 			"description": "<power>+2 Power</power>, but the item suffers wear.",
 			"difficulty": 1,
 			"costs": {
-				"gold": 20,
+				"gold": 0,
 				"iron": 1,
 				"wood": 0,
 				"silver": 0,
