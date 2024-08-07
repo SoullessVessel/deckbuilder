@@ -8052,6 +8052,27 @@
 			"rules": "Mage Order Robes armor light magical Add (Enhancement Die) to spellcasting.    You may use the below spending options on defense and spellcasting. Surge: +1 Power."
 		},
 		{
+			"name": "Maul",
+			"abundance": "1",
+			"durability": "5",
+			"price": "60",
+			"tier": "3",
+			"id": "i103",
+			"category": "item",
+			"currency": "Gold",
+			"types": [
+				"2h",
+				"weapon",
+				"melee",
+				"crushing",
+				"hand"
+			],
+			"spends": [],
+			"craftable": true,
+			"craftBaseId": "cb005",
+			"rules": "Maul 2h weapon melee crushing hand Add (Power Die) to attacks. craftable"
+		},
+		{
 			"name": "Medium Armor",
 			"abundance": "2",
 			"durability": "5",
@@ -9362,7 +9383,7 @@
 			"rules": "Thief's Blade 1h weapon melee blade hand Add (Enhancement Die) (Blessing Die) (Blessing Die) to attacks.    At the end of your turn, you may Move (3) (gain Nimble) in a straight or diagonal line and perform a free attack against one enemy that was within reach on that path.  You may use the below spending options on attacks. DoubleSurge: -2 Cooldown for one of your cards at cooldown 5."
 		},
 		{
-			"name": "Throwing Knives",
+			"name": "Throwing Knife",
 			"abundance": "1",
 			"durability": "5",
 			"price": "30",
@@ -9378,8 +9399,9 @@
 				"hand"
 			],
 			"spends": [],
-			"craftable": false,
-			"rules": "Throwing Knives 1h weapon ranged throwing hand Range 5.  Add (Blessing Die) to attacks."
+			"craftable": true,
+			"craftBaseId": "cb007",
+			"rules": "Throwing Knife 1h weapon ranged throwing hand Range 5.  Add (Blessing Die) to attacks. craftable"
 		},
 		{
 			"name": "Throwing Knives",
@@ -9535,26 +9557,6 @@
 			],
 			"craftable": false,
 			"rules": "Wardancer's Spear 2h weapon melee polearm hand Gain Reach.  Add (Power Die) (Enhancement Die) to attacks.    You may use the below spending options on attacks. Surge: Add (Blessing Die) to your next defense this round. Surge: Cause Weaken. Surge: +2 Power."
-		},
-		{
-			"name": "Warhammer",
-			"abundance": "1",
-			"durability": "5",
-			"price": "60",
-			"tier": "3",
-			"id": "i103",
-			"category": "item",
-			"currency": "Gold",
-			"types": [
-				"2h",
-				"weapon",
-				"melee",
-				"crushing",
-				"hand"
-			],
-			"spends": [],
-			"craftable": false,
-			"rules": "Warhammer 2h weapon melee crushing hand Add (Power Die) to attacks."
 		},
 		{
 			"name": "Warhammer",
