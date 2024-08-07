@@ -6207,7 +6207,7 @@
 				"ongoing"
 			],
 			"spends": [],
-			"rules": "Witchhunter Style Meta Ongoing  If you wield a 1h melee weapon in one hand and a 1h ranged weapon in the other, you may attack with both weapons whenever you are allowed to perform an attack with either. Reduce the duration of this effect by 1 whenever you make use of this.  If this effect ends, put it on cooldown 5 instead of into your hand. Attack.\r\nAdd (Blessing Die) (Blessing Die) if you wield a 1h melee attack and a 1h ranged attack at the same time."
+			"rules": "Witchhunter Style Meta Ongoing  If you wield a 1h melee weapon in one hand and a 1h ranged weapon in the other, you may attack with both weapons whenever you are allowed to perform an attack with either. Reduce the duration of this effect by 1 whenever you make use of this.  If this effect ends, put it on cooldown 5 instead of into your hand. Attack.\nAdd (Blessing Die) (Blessing Die) if you wield a 1h melee attack and a 1h ranged attack at the same time."
 		},
 		{
 			"type": "Meta",
@@ -6224,7 +6224,7 @@
 				"surge",
 				"surge"
 			],
-			"rules": "Witchhunter Style Meta Ongoing  If you wield a 1h melee weapon in one hand and a 1h ranged weapon in the other, add (Enhancement Die) to your attacks and gain the following spending options: Surge: Move (2) (gain Slippery) Surge: +2 Power. Attack.\r\nAdd (Blessing Die) (Blessing Die) if you wield a 1h melee attack and a 1h ranged attack at the same time."
+			"rules": "Witchhunter Style Meta Ongoing  If you wield a 1h melee weapon in one hand and a 1h ranged weapon in the other, add (Enhancement Die) to your attacks and gain the following spending options: Surge: Move (2) (gain Slippery) Surge: +2 Power. Attack.\nAdd (Blessing Die) (Blessing Die) if you wield a 1h melee attack and a 1h ranged attack at the same time."
 		},
 		{
 			"type": "Meta",
@@ -6238,7 +6238,7 @@
 				"interrupt"
 			],
 			"spends": [],
-			"rules": "Witchhunter Style Meta Interrupt  Move (1) (gain Slippery) OR Pull (4)  Additionally, if you just performed an attack with a 1h melee weapon, you may perform a free attack with your 1h ranged weapon in the other hand - or vice versa. Attack.\r\nAdd (Blessing Die) (Blessing Die) if you wield a 1h melee attack and a 1h ranged attack at the same time."
+			"rules": "Witchhunter Style Meta Interrupt  Move (1) (gain Slippery) OR Pull (4)  Additionally, if you just performed an attack with a 1h melee weapon, you may perform a free attack with your 1h ranged weapon in the other hand - or vice versa. Attack.\nAdd (Blessing Die) (Blessing Die) if you wield a 1h melee attack and a 1h ranged attack at the same time."
 		},
 		{
 			"type": "Spell",
@@ -9378,9 +9378,8 @@
 				"hand"
 			],
 			"spends": [],
-			"craftable": true,
-			"craftBaseId": "cb007",
-			"rules": "Throwing Knives 1h weapon ranged throwing hand Range 5.  Add (Blessing Die) to attacks. craftable"
+			"craftable": false,
+			"rules": "Throwing Knives 1h weapon ranged throwing hand Range 5.  Add (Blessing Die) to attacks."
 		},
 		{
 			"name": "Throwing Knives",
@@ -9399,9 +9398,8 @@
 				"hand"
 			],
 			"spends": [],
-			"craftable": true,
-			"craftBaseId": "cb007",
-			"rules": "Throwing Knives 1h weapon ranged throwing hand Range 3  Doesn't have to be equipped to be used.    Add (Blessing Die) to attacks (if in backpack).  Add (Enhancement Die) to attacks (if in hand). craftable"
+			"craftable": false,
+			"rules": "Throwing Knives 1h weapon ranged throwing hand Range 3  Doesn't have to be equipped to be used.    Add (Blessing Die) to attacks (if in backpack).  Add (Enhancement Die) to attacks (if in hand)."
 		},
 		{
 			"name": "Tinkerer's Toolkit",
@@ -9555,9 +9553,8 @@
 				"hand"
 			],
 			"spends": [],
-			"craftable": true,
-			"craftBaseId": "cb005",
-			"rules": "Warhammer 2h weapon melee crushing hand Add (Power Die) to attacks. craftable"
+			"craftable": false,
+			"rules": "Warhammer 2h weapon melee crushing hand Add (Power Die) to attacks."
 		},
 		{
 			"name": "Warhammer",
@@ -9579,9 +9576,8 @@
 				"star",
 				"surge"
 			],
-			"craftable": true,
-			"craftBaseId": "cb005",
-			"rules": "Warhammer 2h weapon melee crushing hand Add (Enhancement Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Cause Stun. Star: Cause Dazed. craftable"
+			"craftable": false,
+			"rules": "Warhammer 2h weapon melee crushing hand Add (Enhancement Die) (Blessing Die) to attacks.    You may use the below spending options on attacks. Star: Cause Stun. Star: Cause Dazed."
 		},
 		{
 			"name": "Weapon Oil",
@@ -10514,8 +10510,8 @@
 				"defense": false
 			}
 		},
-		"Warhammer": {
-			"name": "Warhammer",
+		"Maul": {
+			"name": "Maul",
 			"id": "cb005",
 			"baseEffect": "Add <img src=\"images/power-die.png\" class=\"CardSymbol\"> to attacks.",
 			"costs": {
@@ -10546,8 +10542,8 @@
 				"defense": false
 			}
 		},
-		"Throwing Knives": {
-			"name": "Throwing Knives",
+		"Throwing Knife": {
+			"name": "Throwing Knife",
 			"id": "cb007",
 			"baseEffect": "<range>Range 5</range>.  Add <img src=\"images/blessing-die.png\" class=\"CardSymbol\"> to attacks.",
 			"costs": {
