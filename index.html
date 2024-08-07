@@ -3183,10 +3183,14 @@
 						if( craftData.spends[i].enableSpellcasting )
 							castingSpend = true;
 					}
-					if( craftData.dice.enableSpellcasting )
-						castingSpend = true;
-					if( craftData.trait.enableSpellcasting )
-						castingSpend = true;
+					if( craftData.dice ){
+						if( craftData.dice.enableSpellcasting )
+							castingSpend = true;
+					}
+					if( craftData.trait ){
+						if( craftData.trait.enableSpellcasting )
+							castingSpend = true;
+					}
 
 					var spendFlags = data.craftBases[ craftData.baseCard.name ].options;
 					var spendText = "Spending options on ";
