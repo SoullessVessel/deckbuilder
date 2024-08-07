@@ -142,6 +142,11 @@ function build(){
 		entry.description = raw.description;
 		entry.difficulty = parseInt(raw.difficulty);
 		
+		if( raw.enables_spellcasting == "TRUE" )
+			entry.enableSpellcasting = true;
+		else
+			entry.enableSpellcasting = false;
+		
 		entry.costs = {gold:0,iron:0,wood:0,silver:0,cloth:0,steel:0,celestium:0,hardwood:0};
 		if( raw.cost_gold ) entry.costs.gold = parseInt(raw.cost_gold);
 		if( raw.cost_iron ) entry.costs.iron = parseInt(raw.cost_iron);
