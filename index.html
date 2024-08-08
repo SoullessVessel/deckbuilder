@@ -1296,6 +1296,11 @@
 				pointer-events: none;
 				opacity:0%;
 			}
+			
+			#CraftingContainer .hidden,
+			#CraftingContainer .CardText i.hidden{
+				display:none;
+			}
 
 		</style>
 		
@@ -2312,6 +2317,11 @@
 						// Remove from group in active deck
 						var index = set.indexOf( specimen );
 						if (index !== -1) {
+						
+							// Clear crafting options
+							activeDeck[ group ][ index ].craftOptions = null;
+							activeDeck[ group ][ index ].customName = null;
+
 							set.splice( index, 1 );
 						}
 						
@@ -3155,7 +3165,7 @@
 
 				var trait = document.getElementById( "TargetTrait" );
 				if( craftData.trait ){
-					trait.className.replace( " hidden", "" );
+					trait.className = trait.className.replace( / hidden/g, "" );
 					trait.innerHTML = craftData.trait.description;
 				}
 				else{
@@ -3164,7 +3174,7 @@
 				
 				var dice = document.getElementById( "TargetDice" );
 				if( craftData.dice ){
-					dice.className.replace( " hidden", "" );
+					dice.className = dice.className.replace( / hidden/g, "" );
 					dice.innerHTML = craftData.dice.description;
 				}
 				else{
@@ -3175,8 +3185,8 @@
 				var spends = document.getElementById( "TargetSpends" );
 				spends.innerHTML = "";
 				if( craftData.spends.length ){
-					spendType.className.replace( " hidden", "" );
-					spends.className.replace( " hidden", "" );
+					spendType.className = spendType.className.replace( / hidden/g, "" );
+					spends.className = spends.className.replace( / hidden/g, "" );
 					
 					var castingSpend = false;
 					for( var i = 0; i < craftData.spends.length; i++ ){
