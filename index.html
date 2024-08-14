@@ -1720,7 +1720,7 @@
 				
 				if( deck.armor.length ){
 					var cardData = cardLookup[ deck.armor[0].id ];
-					var card = createCard( cardData, cardLookup[ deck.armor[0].rune ], null, "armor", i );
+					var card = createCard( cardData, cardLookup[ deck.armor[0].rune ], null, "armor", 0 );
 						card.setAttribute( "group", "armor" );
 						card.setAttribute( "index", 0 );
 					deck.armor[0].card = card;
